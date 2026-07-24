@@ -1,47 +1,108 @@
 import { act, renderHook } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-// Mock the audio services so the Play gesture can be tested without real audio
-// or network. The direct real-audio start must happen inside the Play gesture
-// for mobile/PWA browser policy.
+// The hook still calls backgroundAudioService.stop() directly on unmount and
+// in its onPlaybackFailed listener, so that surface is mocked here. Every
+// other playback call now goes through AudioQueueEngine (mocked below), not
+// this service directly.
 vi.mock('../../../services/audio/backgroundAudioService', () => ({
   backgroundAudioService: {
-    primeForUserGesture: vi.fn(),
-    playTextFromUserGesture: vi.fn().mockResolvedValue(undefined),
-    playText: vi.fn().mockResolvedValue(undefined),
-    resume: vi.fn().mockResolvedValue(undefined),
-    pause: vi.fn(),
     stop: vi.fn(),
-    setHandlers: vi.fn(),
+  },
+}));
+
+const engineMock = vi.hoisted(() => {
+  const mock = {
+    load: vi.fn(),
+    start: vi.fn(() => Promise.resolve(undefined)),
+    startAutomatic: vi.fn(() => Promise.resolve(undefined)),
+    resume: vi.fn(() => Promise.resolve(undefined)),
+    pause: vi.fn(),
+    next: vi.fn(() => Promise.resolve(undefined)),
+    previous: vi.fn(() => Promise.resolve(undefined)),
+    stop: vi.fn(),
+    setListeners: vi.fn(),
     setRate: vi.fn(),
     setVolume: vi.fn(),
-    canResume: vi.fn(() => false),
-    getLoadedText: vi.fn(() => null),
-    isPlayingLoadedText: vi.fn(() => false),
-  },
+    setRepeatMode: vi.fn(),
+    setDefaultRepeatCount: vi.fn(),
+    getPlaybackState: vi.fn(() => 'idle'),
+    getCurrentItem: vi.fn(() => null as unknown),
+    getCurrentIndex: vi.fn(() => 0),
+    getItems: vi.fn(() => [] as unknown[]),
+    getPersistedPosition: vi.fn(() => null as unknown),
+  };
+  // A real engine's getItems() reflects whatever load() last stored. Mirroring
+  // that here means the hook's own sync effect (which compares getItems()
+  // against the freshly built queue on every render) sees a match after the
+  // first load and does not call load() again on every subsequent render.
+  mock.load.mockImplementation((items: unknown[]) => {
+    mock.getItems.mockReturnValue(items);
+  });
+  return mock;
+});
+
+vi.mock('../../../services/audio/audioQueueEngine', () => ({
+  // Arrow functions cannot be invoked with `new`; the mock constructor needs a
+  // real function that returns the shared mock object as the instance.
+  AudioQueueEngine: vi.fn(function AudioQueueEngine() {
+    return engineMock;
+  }),
 }));
 
-vi.mock('../../../services/audio/TTSEngine', () => ({
-  ttsEngine: {
-    speak: vi.fn().mockResolvedValue(undefined),
-    stopSpeaking: vi.fn().mockResolvedValue(undefined),
-  },
+vi.mock('../../../services/dataset/datasetLoader', () => ({
+  loadDataset: vi.fn(),
 }));
 
+import { appConfig } from '../../../config/AppConfig';
 import { backgroundAudioService } from '../../../services/audio/backgroundAudioService';
+import { loadDataset } from '../../../services/dataset/datasetLoader';
 import { useAppStore } from '../../../stores';
 import { useAutoPlayController } from './useAutoPlayController';
 
-const seedCurrentItem = () => {
+type SetListenersArg = Parameters<typeof engineMock.setListeners>[0];
+
+const seedCurrentItem = (overrides: Record<string, unknown> = {}) => {
   const store = useAppStore.getState();
   store.vocabulary.setCurrentItem(
-    { english: 'hello', id: 'test-1' } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
+    { english: 'hello', id: 'test-1', ...overrides } as unknown as Parameters<
+      typeof store.vocabulary.setCurrentItem
+    >[0]
   );
 };
 
-describe('useAutoPlayController - Play gesture audio start', () => {
+const setRepeatMode = (enabled: boolean) => {
+  if (useAppStore.getState().audio.repeatMode !== enabled) {
+    useAppStore.getState().audio.toggleRepeat();
+  }
+};
+
+const latestListeners = (): SetListenersArg =>
+  engineMock.setListeners.mock.calls.at(-1)?.[0] as SetListenersArg;
+
+/** Flushes pending microtasks and at least one macrotask tick inside act(),
+ * matching the flush pattern the pre-adapter test file already used, so a
+ * mocked engine promise settling a beat later never lands unwrapped during a
+ * later test. */
+const flush = async (): Promise<void> => {
+  await act(async () => {
+    await Promise.resolve();
+    await new Promise((resolve) => setTimeout(resolve, 0));
+  });
+};
+
+
+describe('useAutoPlayController - queue engine delegation', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    engineMock.getPlaybackState.mockReturnValue('idle');
+    engineMock.getCurrentItem.mockReturnValue(null);
+    engineMock.getCurrentIndex.mockReturnValue(0);
+    engineMock.start.mockReturnValue(Promise.resolve(undefined));
+    engineMock.startAutomatic.mockReturnValue(Promise.resolve(undefined));
+    engineMock.resume.mockReturnValue(Promise.resolve(undefined));
+    engineMock.next.mockReturnValue(Promise.resolve(undefined));
+    engineMock.previous.mockReturnValue(Promise.resolve(undefined));
     useAppStore.getState().audio.stopAutoPlay();
     seedCurrentItem();
   });
@@ -50,73 +111,153 @@ describe('useAutoPlayController - Play gesture audio start', () => {
     useAppStore.getState().audio.stopAutoPlay();
   });
 
-  it('starts the current real-audio clip directly inside the Play gesture', () => {
-    useAppStore.getState().settings.updateSetting('backgroundAudioMode', true);
-
+  it('loads the queue and starts it directly inside the Play gesture', async () => {
     const { result } = renderHook(() => useAutoPlayController());
+
     act(() => {
       result.current.handlePlay();
     });
+    await flush();
 
-    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
-      'hello',
-      expect.objectContaining({ rate: expect.any(Number), volume: expect.any(Number) })
+    expect(engineMock.load).toHaveBeenCalledWith(
+      expect.arrayContaining([expect.objectContaining({ text: 'hello' })]),
+      expect.any(Number)
     );
-    expect(backgroundAudioService.primeForUserGesture).not.toHaveBeenCalled();
+    // The real call happens synchronously inside the gesture handler, before
+    // any await, so it is already recorded before the flush above.
+    expect(engineMock.start).toHaveBeenCalledTimes(1);
+    expect(engineMock.resume).not.toHaveBeenCalled();
   });
 
-  it('uses British sounds-like text as the bright media-session title row', () => {
+  it('resumes instead of reloading the queue when the engine is already paused', async () => {
+    engineMock.getPlaybackState.mockReturnValue('paused');
+    const { result } = renderHook(() => useAutoPlayController());
+    await flush();
+    engineMock.load.mockClear();
+
+    act(() => {
+      result.current.handlePlay();
+    });
+    await flush();
+
+    expect(engineMock.resume).toHaveBeenCalled();
+    expect(engineMock.load).not.toHaveBeenCalled();
+    expect(engineMock.start).not.toHaveBeenCalled();
+  });
+
+  it('continues autoplay through startAutomatic when auto-playing resumes without a gesture', async () => {
+    renderHook(() => useAutoPlayController());
+
+    await act(async () => {
+      useAppStore.getState().audio.startAutoPlay();
+      await Promise.resolve();
+    });
+    await flush();
+
+    expect(engineMock.startAutomatic).toHaveBeenCalledTimes(1);
+    expect(engineMock.start).not.toHaveBeenCalled();
+  });
+
+  it('resumes through the engine when autoplay continuation finds a paused engine', async () => {
+    engineMock.getPlaybackState.mockReturnValue('paused');
+    renderHook(() => useAutoPlayController());
+
+    await act(async () => {
+      useAppStore.getState().audio.startAutoPlay();
+      await Promise.resolve();
+    });
+    await flush();
+
+    expect(engineMock.resume).toHaveBeenCalledTimes(1);
+    expect(engineMock.startAutomatic).not.toHaveBeenCalled();
+  });
+
+  it('delegates pause to the queue engine', async () => {
+    const { result } = renderHook(() => useAutoPlayController());
+
+    act(() => {
+      result.current.handlePause();
+    });
+    await flush();
+
+    expect(engineMock.pause).toHaveBeenCalledTimes(1);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+  });
+
+  it('delegates next and previous to the queue engine', async () => {
+    const { result } = renderHook(() => useAutoPlayController());
+
+    await act(async () => {
+      await result.current.handleNext();
+    });
+    await flush();
+    expect(engineMock.next).toHaveBeenCalledTimes(1);
+
+    await act(async () => {
+      await result.current.handlePrev();
+    });
+    await flush();
+    expect(engineMock.previous).toHaveBeenCalledTimes(1);
+  });
+
+  it('syncs rate, volume, and repeat count into the engine on mount and on change', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
     const store = useAppStore.getState();
-    store.vocabulary.setCurrentItem(
-      {
-        english: 'consoles',
-        id: 'metadata-test',
-        phonetic: { british: 'KON-solz' },
-      } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
-    );
 
-    const { result } = renderHook(() => useAutoPlayController());
+    expect(engineMock.setRate).toHaveBeenCalledWith(store.settings.ttsRate);
+    expect(engineMock.setVolume).toHaveBeenCalledWith(store.audio.volume);
+    expect(engineMock.setDefaultRepeatCount).toHaveBeenCalledWith(store.settings.vocabRepeatCount || 1);
+
     act(() => {
-      result.current.handlePlay();
+      useAppStore.getState().settings.updateSetting('ttsRate', 0.9);
     });
+    await flush();
+    expect(engineMock.setRate).toHaveBeenLastCalledWith(0.9);
 
-    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
-      'consoles',
-      expect.objectContaining({
-        mediaTitle: 'KON-solz',
-        mediaArtist: 'consoles',
-      })
-    );
+    act(() => {
+      useAppStore.getState().settings.updateSetting('vocabRepeatCount', 3);
+    });
+    await flush();
+    expect(engineMock.setDefaultRepeatCount).toHaveBeenLastCalledWith(3);
   });
 
-  it('still starts real audio directly when the legacy Background Audio Mode setting is off', () => {
-    useAppStore.getState().settings.updateSetting('backgroundAudioMode', false);
+  it('mirrors plain repeat mode into the engine when autoSwitchBooks is off', async () => {
+    useAppStore.getState().settings.updateSetting('autoSwitchBooks', false);
+    setRepeatMode(false);
+    renderHook(() => useAutoPlayController());
+    await flush();
 
-    const { result } = renderHook(() => useAutoPlayController());
+    expect(engineMock.setRepeatMode).toHaveBeenLastCalledWith(false);
+
     act(() => {
-      result.current.handlePlay();
+      setRepeatMode(true);
     });
-
-    expect(backgroundAudioService.playTextFromUserGesture).toHaveBeenCalledWith(
-      'hello',
-      expect.objectContaining({ rate: expect.any(Number), volume: expect.any(Number) })
-    );
+    await flush();
+    expect(engineMock.setRepeatMode).toHaveBeenLastCalledWith(true);
   });
 
-  it('surfaces an error when direct mobile audio start is rejected', async () => {
-    const playError = new Error('mobile playback rejected');
-    (backgroundAudioService.playTextFromUserGesture as unknown as ReturnType<typeof vi.fn>)
-      .mockRejectedValueOnce(playError);
-
+  it('shows a notification and stops autoplay when the engine reports a playback failure', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
     const notifySpy = vi
       .spyOn(useAppStore.getState().ui, 'showNotification')
       .mockImplementation(() => {});
 
-    const { result } = renderHook(() => useAutoPlayController());
-    await act(async () => {
-      result.current.handlePlay();
-      await Promise.resolve();
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
     });
+    await flush();
+
+    act(() => {
+      latestListeners().onPlaybackFailed?.({
+        item: { id: 'x', datasetId: 'd', index: 0, text: 'x', mediaTitle: 'x', mediaArtist: '', itemType: 'vocabulary' },
+        index: 0,
+        error: new Error('boom'),
+        recoverable: false,
+      });
+    });
+    await flush();
 
     expect(backgroundAudioService.stop).toHaveBeenCalled();
     expect(notifySpy).toHaveBeenCalledWith(expect.stringContaining('Premium audio'), 'error');
@@ -125,89 +266,102 @@ describe('useAutoPlayController - Play gesture audio start', () => {
     notifySpy.mockRestore();
   });
 });
-
-describe('useAutoPlayController - playback error handling', () => {
-  const flushAutoPlay = async () => {
-    await act(async () => {
-      useAppStore.getState().audio.startAutoPlay();
-      // Let the effect and its async playback chain settle.
-      await Promise.resolve();
-      await Promise.resolve();
-      await new Promise((resolve) => setTimeout(resolve, 0));
-    });
-  };
-
+describe('useAutoPlayController - autoSwitchBooks and repeatMode', () => {
   beforeEach(() => {
+    vi.useFakeTimers();
     vi.clearAllMocks();
+    engineMock.getPlaybackState.mockReturnValue('idle');
+    engineMock.getCurrentItem.mockReturnValue(null);
+    engineMock.getCurrentIndex.mockReturnValue(0);
     useAppStore.getState().audio.stopAutoPlay();
-    const store = useAppStore.getState();
-    store.vocabulary.setCurrentItem(
-      { english: 'hello', id: 'abort-test' } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
-    );
+    seedCurrentItem();
+    useAppStore.getState().settings.updateSetting('practiceType', 'vocabulary');
+    useAppStore.getState().settings.updateSetting('autoSwitchBooks', true);
+    (loadDataset as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
+      items: [{ english: 'next book word', id: 'next-book-1' }],
+    });
   });
 
   afterEach(() => {
     useAppStore.getState().audio.stopAutoPlay();
+    useAppStore.getState().settings.updateSetting('autoSwitchBooks', false);
+    vi.useRealTimers();
   });
 
-  it('does not surface an error or stop autoplay when playback is aborted or superseded', async () => {
-    // An intentional supersession (e.g. a list-item click during autoplay)
-    // aborts the in-flight fetch; playText rejects with an AbortError.
-    const abortError = Object.assign(new Error('aborted'), { name: 'AbortError' });
-    (backgroundAudioService.playText as unknown as ReturnType<typeof vi.fn>).mockRejectedValueOnce(abortError);
-
-    const notifySpy = vi
-      .spyOn(useAppStore.getState().ui, 'showNotification')
-      .mockImplementation(() => {});
+  it('switches to the next enabled book before looping, even with repeat mode on', async () => {
+    vi.spyOn(appConfig, 'getVocabularyBookIds').mockReturnValue(['book-a', 'book-b']);
+    useAppStore.getState().settings.updateSetting('vocabularyBook', 'book-a');
+    setRepeatMode(true);
+    useAppStore.getState().audio.startAutoPlay();
 
     renderHook(() => useAutoPlayController());
-    await flushAutoPlay();
+    engineMock.getItems.mockReturnValue([{ id: 'a1' }, { id: 'a2' }]);
 
-    expect(backgroundAudioService.playText).toHaveBeenCalled();
-    // No false "premium audio unavailable" message, and autoplay is left running.
-    expect(notifySpy).not.toHaveBeenCalled();
-    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    await act(async () => {
+      latestListeners().onClipEnded?.({ index: 1, repeatIndex: 1, repeatCount: 1 });
+      await vi.advanceTimersByTimeAsync(1000);
+    });
+    await act(async () => {
+      await Promise.resolve();
+      await Promise.resolve();
+    });
 
-    notifySpy.mockRestore();
+    expect(loadDataset).toHaveBeenCalledWith('book-b');
+    expect(useAppStore.getState().settings.vocabularyBook).toBe('book-b');
   });
 
-  it('surfaces an error and stops autoplay when the TTS request genuinely fails', async () => {
-    const realFailure = new Error('Premium TTS is unavailable for background audio');
-    (backgroundAudioService.playText as unknown as ReturnType<typeof vi.fn>).mockRejectedValueOnce(realFailure);
-
-    const notifySpy = vi
-      .spyOn(useAppStore.getState().ui, 'showNotification')
-      .mockImplementation(() => {});
+  it('loops back to the first enabled book only after the final book, with repeat mode on', async () => {
+    vi.spyOn(appConfig, 'getVocabularyBookIds').mockReturnValue(['book-a', 'book-b']);
+    useAppStore.getState().settings.updateSetting('vocabularyBook', 'book-b');
+    setRepeatMode(true);
+    useAppStore.getState().audio.startAutoPlay();
 
     renderHook(() => useAutoPlayController());
-    await flushAutoPlay();
+    engineMock.getItems.mockReturnValue([{ id: 'b1' }]);
 
-    expect(backgroundAudioService.playText).toHaveBeenCalled();
-    expect(notifySpy).toHaveBeenCalledWith(expect.stringContaining('Premium audio'), 'error');
+    await act(async () => {
+      latestListeners().onClipEnded?.({ index: 0, repeatIndex: 1, repeatCount: 1 });
+      await vi.advanceTimersByTimeAsync(1000);
+    });
+    await act(async () => {
+      await Promise.resolve();
+      await Promise.resolve();
+    });
+
+    expect(loadDataset).toHaveBeenCalledWith('book-a');
+  });
+
+  it('stops at the final enabled book when repeat mode is off, without switching', async () => {
+    vi.spyOn(appConfig, 'getVocabularyBookIds').mockReturnValue(['book-a', 'book-b']);
+    useAppStore.getState().settings.updateSetting('vocabularyBook', 'book-b');
+    setRepeatMode(false);
+    useAppStore.getState().audio.startAutoPlay();
+
+    renderHook(() => useAutoPlayController());
+    engineMock.getItems.mockReturnValue([{ id: 'b1' }]);
+
+    await act(async () => {
+      latestListeners().onClipEnded?.({ index: 0, repeatIndex: 1, repeatCount: 1 });
+      await vi.advanceTimersByTimeAsync(1000);
+    });
+    await act(async () => {
+      await Promise.resolve();
+      await Promise.resolve();
+    });
+
+    expect(loadDataset).not.toHaveBeenCalled();
     expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
-
-    notifySpy.mockRestore();
   });
 
-  it('uses British sounds-like text as the bright media-session title row during autoplay', async () => {
-    const store = useAppStore.getState();
-    store.vocabulary.setCurrentItem(
-      {
-        english: 'availability',
-        id: 'autoplay-metadata-test',
-        phonetic: { british: 'uh-vay-luh-BIL-uh-tee' },
-      } as unknown as Parameters<typeof store.vocabulary.setCurrentItem>[0]
-    );
-
+  it('tells the engine not to loop the same queue itself while autoSwitchBooks is on', async () => {
+    setRepeatMode(true);
     renderHook(() => useAutoPlayController());
-    await flushAutoPlay();
+    await act(async () => {
+      await Promise.resolve();
+    });
 
-    expect(backgroundAudioService.playText).toHaveBeenCalledWith(
-      'availability',
-      expect.objectContaining({
-        mediaTitle: 'uh-vay-luh-BIL-uh-tee',
-        mediaArtist: 'availability',
-      })
-    );
+    // Book-level looping is handleAutoSwitchBooks's job; the engine looping
+    // its own loaded queue at the same time would race with a book switch.
+    expect(engineMock.setRepeatMode).toHaveBeenLastCalledWith(false);
   });
 });

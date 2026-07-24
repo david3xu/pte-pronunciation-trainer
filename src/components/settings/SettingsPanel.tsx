@@ -457,19 +457,19 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Word Repeat Count</Text>
                 <Text size="2" color="gray" mb="1">
-                  Number of times to repeat each word during auto-play
+                  Default auto-play repeats: easy words 1 time, normal words 3 times, hard words 5 times
                 </Text>
                 <Select.Root
-                  value={String(settings.vocabRepeatCount || 1)}
+                  value={String(settings.vocabRepeatCount || 3)}
                   onValueChange={(value) =>
                     updateSetting('vocabRepeatCount', Number(value) as 1 | 3 | 5)
                   }
                 >
                   <Select.Trigger />
                   <Select.Content>
-                    <Select.Item value="1">1 time (default)</Select.Item>
-                    <Select.Item value="3">3 times</Select.Item>
-                    <Select.Item value="5">5 times</Select.Item>
+                    <Select.Item value="1">1 time fallback</Select.Item>
+                    <Select.Item value="3">3 times fallback (normal default)</Select.Item>
+                    <Select.Item value="5">5 times fallback</Select.Item>
                   </Select.Content>
                 </Select.Root>
               </Flex>

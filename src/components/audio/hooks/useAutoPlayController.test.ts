@@ -147,6 +147,32 @@ describe('useAutoPlayController - queue engine delegation', () => {
     expect(engineMock.resume).not.toHaveBeenCalled();
   });
 
+  it('sets difficulty-based default repeat counts on queued words', async () => {
+    const store = useAppStore.getState();
+    const dataset = [
+      { id: 'easy-word', english: 'easy word', difficulty: 'easy', category: 'test' },
+      { id: 'normal-word', english: 'normal word', difficulty: 'normal', category: 'test' },
+      { id: 'hard-word', english: 'hard word', difficulty: 'hard', category: 'test' },
+    ] as unknown as Parameters<typeof store.vocabulary.setDataset>[0];
+    store.vocabulary.setDataset(dataset, 'test');
+
+    const { result } = renderHook(() => useAutoPlayController());
+
+    act(() => {
+      result.current.handlePlay();
+    });
+    await flush();
+
+    expect(engineMock.load).toHaveBeenCalledWith(
+      [
+        expect.objectContaining({ id: 'easy-word', repeatCount: 1 }),
+        expect.objectContaining({ id: 'normal-word', repeatCount: 3 }),
+        expect.objectContaining({ id: 'hard-word', repeatCount: 5 }),
+      ],
+      expect.any(Number)
+    );
+  });
+
   it('resumes instead of reloading the queue when the engine is already paused', async () => {
     engineMock.getPlaybackState.mockReturnValue('paused');
     const { result } = renderHook(() => useAutoPlayController());
@@ -225,7 +251,7 @@ describe('useAutoPlayController - queue engine delegation', () => {
 
     expect(engineMock.setRate).toHaveBeenCalledWith(store.settings.ttsRate);
     expect(engineMock.setVolume).toHaveBeenCalledWith(store.audio.volume);
-    expect(engineMock.setDefaultRepeatCount).toHaveBeenCalledWith(store.settings.vocabRepeatCount || 1);
+    expect(engineMock.setDefaultRepeatCount).toHaveBeenCalledWith(store.settings.vocabRepeatCount || 3);
 
     act(() => {
       useAppStore.getState().settings.updateSetting('ttsRate', 0.9);

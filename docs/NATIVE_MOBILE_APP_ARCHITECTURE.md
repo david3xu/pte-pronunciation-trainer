@@ -62,6 +62,23 @@ No other framework choice gets this reuse for free; see §10.
 
 ## 2. Project structure
 
+**`capacitor.config.ts` (illustrative content, not created this round):**
+
+```ts
+import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.ptetrainer.app', // placeholder; finalize as a real reverse-domain id before store submission
+  appName: 'PTE Pronunciation Trainer', // matches the existing PWA manifest name
+  webDir: 'dist', // vite build's output directory; must match vite.config.ts's build.outDir
+  plugins: {
+    // Registered here once the custom plugin (§10) exists under native-plugins/background-audio
+  },
+};
+
+export default config;
+```
+
 ```
 /
 ├── capacitor.config.ts              # NEW (foundation round): appId, webDir, plugin config

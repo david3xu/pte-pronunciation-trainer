@@ -3,6 +3,12 @@ import { cleanup } from '@testing-library/react';
 import * as matchers from '@testing-library/jest-dom/matchers';
 import '@testing-library/jest-dom';
 
+// React 19 checks this global to know it is running inside an act aware test
+// environment. Without it, act() can fail to recognize updates it caused as
+// wrapped, producing "not wrapped in act(...)" warnings regardless of how an
+// individual test wraps its own interactions.
+(globalThis as unknown as { IS_REACT_ACT_ENVIRONMENT?: boolean }).IS_REACT_ACT_ENVIRONMENT = true;
+
 // Extend Vitest's expect with jest-dom matchers
 expect.extend(matchers);
 

@@ -21,6 +21,10 @@ class FakeAudioCacheStorage implements AudioCacheStorage {
     this.entries.delete(key);
   }
 
+  async clear(): Promise<void> {
+    this.entries.clear();
+  }
+
   has(key: string): boolean {
     return this.entries.has(key);
   }
@@ -134,6 +138,7 @@ describe('AudioCache', () => {
       get: vi.fn(() => Promise.reject(new Error('IndexedDB unavailable'))),
       set: vi.fn(() => Promise.reject(new Error('IndexedDB unavailable'))),
       delete: vi.fn(() => Promise.resolve()),
+      clear: vi.fn(() => Promise.reject(new Error('IndexedDB unavailable'))),
     };
     const brokenCache = new AudioCache(failingStorage);
 
@@ -145,5 +150,14 @@ describe('AudioCache', () => {
     await expect(
       brokenCache.set('key-5', makeBlob(), { contentType: 'audio/mpeg' })
     ).resolves.toBeUndefined();
+  });
+
+  it('clears stored entries without throwing', async () => {
+    await cache.set('key-6', makeBlob(), { contentType: 'audio/mpeg' });
+    expect(storage.has('key-6')).toBe(true);
+
+    await cache.clear();
+
+    expect(storage.has('key-6')).toBe(false);
   });
 });

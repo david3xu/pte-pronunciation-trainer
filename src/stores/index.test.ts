@@ -62,6 +62,28 @@ describe('store audio settings', () => {
     store.settings.resetSettings();
     expect(useAppStore.getState().settings.ttsRate).toBe(0.7);
   });
+
+  it('resetSettings restores audio preferences and runtime playback state', () => {
+    const store = useAppStore.getState();
+
+    store.audio.setAutoPlay(false);
+    store.audio.toggleRepeat();
+    store.audio.setVolume(0.4);
+    store.audio.startAutoPlay();
+    store.audio.pauseAutoPlay();
+    store.audio.setNeedsResume(true, 'suspended');
+
+    store.settings.resetSettings();
+
+    const audio = useAppStore.getState().audio;
+    expect(audio.autoPlayEnabled).toBe(true);
+    expect(audio.repeatMode).toBe(true);
+    expect(audio.volume).toBe(1);
+    expect(audio.isAutoPlaying).toBe(false);
+    expect(audio.isPaused).toBe(false);
+    expect(audio.needsResume).toBe(false);
+    expect(audio.resumeReason).toBeNull();
+  });
 });
 
 describe('store navigation', () => {

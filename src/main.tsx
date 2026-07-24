@@ -42,6 +42,7 @@ const SERVICE_WORKER_UPDATE_CHECK_THROTTLE_MS = 60 * 1000;
 let lastServiceWorkerUpdateCheckAt = 0;
 let isCheckingForServiceWorkerUpdate = false;
 let hasRequestedServiceWorkerReload = false;
+let updateSW: (reloadPage?: boolean) => Promise<void> = async () => {};
 
 const reloadForServiceWorkerUpdate = () => {
   if (hasRequestedServiceWorkerReload) return;
@@ -78,38 +79,51 @@ const requestServiceWorkerUpdateCheck = (
     });
 };
 
-const updateSW = registerSW({
-  immediate: true,
-  onNeedRefresh() {
-    reloadForServiceWorkerUpdate();
-  },
-  onRegisteredSW(_swScriptUrl, registration) {
-    requestServiceWorkerUpdateCheck(registration, true);
+if (window.location.protocol === 'capacitor:') {
+  if ('serviceWorker' in navigator) {
+    void navigator.serviceWorker.getRegistrations()
+      .then((registrations) => Promise.all(registrations.map((registration) => registration.unregister())))
+      .catch((error) => console.warn('[PWA] Failed to unregister service workers in native app:', error));
+  }
+  if ('caches' in window) {
+    void caches.keys()
+      .then((keys) => Promise.all(keys.map((key) => caches.delete(key))))
+      .catch((error) => console.warn('[PWA] Failed to clear native app caches:', error));
+  }
+} else {
+  updateSW = registerSW({
+    immediate: true,
+    onNeedRefresh() {
+      reloadForServiceWorkerUpdate();
+    },
+    onRegisteredSW(_swScriptUrl, registration) {
+      requestServiceWorkerUpdateCheck(registration, true);
 
-    const checkForUpdates = () => requestServiceWorkerUpdateCheck(registration);
-    const checkForUpdatesWhenVisible = () => {
-      if (document.visibilityState === 'visible') {
-        checkForUpdates();
-      }
-    };
+      const checkForUpdates = () => requestServiceWorkerUpdateCheck(registration);
+      const checkForUpdatesWhenVisible = () => {
+        if (document.visibilityState === 'visible') {
+          checkForUpdates();
+        }
+      };
 
-    window.addEventListener('focus', checkForUpdates);
-    window.addEventListener('online', checkForUpdates);
-    window.addEventListener('pageshow', checkForUpdates);
-    document.addEventListener('visibilitychange', checkForUpdatesWhenVisible);
+      window.addEventListener('focus', checkForUpdates);
+      window.addEventListener('online', checkForUpdates);
+      window.addEventListener('pageshow', checkForUpdates);
+      document.addEventListener('visibilitychange', checkForUpdatesWhenVisible);
 
-    window.setInterval(
-      checkForUpdates,
-      SERVICE_WORKER_UPDATE_CHECK_INTERVAL_MS
-    );
-  },
-  onOfflineReady() {
-    console.log('✅ App ready to work offline');
-  },
-  onRegisterError(error) {
-    console.error('[PWA] Service worker registration failed:', error);
-  },
-});
+      window.setInterval(
+        checkForUpdates,
+        SERVICE_WORKER_UPDATE_CHECK_INTERVAL_MS
+      );
+    },
+    onOfflineReady() {
+      console.log('✅ App ready to work offline');
+    },
+    onRegisterError(error) {
+      console.error('[PWA] Service worker registration failed:', error);
+    },
+  });
+}
 
 // Export for testing
 export { App };

@@ -86,6 +86,8 @@ export class BackgroundAudioService {
   private expectedPauseToken = 0;
   private suppressSuspensionEvents = false;
   private sourceLoadToken = 0;
+  private playbackToken = 0;
+  private endFallbackTimer: number | null = null;
 
   /** True when this environment can support real-audio background playback. */
   isSupported(): boolean {
@@ -213,6 +215,8 @@ export class BackgroundAudioService {
 
     const blobUrl = URL.createObjectURL(blob);
     const audio = this.ensureAudioElement();
+    const playbackToken = ++this.playbackToken;
+    this.clearEndFallbackTimer();
     this.releaseObjectUrl(); // revoke the previous clip before swapping src
     this.objectUrl = blobUrl;
     this.currentText = text;
@@ -240,6 +244,7 @@ export class BackgroundAudioService {
     try {
       await audio.play();
       this.endIntentionalSourceLoad(sourceLoadToken);
+      this.scheduleEndFallback(playbackToken);
       this.setPlaybackState('playing');
     } catch (error) {
       this.endIntentionalSourceLoad(sourceLoadToken);
@@ -295,6 +300,8 @@ export class BackgroundAudioService {
     this.abortPendingFetch();
 
     const audio = this.ensureAudioElement();
+    const playbackToken = ++this.playbackToken;
+    this.clearEndFallbackTimer();
     this.releaseObjectUrl();
     this.currentText = text;
     audio.loop = false;
@@ -324,6 +331,7 @@ export class BackgroundAudioService {
       return played.then(
         () => {
           this.endIntentionalSourceLoad(sourceLoadToken);
+          this.scheduleEndFallback(playbackToken);
         },
         (error: unknown) => {
           this.endIntentionalSourceLoad(sourceLoadToken);
@@ -345,6 +353,7 @@ export class BackgroundAudioService {
   }
 
   pause(): void {
+    this.clearEndFallbackTimer();
     this.expectNativePause();
     this.audio?.pause();
     this.setPlaybackState('paused');
@@ -393,6 +402,8 @@ export class BackgroundAudioService {
 
   stop(): void {
     this.abortPendingFetch();
+    this.playbackToken++;
+    this.clearEndFallbackTimer();
     // Disarm any in-flight priming pause so it cannot fire after a reset.
     this.primeGeneration++;
     if (this.audio) {
@@ -418,8 +429,9 @@ export class BackgroundAudioService {
     audio.preload = 'auto';
     audio.setAttribute('playsinline', '');
     audio.setAttribute('webkit-playsinline', '');
-    audio.addEventListener('ended', () => this.handlers.onEnded?.());
+    audio.addEventListener('ended', () => this.handleEnded());
     audio.addEventListener('error', () => {
+      this.clearEndFallbackTimer();
       this.handlers.onError?.(new Error('Background audio element reported an error'));
     });
     audio.addEventListener('pause', this.handleNativePause);
@@ -440,13 +452,22 @@ export class BackgroundAudioService {
     this.handlers.onSuspended?.();
   };
 
-  /** 'waiting' and 'stalled' both mean playback is stuck buffering, which is
-   * the same recoverable situation as an unexpected pause from the caller's
-   * point of view; neither is something pause()/stop() would cause. */
+  /** A transient 'waiting'/'stalled' event while the element is still playing
+   * is normal buffering and the browser can recover by itself. Only escalate
+   * if the element has also become paused before natural end. */
   private handleStalled = (): void => {
     if (this.suppressSuspensionEvents) return;
+    if (this.audio && !this.audio.paused && !this.audio.ended) return;
     this.handlers.onSuspended?.();
   };
+
+  private handleEnded(): void {
+    if (!this.currentText) return;
+    this.clearEndFallbackTimer();
+    this.currentText = null;
+    this.setPlaybackState('none');
+    this.handlers.onEnded?.();
+  }
 
   private isAtNaturalEnd(): boolean {
     if (!this.audio) return false;
@@ -466,6 +487,36 @@ export class BackgroundAudioService {
   private endIntentionalSourceLoad(token: number): void {
     if (this.sourceLoadToken === token) {
       this.suppressSuspensionEvents = false;
+    }
+  }
+
+  private scheduleEndFallback(token: number): void {
+    const audio = this.audio;
+    if (!audio) return;
+
+    const scheduleFromDuration = () => {
+      if (this.playbackToken !== token || !this.currentText || !this.audio) return;
+      const { currentTime, duration } = this.audio;
+      if (!Number.isFinite(duration) || duration <= 0) return;
+
+      const rate = this.currentRate && this.currentRate > 0 ? this.currentRate : 1;
+      const remainingSeconds = Math.max(0, duration - currentTime);
+      const timeoutMs = (remainingSeconds / rate) * 1000 + Math.max(2000, duration * 500);
+      this.clearEndFallbackTimer();
+      this.endFallbackTimer = window.setTimeout(() => {
+        if (this.playbackToken !== token || !this.currentText || this.audio?.paused) return;
+        this.handleEnded();
+      }, timeoutMs);
+    };
+
+    scheduleFromDuration();
+    audio.addEventListener('loadedmetadata', scheduleFromDuration, { once: true });
+  }
+
+  private clearEndFallbackTimer(): void {
+    if (this.endFallbackTimer) {
+      window.clearTimeout(this.endFallbackTimer);
+      this.endFallbackTimer = null;
     }
   }
 

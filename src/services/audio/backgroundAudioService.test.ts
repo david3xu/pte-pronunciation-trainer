@@ -177,6 +177,36 @@ describe('BackgroundAudioService', () => {
     expect(onEnded).toHaveBeenCalledTimes(1);
   });
 
+  it('fires ended from a duration fallback if the browser misses the ended event', async () => {
+    vi.useFakeTimers();
+    const service = new BackgroundAudioService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playTextFromUserGesture('missed ended clip');
+    await vi.advanceTimersByTimeAsync(2999);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1);
+    expect(onEnded).toHaveBeenCalledTimes(1);
+    expect(service.getLoadedText()).toBeNull();
+
+    vi.useRealTimers();
+  });
+
+  it('does not report suspension for transient buffering while still playing', async () => {
+    const service = new BackgroundAudioService();
+    const onSuspended = vi.fn();
+    service.setHandlers({ onSuspended });
+
+    await service.playTextFromUserGesture('buffering clip');
+
+    lastFakeAudio?.emit('waiting');
+    lastFakeAudio?.emit('stalled');
+
+    expect(onSuspended).not.toHaveBeenCalled();
+  });
+
   it('does not report suspension when the browser pauses just before firing ended', async () => {
     const service = new BackgroundAudioService();
     const onEnded = vi.fn();
@@ -224,6 +254,10 @@ describe('BackgroundAudioService', () => {
     await secondPlay;
     await loadingSecondClip;
 
+    lastFakeAudio?.emit('waiting');
+    expect(onSuspended).not.toHaveBeenCalled();
+
+    if (lastFakeAudio) lastFakeAudio.paused = true;
     lastFakeAudio?.emit('waiting');
     expect(onSuspended).toHaveBeenCalledTimes(1);
   });

@@ -170,6 +170,7 @@ export class NativeAudioService {
     this.listenersBound = true;
 
     void BackgroundAudio.addListener('ended', () => {
+      if (!this.currentText) return;
       this.clearEndFallbackTimer();
       this.currentText = null;
       this.isPaused = false;
@@ -214,7 +215,10 @@ export class NativeAudioService {
     if (!Number.isFinite(duration) || !duration || duration <= 0) return;
 
     const rate = this.currentRate && this.currentRate > 0 ? this.currentRate : 1;
-    const timeoutMs = Math.max(250, (duration / rate) * 1000 + 250);
+    // AVAudioPlayer duration can be optimistic for short/VBR MP3 clips. This
+    // timer is only a safety net for a missed native "ended" event, so keep it
+    // deliberately late rather than risking a premature queue advance.
+    const timeoutMs = (duration / rate) * 1000 + Math.max(2000, duration * 500);
     this.endFallbackTimer = setTimeout(() => {
       if (this.playbackToken !== token || this.isPaused || !this.currentText) return;
       this.currentText = null;

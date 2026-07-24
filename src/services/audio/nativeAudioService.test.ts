@@ -163,7 +163,10 @@ describe('NativeAudioService', () => {
     await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
     expect(onEnded).not.toHaveBeenCalled();
 
-    await vi.advanceTimersByTimeAsync(1250);
+    await vi.advanceTimersByTimeAsync(2999);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1);
 
     expect(onEnded).toHaveBeenCalledTimes(1);
     expect(service.getLoadedText()).toBeNull();
@@ -179,7 +182,21 @@ describe('NativeAudioService', () => {
 
     await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
     getRegisteredListener('ended')();
-    await vi.advanceTimersByTimeAsync(1250);
+    await vi.advanceTimersByTimeAsync(3000);
+
+    expect(onEnded).toHaveBeenCalledTimes(1);
+  });
+
+  it('ignores stale ended events after fallback already advanced', async () => {
+    vi.useFakeTimers();
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+    await vi.advanceTimersByTimeAsync(3000);
+    getRegisteredListener('ended')();
 
     expect(onEnded).toHaveBeenCalledTimes(1);
   });
@@ -193,13 +210,13 @@ describe('NativeAudioService', () => {
 
     await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
     service.pause();
-    await vi.advanceTimersByTimeAsync(1250);
+    await vi.advanceTimersByTimeAsync(3000);
     expect(onEnded).not.toHaveBeenCalled();
 
     pluginMock.play.mockResolvedValueOnce({ duration: 1 });
     await service.playBlob('again', new Blob(['audio'], { type: 'audio/mpeg' }));
     service.stop();
-    await vi.advanceTimersByTimeAsync(1250);
+    await vi.advanceTimersByTimeAsync(3000);
 
     expect(onEnded).not.toHaveBeenCalled();
   });
@@ -215,10 +232,10 @@ describe('NativeAudioService', () => {
 
     await service.playBlob('first', new Blob(['audio'], { type: 'audio/mpeg' }));
     await service.playBlob('second', new Blob(['audio'], { type: 'audio/mpeg' }));
-    await vi.advanceTimersByTimeAsync(1250);
+    await vi.advanceTimersByTimeAsync(3000);
     expect(onEnded).not.toHaveBeenCalled();
 
-    await vi.advanceTimersByTimeAsync(1000);
+    await vi.advanceTimersByTimeAsync(3000);
     expect(onEnded).toHaveBeenCalledTimes(1);
   });
 });

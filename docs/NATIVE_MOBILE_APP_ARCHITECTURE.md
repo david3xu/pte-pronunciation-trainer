@@ -1,8 +1,10 @@
 # Native Mobile App Architecture
 
 **Status:** Architecture only. No `ios/`, `android/`, or Capacitor config exists in
-the repository yet. Nothing in this document has been implemented. It is the
-implementation-ready design the next ("foundation") round executes against.
+the repository yet. Nothing in this document has been implemented. The immediate
+foundation round is iOS-first: generate and validate the iOS Capacitor shell
+before starting Android parity work. Android remains part of the broader
+architecture, but it is deferred until the iOS path is ready.
 
 **Relationship to the long-term plan:** `docs/BACKGROUND_AUDIO_LONG_TERM_PLAN.md`
 Phases 7-9 state the *goal* (a full native mobile app, comparable to a podcast
@@ -24,11 +26,13 @@ not re-verified in this round.
 
 ## 1. Chosen framework and rationale
 
-**Choice: Capacitor**, wrapping the existing React/Vite app. Custom native
-plugins (Swift + Kotlin) handle the parts a WebView genuinely cannot: the
-background audio session, lock-screen/notification controls, and OS
-interruption handling. Everything else — UI, routing, the Zustand store, the
-entire `src/services/audio` queue/cache/recovery stack built out this session,
+**Choice: Capacitor**, wrapping the existing React/Vite app. The current
+implementation stage is iOS-first, so the first custom native work is Swift.
+Kotlin/Android parity stays in the architecture but is deferred. Custom native
+plugins handle the parts a WebView genuinely cannot: the background audio
+session, lock-screen/notification controls, and OS interruption handling.
+Everything else — UI, routing, the Zustand store, the entire
+`src/services/audio` queue/cache/recovery stack built out this session,
 Supabase, PostHog — runs unchanged inside the WebView.
 
 **Why not React Native.** RN does not render HTML/CSS; every component is
@@ -82,7 +86,7 @@ export default config;
 ```
 /
 ├── capacitor.config.ts              # NEW (foundation round): appId, webDir, plugin config
-├── ios/                              # NEW (foundation round): generated Xcode project
+├── ios/                              # NEW (current foundation round): generated Xcode project
 │   └── App/
 │       ├── App.xcodeproj
 │       ├── App/
@@ -90,7 +94,7 @@ export default config;
 │       │   ├── Info.plist            # UIBackgroundModes: audio; privacy strings (§8)
 │       │   └── capacitor.config.json
 │       └── Podfile
-├── android/                          # NEW (foundation round): generated Android Studio project
+├── android/                          # DEFERRED: generated in the Android parity track, not iOS stage
 │   └── app/
 │       ├── build.gradle
 │       └── src/main/
@@ -116,37 +120,35 @@ export default config;
     └── audioServiceForPlatform.ts     # NEW: Capacitor.isNativePlatform() ? nativeAudioService : backgroundAudioService
 ```
 
-Nothing under `ios/`, `android/`, or `native-plugins/` is created in this
-round; the tree above is the target for the foundation round, not a
-description of anything currently on disk.
+Nothing under `ios/`, `android/`, or `native-plugins/` exists yet. The current
+foundation round creates `ios/` and `capacitor.config.ts` only. `android/` and
+Kotlin plugin files stay documented here so their contracts are not forgotten,
+but they must not be generated in the current iOS-first stage.
 
 ---
 
 ## 3. Mobile scripts
 
-To add to `package.json` in the foundation round (not this one):
+To add to `package.json` in the iOS foundation round (not this architecture round):
 
 ```json
 {
   "scripts": {
-    "cap:sync": "vite build && npx cap sync",
     "cap:sync:ios": "vite build && npx cap sync ios",
-    "cap:sync:android": "vite build && npx cap sync android",
     "cap:open:ios": "npx cap open ios",
-    "cap:open:android": "npx cap open android",
-    "cap:run:ios": "npx cap run ios",
-    "cap:run:android": "npx cap run android"
+    "cap:run:ios": "npx cap run ios"
   }
 }
 ```
 
-`cap sync` copies the fresh `vite build` output into `ios/App/App/public` and
-`android/app/src/main/assets/public`, then updates native dependencies from
-`capacitor.config.ts`'s plugin list. `cap open` launches Xcode / Android
-Studio for anything that needs a native IDE (signing, capability toggles,
-Info.plist/Manifest edits, running on a real device). `cap run` builds and
-launches on a connected device or simulator/emulator directly from the CLI,
-useful for quick iteration once the shell exists.
+`cap sync ios` copies the fresh `vite build` output into `ios/App/App/public`,
+then updates native iOS dependencies from `capacitor.config.ts`'s plugin list.
+`cap open ios` launches Xcode for anything that needs the native IDE (signing,
+capability toggles, Info.plist edits, running on a real device). `cap run ios`
+builds and launches on a connected device or simulator directly from the CLI,
+useful for quick iteration once the shell exists. Android scripts should be
+added later with the Android parity track, not in the current iOS foundation
+round.
 
 ---
 

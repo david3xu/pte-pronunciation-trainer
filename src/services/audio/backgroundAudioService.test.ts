@@ -20,6 +20,8 @@ class FakeAudio {
   preload = '';
   paused = true;
   ended = false;
+  currentTime = 0;
+  duration = 1;
   loop = false;
   muted = false;
   playbackRate = 1;
@@ -168,6 +170,27 @@ describe('BackgroundAudioService', () => {
       lastFakeAudio.ended = true;
       lastFakeAudio.paused = true;
       lastFakeAudio.emit('pause');
+      lastFakeAudio.emit('ended');
+    }
+
+    expect(onSuspended).not.toHaveBeenCalled();
+    expect(onEnded).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not report suspension when the browser pauses just before firing ended', async () => {
+    const service = new BackgroundAudioService();
+    const onEnded = vi.fn();
+    const onSuspended = vi.fn();
+    service.setHandlers({ onEnded, onSuspended });
+
+    await service.playTextFromUserGesture('short word');
+
+    if (lastFakeAudio) {
+      lastFakeAudio.currentTime = 0.95;
+      lastFakeAudio.duration = 1;
+      lastFakeAudio.paused = true;
+      lastFakeAudio.emit('pause');
+      lastFakeAudio.ended = true;
       lastFakeAudio.emit('ended');
     }
 

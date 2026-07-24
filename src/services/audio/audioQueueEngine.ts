@@ -103,7 +103,9 @@ export type QueueAudioService = Pick<
   | 'setRate'
   | 'setVolume'
   | 'stop'
->;
+> & {
+  prefersDirectQueuePlayback?: () => boolean;
+};
 
 /** Prefetch stays deliberately small: the next 1-2 clips only. */
 const PREFETCH_WINDOW = 2;
@@ -465,6 +467,11 @@ export class AudioQueueEngine {
     this.listeners.onBufferingStarted?.({ item, index: this.currentIndex });
 
     const options = this.getAudioOptions(item);
+    if (this.audioService.prefersDirectQueuePlayback?.()) {
+      const playback = this.audioService.playText(item.text, options);
+      return this.settlePlayback(playback, operation, item);
+    }
+
     const playback = this.cache
       .getOrFetch(
         this.buildCacheKeyForItem(item),
@@ -574,7 +581,13 @@ export class AudioQueueEngine {
 
   private handleClipEnded(): void {
     const item = this.getCurrentItem();
-    if (!item || !this.playbackIntent || this.playbackState !== 'playing') return;
+    if (
+      !item ||
+      !this.playbackIntent ||
+      (this.playbackState !== 'playing' && this.playbackState !== 'suspended')
+    ) {
+      return;
+    }
 
     const repeatCount = this.getRepeatCount(item);
     this.repeatsCompleted += 1;

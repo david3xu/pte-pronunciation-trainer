@@ -228,6 +228,43 @@ describe('useAutoPlayController - queue engine delegation', () => {
     expect(useAppStore.getState().audio.isPaused).toBe(true);
   });
 
+  it('does not mirror transient queue playback states back into user playback intent', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
+    const listeners = latestListeners();
+
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+      useAppStore.getState().audio.pauseAutoPlay();
+      useAppStore.getState().audio.setNeedsResume(true, 'suspended');
+    });
+
+    act(() => {
+      listeners.onStateChanged?.({ state: 'buffering', previousState: 'idle', itemId: 'x', at: Date.now() });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    expect(useAppStore.getState().audio.isPlaying).toBe(false);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+    expect(useAppStore.getState().audio.needsResume).toBe(false);
+
+    act(() => {
+      listeners.onStateChanged?.({ state: 'paused', previousState: 'playing', itemId: 'x', at: Date.now() });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    expect(useAppStore.getState().audio.isPlaying).toBe(false);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+
+    act(() => {
+      listeners.onStateChanged?.({ state: 'playing', previousState: 'paused', itemId: 'x', at: Date.now() });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    expect(useAppStore.getState().audio.isPlaying).toBe(false);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+  });
+
   it('delegates next and previous to the queue engine', async () => {
     const { result } = renderHook(() => useAutoPlayController());
 
@@ -306,7 +343,7 @@ describe('useAutoPlayController - queue engine delegation', () => {
     await flush();
 
     expect(backgroundAudioService.stop).toHaveBeenCalled();
-    expect(notifySpy).toHaveBeenCalledWith(expect.stringContaining('Premium audio'), 'error');
+    expect(notifySpy).toHaveBeenCalledWith('Audio playback cannot start: boom', 'error');
     expect(useAppStore.getState().audio.isAutoPlaying).toBe(false);
 
     notifySpy.mockRestore();

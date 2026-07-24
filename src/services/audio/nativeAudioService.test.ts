@@ -34,7 +34,9 @@ const getRegisteredListener = (eventName: string): ListenerCallback => {
 
 describe('NativeAudioService', () => {
   beforeEach(async () => {
+    vi.useRealTimers();
     vi.clearAllMocks();
+    pluginMock.play.mockResolvedValue(undefined);
     pluginMock.getState.mockResolvedValue({ loadedText: null, canResume: false });
     // Fresh module instance per test: listenersBound and all local state
     // (currentText, isPaused, handlers) must not leak between tests.
@@ -149,5 +151,74 @@ describe('NativeAudioService', () => {
     service.setHandlers(handlers);
 
     expect(onOwnershipLost).not.toHaveBeenCalled();
+  });
+
+  it('fires ended from the native duration fallback if the bridge event is missed', async () => {
+    vi.useFakeTimers();
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1250);
+
+    expect(onEnded).toHaveBeenCalledTimes(1);
+    expect(service.getLoadedText()).toBeNull();
+    expect(service.canResume()).toBe(false);
+  });
+
+  it('cancels the duration fallback when the native ended event arrives first', async () => {
+    vi.useFakeTimers();
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+    getRegisteredListener('ended')();
+    await vi.advanceTimersByTimeAsync(1250);
+
+    expect(onEnded).toHaveBeenCalledTimes(1);
+  });
+
+  it('cancels the duration fallback on pause and stop', async () => {
+    vi.useFakeTimers();
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+    service.pause();
+    await vi.advanceTimersByTimeAsync(1250);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    await service.playBlob('again', new Blob(['audio'], { type: 'audio/mpeg' }));
+    service.stop();
+    await vi.advanceTimersByTimeAsync(1250);
+
+    expect(onEnded).not.toHaveBeenCalled();
+  });
+
+  it('ignores a stale duration fallback after a new clip starts', async () => {
+    vi.useFakeTimers();
+    pluginMock.play
+      .mockResolvedValueOnce({ duration: 1 })
+      .mockResolvedValueOnce({ duration: 2 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('first', new Blob(['audio'], { type: 'audio/mpeg' }));
+    await service.playBlob('second', new Blob(['audio'], { type: 'audio/mpeg' }));
+    await vi.advanceTimersByTimeAsync(1250);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1000);
+    expect(onEnded).toHaveBeenCalledTimes(1);
   });
 });

@@ -24,6 +24,14 @@ const AudioControls: React.FC = () => {
   const progress = useProgress();
   const settings = useSettings();
   const { handlePlay, handlePause, handleNext, handlePrev } = useAutoPlayController();
+  const [playRequested, setPlayRequested] = React.useState(false);
+  const showPause = playRequested || (audio.isAutoPlaying && !audio.isPaused);
+
+  React.useEffect(() => {
+    if (audio.needsResume) {
+      setPlayRequested(false);
+    }
+  }, [audio.needsResume]);
 
   return (
     <Card size="3" className="audio-controls">
@@ -51,18 +59,16 @@ const AudioControls: React.FC = () => {
             size="4"
             variant="solid"
             onClick={() => {
-              if (audio.isAutoPlaying) {
-                if (audio.isPaused) {
-                  handlePlay();
-                } else {
-                  handlePause();
-                }
+              if (showPause) {
+                setPlayRequested(false);
+                handlePause();
               } else {
+                setPlayRequested(true);
                 handlePlay();
               }
             }}
           >
-            {audio.isAutoPlaying && !audio.isPaused ? (
+            {showPause ? (
               <>
                 <PauseIcon width="20" height="20" />
                 Pause
@@ -119,8 +125,8 @@ const AudioControls: React.FC = () => {
           <Flex justify="between" align="center">
             <Text size="2">Auto-play</Text>
             <Switch
-              checked={audio.autoPlayEnabled}
-              onCheckedChange={(checked) => audio.setAutoPlay(checked)}
+              checked={settings.autoPlay}
+              onCheckedChange={(checked) => settings.updateSetting('autoPlay', checked)}
             />
           </Flex>
 

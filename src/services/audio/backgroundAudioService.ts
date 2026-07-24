@@ -286,6 +286,7 @@ export class BackgroundAudioService {
     if (!this.isSupported()) {
       return Promise.reject(new Error('Background audio is not supported in this environment'));
     }
+
     if (!text || !text.trim()) {
       return Promise.reject(new Error('Cannot play empty text in background audio mode'));
     }
@@ -435,7 +436,7 @@ export class BackgroundAudioService {
     const wasExpected = this.expectingPause;
     this.expectingPause = false;
     this.expectedPauseToken += 1;
-    if (wasExpected || this.suppressSuspensionEvents || this.audio?.ended) return;
+    if (wasExpected || this.suppressSuspensionEvents || this.isAtNaturalEnd()) return;
     this.handlers.onSuspended?.();
   };
 
@@ -446,6 +447,14 @@ export class BackgroundAudioService {
     if (this.suppressSuspensionEvents) return;
     this.handlers.onSuspended?.();
   };
+
+  private isAtNaturalEnd(): boolean {
+    if (!this.audio) return false;
+    if (this.audio.ended) return true;
+
+    const { currentTime, duration } = this.audio;
+    return Number.isFinite(duration) && duration > 0 && duration - currentTime <= 0.25;
+  }
 
   private beginIntentionalSourceLoad(): number {
     this.expectNativePause();
@@ -475,7 +484,7 @@ export class BackgroundAudioService {
     }, 0);
   }
 
-  private async fetchAudioBase64(
+  async fetchAudioBase64(
     text: string,
     options: PlayTextOptions,
     signal?: AbortSignal

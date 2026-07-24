@@ -265,10 +265,8 @@ export class AppConfig {
       },
 
       // ===== SETTINGS CONFIGURATION =====
-      // NOTE: The Zustand store (src/stores/index.ts) is the runtime source of
-      // truth for user-settings defaults. These values mirror the store's
-      // initial state so the documented defaults stay honest; they are not read
-      // during store initialization.
+      // Single source of truth for user-settings defaults. The Zustand store
+      // reads these values during initialization and reset.
       settings: {
         defaults: {
           autoPlayNext: true,
@@ -276,6 +274,12 @@ export class AppConfig {
           showPhonetic: true,
           ttsRate: 0.7,
           ttsVolume: 1.0,
+          vocabRepeatCount: 3,
+          wordRepeatCount: {
+            easy: 1,
+            normal: 3,
+            hard: 5
+          },
           practiceMode: null,
           difficultyFilter: 'all',
           theme: 'auto'

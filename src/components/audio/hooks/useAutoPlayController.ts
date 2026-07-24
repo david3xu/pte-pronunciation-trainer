@@ -71,15 +71,11 @@ const getItemDifficultyAndCategory = (
 };
 
 const getDefaultRepeatCountForDifficulty = (difficulty?: Difficulty): 1 | 3 | 5 => {
-  switch (difficulty) {
-    case 'easy':
-      return 1;
-    case 'hard':
-      return 5;
-    case 'normal':
-    default:
-      return 3;
-  }
+  const repeatDefaults = appConfig.get<Record<Difficulty, 1 | 3 | 5>>(
+    'settings.defaults.wordRepeatCount',
+    { easy: 1, normal: 3, hard: 5 }
+  );
+  return difficulty ? repeatDefaults[difficulty] : repeatDefaults.normal;
 };
 
 const toQueueItem = (
@@ -157,7 +153,8 @@ export const useAutoPlayController = () => {
 
   // Keep repeat settings in sync with engine
   useEffect(() => {
-    queueEngine.setDefaultRepeatCount(settings.vocabRepeatCount || 3);
+    const fallbackRepeatCount = appConfig.get<1 | 3 | 5>('settings.defaults.vocabRepeatCount', 3);
+    queueEngine.setDefaultRepeatCount(settings.vocabRepeatCount || fallbackRepeatCount);
   }, [settings.vocabRepeatCount]);
 
   useEffect(() => {

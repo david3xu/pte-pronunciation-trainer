@@ -251,7 +251,9 @@ describe('useAutoPlayController - queue engine delegation', () => {
 
     expect(engineMock.setRate).toHaveBeenCalledWith(store.settings.ttsRate);
     expect(engineMock.setVolume).toHaveBeenCalledWith(store.audio.volume);
-    expect(engineMock.setDefaultRepeatCount).toHaveBeenCalledWith(store.settings.vocabRepeatCount || 3);
+    expect(engineMock.setDefaultRepeatCount).toHaveBeenCalledWith(
+      store.settings.vocabRepeatCount || appConfig.get('settings.defaults.vocabRepeatCount', 3)
+    );
 
     act(() => {
       useAppStore.getState().settings.updateSetting('ttsRate', 0.9);

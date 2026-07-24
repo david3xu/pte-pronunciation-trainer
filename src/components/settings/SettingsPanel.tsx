@@ -23,6 +23,12 @@ interface SettingsPanelProps {
 }
 
 const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
+  const repeatDefaults = appConfig.get<Record<'easy' | 'normal' | 'hard', 1 | 3 | 5>>(
+    'settings.defaults.wordRepeatCount',
+    { easy: 1, normal: 3, hard: 5 }
+  );
+  const fallbackRepeatCount = appConfig.get<1 | 3 | 5>('settings.defaults.vocabRepeatCount', repeatDefaults.normal);
+
   // Get settings data using selectors
   const settings = useSettings();
   const {
@@ -457,10 +463,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               <Flex direction="column" gap="2">
                 <Text size="3" weight="medium">Word Repeat Count</Text>
                 <Text size="2" color="gray" mb="1">
-                  Default auto-play repeats: easy words 1 time, normal words 3 times, hard words 5 times
+                  Default auto-play repeats: easy words {repeatDefaults.easy} time, normal words {repeatDefaults.normal} times, hard words {repeatDefaults.hard} times
                 </Text>
                 <Select.Root
-                  value={String(settings.vocabRepeatCount || 3)}
+                  value={String(settings.vocabRepeatCount || fallbackRepeatCount)}
                   onValueChange={(value) =>
                     updateSetting('vocabRepeatCount', Number(value) as 1 | 3 | 5)
                   }

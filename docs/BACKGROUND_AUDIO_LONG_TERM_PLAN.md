@@ -39,6 +39,41 @@ This target cannot be guaranteed by a browser-only PWA. Browser and PWA policies
 
 Do not close the overall background-audio initiative as "Spotify-like" or "fully mobile" until the native mobile app has shipped and passed device-level background tests.
 
+## Implementation and audit loop
+
+Use a gated loop for the remaining work so the mobile app does not inherit
+untested web/PWA assumptions:
+
+1. **Developer implementation round:** one reasonably large, commit-ready unit.
+   The round must include targeted tests, the smallest relevant validation
+   commands, and full-suite validation when the change affects shared audio or
+   mobile behavior.
+2. **Audit/instructions round:** review the landed commit against this plan,
+   add missing regression coverage if the audit exposes a real test gap, and
+   produce the next developer instructions. Do not start the next implementation
+   round until the audit gate passes.
+3. **Rework gate:** if the audit finds a blocking issue, create a dedicated
+   rework task and audit that fix before moving forward.
+
+Current ordering:
+
+1. Full native mobile app architecture.
+2. Audit the architecture.
+3. Native mobile app foundation.
+4. Audit the foundation.
+5. Native background audio bridge.
+6. Audit the bridge.
+7. Native mobile E2E/manual-device validation.
+8. Audit native mobile validation.
+9. Mobile release hardening.
+10. Final release-readiness audit.
+
+Do not spend the next implementation round expanding browser/PWA mobile E2E as
+if that were the product target. Browser/PWA checks can remain useful regression
+coverage, but the next product step is native iOS/Android architecture. Mobile
+E2E becomes a real native-device validation gate after the native shell and
+native audio bridge exist.
+
 ## Phase 1: Queue state machine on top of the existing audio service
 
 Evolve `src/services/audio/backgroundAudioService.ts` instead of replacing it from scratch. It already owns one reusable `HTMLAudioElement`, direct user-gesture playback for mobile autoplay policy, Media Session handlers, pause/resume, stop, rate/volume updates, and explicit failure behavior.
@@ -190,7 +225,7 @@ Whether `next`/`previous` actually start playing the new item, or just move the 
 
 ### 4. Events and callbacks
 
-The engine's events are a different set from `BackgroundAudioHandlers`. `BackgroundAudioHandlers.onPlay/onPause/onNext/onPrevious` are OS Media Session button taps, not state notifications, and `onEnded`/`onError` are raw DOM events. The engine is the only caller of `backgroundAudioService.setHandlers(...)`, registering its internal handlers once during setup instead of once per item, which removes the need for the current `bgPlayRef`/`bgPauseRef`/`bgNextRef`/`bgPrevRef` ref indirection, and translates them into its own commands and events before anything reaches the UI:
+The engine's events are a different set from `BackgroundAudioHandlers`. `BackgroundAudioHandlers.onPlay/onPause/onNext/onPrevious` are OS Media Session button taps, not state notifications, and `onEnded`/`onError` are raw DOM events. The queue engine should use one stable handler object and reclaim ownership only when it is about to play or resume queue audio. Other intentional playback owners, such as manual word pronunciation through `TTSEngine`, may take ownership, but `backgroundAudioService.setHandlers(...)` must notify the previous owner through `onOwnershipLost` instead of silently replacing it. The queue engine translates raw service handlers into its own commands and events before anything reaches the UI:
 
 ```ts
 interface QueueEngineEvents {
@@ -567,6 +602,15 @@ Implementation notes:
 
 ## Phase 7: Native mobile app foundation
 
+**Full implementation-ready architecture: see `docs/NATIVE_MOBILE_APP_ARCHITECTURE.md`.**
+That document covers framework choice and rationale, project structure,
+mobile build scripts, data packaging, the env/secrets model, the native API
+and Supabase/PostHog strategy, permissions, the playback-ownership invariant,
+the full React/native bridge contract, iOS and Android design, queue
+persistence/recovery, the test strategy and acceptance criteria, and the
+migration/rollout plan. The summary below is retained for context; it is no
+longer the primary source for this phase.
+
 For Spotify or podcast level reliability, a native mobile app is required, not optional. The current React/Vite app can remain the main UI, but native code must own the mobile background audio session and OS integration.
 
 Options:
@@ -634,10 +678,15 @@ Before calling the app fully mobile, complete release hardening:
 6. Add suspension detection and tap-to-resume UX.
 7. Add Background Practice Mode using the same queue engine.
 8. Add batch TTS generation if prefetch warmup still creates too many requests or gaps.
-9. Add mobile E2E tests for the web/PWA recovery path.
-10. Build the Capacitor mobile app foundation.
-11. Add the native background audio plugin/bridge.
-12. Add native-device background playback tests and release hardening before claiming Spotify-like support.
+9. Produce the full iOS/Android mobile app architecture, including native audio ownership and React/native bridge contracts.
+10. Audit the architecture.
+11. Build the Capacitor mobile app foundation.
+12. Audit the foundation.
+13. Add the native background audio plugin/bridge.
+14. Audit native background playback behavior.
+15. Add native E2E/manual-device coverage for locked-screen/background playback, remote controls, app switching, interruptions, and queue sync.
+16. Audit native mobile validation.
+17. Add release hardening before claiming Spotify-like support.
 
 ## Success criteria
 

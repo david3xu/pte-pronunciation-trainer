@@ -15,7 +15,8 @@ let lastFakeAudio: FakeAudio | null = null;
 
 // Minimal controllable stand-in for HTMLAudioElement.
 class FakeAudio {
-  src = '';
+  private _src = '';
+  private listeners = new Map<string, Array<() => void>>();
   preload = '';
   paused = true;
   ended = false;
@@ -24,12 +25,29 @@ class FakeAudio {
   playbackRate = 1;
   volume = 1;
   constructor() { lastFakeAudio = this; }
+  get src() { return this._src; }
+  set src(value: string) {
+    if (this._src === value) return;
+    const wasPlaying = !this.paused;
+    this._src = value;
+    if (wasPlaying) {
+      this.paused = true;
+      this.emit('pause');
+    }
+  }
   play() { playSpy(); this.paused = false; return Promise.resolve(); }
   pause() { pauseSpy(); this.paused = true; }
   load() { /* noop */ }
   setAttribute() { /* noop */ }
   removeAttribute() { this.src = ''; }
-  addEventListener() { /* noop */ }
+  addEventListener(type: string, listener: () => void) {
+    this.listeners.set(type, [...(this.listeners.get(type) ?? []), listener]);
+  }
+  emit(type: string) {
+    for (const listener of this.listeners.get(type) ?? []) {
+      listener();
+    }
+  }
 }
 
 const successFetch = () =>
@@ -120,6 +138,52 @@ describe('BackgroundAudioService', () => {
 
     await service.resume();
     expect(playSpy).toHaveBeenCalledTimes(2);
+  });
+
+  it('does not report suspension when swapping the reusable element to the next clip', async () => {
+    const service = new BackgroundAudioService();
+    const onSuspended = vi.fn();
+    service.setHandlers({ onSuspended });
+
+    await service.playTextFromUserGesture('first clip');
+    expect(lastFakeAudio?.paused).toBe(false);
+
+    await service.playBlob('second clip', new Blob(['audio']), {});
+
+    expect(onSuspended).not.toHaveBeenCalled();
+
+    lastFakeAudio?.emit('pause');
+    expect(onSuspended).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not report suspension for normal waiting events while a new clip is loading', async () => {
+    const service = new BackgroundAudioService();
+    const onSuspended = vi.fn();
+    service.setHandlers({ onSuspended });
+    const secondPlay = new Promise<void>((resolve) => {
+      vi.spyOn(FakeAudio.prototype, 'play').mockImplementationOnce(function play(this: FakeAudio) {
+        this.paused = false;
+        return Promise.resolve();
+      }).mockImplementationOnce(function play(this: FakeAudio) {
+        this.paused = false;
+        return new Promise((innerResolve) => {
+          resolve();
+          innerResolve();
+        });
+      });
+    });
+
+    await service.playTextFromUserGesture('first clip');
+    const loadingSecondClip = service.playBlob('second clip', new Blob(['audio']), {});
+
+    lastFakeAudio?.emit('waiting');
+    expect(onSuspended).not.toHaveBeenCalled();
+
+    await secondPlay;
+    await loadingSecondClip;
+
+    lastFakeAudio?.emit('waiting');
+    expect(onSuspended).toHaveBeenCalledTimes(1);
   });
 
   it('fully clears resumable state on stop', async () => {

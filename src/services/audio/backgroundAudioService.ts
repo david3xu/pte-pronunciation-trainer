@@ -83,6 +83,9 @@ export class BackgroundAudioService {
    * pause event means the browser or OS paused the element out from under
    * us, not something we asked for. */
   private expectingPause = false;
+  private expectedPauseToken = 0;
+  private suppressSuspensionEvents = false;
+  private sourceLoadToken = 0;
 
   /** True when this environment can support real-audio background playback. */
   isSupported(): boolean {
@@ -131,6 +134,7 @@ export class BackgroundAudioService {
     try {
       audio.loop = true;
       audio.muted = true;
+      this.expectTransientNativePause();
       audio.src = SILENT_AUDIO_DATA_URI;
       const played = audio.play();
       if (played && typeof played.then === 'function') {
@@ -214,6 +218,7 @@ export class BackgroundAudioService {
     this.currentText = text;
     audio.loop = false;
     audio.muted = false;
+    const sourceLoadToken = this.beginIntentionalSourceLoad();
     audio.src = blobUrl;
 
     if (typeof options.rate === 'number') {
@@ -234,8 +239,10 @@ export class BackgroundAudioService {
 
     try {
       await audio.play();
+      this.endIntentionalSourceLoad(sourceLoadToken);
       this.setPlaybackState('playing');
     } catch (error) {
+      this.endIntentionalSourceLoad(sourceLoadToken);
       throw error instanceof Error ? error : new Error('Background audio playback failed');
     }
   }
@@ -291,6 +298,7 @@ export class BackgroundAudioService {
     this.currentText = text;
     audio.loop = false;
     audio.muted = false;
+    const sourceLoadToken = this.beginIntentionalSourceLoad();
     audio.src = this.buildDirectAudioUrl(text, options);
 
     if (typeof options.rate === 'number') {
@@ -312,8 +320,17 @@ export class BackgroundAudioService {
     try {
       const played = audio.play();
       this.setPlaybackState('playing');
-      return played;
+      return played.then(
+        () => {
+          this.endIntentionalSourceLoad(sourceLoadToken);
+        },
+        (error: unknown) => {
+          this.endIntentionalSourceLoad(sourceLoadToken);
+          throw error instanceof Error ? error : new Error('Background audio playback failed');
+        }
+      );
     } catch (error) {
+      this.endIntentionalSourceLoad(sourceLoadToken);
       return Promise.reject(error instanceof Error ? error : new Error('Background audio playback failed'));
     }
   }
@@ -327,7 +344,7 @@ export class BackgroundAudioService {
   }
 
   pause(): void {
-    this.expectingPause = true;
+    this.expectNativePause();
     this.audio?.pause();
     this.setPlaybackState('paused');
   }
@@ -378,7 +395,7 @@ export class BackgroundAudioService {
     // Disarm any in-flight priming pause so it cannot fire after a reset.
     this.primeGeneration++;
     if (this.audio) {
-      this.expectingPause = true;
+      this.expectNativePause();
       this.audio.pause();
       this.audio.loop = false;
       this.audio.muted = false;
@@ -417,7 +434,8 @@ export class BackgroundAudioService {
   private handleNativePause = (): void => {
     const wasExpected = this.expectingPause;
     this.expectingPause = false;
-    if (wasExpected) return;
+    this.expectedPauseToken += 1;
+    if (wasExpected || this.suppressSuspensionEvents) return;
     this.handlers.onSuspended?.();
   };
 
@@ -425,8 +443,37 @@ export class BackgroundAudioService {
    * the same recoverable situation as an unexpected pause from the caller's
    * point of view; neither is something pause()/stop() would cause. */
   private handleStalled = (): void => {
+    if (this.suppressSuspensionEvents) return;
     this.handlers.onSuspended?.();
   };
+
+  private beginIntentionalSourceLoad(): number {
+    this.expectNativePause();
+    this.suppressSuspensionEvents = true;
+    this.sourceLoadToken += 1;
+    return this.sourceLoadToken;
+  }
+
+  private endIntentionalSourceLoad(token: number): void {
+    if (this.sourceLoadToken === token) {
+      this.suppressSuspensionEvents = false;
+    }
+  }
+
+  private expectNativePause(): void {
+    this.expectedPauseToken += 1;
+    this.expectingPause = true;
+  }
+
+  private expectTransientNativePause(): void {
+    this.expectNativePause();
+    const token = this.expectedPauseToken;
+    window.setTimeout(() => {
+      if (this.expectedPauseToken === token) {
+        this.expectingPause = false;
+      }
+    }, 0);
+  }
 
   private async fetchAudioBase64(
     text: string,

@@ -41,6 +41,7 @@ const AudioControls: React.FC = () => {
             variant="soft"
             onClick={handlePrev}
             disabled={audio.currentIndex === 0}
+            aria-label="Previous"
           >
             <TrackPreviousIcon width="20" height="20" />
           </Button>
@@ -79,6 +80,7 @@ const AudioControls: React.FC = () => {
             size="3"
             variant="soft"
             onClick={handleNext}
+            aria-label="Next"
           >
             <TrackNextIcon width="20" height="20" />
           </Button>
@@ -140,6 +142,7 @@ const AudioControls: React.FC = () => {
               min={0.5}
               max={2.0}
               step={0.1}
+              data-testid="playback-speed-slider"
             />
           </Flex>
 

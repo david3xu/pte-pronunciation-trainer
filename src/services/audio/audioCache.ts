@@ -81,6 +81,7 @@ export interface AudioCacheStorage {
   get(key: string): Promise<CachedAudioEntry | null>;
   set(key: string, entry: CachedAudioEntry): Promise<void>;
   delete(key: string): Promise<void>;
+  clear(): Promise<void>;
 }
 
 const DB_NAME = 'pte-audio-cache';
@@ -142,6 +143,16 @@ export class IndexedDbAudioCacheStorage implements AudioCacheStorage {
       transaction.objectStore(STORE_NAME).delete(key);
       transaction.oncomplete = () => resolve();
       transaction.onerror = () => reject(transaction.error ?? new Error('Failed to delete from the audio cache'));
+    });
+  }
+
+  async clear(): Promise<void> {
+    const db = await this.openDb();
+    return new Promise<void>((resolve, reject) => {
+      const transaction = db.transaction(STORE_NAME, 'readwrite');
+      transaction.objectStore(STORE_NAME).clear();
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error ?? new Error('Failed to clear the audio cache'));
     });
   }
 }
@@ -218,6 +229,14 @@ export class AudioCache {
     };
     await this.storage.set(key, entry).catch(() => {
       // Cache write problems must not invalidate audio that already played.
+    });
+  }
+
+  /** Clears all cached audio entries. Never throws: reset flows must still
+   * complete even if IndexedDB is unavailable or temporarily blocked. */
+  async clear(): Promise<void> {
+    await this.storage.clear().catch(() => {
+      // Cache clear problems must not block app data reset.
     });
   }
 

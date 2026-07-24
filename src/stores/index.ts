@@ -302,7 +302,15 @@ export const useAppStore = create<AppState>()(
                 },
                 audio: {
                   ...state.audio,
+                  isPlaying: false,
+                  isAutoPlaying: false,
+                  autoPlayEnabled: true,
+                  isPaused: false,
                   currentIndex: 0,
+                  repeatMode: true,
+                  volume: 1.0,
+                  needsResume: false,
+                  resumeReason: null,
                 },
                 progress: {
                   ...state.progress,

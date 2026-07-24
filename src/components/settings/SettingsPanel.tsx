@@ -13,7 +13,8 @@ import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@
 import React, { useEffect, useMemo } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { appConfig } from '../../config/AppConfig';
-import { useAudioState, useSettings, useVocabulary } from '../../stores';
+import { useAudioState, useProgress, useSettings, useVocabulary } from '../../stores';
+import { clearLocalAppData } from '../../services/appDataReset';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
 import { audioServiceForPlatform } from '../../services/audio/audioServiceForPlatform';
 import { ttsEngine } from '../../services/audio/TTSEngine';
@@ -50,6 +51,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
   const audio = useAudioState();
   const { volume: audioVolume, setVolume } = audio;
+  const progress = useProgress();
 
   const vocabulary = useVocabulary();
   const { setLoading, setDataset } = vocabulary;
@@ -185,6 +187,53 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       setLoading(false);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       alert(`Failed to load writing task dataset.\n\nError: ${errorMessage}`);
+    }
+  };
+
+  const loadDefaultVocabularyDataset = async () => {
+    const defaultBookId = appConfig.getDefaultVocabularyBookId();
+    setLoading(true);
+
+    try {
+      const { items } = await loadDataset(defaultBookId);
+      setDataset(items, defaultBookId);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const stopPlaybackForReset = async () => {
+    ttsEngine.stopSpeaking();
+    await audioServiceForPlatform.stop();
+  };
+
+  const handleResetSettings = async () => {
+    try {
+      await stopPlaybackForReset();
+      resetSettings();
+      audioServiceForPlatform.setRate(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
+      audioServiceForPlatform.setVolume(1.0);
+      await loadDefaultVocabularyDataset();
+      alert('Settings reset to defaults');
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Failed to reset settings.\n\nError: ${errorMessage}`);
+    }
+  };
+
+  const handleClearAllData = async () => {
+    try {
+      await stopPlaybackForReset();
+      await clearLocalAppData();
+      resetSettings();
+      progress.resetProgress();
+      audioServiceForPlatform.setRate(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
+      audioServiceForPlatform.setVolume(1.0);
+      await loadDefaultVocabularyDataset();
+      alert('All local data cleared');
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Failed to clear all data.\n\nError: ${errorMessage}`);
     }
   };
 
@@ -569,10 +618,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Button
                   variant="soft"
                   color="red"
-                  onClick={() => {
-                    resetSettings();
-                    alert('Settings reset to defaults');
-                  }}
+                  onClick={handleResetSettings}
                 >
                   Reset All Settings
                 </Button>
@@ -584,15 +630,12 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 <Text size="3" weight="medium">v{appConfig.get('app.version')}</Text>
               </Flex>
 
-              {/* Cache Info */}
+              {/* Local Data */}
               <Flex direction="column" gap="2">
-                <Text size="3" weight="medium">Clear Cache</Text>
+                <Text size="3" weight="medium">Clear Local Data</Text>
                 <Button
                   variant="soft"
-                  onClick={() => {
-                    localStorage.clear();
-                    alert('Cache cleared. Please refresh the page.');
-                  }}
+                  onClick={handleClearAllData}
                 >
                   Clear All Data
                 </Button>

@@ -55,24 +55,30 @@ untested web/PWA assumptions:
 3. **Rework gate:** if the audit finds a blocking issue, create a dedicated
    rework task and audit that fix before moving forward.
 
-Current ordering:
+Current iOS-first ordering:
 
 1. Full native mobile app architecture.
 2. Audit the architecture.
-3. Native mobile app foundation.
-4. Audit the foundation.
-5. Native background audio bridge.
-6. Audit the bridge.
-7. Native mobile E2E/manual-device validation.
-8. Audit native mobile validation.
-9. Mobile release hardening.
-10. Final release-readiness audit.
+3. iOS Capacitor app foundation.
+4. Audit the iOS foundation.
+5. iOS native background audio bridge.
+6. Audit the iOS bridge.
+7. iOS E2E/manual-device validation.
+8. Audit iOS validation.
+9. iOS release hardening.
+10. Final iOS release-readiness audit.
+11. Deferred Android parity track.
 
 Do not spend the next implementation round expanding browser/PWA mobile E2E as
 if that were the product target. Browser/PWA checks can remain useful regression
 coverage, but the next product step is native iOS/Android architecture. Mobile
 E2E becomes a real native-device validation gate after the native shell and
 native audio bridge exist.
+
+The current implementation stage is iOS only. Android remains part of the
+long-term full-mobile target, but Android project generation, foreground media
+service work, Android device validation, and Android release hardening are
+deferred until the iOS path is ready.
 
 ## Phase 1: Queue state machine on top of the existing audio service
 
@@ -621,25 +627,26 @@ Options:
 
 Recommended direction: start with **Capacitor** unless there is a strong reason to rewrite in React Native or fully native code. Capacitor preserves the existing React app and lets the project add native plugins for audio session, media controls, persistence, and lifecycle behavior.
 
-Foundation requirements:
+Current iOS-first foundation requirements:
 
 - Add Capacitor project configuration and mobile build scripts.
-- Generate and commit `ios/` and `android/` projects once the shell configuration is stable.
+- Generate and commit the `ios/` project once the shell configuration is stable.
+- Do not generate `android/` in the current stage; keep Android as a later parity track.
 - Define mobile environment handling so server-only secrets remain server-only and client-exposed values still use `VITE_` prefixes.
 - Ensure generated PTE data is available in mobile builds, either bundled in the app or fetched through a versioned update path.
 - Confirm Supabase, PostHog, Gemini proxy/API routes, and Azure Speech routes work from the mobile app deployment model.
 - Add mobile-specific app metadata, deep-link scheme if needed, app icons/splash assets, permissions, and privacy strings.
 - Keep web and mobile using the same React source where practical; fork only native behavior that genuinely requires platform APIs.
 
-Native requirements:
+Native requirements for the current iOS stage:
 
 - iOS: enable the Audio background mode, configure `AVAudioSession` for playback, integrate lock-screen metadata and remote commands with `MPNowPlayingInfoCenter` / `MPRemoteCommandCenter`.
-- Android: implement a foreground media playback service with a persistent notification, audio focus handling, media session controls, and lock-screen metadata.
+- Android: deferred. Later parity work must implement a foreground media playback service with a persistent notification, audio focus handling, media session controls, and lock-screen metadata.
 - Maintain one logical queue model shared with the web queue engine: current item, next item, repeat state, playback state, and cache key metadata must serialize cleanly across the web/native boundary.
 - Let native code own the actual background playback session while reusing the same generated audio cache/prefetch rules where possible.
 - Sync native playback events back to the React store so visible UI, lock-screen controls, and queue state stay consistent.
 - Store queue position and cache metadata durably enough to recover after app backgrounding, process death, or network interruption.
-- Add device-level E2E/manual test scripts for locked screen, app switcher, Bluetooth/earbud controls, and long-session playback.
+- Add iOS device-level E2E/manual test scripts for locked screen, app switcher, Bluetooth/earbud controls, and long-session playback.
 
 Native apps can request real background audio privileges. A PWA cannot fully guarantee continuous background execution, especially in Low Power Mode.
 
@@ -684,9 +691,10 @@ Before calling the app fully mobile, complete release hardening:
 12. Audit the foundation.
 13. Add the native background audio plugin/bridge.
 14. Audit native background playback behavior.
-15. Add native E2E/manual-device coverage for locked-screen/background playback, remote controls, app switching, interruptions, and queue sync.
-16. Audit native mobile validation.
-17. Add release hardening before claiming Spotify-like support.
+15. Add iOS E2E/manual-device coverage for locked-screen/background playback, remote controls, app switching, interruptions, and queue sync.
+16. Audit iOS mobile validation.
+17. Add iOS release hardening before claiming iOS Spotify-like support.
+18. Start the deferred Android parity track after the iOS path is ready.
 
 ## Success criteria
 

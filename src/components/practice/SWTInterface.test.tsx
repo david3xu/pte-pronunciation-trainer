@@ -33,9 +33,7 @@ describe('SWTInterface', () => {
     render(<SWTInterface item={sampleItem as any} />);
     // The target is rendered one character per span, so it cannot be found
     // as a single text node; check the concatenated text of its container.
-    expect(
-      screen.getByText((_, element) => element?.tagName === 'DIV' && element.textContent === sampleItem.answer)
-    ).toBeInTheDocument();
+    expect(screen.getByTestId('typing-target')).toHaveTextContent(sampleItem.answer);
   });
 
   it('keeps the passage collapsed and not visible as the central target by default', () => {
@@ -93,13 +91,13 @@ describe('SWTInterface', () => {
 
     const chars = Array.from(screen.getByTestId('typing-target').querySelectorAll('span'));
     expect(screen.getByTestId('typing-target')).toHaveStyle({
-      backgroundColor: '#1e293b',
-      borderColor: '#334155',
+      backgroundColor: '#ffffff',
+      borderColor: '#e2e8f0',
     });
-    expect(chars[0]).toHaveStyle({ color: '#f87171' }); // wrong
-    expect(chars[1]).toHaveStyle({ color: '#e2e8f0' }); // correct
-    expect(chars[2]).toHaveStyle({ color: '#94a3b8', borderLeft: '2px solid #f59e0b' }); // current
-    expect(chars[3]).toHaveStyle({ color: '#94a3b8' }); // untyped
+    expect(chars[0]).toHaveStyle({ color: '#dc2626' }); // wrong
+    expect(chars[1]).toHaveStyle({ color: '#172033' }); // correct
+    expect(chars[2]).toHaveStyle({ color: '#475569', backgroundColor: '#eef2ff' }); // current
+    expect(chars[3]).toHaveStyle({ color: '#475569' }); // untyped
   });
 
   it('shows no PTE validity language anywhere: no words/sentences bounds, no Valid/Invalid', async () => {

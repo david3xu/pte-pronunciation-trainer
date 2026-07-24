@@ -29,12 +29,12 @@ interface SWTInterfaceProps {
 const task = TYPING_TASKS.swt;
 
 const monkeytypeColors = {
-  background: '#1e293b',
-  border: '#334155',
-  correct: '#e2e8f0',
-  wrong: '#f87171',
-  current: '#f59e0b',
-  untyped: '#94a3b8',
+  background: '#ffffff',
+  border: '#e2e8f0',
+  correct: '#172033',
+  wrong: '#dc2626',
+  current: '#4f46e5',
+  untyped: '#475569',
 };
 
 const SWTInterface: React.FC<SWTInterfaceProps> = ({
@@ -63,6 +63,7 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
 
   const progress = getTypingProgress(targetText, typed);
   const wpm = getWordsPerMinute(progress.typedLength, elapsedSeconds);
+  const accuracyLabel = typed.length > 0 ? `${progress.accuracyPercent}%` : '—';
 
   // Resets local practice state. Called on Restart, on Next/Previous, and on
   // any item change regardless of which navigation path triggered it.
@@ -197,43 +198,62 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
     if (onPrevious) onPrevious();
   };
 
+  const focusTypingInput = () => inputRef.current?.focus();
+
   const navButtonClass =
-    'rounded border border-app-border px-4 py-2.5 text-app-text-secondary transition-colors hover:border-app-border-light hover:text-app-text-primary';
+    'min-h-11 rounded-xl border border-slate-200 bg-white px-4 py-2.5 font-medium text-slate-600 shadow-sm transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2';
+  const primaryButtonClass =
+    'min-h-12 rounded-xl bg-indigo-600 px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2';
+  const metricCardClass =
+    'rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm';
 
   return (
-    <div className="mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-7xl flex-col rounded-lg bg-app-bg-primary px-4 py-6 text-app-text-primary sm:px-8 sm:py-8 lg:px-10">
-      <div className="mb-8 flex items-center justify-between">
-        <span className="text-lg font-semibold lowercase text-yellow-400">{task.shortName.toLowerCase()}.</span>
-        <span className="rounded bg-app-bg-card px-2 py-1 text-xs uppercase tracking-wide text-app-text-secondary">
+    <div className="mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-6xl flex-col rounded-3xl bg-slate-50 px-4 py-6 text-slate-900 sm:px-8 sm:py-8 lg:px-10">
+      <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">{task.title}</p>
+          <h2 className="mt-1 text-2xl font-bold text-slate-900">Exact-answer typing practice</h2>
+          <p className="mt-1 text-sm text-slate-500">Type the model answer accurately and at a natural pace.</p>
+        </div>
+        <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600 shadow-sm">
           {difficulty}
         </span>
       </div>
 
       {!finished && (
         <>
-          {/* Compact metrics bar: timer, WPM, accuracy, progress, errors. No
-              PTE validity status here; this is typing accuracy/speed practice.
-              Only shown while typing: Results below has its own complete set. */}
-          <div className="mb-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-base" aria-live="polite">
-            <span className="font-mono text-xl text-yellow-400">{formatTimer(elapsedSeconds)}</span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{wpm}</span> wpm
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{progress.accuracyPercent}%</span> accuracy
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary" data-testid="typing-progress-percent">
+          <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-5" aria-live="polite">
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Time</p>
+              <p className="mt-1 font-mono text-2xl font-semibold text-slate-900">{formatTimer(elapsedSeconds)}</p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Speed</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900">{wpm} <span className="text-sm font-medium text-slate-500">WPM</span></p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Accuracy</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900">{accuracyLabel}</p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Progress</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900" data-testid="typing-progress-percent">
                 {progress.progressPercent}%
-              </span>{' '}
-              done
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary" data-testid="typing-error-count">
+              </p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Errors</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900" data-testid="typing-error-count">
                 {progress.errorChars}
-              </span>{' '}
-              error{progress.errorChars === 1 ? '' : 's'}
-            </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-8 h-2 overflow-hidden rounded-full bg-slate-200" aria-hidden="true">
+            <div
+              className="h-full rounded-full bg-indigo-600 transition-[width] duration-200"
+              style={{ width: `${progress.progressPercent}%` }}
+            />
           </div>
 
           <label htmlFor="swt-typing-input" className="sr-only">
@@ -255,35 +275,38 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
               visual UI; the textarea above only captures keystrokes. */}
           <div
             data-testid="typing-target"
-            className="mb-8 min-h-[22rem] cursor-text select-none whitespace-pre-wrap break-words rounded-lg border p-5 font-mono text-2xl leading-loose tracking-wide sm:p-6 md:text-3xl md:leading-loose xl:min-h-[28rem]"
-            onClick={() => inputRef.current?.focus()}
+            className="mb-8 min-h-[18rem] cursor-text select-none rounded-3xl border p-8 shadow-sm sm:p-10 lg:p-12"
+            onClick={focusTypingInput}
             style={{ backgroundColor: monkeytypeColors.background, borderColor: monkeytypeColors.border }}
           >
-            {targetText.split('').map((char, index) => {
-              const isTyped = index < typed.length;
-              const isCurrent = index === typed.length;
-              const isCorrectChar = isTyped && typed[index] === char;
-              const isWrongChar = isTyped && typed[index] !== char;
-              return (
-                <span
-                  key={index}
-                  className={isWrongChar ? 'underline' : undefined}
-                  style={{
-                    color: isCorrectChar
-                      ? monkeytypeColors.correct
-                      : isWrongChar
-                        ? monkeytypeColors.wrong
-                        : monkeytypeColors.untyped,
-                    borderLeft: isCurrent ? `2px solid ${monkeytypeColors.current}` : undefined,
-                  }}
-                >
-                  {char}
-                </span>
-              );
-            })}
+            <div className="mx-auto max-w-4xl whitespace-pre-wrap break-words font-sans text-[clamp(1.35rem,2vw,1.75rem)] leading-[1.85] tracking-normal">
+              {targetText.split('').map((char, index) => {
+                const isTyped = index < typed.length;
+                const isCurrent = index === typed.length;
+                const isCorrectChar = isTyped && typed[index] === char;
+                const isWrongChar = isTyped && typed[index] !== char;
+                return (
+                  <span
+                    key={index}
+                    className={isWrongChar ? 'decoration-2 underline underline-offset-4' : undefined}
+                    style={{
+                      color: isCorrectChar
+                        ? monkeytypeColors.correct
+                        : isWrongChar
+                          ? monkeytypeColors.wrong
+                          : monkeytypeColors.untyped,
+                      backgroundColor: isCurrent ? '#eef2ff' : undefined,
+                      boxShadow: isCurrent ? `inset 0 -3px 0 ${monkeytypeColors.current}` : undefined,
+                    }}
+                  >
+                    {char}
+                  </span>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="flex flex-wrap gap-3 pt-1">
+          <div className="flex flex-col items-stretch gap-3 pt-1 sm:flex-row sm:items-center">
             <button type="button" onClick={handleRestart} className={navButtonClass}>
               Restart
             </button>
@@ -292,15 +315,17 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
                 {showPassage ? 'Hide reference passage' : 'Show reference passage'}
               </button>
             )}
-            <button
-              type="button"
-              onClick={handleFinishEarly}
-              disabled={typed.length === 0}
-              className={`${navButtonClass} disabled:cursor-not-allowed disabled:opacity-40`}
-            >
-              Finish early
-            </button>
-            <div className="ml-auto flex gap-2">
+            {typed.length > 0 && (
+              <button type="button" onClick={handleFinishEarly} className={navButtonClass}>
+                Finish early
+              </button>
+            )}
+            <div className="flex flex-1 justify-center">
+              <button type="button" onClick={focusTypingInput} className={primaryButtonClass}>
+                {typed.length > 0 ? 'Continue typing' : 'Start typing'}
+              </button>
+            </div>
+            <div className="flex gap-2 sm:ml-auto">
               <button type="button" onClick={handlePrevious} className={navButtonClass}>
                 Previous
               </button>
@@ -313,9 +338,9 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
           {/* Kept small and collapsed by default: the passage is reference
               material, never the typing target. */}
           {hasReferencePassage && showPassage && (
-            <div className="mt-6">
-              <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Reference passage</p>
-              <p className="break-words text-sm leading-relaxed text-app-text-secondary">{passage}</p>
+            <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Reference passage</p>
+              <p className="break-words text-sm leading-relaxed text-slate-600">{passage}</p>
             </div>
           )}
         </>
@@ -323,43 +348,50 @@ const SWTInterface: React.FC<SWTInterfaceProps> = ({
 
       {finished && (
         <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-yellow-400">Results</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-indigo-600">Results</p>
 
-          <div className="mb-8 flex flex-wrap items-center gap-5 text-base" aria-live="polite">
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{wpm}</span> wpm
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{progress.accuracyPercent}%</span> accuracy
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{progress.errorChars}</span> error{progress.errorChars === 1 ? '' : 's'}
-            </span>
-            <span className="text-app-text-secondary">
-              <span className="text-app-text-primary">{formatTimer(elapsedSeconds)}</span> time
-            </span>
-            <span className={progress.completed ? 'text-yellow-400' : 'text-app-text-muted'}>
-              {progress.completed ? 'Completed' : 'Incomplete'}
-            </span>
+          <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-5" aria-live="polite">
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Speed</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900">{wpm} <span className="text-sm font-medium text-slate-500">WPM</span></p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Accuracy</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900">{progress.accuracyPercent}%</p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Errors</p>
+              <p className="mt-1 text-2xl font-semibold text-slate-900">{progress.errorChars}</p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Time</p>
+              <p className="mt-1 font-mono text-2xl font-semibold text-slate-900">{formatTimer(elapsedSeconds)}</p>
+            </div>
+            <div className={metricCardClass}>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Status</p>
+              <p className={progress.completed ? 'mt-1 text-2xl font-semibold text-green-600' : 'mt-1 text-2xl font-semibold text-amber-600'}>
+                {progress.completed ? 'Completed' : 'Incomplete'}
+              </p>
+            </div>
           </div>
 
-          <p className="mb-1 text-xs uppercase tracking-wide text-app-text-muted">Target text</p>
-          <p className="mb-8 break-words rounded-lg border border-app-border bg-app-bg-secondary p-5 text-xl leading-loose text-app-text-secondary sm:p-6">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Target text</p>
+          <p className="mb-8 break-words rounded-2xl border border-slate-200 bg-white p-6 text-xl leading-loose text-slate-700 shadow-sm">
             {targetText}
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row">
             <button type="button" onClick={handleRestart} className={navButtonClass}>
               Restart
             </button>
-            <div className="ml-auto flex gap-2">
+            <div className="flex gap-2 sm:ml-auto">
               <button type="button" onClick={handlePrevious} className={navButtonClass}>
                 Previous
               </button>
               <button
                 type="button"
                 onClick={handleNext}
-                className="rounded bg-yellow-400 px-4 py-2.5 font-semibold text-app-text-inverse"
+                className={primaryButtonClass}
               >
                 Next
               </button>

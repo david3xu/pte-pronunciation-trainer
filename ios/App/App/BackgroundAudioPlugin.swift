@@ -88,20 +88,6 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
                 newPlayer.volume = Float(volume)
             }
 
-            newPlayer.prepareToPlay()
-            print("[BackgroundAudioPlugin] Prepared native audio: bytes=\(audioData.count), contentType=\(contentType), duration=\(newPlayer.duration)")
-            let didStart = newPlayer.play()
-            if !didStart {
-                try? FileManager.default.removeItem(at: tempURL)
-                throw NSError(
-                    domain: "BackgroundAudioPlugin",
-                    code: 1,
-                    userInfo: [
-                        NSLocalizedDescriptionKey: "AVAudioPlayer.play() returned false (bytes: \(audioData.count), duration: \(newPlayer.duration))"
-                    ]
-                )
-            }
-
             cleanupTempFile()
             player = newPlayer
             currentTempFileURL = tempURL
@@ -110,8 +96,27 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
 
             setNowPlayingInfo(
                 title: call.getString("mediaTitle") ?? text,
-                artist: call.getString("mediaArtist") ?? ""
+                artist: call.getString("mediaArtist") ?? "",
+                playbackRate: 1.0
             )
+
+            newPlayer.prepareToPlay()
+            print("[BackgroundAudioPlugin] Prepared native audio: bytes=\(audioData.count), contentType=\(contentType), duration=\(newPlayer.duration)")
+            let didStart = newPlayer.play()
+            if !didStart {
+                player = nil
+                loadedText = nil
+                hasFinished = false
+                cleanupTempFile()
+                MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+                throw NSError(
+                    domain: "BackgroundAudioPlugin",
+                    code: 1,
+                    userInfo: [
+                        NSLocalizedDescriptionKey: "AVAudioPlayer.play() returned false (bytes: \(audioData.count), duration: \(newPlayer.duration))"
+                    ]
+                )
+            }
             configureRemoteCommandsIfNeeded()
 
             call.resolve(["duration": newPlayer.duration])
@@ -224,7 +229,7 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
 
     // MARK: - Now Playing / remote commands
 
-    private func setNowPlayingInfo(title: String, artist: String) {
+    private func setNowPlayingInfo(title: String, artist: String, playbackRate: Double? = nil) {
         var info: [String: Any] = [
             MPMediaItemPropertyTitle: title,
             MPMediaItemPropertyArtist: artist
@@ -235,7 +240,7 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
         if let currentTime = player?.currentTime {
             info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentTime
         }
-        info[MPNowPlayingInfoPropertyPlaybackRate] = (player?.isPlaying == true) ? 1.0 : 0.0
+        info[MPNowPlayingInfoPropertyPlaybackRate] = playbackRate ?? ((player?.isPlaying == true) ? 1.0 : 0.0)
         MPNowPlayingInfoCenter.default().nowPlayingInfo = info
     }
 

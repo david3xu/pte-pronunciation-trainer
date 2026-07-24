@@ -637,7 +637,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   variant="soft"
                   onClick={handleClearAllData}
                 >
-                  Clear All Data
+                  Clear Local Data
                 </Button>
               </Flex>
             </Flex>

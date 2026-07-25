@@ -13,8 +13,23 @@ const pluginMock = {
   removeAllListeners: vi.fn().mockResolvedValue(undefined),
 };
 
+const backgroundAudioServiceMock = {
+  fetchAudioBase64: vi.fn().mockResolvedValue({
+    audioBase64: 'YXVkaW8=',
+    contentType: 'audio/mpeg',
+  }),
+  fetchAudioBlob: vi.fn().mockResolvedValue({
+    blob: new Blob(['audio'], { type: 'audio/mpeg' }),
+    contentType: 'audio/mpeg',
+  }),
+};
+
 vi.mock('./backgroundAudioPlugin', () => ({
   default: pluginMock,
+}));
+
+vi.mock('./backgroundAudioService', () => ({
+  backgroundAudioService: backgroundAudioServiceMock,
 }));
 
 /**
@@ -37,6 +52,14 @@ describe('NativeAudioService', () => {
     vi.clearAllMocks();
     pluginMock.play.mockResolvedValue(undefined);
     pluginMock.getState.mockResolvedValue({ loadedText: null, canResume: false });
+    backgroundAudioServiceMock.fetchAudioBase64.mockResolvedValue({
+      audioBase64: 'YXVkaW8=',
+      contentType: 'audio/mpeg',
+    });
+    backgroundAudioServiceMock.fetchAudioBlob.mockResolvedValue({
+      blob: new Blob(['audio'], { type: 'audio/mpeg' }),
+      contentType: 'audio/mpeg',
+    });
     // Fresh module instance per test: listenersBound and all local state
     // (currentText, isPaused, handlers) must not leak between tests.
     vi.resetModules();
@@ -83,6 +106,35 @@ describe('NativeAudioService', () => {
     expect(onSuspended).toHaveBeenCalledTimes(1);
     expect(callOrder).toEqual(['onSuspended saw canResume=true']);
     expect(service.getLoadedText()).toBe('hello'); // text stays; only paused state changes
+  });
+
+  it('prefetches native base64 and consumes it on playText without refetching', async () => {
+    backgroundAudioServiceMock.fetchAudioBase64.mockResolvedValueOnce({
+      audioBase64: 'cHJlZmV0Y2hlZA==',
+      contentType: 'audio/mpeg',
+    });
+    const service = await loadService();
+
+    await service.prefetchText('hello', { rate: 1.1, voiceId: 'voice-a' });
+    await service.playText('hello', { rate: 1.1, voiceId: 'voice-a' });
+
+    expect(backgroundAudioServiceMock.fetchAudioBase64).toHaveBeenCalledTimes(1);
+    expect(pluginMock.play).toHaveBeenCalledWith(expect.objectContaining({
+      base64Audio: 'cHJlZmV0Y2hlZA==',
+      text: 'hello',
+    }));
+  });
+
+  it('falls back to direct base64 fetch when native prefetch is missing', async () => {
+    const service = await loadService();
+
+    await service.playText('hello');
+
+    expect(backgroundAudioServiceMock.fetchAudioBase64).toHaveBeenCalledTimes(1);
+    expect(pluginMock.play).toHaveBeenCalledWith(expect.objectContaining({
+      base64Audio: 'YXVkaW8=',
+      text: 'hello',
+    }));
   });
 
   it('remotePause updates state and calls handler', async () => {

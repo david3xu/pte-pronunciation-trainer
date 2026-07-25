@@ -105,6 +105,7 @@ export type QueueAudioService = Pick<
   | 'stop'
 > & {
   prefersDirectQueuePlayback?: () => boolean;
+  prefetchText?: (text: string, options?: PlayTextOptions) => Promise<void>;
 };
 
 /** Prefetch stays deliberately small: the next 1-2 clips only. */
@@ -517,11 +518,15 @@ export class AudioQueueEngine {
 
           const options = this.getAudioOptions(item);
           try {
-            await this.cache.getOrFetch(
-              this.buildCacheKeyForItem(item),
-              () => this.audioService.fetchAudioBlob(item.text, options),
-              { itemId: item.id, datasetId: item.datasetId }
-            );
+            if (this.audioService.prefersDirectQueuePlayback?.() && this.audioService.prefetchText) {
+              await this.audioService.prefetchText(item.text, options);
+            } else {
+              await this.cache.getOrFetch(
+                this.buildCacheKeyForItem(item),
+                () => this.audioService.fetchAudioBlob(item.text, options),
+                { itemId: item.id, datasetId: item.datasetId }
+              );
+            }
           } catch {
             // Prefetch failures are silent; real playback retries normally
             // through playCurrentInBackground when this item is actually needed.

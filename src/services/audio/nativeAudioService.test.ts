@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 type ListenerCallback = (data?: { message?: string; shouldResume?: boolean }) => void;
 const pluginMock = {
@@ -63,6 +63,17 @@ describe('NativeAudioService', () => {
     // Fresh module instance per test: listenersBound and all local state
     // (currentText, isPaused, handlers) must not leak between tests.
     vi.resetModules();
+  });
+
+  // Some tests below use vi.useFakeTimers() and do not restore real timers
+  // at their own end, relying on the beforeEach above for the next test in
+  // this file. That protects tests within this file but not whichever test
+  // file Vitest happens to run next in the same worker; a leaked fake clock
+  // there can hang anything awaiting a real setTimeout. This is the one
+  // place that must run unconditionally, so nothing after this file's last
+  // test is ever left with fake timers armed.
+  afterEach(() => {
+    vi.useRealTimers();
   });
 
   const loadService = async () => {

@@ -100,7 +100,7 @@
   },
   "homepage": "https://github.com/your-username/ccl-pronunciation-trainer#readme",
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=22.0.0",
     "pnpm": ">=10.0.0"
   },
   "browserslist": [
@@ -163,6 +163,7 @@
     "posthog-js": "^1.290.0",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
+    "workbox-window": "7.4.1",
     "zod": "^4.1.13",
     "zustand": "^5.0.8"
   },

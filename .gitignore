@@ -20,7 +20,8 @@ vocabulary-data.js
 !scripts/pte-data-pipeline.d.ts
 
 # Reports
-data/reports/
+data/reports/*
+!data/reports/.gitkeep
 validation-report.json
 
 # Environment variables

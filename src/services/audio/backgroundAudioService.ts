@@ -32,8 +32,24 @@ export interface BackgroundAudioHandlers {
   /** Fires when the element pauses, stalls, or starts waiting for data
    * without this service itself having called pause() or stop(): a browser
    * or OS level interruption (backgrounding, Low Power Mode, a dropped
-   * connection mid-buffer), not a user or app initiated pause. */
-  onSuspended?: () => void;
+   * connection mid-buffer), not a user or app initiated pause.
+   *
+   * info.deferRecovery, native only: true when this suspension came from an
+   * AVAudioSession interruption beginning, where an immediate resume() retry
+   * would just fail (the session is still interrupted) and onInterruptionEnded
+   * below is coming with the actual "safe to retry now" answer. Web callers
+   * never pass this, so a caller that ignores it keeps today's immediate
+   * retry behavior unchanged. */
+  onSuspended?: (info?: { deferRecovery?: boolean }) => void;
+  /** Native only. Fires once AVAudioSession reports the interruption that
+   * caused onSuspended has ENDED, with shouldResume reflecting whether iOS
+   * says reactivating the session now will actually succeed. onSuspended
+   * itself fires early (on the interruption's began signal, before iOS has
+   * decided whether resume is safe), so a caller retrying resume() from
+   * onSuspended alone is guessing at timing; this is the authoritative
+   * follow up signal for a caller that wants to defer a real resume attempt
+   * until iOS confirms it is safe rather than retrying blind. */
+  onInterruptionEnded?: (shouldResume: boolean) => void;
   /** Fires on the PREVIOUSLY registered handlers when a different caller
    * calls setHandlers(), taking over the shared element. There is exactly
    * one audio element and exactly one active handler set at a time, so a
@@ -375,6 +391,12 @@ export class BackgroundAudioService {
     }
     await this.audio.play();
     this.setPlaybackState('playing');
+    // Rearm the missed-ended watchdog from the current position. Without
+    // this, a clip that gets interrupted and resumed keeps whatever fallback
+    // timer (or none) was scheduled at the original play() call, so a later
+    // missed native "ended" event for the remainder of this clip has no
+    // protection.
+    this.scheduleEndFallback(this.playbackToken);
   }
 
   /**

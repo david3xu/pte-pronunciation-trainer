@@ -7,6 +7,7 @@ const controllerMocks = vi.hoisted(() => ({
   handlePause: vi.fn(),
   handleNext: vi.fn(),
   handlePrev: vi.fn(),
+  handleResumeTap: vi.fn(),
 }));
 
 vi.mock('../../services/audio/backgroundAudioService', () => ({
@@ -85,5 +86,27 @@ describe('AudioControls', () => {
     });
 
     expect(screen.getByRole('button', { name: /^Play$/ })).toBeInTheDocument();
+  });
+
+  it('shows a resume prompt wired to handleResumeTap when needsResume is true', async () => {
+    const user = userEvent.setup();
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+      useAppStore.getState().audio.pauseAutoPlay();
+      useAppStore.getState().audio.setNeedsResume(true, 'suspended');
+    });
+
+    render(<AudioControls />);
+
+    expect(screen.getByText(/suspended/i)).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: /Resume audio/i }));
+
+    expect(controllerMocks.handleResumeTap).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not show a resume prompt when needsResume is false', () => {
+    render(<AudioControls />);
+
+    expect(screen.queryByRole('button', { name: /Resume audio/i })).not.toBeInTheDocument();
   });
 });

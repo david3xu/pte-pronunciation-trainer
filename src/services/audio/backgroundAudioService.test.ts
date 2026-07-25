@@ -194,6 +194,25 @@ describe('BackgroundAudioService', () => {
     vi.useRealTimers();
   });
 
+  it('rearms the duration fallback after pause then resume, not only on the original play', async () => {
+    vi.useFakeTimers();
+    const service = new BackgroundAudioService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playTextFromUserGesture('missed ended after resume clip');
+    service.pause();
+    await service.resume();
+
+    await vi.advanceTimersByTimeAsync(2999);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1);
+    expect(onEnded).toHaveBeenCalledTimes(1);
+
+    vi.useRealTimers();
+  });
+
   it('does not report suspension for transient buffering while still playing', async () => {
     const service = new BackgroundAudioService();
     const onSuspended = vi.fn();

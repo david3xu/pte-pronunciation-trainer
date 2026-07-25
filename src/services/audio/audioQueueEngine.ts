@@ -135,6 +135,7 @@ export class AudioQueueEngine {
   private prefetchGeneration = 0;
   private prefetchInFlight = false;
   private recoveryInFlight = false;
+  private recoveryDeferredUntilInterruptionEnd = false;
   /** Created once and reused for every setHandlers() call this engine ever
    * makes (construction and every ownership reclaim below), so
    * backgroundAudioService's reference check correctly treats the engine
@@ -385,7 +386,7 @@ export class AudioQueueEngine {
    * lifecycle event (not a user gesture) would just fail again.
    */
   checkForRecovery(): void {
-    if (this.playbackState === 'suspended') {
+    if (this.playbackState === 'suspended' && !this.recoveryDeferredUntilInterruptionEnd) {
       this.attemptRecovery();
     }
   }
@@ -394,7 +395,8 @@ export class AudioQueueEngine {
     return {
       onEnded: () => this.handleClipEnded(),
       onError: (error) => this.handleAudioError(error),
-      onSuspended: () => this.handleSuspended(),
+      onSuspended: (info) => this.handleSuspended(info?.deferRecovery ?? false),
+      onInterruptionEnded: (shouldResume) => this.handleInterruptionEnded(shouldResume),
       onOwnershipLost: () => this.handleOwnershipLost(),
       onPlay: () => {
         void this.resume().catch(() => {
@@ -646,8 +648,16 @@ export class AudioQueueEngine {
    * here; backgroundAudioService only calls onSuspended when it did not
    * expect the pause itself). Only a playback attempt actually in progress
    * can be suspended; an idle, paused, or already-erroring queue ignores a
-   * stray signal rather than surfacing a false error. */
-  private handleSuspended(): void {
+   * stray signal rather than surfacing a false error.
+   *
+   * deferRecovery (native interruption start): sets 'suspended' but does NOT
+   * attempt a resume yet. iOS has not said whether resuming will work at
+   * this point (AVAudioSessionInterruptionType.began only), so an immediate
+   * attempt is just guessing at timing and, on a real interruption, will
+   * reliably fail while it is still active. handleInterruptionEnded() below
+   * carries the actual answer and is what attempts recovery for this path.
+   * Web suspensions never set this and keep today's immediate retry. */
+  private handleSuspended(deferRecovery = false): void {
     const item = this.getCurrentItem();
     if (
       !item ||
@@ -657,7 +667,41 @@ export class AudioQueueEngine {
       return;
     }
     this.setState('suspended');
-    this.attemptRecovery();
+    this.recoveryDeferredUntilInterruptionEnd = deferRecovery;
+    if (!deferRecovery) {
+      this.attemptRecovery();
+    }
+  }
+
+  /**
+   * The authoritative "is it actually safe to resume now" signal for a
+   * native interruption that handleSuspended(deferRecovery=true) deliberately
+   * did not act on. Ignored unless still 'suspended' from that same
+   * interruption: if recovery already resolved some other way (a user tap,
+   * a stale/late event after the operation moved on) by the time this
+   * fires, acting on it again would be wrong. shouldResume=true reuses
+   * attemptRecovery(), whose own recoveryInFlight guard already prevents a
+   * duplicate attempt if one is somehow already running. shouldResume=false
+   * skips attempting a resume iOS already told us will fail, and escalates
+   * straight to needs-user-resume, the same outcome attemptRecovery()'s own
+   * rejection branch would reach, just without wasting a doomed attempt. */
+  private handleInterruptionEnded(shouldResume: boolean): void {
+    if (this.playbackState !== 'suspended') return;
+    this.recoveryDeferredUntilInterruptionEnd = false;
+
+    if (shouldResume) {
+      this.attemptRecovery();
+      return;
+    }
+
+    const item = this.getCurrentItem();
+    if (!item) return;
+    this.setState('needs-user-resume');
+    this.listeners.onResumeRequired?.({
+      item,
+      index: this.currentIndex,
+      reason: 'suspended',
+    });
   }
 
   /**
@@ -798,6 +842,7 @@ export class AudioQueueEngine {
   private invalidatePlayback(): void {
     this.playbackOperation += 1;
     this.playbackIntent = false;
+    this.recoveryDeferredUntilInterruptionEnd = false;
   }
 
   private stopAudioService(): void {

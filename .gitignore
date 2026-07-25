@@ -61,6 +61,9 @@ coverage/
 .cache/
 .parcel-cache/
 
+# Local iOS build tooling
+.contextpatch-derived-data/
+
 # Temporary files
 tmp/
 temp/

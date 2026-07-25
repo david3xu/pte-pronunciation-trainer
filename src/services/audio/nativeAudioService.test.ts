@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-type ListenerCallback = (data?: { message?: string }) => void;
+type ListenerCallback = (data?: { message?: string; shouldResume?: boolean }) => void;
 const pluginMock = {
   play: vi.fn().mockResolvedValue(undefined),
   pause: vi.fn().mockResolvedValue(undefined),
@@ -106,6 +106,23 @@ describe('NativeAudioService', () => {
     expect(onSuspended).toHaveBeenCalledTimes(1);
     expect(callOrder).toEqual(['onSuspended saw canResume=true']);
     expect(service.getLoadedText()).toBe('hello'); // text stays; only paused state changes
+  });
+
+  it('a route change relays interruptionEnded(shouldResume: false) after the deferred interrupted signal', async () => {
+    const service = await loadService();
+    const onSuspended = vi.fn();
+    const onInterruptionEnded = vi.fn();
+    service.setHandlers({ onSuspended, onInterruptionEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+
+    // A route change has no real "ended" signal, so handleRouteChange
+    // follows interrupted with a synthetic interruptionEnded(false).
+    getRegisteredListener('interrupted')();
+    getRegisteredListener('interruptionEnded')({ shouldResume: false });
+
+    expect(onSuspended).toHaveBeenCalledWith({ deferRecovery: true });
+    expect(onInterruptionEnded).toHaveBeenCalledWith(false);
   });
 
   it('prefetches native base64 and consumes it on playText without refetching', async () => {

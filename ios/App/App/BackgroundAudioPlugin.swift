@@ -325,6 +325,15 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
     /// so audio does not suddenly continue through the phone speaker
     /// unexpectedly. New devices connecting need no action; playback just
     /// continues through the new route.
+    ///
+    /// Unlike a real AVAudioSession interruption, a route change has no
+    /// "ended" counterpart: nothing would ever tell JS it is safe to retry.
+    /// Sending interruptionEnded(shouldResume: false) immediately after
+    /// interrupted reuses the already-tested path a real interruption takes
+    /// when iOS says resuming will not work, so AudioQueueEngine reaches
+    /// needs-user-resume (a visible resume prompt) instead of staying
+    /// deferred in suspended with no way out and a stale-looking Pause
+    /// button.
     @objc private func handleRouteChange(notification: Notification) {
         guard let info = notification.userInfo,
               let reasonValue = info[AVAudioSessionRouteChangeReasonKey] as? UInt,
@@ -335,6 +344,7 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
             player?.pause()
             updateNowPlayingPlaybackRate(0)
             notifyListeners("interrupted", data: nil)
+            notifyListeners("interruptionEnded", data: ["shouldResume": false])
         }
     }
 }

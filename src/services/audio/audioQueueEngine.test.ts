@@ -603,6 +603,32 @@ describe('AudioQueueEngine', () => {
     }));
   });
 
+  it('a route change (interrupted then a synthetic interruptionEnded(false), never a real ended) still reaches needs-user-resume', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    // A route change has no real "ended" signal, so the plugin follows
+    // interrupted with a synthetic interruptionEnded(false); the deferred
+    // suspension must still resolve to a visible resume prompt, not stay stuck.
+    getHandlers().onSuspended?.({ deferRecovery: true });
+    await flushQueueWork();
+    expect(engine.getPlaybackState()).toBe('suspended');
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+
+    getHandlers().onInterruptionEnded?.(false);
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+    expect(engine.getPlaybackState()).toBe('needs-user-resume');
+    expect(onResumeRequired).toHaveBeenCalledWith(expect.objectContaining({
+      reason: 'suspended',
+      item: expect.objectContaining({ id: 'first' }),
+    }));
+  });
+
   it('interruptionEnded is ignored once recovery already resolved some other way', async () => {
     const onResumeRequired = vi.fn();
     const engine = new AudioQueueEngine();

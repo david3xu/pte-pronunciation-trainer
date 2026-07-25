@@ -1,4 +1,5 @@
 import { backgroundAudioService, type BackgroundAudioHandlers, type PlayTextOptions } from './backgroundAudioService';
+import { buildAudioCacheKey } from './audioCache';
 import BackgroundAudio from './backgroundAudioPlugin';
 
 /**
@@ -34,6 +35,7 @@ export class NativeAudioService {
   private isPaused = false;
   private endFallbackTimer: ReturnType<typeof setTimeout> | null = null;
   private playbackToken = 0;
+  private prefetchedAudio = new Map<string, { audioBase64: string; contentType: string }>();
   // Retained so resume() can rearm the missed-ended watchdog after an
   // interruption; scheduleEndFallback itself is stateless about duration.
   private currentDuration: number | undefined;
@@ -71,8 +73,30 @@ export class NativeAudioService {
   }
 
   async playText(text: string, options: PlayTextOptions = {}): Promise<void> {
-    const { audioBase64, contentType } = await backgroundAudioService.fetchAudioBase64(text, options);
+    const key = this.buildPrefetchKey(text, options);
+    const prefetched = this.prefetchedAudio.get(key);
+    this.prefetchedAudio.delete(key);
+
+    const { audioBase64, contentType } = prefetched
+      ? prefetched
+      : await backgroundAudioService.fetchAudioBase64(text, options);
     await this.playBase64(text, audioBase64, contentType, options);
+  }
+
+  async prefetchText(text: string, options: PlayTextOptions = {}): Promise<void> {
+    if (!text.trim()) return;
+    const key = this.buildPrefetchKey(text, options);
+    if (this.prefetchedAudio.has(key)) return;
+
+    const audio = await backgroundAudioService.fetchAudioBase64(text, options);
+    this.prefetchedAudio.set(key, audio);
+
+    const MAX_PREFETCHED_NATIVE_CLIPS = 4;
+    while (this.prefetchedAudio.size > MAX_PREFETCHED_NATIVE_CLIPS) {
+      const oldestKey = this.prefetchedAudio.keys().next().value as string | undefined;
+      if (!oldestKey) break;
+      this.prefetchedAudio.delete(oldestKey);
+    }
   }
 
   playTextFromUserGesture(text: string, options: PlayTextOptions = {}): Promise<void> {
@@ -250,6 +274,16 @@ export class NativeAudioService {
       clearTimeout(this.endFallbackTimer);
       this.endFallbackTimer = null;
     }
+  }
+
+  private buildPrefetchKey(text: string, options: PlayTextOptions): string {
+    return buildAudioCacheKey({
+      text,
+      voiceId: options.voiceId,
+      languageCode: options.languageCode,
+      rate: options.rate,
+      engine: options.engine,
+    });
   }
 
 }

@@ -23,7 +23,8 @@ const AudioControls: React.FC = () => {
   const audio = useAudioState();
   const progress = useProgress();
   const settings = useSettings();
-  const { handlePlay, handlePause, handleNext, handlePrev } = useAutoPlayController();
+  const { handlePlay, handlePause, handleNext, handlePrev, handleResumeTap } =
+    useAutoPlayController();
   const showPause = audio.isAutoPlaying && !audio.isPaused;
 
   return (
@@ -91,6 +92,34 @@ const AudioControls: React.FC = () => {
             <LoopIcon width="20" height="20" />
           </Button>
         </Flex>
+
+        {/* Resume prompt: the queue engine could not silently recover from
+            a suspension or interruption and is waiting on a real user
+            gesture before native/browser autoplay policy allows audio to
+            resume. This is a genuine dead end without this control, since
+            nothing else in the UI surfaces needsResume. */}
+        {audio.needsResume && (
+          <Flex
+            direction="column"
+            gap="2"
+            align="center"
+            className="audio-resume-banner"
+          >
+            <Text size="2" color="orange">
+              Audio paused and needs a tap to continue
+              {audio.resumeReason ? ` (${audio.resumeReason})` : ''}.
+            </Text>
+            <Button
+              size="3"
+              variant="solid"
+              color="orange"
+              onClick={handleResumeTap}
+              aria-label="Resume audio"
+            >
+              Tap to resume audio
+            </Button>
+          </Flex>
+        )}
 
         {/* Progress indicator */}
         <Flex direction="column" gap="2">

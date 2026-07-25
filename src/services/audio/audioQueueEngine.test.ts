@@ -8,7 +8,8 @@ type TestAudioHandlers = {
   onStop?: () => void;
   onNext?: () => void;
   onPrevious?: () => void;
-  onSuspended?: () => void;
+  onSuspended?: (info?: { deferRecovery?: boolean }) => void;
+  onInterruptionEnded?: (shouldResume: boolean) => void;
   onOwnershipLost?: () => void;
 };
 
@@ -535,6 +536,93 @@ describe('AudioQueueEngine', () => {
       reason: 'suspended',
       item: expect.objectContaining({ id: 'first' }),
     }));
+  });
+
+  it('a deferred native interruption (interruptionEnded pending) does not retry immediately on suspend', async () => {
+    const engine = new AudioQueueEngine();
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.({ deferRecovery: true });
+    await flushQueueWork();
+
+    expect(engine.getPlaybackState()).toBe('suspended');
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+  });
+
+  it('a deferred native interruption ignores lifecycle recovery checks until interruptionEnded arrives', async () => {
+    const engine = new AudioQueueEngine();
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.({ deferRecovery: true });
+    engine.checkForRecovery();
+    await flushQueueWork();
+
+    expect(engine.getPlaybackState()).toBe('suspended');
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+  });
+
+  it('interruptionEnded(true) attempts recovery for a deferred native interruption', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.({ deferRecovery: true });
+    await flushQueueWork();
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+
+    getHandlers().onInterruptionEnded?.(true);
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).toHaveBeenCalledTimes(1);
+    expect(engine.getPlaybackState()).toBe('playing');
+    expect(onResumeRequired).not.toHaveBeenCalled();
+  });
+
+  it('interruptionEnded(false) escalates straight to needs-user-resume without attempting a doomed resume', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    getHandlers().onSuspended?.({ deferRecovery: true });
+    await flushQueueWork();
+
+    getHandlers().onInterruptionEnded?.(false);
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+    expect(engine.getPlaybackState()).toBe('needs-user-resume');
+    expect(onResumeRequired).toHaveBeenCalledWith(expect.objectContaining({
+      reason: 'suspended',
+      item: expect.objectContaining({ id: 'first' }),
+    }));
+  });
+
+  it('interruptionEnded is ignored once recovery already resolved some other way', async () => {
+    const onResumeRequired = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onResumeRequired });
+    engine.load(createItems());
+    await engine.start();
+
+    // A plain (non-deferred) suspension already resolved this silently.
+    getHandlers().onSuspended?.();
+    await flushQueueWork();
+    expect(engine.getPlaybackState()).toBe('playing');
+    audioMocks.backgroundAudioService.resume.mockClear();
+
+    // A late interruptionEnded for some earlier, already-resolved interruption
+    // must not re-trigger anything.
+    getHandlers().onInterruptionEnded?.(true);
+    await flushQueueWork();
+
+    expect(audioMocks.backgroundAudioService.resume).not.toHaveBeenCalled();
+    expect(onResumeRequired).not.toHaveBeenCalled();
   });
 
   it('does not run two recovery attempts concurrently, including one triggered by a page lifecycle signal', async () => {

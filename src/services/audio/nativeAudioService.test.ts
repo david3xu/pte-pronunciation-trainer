@@ -1,7 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 type ListenerCallback = (data?: { message?: string }) => void;
-
 const pluginMock = {
   play: vi.fn().mockResolvedValue(undefined),
   pause: vi.fn().mockResolvedValue(undefined),
@@ -221,6 +220,26 @@ describe('NativeAudioService', () => {
     expect(onEnded).not.toHaveBeenCalled();
   });
 
+  it('rearms the duration fallback after pause then resume, not only on the original play', async () => {
+    vi.useFakeTimers();
+    pluginMock.play.mockResolvedValueOnce({ duration: 1 });
+    const service = await loadService();
+    const onEnded = vi.fn();
+    service.setHandlers({ onEnded });
+
+    await service.playBlob('hello', new Blob(['audio'], { type: 'audio/mpeg' }));
+    service.pause();
+    await vi.advanceTimersByTimeAsync(3000);
+    expect(onEnded).not.toHaveBeenCalled(); // paused: no fallback should fire
+
+    await service.resume();
+    await vi.advanceTimersByTimeAsync(2999);
+    expect(onEnded).not.toHaveBeenCalled();
+
+    await vi.advanceTimersByTimeAsync(1);
+    expect(onEnded).toHaveBeenCalledTimes(1);
+  });
+
   it('ignores a stale duration fallback after a new clip starts', async () => {
     vi.useFakeTimers();
     pluginMock.play
@@ -238,4 +257,5 @@ describe('NativeAudioService', () => {
     await vi.advanceTimersByTimeAsync(3000);
     expect(onEnded).toHaveBeenCalledTimes(1);
   });
+
 });

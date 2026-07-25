@@ -281,6 +281,28 @@ describe('useAutoPlayController - queue engine delegation', () => {
     expect(useAppStore.getState().audio.isPaused).toBe(true);
   });
 
+  it('mirrors needs-user-resume into the autoplay store so the main button does not stay falsely active', async () => {
+    renderHook(() => useAutoPlayController());
+    await flush();
+
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+    });
+    expect(useAppStore.getState().audio.isPaused).toBe(false);
+
+    act(() => {
+      latestListeners().onStateChanged?.({
+        state: 'needs-user-resume',
+        previousState: 'suspended',
+        itemId: 'x',
+        at: Date.now(),
+      });
+    });
+
+    expect(useAppStore.getState().audio.isAutoPlaying).toBe(true);
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+  });
+
   it('clears autoplay intent when the final non-repeating clip ends', async () => {
     setRepeatMode(false);
     renderHook(() => useAutoPlayController());
@@ -390,6 +412,29 @@ describe('useAutoPlayController - queue engine delegation', () => {
     await flush();
 
     expect(engineMock.resume).toHaveBeenCalledTimes(1);
+  });
+
+  it('handleResumeTap clears isPaused explicitly, since needs-user-resume recovery has no other store write to undo its own pause mirror', async () => {
+    const { result } = renderHook(() => useAutoPlayController());
+    await flush();
+
+    act(() => {
+      useAppStore.getState().audio.startAutoPlay();
+      latestListeners().onStateChanged?.({
+        state: 'needs-user-resume',
+        previousState: 'suspended',
+        itemId: 'x',
+        at: Date.now(),
+      });
+    });
+    expect(useAppStore.getState().audio.isPaused).toBe(true);
+
+    act(() => {
+      result.current.handleResumeTap();
+    });
+    await flush();
+
+    expect(useAppStore.getState().audio.isPaused).toBe(false);
   });
 
   it('shows resume-required state in the store when the engine reports it, and clears it once resumed', async () => {

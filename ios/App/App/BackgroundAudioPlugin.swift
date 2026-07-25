@@ -150,7 +150,13 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
         if let volume = call.getDouble("volume") {
             player.volume = Float(volume)
         }
-        player.play()
+        let didResume = player.play()
+        if !didResume {
+            call.reject(
+                "resume() AVAudioPlayer.play() returned false (session may still be interrupted)"
+            )
+            return
+        }
         updateNowPlayingPlaybackRate(player.rate == 0 ? 1 : player.rate)
         call.resolve()
     }
@@ -297,6 +303,19 @@ public class BackgroundAudioPlugin: CAPPlugin, CAPBridgedPlugin {
         }
         if type == .began {
             notifyListeners("interrupted", data: nil)
+            return
+        }
+        if type == .ended {
+            // iOS is the only authority on whether reactivating the session
+            // now will actually succeed. shouldResume absent or false means
+            // JS should not attempt a resume yet and should keep waiting for
+            // a real user gesture instead of retrying blind.
+            var shouldResume = false
+            if let optionsValue = info[AVAudioSessionInterruptionOptionKey] as? UInt {
+                shouldResume = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
+                    .contains(.shouldResume)
+            }
+            notifyListeners("interruptionEnded", data: ["shouldResume": shouldResume])
         }
     }
 

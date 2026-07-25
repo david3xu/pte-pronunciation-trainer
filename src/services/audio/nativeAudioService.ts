@@ -34,6 +34,9 @@ export class NativeAudioService {
   private isPaused = false;
   private endFallbackTimer: ReturnType<typeof setTimeout> | null = null;
   private playbackToken = 0;
+  // Retained so resume() can rearm the missed-ended watchdog after an
+  // interruption; scheduleEndFallback itself is stateless about duration.
+  private currentDuration: number | undefined;
 
   isSupported(): boolean {
     return true;
@@ -110,7 +113,8 @@ export class NativeAudioService {
 
     this.currentText = text;
     this.isPaused = false;
-    this.scheduleEndFallback(result?.duration, token);
+    this.currentDuration = result?.duration;
+    this.scheduleEndFallback(this.currentDuration, token);
   }
 
   pause(): void {
@@ -127,6 +131,12 @@ export class NativeAudioService {
       volume: this.currentVolume ?? undefined,
     });
     this.isPaused = false;
+    // Rearm the missed-ended watchdog. This reuses the original clip
+    // duration rather than the true remaining time, which is deliberately
+    // conservative (a late fallback is safe; the risk this guards against is
+    // a resumed clip having no fallback at all after an interruption).
+    this.clearEndFallbackTimer();
+    this.scheduleEndFallback(this.currentDuration, this.playbackToken);
   }
 
   setRate(rate: number): void {
@@ -190,7 +200,15 @@ export class NativeAudioService {
       // not the stale "still playing" state from just before the
       // interruption or route change fired.
       this.isPaused = true;
-      this.handlers.onSuspended?.();
+      // deferRecovery: true because this fires on the interruption STARTING
+      // (AVAudioSessionInterruptionType.began), before iOS has any opinion on
+      // whether resuming will work. onInterruptionEnded below carries the
+      // actual answer; retrying resume() here would just be guessing at
+      // timing while the interruption may still be active.
+      this.handlers.onSuspended?.({ deferRecovery: true });
+    });
+    void BackgroundAudio.addListener('interruptionEnded', (data) => {
+      this.handlers.onInterruptionEnded?.(Boolean(data?.shouldResume));
     });
     void BackgroundAudio.addListener('remotePlay', () => {
       this.isPaused = false;
@@ -233,6 +251,7 @@ export class NativeAudioService {
       this.endFallbackTimer = null;
     }
   }
+
 }
 
 /** AVAudioPlayer plays from a file URL, not raw bytes, and Capacitor's

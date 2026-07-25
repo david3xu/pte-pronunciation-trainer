@@ -233,16 +233,28 @@ export const useAutoPlayController = () => {
         // Queue state must not write playback intent back into the app store:
         // doing so creates a feedback loop with the effect below on mobile
         // transition states. The UI intent remains owned by explicit user
-        // actions; queue state only clears a previously shown resume prompt
-        // and mirrors real paused state from native/media controls.
-        if (state === 'paused') {
-          const storeAudio = useAppStore.getState().audio;
+        // actions; queue state only mirrors a real paused state from
+        // native/media controls and from the engine's own recovery outcomes
+        // (including a failed silent resume, which lands here rather than
+        // in onResumeRequired's own store write), and clears a previously
+        // shown resume prompt once it is resolved. A silent recovery that
+        // succeeds without ever visiting 'paused'/'needs-user-resume' never
+        // set isPaused in the first place, so there is nothing to undo here;
+        // the reverse direction (clearing isPaused once a resume gesture
+        // actually succeeds) is owned explicitly by handleResumeTap/handlePlay
+        // below, matching how every other explicit action already works, and
+        // deliberately not by mirroring 'playing' here (see the existing
+        // "does not mirror transient queue playback states" test, which
+        // pins the case where the engine reports 'playing' again with no
+        // explicit user action having happened).
+        const storeAudio = useAppStore.getState().audio;
+        if (state === 'paused' || state === 'needs-user-resume') {
           if (storeAudio.isAutoPlaying && !storeAudio.isPaused) {
             storeAudio.pauseAutoPlay();
           }
         }
         if (state !== 'needs-user-resume') {
-          useAppStore.getState().audio.setNeedsResume(false);
+          storeAudio.setNeedsResume(false);
         }
       },
       onClipEnded: ({ index, repeatIndex, repeatCount }) => {
@@ -366,7 +378,8 @@ export const useAutoPlayController = () => {
       volume: useAppStore.getState().audio.volume,
     };
 
-    if (queueEngine.getPlaybackState() === 'paused') {
+    const playbackState = queueEngine.getPlaybackState();
+    if (playbackState === 'paused' || playbackState === 'needs-user-resume') {
       void queueEngine.resume(opts).catch((error) => {
         console.error('[useAutoPlayController] Play gesture resume failed:', error);
       });
@@ -392,13 +405,27 @@ export const useAutoPlayController = () => {
    * call covers both the resume and start cases the tap needs to handle.
    */
   const handleResumeTap = () => {
+    // Update the store only after resume() actually succeeds, not before.
+    // queueEngine.resume() already sets 'playing' synchronously for the
+    // common (same item still loaded) recovery path, but the sync effect
+    // above re-runs off audio.isPaused and calls startAutomatic() for any
+    // state that is not already 'playing'/'buffering'/'paused'. Clearing
+    // isPaused up front, ahead of resume()'s own state transition landing,
+    // risked that effect racing a second, competing start against this same
+    // resume() call. Resolving the store write after resume() settles
+    // removes that ordering assumption entirely rather than relying on it.
     const opts = {
       rate: settings.ttsRate,
       volume: useAppStore.getState().audio.volume,
     };
-    void queueEngine.resume(opts).catch((error) => {
-      console.error('[useAutoPlayController] Resume tap failed:', error);
-    });
+    void queueEngine
+      .resume(opts)
+      .then(() => {
+        useAppStore.getState().audio.resumeAutoPlay();
+      })
+      .catch((error) => {
+        console.error('[useAutoPlayController] Resume tap failed:', error);
+      });
   };
 
   const handleNext = async () => {

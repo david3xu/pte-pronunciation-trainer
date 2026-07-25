@@ -63,8 +63,8 @@ export interface BackgroundAudioPlugin {
   getState(): Promise<{ loadedText: string | null; canResume: boolean }>;
 
   addListener(
-    eventName: 'ended' | 'error' | 'interrupted' | 'remotePlay' | 'remotePause' | 'remoteNext' | 'remotePrevious' | 'remoteStop',
-    listenerFunc: (data?: { message?: string }) => void
+    eventName: 'ended' | 'error' | 'interrupted' | 'interruptionEnded' | 'remotePlay' | 'remotePause' | 'remoteNext' | 'remotePrevious' | 'remoteStop',
+    listenerFunc: (data?: { message?: string; shouldResume?: boolean }) => void
   ): Promise<{ remove: () => Promise<void> }>;
 
   removeAllListeners(): Promise<void>;

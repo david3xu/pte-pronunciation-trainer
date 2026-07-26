@@ -92,20 +92,72 @@ describe('BackgroundAudioService', () => {
 
   it('fails loudly when premium TTS returns a fallback response', async () => {
     const service = new BackgroundAudioService();
-    vi.stubGlobal(
-      'fetch',
-      vi.fn(async () => ({ ok: true, json: async () => ({ success: false, fallback: true }) })) as unknown as typeof fetch
-    );
+    const fetchMock = vi.fn(async () => ({ ok: true, json: async () => ({ success: false, fallback: true }) })) as unknown as typeof fetch;
+    vi.stubGlobal('fetch', fetchMock);
     await expect(service.playText('hello world')).rejects.toThrow(/unavailable/i);
+    // One retry on a genuine failure before giving up.
+    expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 
   it('rejects when the premium TTS request is not ok', async () => {
     const service = new BackgroundAudioService();
-    vi.stubGlobal(
-      'fetch',
-      vi.fn(async () => ({ ok: false, status: 500, json: async () => ({}) })) as unknown as typeof fetch
-    );
+    const fetchMock = vi.fn(async () => ({ ok: false, status: 500, json: async () => ({}) })) as unknown as typeof fetch;
+    vi.stubGlobal('fetch', fetchMock);
     await expect(service.playText('hello world')).rejects.toThrow(/500/);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('retries once and recovers when the first fetch stalls past the timeout, instead of leaving autoplay waiting forever', async () => {
+    vi.useFakeTimers();
+    try {
+      const service = new BackgroundAudioService();
+      let callCount = 0;
+      const fetchMock = vi.fn((_url: string, init?: RequestInit) => {
+        callCount += 1;
+        if (callCount === 1) {
+          // Simulates a stalled connection: never resolves on its own,
+          // only reacts to the timeout's abort, same as a real fetch would.
+          return new Promise<Response>((_resolve, reject) => {
+            init?.signal?.addEventListener('abort', () => {
+              reject(new DOMException('The operation was aborted.', 'AbortError'));
+            });
+          });
+        }
+        return Promise.resolve({
+          ok: true,
+          json: async () => ({
+            success: true,
+            data: { audioBase64: btoa('audio-bytes'), contentType: 'audio/mpeg' },
+          }),
+        } as Response);
+      });
+      vi.stubGlobal('fetch', fetchMock as unknown as typeof fetch);
+
+      const playPromise = service.playText('hello world');
+      await vi.advanceTimersByTimeAsync(30000);
+      await playPromise;
+
+      expect(fetchMock).toHaveBeenCalledTimes(2);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('never retries a fetch the caller deliberately superseded', async () => {
+    const service = new BackgroundAudioService();
+    const controller = new AbortController();
+    const fetchMock = vi.fn((_url: string, init?: RequestInit) => new Promise<Response>((_resolve, reject) => {
+      init?.signal?.addEventListener('abort', () => {
+        reject(new DOMException('The operation was aborted.', 'AbortError'));
+      });
+    }));
+    vi.stubGlobal('fetch', fetchMock as unknown as typeof fetch);
+
+    const fetchPromise = service.fetchAudioBlob('hello world', {}, controller.signal);
+    controller.abort();
+
+    await expect(fetchPromise).rejects.toMatchObject({ name: 'AbortError' });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
   // ---- pause / resume / stop ----

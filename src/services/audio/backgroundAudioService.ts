@@ -568,25 +568,63 @@ export class BackgroundAudioService {
     const engine = options.engine ?? appConfig.get<'standard' | 'neural'>('voice.defaultEngine');
     const languageCode = options.languageCode ?? appConfig.get<string>('voice.defaultLanguage');
     const outputFormat = appConfig.get<string>('backgroundAudio.outputFormat');
+    const timeoutMs = appConfig.get<number>('backgroundAudio.fetchTimeoutMs');
+    const retryAttempts = appConfig.get<number>('backgroundAudio.fetchRetryAttempts');
+    const retryDelayMs = appConfig.get<number>('backgroundAudio.fetchRetryDelayMs');
 
-    const response = await fetch(`${baseUrl}${endpoint}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, voiceId, engine, languageCode, outputFormat }),
-      signal,
-    });
+    // A single attempt, bounded by timeoutMs so a stalled connection (common
+    // on a degraded or backgrounded network) fails instead of leaving the
+    // caller waiting on a promise that may never settle. The caller's own
+    // signal, when it aborts, also aborts this attempt immediately.
+    const requestOnce = async (): Promise<{ audioBase64: string; contentType: string }> => {
+      const timeoutController = new AbortController();
+      const timeoutId = setTimeout(() => timeoutController.abort(), timeoutMs);
+      const onCallerAbort = () => timeoutController.abort();
+      signal?.addEventListener('abort', onCallerAbort);
 
-    if (!response.ok) {
-      throw new Error(`Premium TTS request failed with status ${response.status}`);
+      try {
+        const response = await fetch(`${baseUrl}${endpoint}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, voiceId, engine, languageCode, outputFormat }),
+          signal: timeoutController.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Premium TTS request failed with status ${response.status}`);
+        }
+
+        const payload = (await response.json()) as PremiumTtsResponse;
+
+        if (!payload.success || payload.fallback || !payload.data) {
+          throw new Error(payload.error || 'Premium TTS is unavailable for background audio');
+        }
+
+        return { audioBase64: payload.data.audioBase64, contentType: payload.data.contentType };
+      } finally {
+        clearTimeout(timeoutId);
+        signal?.removeEventListener('abort', onCallerAbort);
+      }
+    };
+
+    for (let attempt = 0; ; attempt++) {
+      try {
+        return await requestOnce();
+      } catch (error) {
+        // The caller superseded this fetch (a skip, a stop, a new clip
+        // starting): never retry a deliberate cancellation, and never
+        // report it as a fetch failure. shouldIgnorePlaybackFailure
+        // upstream already treats AbortError this way; retrying here would
+        // just waste a request the caller no longer wants.
+        if (signal?.aborted) {
+          throw error;
+        }
+        if (attempt >= retryAttempts) {
+          throw error;
+        }
+        await new Promise((resolve) => setTimeout(resolve, retryDelayMs));
+      }
     }
-
-    const payload = (await response.json()) as PremiumTtsResponse;
-
-    if (!payload.success || payload.fallback || !payload.data) {
-      throw new Error(payload.error || 'Premium TTS is unavailable for background audio');
-    }
-
-    return { audioBase64: payload.data.audioBase64, contentType: payload.data.contentType };
   }
 
   private buildDirectAudioUrl(text: string, options: PlayTextOptions): string {

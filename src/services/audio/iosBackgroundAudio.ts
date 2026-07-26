@@ -1,3 +1,5 @@
+import { Capacitor } from '@capacitor/core';
+
 type BackgroundSyncRegistration = ServiceWorkerRegistration & {
   sync?: {
     register: (tag: string) => Promise<void>;
@@ -14,6 +16,18 @@ export class IOSBackgroundAudio {
   private backgroundAudioElement?: HTMLAudioElement;
 
   enable(): void {
+    // Native builds already have a real AVAudioSession backed background
+    // audio path (see nativeAudioService.ts and
+    // ios/App/App/BackgroundAudioPlugin.swift). This web only PWA keep
+    // alive technique must never run there: it would create a second,
+    // uncoordinated HTMLAudioElement looping at an audible, not muted,
+    // volume, against the single playback owner invariant the rest of
+    // this codebase's audio work enforces (see
+    // docs/NATIVE_MOBILE_APP_ARCHITECTURE.md section 9).
+    if (Capacitor.isNativePlatform()) {
+      return;
+    }
+
     if (!this.enabled) {
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.ready.then((registration) => {

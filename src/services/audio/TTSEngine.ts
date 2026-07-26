@@ -348,6 +348,28 @@ export class TTSEngine {
   }
 
   /**
+   * Stops whatever this engine is currently driving: browser speech
+   * synthesis and any in flight real audio through audioServiceForPlatform,
+   * without starting anything new. External callers that need exclusive
+   * use of the shared audio session, such as PronunciationScoring before it
+   * starts Web Speech Recognition for recording, call this first so
+   * recording never starts while this engine still owns playback.
+   */
+  stop(): void {
+    this.cancelCurrentSpeech();
+  }
+
+  private cancelCurrentSpeech(): void {
+    this.synth.cancel();
+    audioServiceForPlatform.stop();
+    this.settleRealAudio?.();
+    this.isSpeaking = false;
+    this.currentUtterance = null;
+    this.lastSpokenText = '';
+    useAppStore.getState().tts.stopSpeaking();
+  }
+
+  /**
    * Core speak method - uses Web Speech API
    */
   async speak(text: string, lang: string | null = null, customRate: number | null = null): Promise<void> {
@@ -378,13 +400,7 @@ export class TTSEngine {
     const isActivelySpeaking = this.isSpeaking || this.synth.speaking || this.synth.pending;
     if (isActivelySpeaking) {
       console.warn(`[TTSEngine #${callId}] ⚠️ Already speaking or pending, cancelling previous speech...`);
-      this.synth.cancel();
-      audioServiceForPlatform.stop();
-      this.settleRealAudio?.();
-      this.isSpeaking = false;
-      this.currentUtterance = null;
-      this.lastSpokenText = '';
-      useAppStore.getState().tts.stopSpeaking();
+      this.cancelCurrentSpeech();
 
       // Desktop Chrome can require speak() to happen inside the same click
       // activation. Do not await after cancel while activation is still live.

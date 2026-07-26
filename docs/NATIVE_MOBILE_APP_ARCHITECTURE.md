@@ -1,10 +1,18 @@
 # Native Mobile App Architecture
 
-**Status:** Architecture only. No `ios/`, `android/`, or Capacitor config exists in
-the repository yet. Nothing in this document has been implemented. The immediate
-foundation round is iOS-first: generate and validate the iOS Capacitor shell
-before starting Android parity work. Android remains part of the broader
-architecture, but it is deferred until the iOS path is ready.
+**Status:** The iOS path described below has been implemented. `ios/`,
+`capacitor.config.ts`, the custom background audio plugin
+(`ios/App/App/BackgroundAudioPlugin.swift`), `nativeAudioService.ts`, and
+`audioServiceForPlatform.ts` (section 9's platform selector) all exist. A
+direct code review confirmed the AVAudioSession category and background
+mode, interruption and route change handling, Now Playing info and remote
+commands, and the queue engine's suspended and needs user resume recovery
+path all match this document's design, and the automated test suite
+(typecheck plus the full Vitest run) passes. What remains unverified is
+section 14's real device testing (Tier 2 and Tier 3), which needs a
+physical iPhone and cannot be confirmed from code, plus finalizing
+`capacitor.config.ts`'s still placeholder `appId` before store submission.
+`android/` remains deferred, as originally planned.
 
 **Relationship to the long-term plan:** `docs/BACKGROUND_AUDIO_LONG_TERM_PLAN.md`
 Phases 7-9 state the *goal* (a full native mobile app, comparable to a podcast

@@ -116,6 +116,12 @@ const PronunciationScoring: React.FC<PronunciationScoringProps> = ({ isOpen = tr
       return;
     }
 
+    // Recording shares the same underlying audio session as playback (the
+    // native iOS bridge included). Stop whatever this engine is driving
+    // first so Speech Recognition never starts while a word tap or the
+    // autoplay queue is still using the microphone capable session.
+    ttsEngine.stop();
+
     setError(null);
     setResult(null);
     setTranscript('');

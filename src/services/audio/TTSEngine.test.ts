@@ -2,13 +2,14 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const playTextMock = vi.fn();
 const setHandlersMock = vi.fn();
+const stopMock = vi.fn();
 
 vi.mock('./backgroundAudioService', () => ({
   backgroundAudioService: {
     primeForUserGesture: vi.fn(),
     playText: playTextMock,
     setHandlers: setHandlersMock,
-    stop: vi.fn(),
+    stop: stopMock,
   },
 }));
 
@@ -103,5 +104,32 @@ describe('TTSEngine', () => {
     // genuine playback failure; matches the existing "cancelled previous
     // speech" path, which also resolves with no error on supersession.
     await expect(speakPromise).resolves.toBeUndefined();
+  });
+
+  it('stop() cancels browser speech and the shared audio service without starting anything new, so a caller like PronunciationScoring can safely take the microphone', async () => {
+    Object.defineProperty(window, 'speechSynthesis', {
+      configurable: true,
+      writable: true,
+      value: {
+        speaking: true,
+        pending: false,
+        paused: false,
+        getVoices: vi.fn(() => []),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        cancel: vi.fn(),
+        resume: vi.fn(),
+        speak: vi.fn(),
+      },
+    });
+
+    const { TTSEngine } = await import('./TTSEngine');
+    const engine = new TTSEngine();
+
+    engine.stop();
+
+    expect(window.speechSynthesis.cancel).toHaveBeenCalledTimes(1);
+    expect(stopMock).toHaveBeenCalledTimes(1);
+    expect(playTextMock).not.toHaveBeenCalled();
   });
 });

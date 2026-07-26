@@ -267,7 +267,18 @@ export class AppConfig {
       // and language are sourced from the `voice` block above.
       backgroundAudio: {
         outputFormat: 'mp3', // Most broadly supported container for <audio> on mobile
-        mediaSessionArtist: 'PTE Pronunciation Trainer'
+        mediaSessionArtist: 'PTE Pronunciation Trainer',
+        // A stalled fetch (common on a degraded or backgrounded connection)
+        // must fail within a bounded time instead of leaving the queue
+        // waiting on a promise that may never settle, which looks like
+        // autoplay silently stopping with no feedback at all.
+        fetchTimeoutMs: 10000,
+        // One retry absorbs the common transient case (a momentary drop, a
+        // slow cold start) without a visible interruption. Retrying past
+        // this point on a persistently failing request would just delay an
+        // already-inevitable, user-visible failure.
+        fetchRetryAttempts: 1,
+        fetchRetryDelayMs: 500
       },
 
       // ===== UI CONFIGURATION =====

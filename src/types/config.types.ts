@@ -397,6 +397,9 @@ export interface BuildConfig {
 export interface BackgroundAudioConfig {
   outputFormat: 'mp3' | 'ogg_vorbis' | 'pcm';
   mediaSessionArtist: string;
+  fetchTimeoutMs: number;
+  fetchRetryAttempts: number;
+  fetchRetryDelayMs: number;
 }
 
 export interface AppConfig {

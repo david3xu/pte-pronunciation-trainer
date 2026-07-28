@@ -87,6 +87,7 @@ export class AppConfig {
               'pte-plural-nouns-s-practice': 'data/processed/pte-plural-nouns-s-practice.json',
               'pte-template-practice': 'data/processed/pte-template-practice-vocabulary.json',
               'pte-essay-topic-paraphrase': 'data/processed/pte-essay-topic-paraphrase-vocabulary.json',
+              'pte-phd-official-project-terms': 'data/processed/pte-phd-official-project-terms.json',
 
               // Practice modes
               'rs': 'data/processed/pte-repeat-sentence-dataset.json',
@@ -138,6 +139,7 @@ export class AppConfig {
           // { id: 'pte-essay-90plus-filled-terms', name: 'PTE 90+ Essay Filled Terms', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-plural-nouns-s-practice', name: 'Plural Nouns /s/ Practice', category: 'vocabulary', difficulty: 'easy' },
           { id: 'pte-template-practice', name: 'Template Practice', category: 'vocabulary', difficulty: 'normal' },
+          { id: 'pte-phd-official-project-terms', name: 'PhD Official Project Terms', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-essay-topic-paraphrase', name: 'Essay Topic & Paraphrase', category: 'vocabulary', difficulty: 'normal' },
 
           // Practice modes, nested under the 'practice' study type (3 total)

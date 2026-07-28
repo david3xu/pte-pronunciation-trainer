@@ -70,6 +70,17 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'rs-wfd',
       keepDuplicates: false
+    },
+    {
+      id: 'pte-phd-official-project-terms',
+      input: 'official-project-terms-pronunciation.md',
+      output: 'pte-phd-official-project-terms.json',
+      category: 'pte-phd-official-project-terms',
+      description: 'PhD official project terms pronunciation list',
+      sourceType: 'pte-phd-official-project-terms',
+      extractorType: 'PTEPronunciationTableExtractor',
+      inputSubdir: 'phd',
+      keepDuplicates: false
     }
   ]
 };
@@ -207,6 +218,88 @@ class PTETermsExtractor {
     if (word.length <= 5) return 'easy';
     if (word.length <= 9) return 'normal';
     return 'hard';
+  }
+}
+
+/**
+ * PTEPronunciationTableExtractor - Parses simple markdown pronunciation tables.
+ *
+ * Source format:
+ *   | Term from the official project document | IPA | Sounds like |
+ *   |---|---|---|
+ *   | Evaluation | /.../ | ih-val-yoo-**AY**-shuhn |
+ */
+class PTEPronunciationTableExtractor {
+  static async extract(filePath, fsModule, options = {}) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`PTE pronunciation table file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const lines = content.split('\n');
+    const terms = [];
+
+    for (const line of lines) {
+      const termData = this.parseTableRow(line.trim(), options);
+      if (termData) {
+        terms.push(termData);
+      }
+    }
+
+    return terms;
+  }
+
+  static parseTableRow(line, options = {}) {
+    if (!line.startsWith('|') || !line.endsWith('|')) {
+      return null;
+    }
+
+    const cells = line
+      .slice(1, -1)
+      .split('|')
+      .map(cell => cell.trim());
+
+    if (cells.length < 3) {
+      return null;
+    }
+
+    const [termCell, ipaCell, phoneticCell] = cells;
+
+    if (
+      !termCell ||
+      !ipaCell ||
+      !phoneticCell ||
+      /^-+$/.test(termCell) ||
+      termCell.toLowerCase().includes('term from the official project document') ||
+      (termCell.toLowerCase() === 'term' && ipaCell.toLowerCase() === 'ipa')
+    ) {
+      return null;
+    }
+
+    const english = termCell.replace(/\s+/g, ' ').trim();
+    const ipa = ipaCell.replace(/^\/|\/$/g, '').trim();
+    const phonetic = phoneticCell.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+
+    if (!english || !ipa || !phonetic) {
+      return null;
+    }
+
+    return {
+      english,
+      pronunciation: {
+        british: {
+          ipa,
+          phonetic
+        },
+        american: {
+          ipa,
+          phonetic
+        }
+      },
+      difficulty: PTETermsExtractor.inferDifficulty(english),
+      category: options.category || 'pte-vocabulary',
+      source: options.source || 'pte-pronunciation-table'
+    };
   }
 }
 
@@ -632,8 +725,13 @@ class PTEDataPipeline {
     if (registry.length > 0) {
       for (const entry of registry) {
         try {
-          // Support PTETermsExtractor and PTESegmentsExtractor
-          if (entry.extractorType !== 'PTETermsExtractor' && entry.extractorType !== 'PTESegmentsExtractor') {
+          // Support vocabulary, table vocabulary, and segment extractors
+          const supportedExtractors = new Set([
+            'PTETermsExtractor',
+            'PTEPronunciationTableExtractor',
+            'PTESegmentsExtractor',
+          ]);
+          if (!supportedExtractors.has(entry.extractorType)) {
             console.log(`   ℹ️ Skipping ${entry.id} (extractor ${entry.extractorType} not supported in build script)`);
             continue;
           }
@@ -647,6 +745,11 @@ class PTEDataPipeline {
           try {
             if (entry.extractorType === 'PTESegmentsExtractor') {
               terms = await PTESegmentsExtractor.extract(inputPath, fs, {
+                category: entry.category,
+                source: entry.sourceType
+              });
+            } else if (entry.extractorType === 'PTEPronunciationTableExtractor') {
+              terms = await PTEPronunciationTableExtractor.extract(inputPath, fs, {
                 category: entry.category,
                 source: entry.sourceType
               });
@@ -841,6 +944,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
 export {
   PTEDataPipeline,
+  PTEPronunciationTableExtractor,
   SWTMarkdownExtractor,
   SWTAnswerTypingMarkdownExtractor,
   SWT_ANSWER_TYPING_SOURCE_FILE,

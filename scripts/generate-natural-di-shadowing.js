@@ -18,7 +18,7 @@ const __dirname = path.dirname(__filename);
  * Parse example-answers.md to extract all image answers
  */
 function parseExampleAnswers() {
-  const sourceFile = path.join(__dirname, '../data/source/pte/di/templates/examples/example-answers.md');
+  const sourceFile = path.join(__dirname, '../data/source/pte/di/example-answers.md');
   const content = fs.readFileSync(sourceFile, 'utf-8');
 
   const answers = [];

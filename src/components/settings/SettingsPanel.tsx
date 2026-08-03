@@ -215,12 +215,18 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     await audioServiceForPlatform.stop();
   };
 
+  // Both reset paths restore playback through here, so they cannot drift apart,
+  // and the values come from config rather than literals repeated at each site.
+  const applyDefaultPlaybackSettings = () => {
+    audioServiceForPlatform.setRate(appConfig.getRequired<number>('settings.defaults.ttsRate'));
+    audioServiceForPlatform.setVolume(appConfig.getRequired<number>('settings.defaults.ttsVolume'));
+  };
+
   const handleResetSettings = async () => {
     try {
       await stopPlaybackForReset();
       resetSettings();
-      audioServiceForPlatform.setRate(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
-      audioServiceForPlatform.setVolume(1.0);
+      applyDefaultPlaybackSettings();
       await loadDefaultVocabularyDataset();
       alert('Settings reset to defaults');
     } catch (error) {
@@ -235,8 +241,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       await clearLocalAppData();
       resetSettings();
       progress.resetProgress();
-      audioServiceForPlatform.setRate(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
-      audioServiceForPlatform.setVolume(1.0);
+      applyDefaultPlaybackSettings();
       await loadDefaultVocabularyDataset();
       alert('All local data cleared');
     } catch (error) {

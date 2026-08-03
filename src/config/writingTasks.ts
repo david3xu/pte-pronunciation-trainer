@@ -8,7 +8,7 @@
  * routing branch, not new hardcoded numbers scattered through a component.
  */
 
-export type WritingMode = 'swt' | 'essay-b1-terms';
+export type WritingMode = 'swt' | 'essay-b1-terms' | 'di-answers';
 
 export interface WritingTaskConfig {
   id: WritingMode;
@@ -44,6 +44,16 @@ export const WRITING_TASKS: Record<WritingMode, WritingTaskConfig> = {
     maxWords: 30,
     requiredSentences: 1,
     placeholder: 'Type the term exactly as shown...',
+  },
+  'di-answers': {
+    id: 'di-answers',
+    title: 'DI Answer Typing',
+    shortName: 'DI',
+    timeLimitSeconds: 10 * 60,
+    minWords: 1,
+    maxWords: 200,
+    requiredSentences: 1,
+    placeholder: 'Type the answer exactly as shown...',
   },
 };
 

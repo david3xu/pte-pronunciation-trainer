@@ -113,6 +113,7 @@ export class AppConfig {
               'wfd': 'data/processed/pte-write-from-dictation-dataset.json',
               'swt': 'data/processed/pte-swt-dataset.json',
               'essay-b1-terms': 'data/processed/pte-essay-b1-terms-dataset.json',
+              'di-answers': 'data/processed/pte-di-answers-dataset.json',
 
               // Shadowing modes
               'di-shadowing': 'data/processed/di-shadowing-natural.json'
@@ -171,6 +172,7 @@ export class AppConfig {
           // scored writing; see src/config/typingTasks.ts.
           { id: 'swt', name: 'Summarize Written Text', category: 'writing', description: '58 practice passages' },
           { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '37 essay topics, 717 terms' },
+          { id: 'di-answers', name: 'DI Answer Typing', category: 'writing', description: '86 image answers' },
 
           // Shadowing modes (1 total)
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }

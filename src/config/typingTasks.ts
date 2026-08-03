@@ -10,7 +10,7 @@
 
 import type { TaskType } from '../types/database';
 
-export type TypingMode = 'swt' | 'essay-b1-terms';
+export type TypingMode = 'swt' | 'essay-b1-terms' | 'di-answers';
 
 export interface TypingTaskConfig {
   id: TypingMode;
@@ -41,5 +41,12 @@ export const TYPING_TASKS: Record<TypingMode, TypingTaskConfig> = {
     shortName: 'B1 Terms',
     accuracyThresholdPercent: 95,
     taskType: 'vocabulary',
+  },
+  'di-answers': {
+    id: 'di-answers',
+    title: 'DI Answer Typing',
+    shortName: 'DI',
+    accuracyThresholdPercent: 95,
+    taskType: 'di',
   },
 };

@@ -41,6 +41,7 @@ const PRACTICE_MODE_TO_REGISTRY_KEY: Record<string, string> = {
   'practice-write-from-dictation': 'wfd',
   'swt': 'swt',
   'essay-b1-terms': 'essay-b1-terms',
+  'di-answers': 'di-answers',
 };
 
 /** True when the id is a dataset consumed raw by a practice or writing task, whether reached via the nested practice-* mode string or (for writing tasks) its own registry key. */

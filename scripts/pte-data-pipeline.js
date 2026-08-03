@@ -314,6 +314,14 @@ const ESSAY_B1_TERM_LINE_PATTERN = /^(\d+)\.\s+\*\*(.+?)\*\*/;
 // One topic is typed as a single line, so its terms are joined with this.
 const ESSAY_B1_TERMS_SEPARATOR = ', ';
 
+const DI_ANSWERS_SOURCE_FILE = 'example-answers.md';
+// Captured groups are the image number and its title.
+const DI_IMAGE_HEADING_PATTERN = /^##\s+Image\s+(\d+)\s*-\s*(.+?)\s*$/;
+const DI_OTHER_HEADING_PATTERN = /^##\s+/;
+const DI_ANSWER_LABEL_PATTERN = /^\*\*Answer:\*\*/;
+// Each answer is one fully quoted line following the label.
+const DI_ANSWER_TEXT_PATTERN = /^"(.+)"$/;
+
 /**
  * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
  *
@@ -598,6 +606,83 @@ class EssayB1TermsMarkdownExtractor {
 }
 
 /**
+ * Parses the DI example answers source, one model answer per image section:
+ *
+ *   ## Image 19 - Australia Share Market (S&P/ASX 200), June 2011
+ *
+ *   **Answer:**
+ *
+ *   "This line graph shows..."
+ *
+ * Parsing is line based rather than one large regex on purpose. The existing
+ * shadowing generator matches a fixed single blank line between the heading and
+ * the answer label, which silently drops any section formatted with an extra
+ * blank line. Tracking state across lines tolerates that spacing instead.
+ *
+ * Item ids come from position in the file, not from the image number, because
+ * the source repeats one image number across two different answers and ids have
+ * to stay unique for progress tracking.
+ */
+class DIAnswersMarkdownExtractor {
+  static extract(filePath, fsModule, sourceSet) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`DI answers source file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const answers = [];
+    let currentAnswer = null;
+    let awaitingAnswerText = false;
+
+    const closeCurrent = () => {
+      if (currentAnswer && currentAnswer.answer) answers.push(currentAnswer);
+      currentAnswer = null;
+      awaitingAnswerText = false;
+    };
+
+    for (const line of content.split('\n')) {
+      const trimmedLine = line.trim();
+      if (!trimmedLine) continue;
+
+      const headingMatch = trimmedLine.match(DI_IMAGE_HEADING_PATTERN);
+      if (headingMatch) {
+        closeCurrent();
+        currentAnswer = {
+          imageNumber: Number(headingMatch[1]),
+          imageTitle: headingMatch[2],
+          answer: '',
+          sourceSet,
+        };
+        continue;
+      }
+
+      if (DI_OTHER_HEADING_PATTERN.test(trimmedLine)) {
+        closeCurrent();
+        continue;
+      }
+
+      if (!currentAnswer) continue;
+
+      if (DI_ANSWER_LABEL_PATTERN.test(trimmedLine)) {
+        awaitingAnswerText = true;
+        continue;
+      }
+
+      if (!awaitingAnswerText) continue;
+
+      const answerMatch = trimmedLine.match(DI_ANSWER_TEXT_PATTERN);
+      if (!answerMatch) continue;
+
+      currentAnswer.answer = answerMatch[1].trim();
+      awaitingAnswerText = false;
+    }
+
+    closeCurrent();
+    return answers;
+  }
+}
+
+/**
  * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
  */
 class PTESegmentsExtractor {
@@ -699,6 +784,9 @@ class PTEDataPipeline {
 
       // Stage 2.7: Generate Essay B1 terms typing dataset
       await this.generateEssayB1TermsDataset();
+
+      // Stage 2.8: Generate DI answer typing dataset
+      await this.generateDIAnswersDataset();
 
       // Stage 3: Report
       this.generateReport();
@@ -840,6 +928,57 @@ class PTEDataPipeline {
 
     this.saveDataset('pte-essay-b1-terms-dataset.json', dataset);
     console.log(`\n📊 Stage 2.7 Summary: Generated ${items.length} essay B1 topic items\n`);
+  }
+
+  /**
+   * Generate the DI answer typing dataset. One item is one image answer, so the
+   * item count is the number of answers the source declares.
+   */
+  async generateDIAnswersDataset() {
+    console.log('\n📝 STAGE 2.8: Generating DI Answers Dataset');
+
+    const diDir = path.join(this.config.inputDir, 'di');
+    const filePath = path.join(diDir, DI_ANSWERS_SOURCE_FILE);
+    const sourceSet = DI_ANSWERS_SOURCE_FILE.replace(/\.md$/, '');
+    let answers = [];
+
+    try {
+      answers = DIAnswersMarkdownExtractor.extract(filePath, fs, sourceSet);
+      console.log(`   🔄 Parsed ${answers.length} DI answers from ${DI_ANSWERS_SOURCE_FILE}`);
+    } catch (e) {
+      console.warn(`   ⚠️  Failed to parse ${DI_ANSWERS_SOURCE_FILE}: ${e.message}`);
+    }
+
+    const items = answers.map((answer, index) => ({
+      id: `di-answers-${index + 1}`,
+      title: `Image ${answer.imageNumber}: ${answer.imageTitle}`,
+      passage: answer.imageTitle,
+      answer: answer.answer,
+      wordCount: answer.answer.split(/\s+/).filter(Boolean).length,
+      sourceSet: answer.sourceSet,
+      metadata: {
+        difficulty: 'normal',
+        category: 'pte-di-answers',
+        source: 'pte-di-answers',
+        tags: ['di-answers', 'answer-typing', 'monkeytype'],
+        imageNumber: answer.imageNumber,
+        imageTitle: answer.imageTitle,
+      },
+    }));
+
+    const dataset = {
+      metadata: {
+        generated: new Date().toISOString(),
+        source: 'pte-di-answers',
+        description: 'DI model answer typing practice targets, one answer per item',
+        totalAnswers: items.length,
+        version: '1.0',
+      },
+      items,
+    };
+
+    this.saveDataset('pte-di-answers-dataset.json', dataset);
+    console.log(`\n📊 Stage 2.8 Summary: Generated ${items.length} DI answer items\n`);
   }
 
   /**
@@ -1089,5 +1228,7 @@ export {
   SWT_ANSWER_TYPING_SOURCE_FILE,
   EssayB1TermsMarkdownExtractor,
   ESSAY_B1_TERMS_SOURCE_FILE,
+  DIAnswersMarkdownExtractor,
+  DI_ANSWERS_SOURCE_FILE,
 };
 export default PTEDataPipeline;

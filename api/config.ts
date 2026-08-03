@@ -47,8 +47,6 @@ export const DELAYS = {
 export const LIMITS = {
   conversationHistory: 10,
   recommendations: 5,
-  ttsCacheSize: 100,
-  ttsCacheMaxAge: 3600000, // 1 hour in ms
 } as const;
 
 // Voice Configuration

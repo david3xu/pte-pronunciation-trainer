@@ -170,7 +170,7 @@ export class AppConfig {
           // Both entries are exact text typing drills rather than PTE form
           // scored writing; see src/config/typingTasks.ts.
           { id: 'swt', name: 'Summarize Written Text', category: 'writing', description: '58 practice passages' },
-          { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '722 essay fill in terms' },
+          { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '37 essay topics, 717 terms' },
 
           // Shadowing modes (1 total)
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }

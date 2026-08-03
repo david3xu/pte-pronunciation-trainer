@@ -188,26 +188,6 @@ export interface DataConfig {
 }
 
 /* ============================================
-   AI TYPES
-   ============================================ */
-
-/**
- * AI configuration for Google Gemini
- */
-export interface AIConfig {
-  gemini: {
-    defaultModel: string;
-    fallbackModel: string;
-    conversationHistoryLimit: number;
-    requestsPerDay: number;
-    maxTokens: number;
-    temperature: number;
-    topP: number;
-    topK: number;
-  };
-}
-
-/* ============================================
    API TYPES
    ============================================ */
 
@@ -245,18 +225,6 @@ export interface DelaysConfig {
   quickQuestionDelay: number;
   moduleInitTimeout: number;
   exponentialBackoffBase: number;
-}
-
-/* ============================================
-   LIMITS TYPES
-   ============================================ */
-
-/**
- * Request limits configuration
- */
-export interface LimitsConfig {
-  conversationHistory: number;
-  recommendations: number;
 }
 
 /* ============================================
@@ -387,10 +355,8 @@ export interface AppConfig {
     description: string;
   };
   data: DataConfig;
-  ai: AIConfig;
   api: APIConfig;
   delays: DelaysConfig;
-  limits: LimitsConfig;
   tts: TTSConfig;
   voice: VoiceConfig;
   backgroundAudio: BackgroundAudioConfig;

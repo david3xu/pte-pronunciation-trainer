@@ -8,13 +8,13 @@
 import { BookmarkIcon, LightningBoltIcon, ReloadIcon, RocketIcon } from '@radix-ui/react-icons';
 import { Badge, Button, Card, Flex, Spinner, Text } from '@radix-ui/themes';
 import React, { useEffect, useState } from 'react';
-import { generateRecommendations, type Recommendation, type UserProgress } from '../../services/ai/recommendationService';
+import { requestAIRecommendations, type AIRecommendation, type UserProgress } from '../../services/ai/recommendationService';
 import { useAuth, useProgress } from '../../stores';
 
 const AIRecommendations: React.FC = () => {
   const auth = useAuth();
   const progress = useProgress();
-  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  const [recommendations, setRecommendations] = useState<AIRecommendation[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -39,7 +39,7 @@ const AIRecommendations: React.FC = () => {
         recentActivity: [] // TODO: Track recent activity
       };
 
-      const result = await generateRecommendations(userProgress);
+      const result = await requestAIRecommendations(userProgress);
       setRecommendations(result);
     } catch (err) {
       setError('❌ Failed to generate AI recommendations. Check: 1) Google Gemini API key in Settings, 2) Internet connection. Get your free key at aistudio.google.com/apikey (100% FREE, 1,500/day)');

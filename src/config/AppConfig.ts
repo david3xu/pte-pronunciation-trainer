@@ -566,6 +566,20 @@ export class AppConfig {
   }
 
   /**
+   * Read a value that must exist. Callers that would otherwise pass a literal
+   * fallback use this instead, so a missing path fails loudly at the point of
+   * use rather than silently substituting a second copy of the configured
+   * value that is then free to drift from it.
+   */
+  getRequired<T = unknown>(path: ConfigPath): T {
+    const value = this.getNestedValue(this.config, path);
+    if (value === undefined || value === null) {
+      throw new Error(`AppConfig: required configuration path is not set: ${path}`);
+    }
+    return value as T;
+  }
+
+  /**
    * Set configuration value using dot notation
    */
   set(path: ConfigPath, value: any): void {

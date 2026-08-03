@@ -114,10 +114,26 @@ export class TTSEngine {
            'en-GB';
   }
 
+  /**
+   * The one place a speaking rate is resolved. Both the real audio path and the
+   * browser speech fallback read from here, so a single setting drives every
+   * utterance on every platform. There is no literal fallback: an unset rate is
+   * a configuration fault and says so.
+   */
   private getCurrentSpeechRate(): number {
-    return this.speechRate ||
-      useAppStore.getState().settings.ttsRate ||
-      this.getConfig()?.get('tts.rate');
+    const candidates = [
+      this.speechRate,
+      useAppStore.getState().settings.ttsRate,
+      this.getConfig()?.get('tts.rate'),
+    ];
+
+    for (const candidate of candidates) {
+      if (typeof candidate === 'number' && candidate > 0) return candidate;
+    }
+
+    throw new Error(
+      'TTSEngine: no speaking rate resolved; settings.ttsRate and tts.rate are both unset'
+    );
   }
 
   /**

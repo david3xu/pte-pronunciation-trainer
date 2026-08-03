@@ -24,7 +24,7 @@ Stabilize browser speech playback and make the TTS/autoplay implementation easie
 ```text
 src/services/audio/
 ├── TTSEngine.ts                 # Thin facade for existing imports
-├── browserSpeechService.ts      # Web Speech API lifecycle and timeouts
+├── browserSpeechService.ts      # Target shape only; not present, see Phase 3
 ├── generatedSpeechService.ts    # Premium generated-audio request/playback fallback
 ├── voiceSelector.ts             # Voice matching and preference logic
 ├── iosBackgroundAudio.ts        # iOS/background audio support
@@ -69,9 +69,16 @@ src/stores/slices/
 
 ## Phase 3: Extract browser speech lifecycle
 
-- Status: Complete. Web Speech utterance creation, event settlement, timeout handling, and active utterance retention now live in `src/services/audio/browserSpeechService.ts`.
+- Status: Reverted, not complete. The extraction was written but never adopted:
+  `TTSEngine` kept its own inline `speakWithBrowserTts`, and nothing ever
+  constructed `BrowserSpeechService`, so the repository carried two browser
+  speech implementations with only one of them reachable. The unused file was
+  deleted rather than left as a second source of truth, and its rate handling
+  had already drifted from the live path. Redoing this phase means moving the
+  live implementation out of `TTSEngine` and wiring the caller in the same
+  change, not extracting a module and leaving adoption for later.
 
-- Move `SpeechSynthesisUtterance` creation, event handling, timeout handling, cancellation, and active utterance retention to `browserSpeechService.ts`.
+- Move `SpeechSynthesisUtterance` creation, event handling, timeout handling, cancellation, and active utterance retention out of `TTSEngine`.
 - Return a normalized result type such as `spoken`, `cancelled`, `timeout`, or `error`.
 - Ensure every request settles exactly once.
 - Keep `TTSEngine.speak()` as a compatibility facade.

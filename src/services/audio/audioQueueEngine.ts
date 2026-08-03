@@ -5,6 +5,7 @@ import {
   type PlayTextOptions,
 } from './backgroundAudioService';
 import { audioCache, buildAudioCacheKey, type AudioCache } from './audioCache';
+import { isAbortError, isAutoplayBlockedError } from './playbackErrors';
 
 /** Only the method the engine actually calls. Pick<AudioCache, ...> alone
  * would require matching AudioCache's private fields too; a fake cache used
@@ -899,16 +900,11 @@ export class AudioQueueEngine {
   }
 
   private isAbortError(error: unknown): boolean {
-    return (
-      typeof error === 'object' &&
-      error !== null &&
-      'name' in error &&
-      (error as { name?: unknown }).name === 'AbortError'
-    );
+    return isAbortError(error);
   }
 
   private isAutoplayBlocked(error: Error): boolean {
-    return error.name === 'NotAllowedError' || /autoplay|user gesture|not allowed/i.test(error.message);
+    return isAutoplayBlockedError(error);
   }
 
   private toError(error: unknown): Error {

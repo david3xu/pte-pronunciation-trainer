@@ -21,6 +21,7 @@ import { appConfig } from '../../config/AppConfig';
 import { backgroundAudioService } from './backgroundAudioService';
 import { audioServiceForPlatform } from './audioServiceForPlatform';
 import { IOSBackgroundAudio } from './iosBackgroundAudio';
+import { isAbortError, isAutoplayBlockedError } from './playbackErrors';
 
 /**
  * Vocabulary word structure
@@ -490,11 +491,18 @@ export class TTSEngine {
     });
   }
 
+  /**
+   * A blocked autoplay is deliberately not a fallback case. The browser refused
+   * playback for want of a gesture, and browser speech synthesis is gated by the
+   * same policy, so switching audio source could not help. Rethrowing lets the
+   * caller ask the user to tap instead of failing twice and reporting the wrong
+   * cause.
+   */
   private shouldFallbackToBrowserTts(error: unknown): boolean {
-    if (error instanceof DOMException && error.name === 'AbortError') {
+    if (isAbortError(error)) {
       return false;
     }
-    if (error instanceof Error && error.name === 'AbortError') {
+    if (isAutoplayBlockedError(error)) {
       return false;
     }
     return true;

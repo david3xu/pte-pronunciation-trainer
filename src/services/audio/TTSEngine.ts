@@ -398,14 +398,6 @@ export class TTSEngine {
     console.log(`[TTSEngine #${callId}] 📊 Current state: isSpeaking=${this.isSpeaking}, lastSpoken="${this.lastSpokenText.substring(0, 20)}..."`);
     console.log(`[TTSEngine #${callId}] 📊 Synth state: speaking=${this.synth.speaking}, pending=${this.synth.pending}, paused=${this.synth.paused}`);
 
-    // Premium TTS is optional. If the real-audio endpoint is unavailable, the
-    // engine falls back to browser speech synthesis below.
-    const ttsVoice = useAppStore.getState().settings.ttsVoice;
-    if (ttsVoice === 'premium') {
-      console.warn('[TTSEngine] Premium TTS is unavailable; resetting to browser TTS');
-      useAppStore.getState().settings.updateSetting('ttsVoice', null);
-    }
-
     // Initialize AudioContext on first speech attempt (user interaction)
     if (!this.audioContextInitialized) {
       this.enableBackgroundAudio();

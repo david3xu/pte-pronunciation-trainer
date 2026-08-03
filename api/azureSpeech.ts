@@ -57,11 +57,9 @@ export async function synthesizeSpeech({
   pitch,
   emphasis,
 }: SynthesizeSpeechOptions): Promise<SynthesizeSpeechResult> {
+  // getAzureSpeechConfig throws naming any missing variable, so there is no
+  // second, vaguer check here.
   const { key, region } = getAzureSpeechConfig();
-
-  if (!key || !region) {
-    throw new Error('Azure Speech is not configured');
-  }
 
   const resolvedVoiceId = resolveAzureVoiceName(voiceId, languageCode);
   const resolvedLanguageCode = languageCode || getVoiceLanguageCode(resolvedVoiceId);

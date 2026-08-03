@@ -54,7 +54,6 @@ export const VOICE_CONFIG = {
   defaultVoiceId: 'en-AU-WilliamNeural',
   defaultEngine: 'neural',
   defaultLanguage: 'en-AU',
-  azureRegion: process.env['AZURE_SPEECH_REGION'] || null,
 } as const;
 
 // Premium Voices List (Azure AI Speech Neural Voices)
@@ -138,12 +137,27 @@ export function getGeminiApiKey(): string | null {
 
 /**
  * Get Azure Speech configuration from environment.
+ *
+ * This is the single place that decides whether Azure is usable. It throws
+ * naming the variables that are missing, rather than returning nulls for a
+ * caller to reinterpret as a generic failure, because a missing key is an
+ * operator configuration fault and the deployment should say which one.
  */
-export function getAzureSpeechConfig() {
-  return {
-    key: process.env['AZURE_SPEECH_KEY'] || null,
-    region: VOICE_CONFIG.azureRegion,
-  };
+export function getAzureSpeechConfig(): { key: string; region: string } {
+  const key = process.env['AZURE_SPEECH_KEY'];
+  const region = process.env['AZURE_SPEECH_REGION'];
+
+  const missing: string[] = [];
+  if (!key) missing.push('AZURE_SPEECH_KEY');
+  if (!region) missing.push('AZURE_SPEECH_REGION');
+
+  if (missing.length > 0) {
+    throw new Error(
+      `Azure Speech is not configured: ${missing.join(' and ')} must be set in the deployment environment`
+    );
+  }
+
+  return { key: key as string, region: region as string };
 }
 
 /**

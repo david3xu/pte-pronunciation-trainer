@@ -13,6 +13,7 @@ import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@
 import React, { useEffect, useMemo } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { appConfig } from '../../config/AppConfig';
+import type { WritingMode } from '../../config/writingTasks';
 import { useAudioState, useProgress, useSettings, useVocabulary } from '../../stores';
 import { clearLocalAppData } from '../../services/appDataReset';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
@@ -66,6 +67,13 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const vocabularyBooks = useMemo(() => {
     const learningModes = appConfig.get('data.learningModes') || [];
     return learningModes.filter((mode: any) => mode.category === 'vocabulary');
+  }, []);
+
+  // Get writing tasks from config dynamically, so a new writing task is a
+  // learningModes entry rather than another hardcoded option in this panel.
+  const writingTasks = useMemo(() => {
+    const learningModes = appConfig.get('data.learningModes') || [];
+    return learningModes.filter((mode: any) => mode.category === 'writing');
   }, []);
 
   // Handle vocabulary book change
@@ -153,10 +161,10 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   };
 
   // Handle writing task change, nested under the reusable writing study type
-  // the same way handlePracticeModeChange nests RS/ASQ/WFD under practice.
-  // Only 'swt' exists today; a second writing task is meant to be a new
-  // union member here, not another top level practiceType or handler.
-  const handleWritingModeChange = async (mode: 'swt' | null) => {
+  // the same way handlePracticeModeChange nests RS/ASQ/WFD under practice. A
+  // new writing task is a new WritingMode union member plus a learningModes
+  // entry, not another top level practiceType or handler.
+  const handleWritingModeChange = async (mode: WritingMode | null) => {
     console.log('[SettingsPanel] Changing writing task to:', mode);
 
     if (typeof updateSetting !== 'function') {
@@ -291,11 +299,11 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                       // still the active dataset.
                       handlePracticeModeChange(practiceMode ?? 'practice-repeat-sentence');
                     } else if (value === 'writing') {
-                      // Preserve the last writing task choice if there is one
-                      // (only 'swt' exists today, but this mirrors 'practice'
-                      // so a second writing task needs no new logic here),
-                      // always reloading it explicitly.
-                      handleWritingModeChange(writingMode ?? 'swt');
+                      // Preserve the last writing task choice if there is one,
+                      // otherwise fall to the first writing task declared in
+                      // learningModes rather than a hardcoded task id, always
+                      // reloading it explicitly.
+                      handleWritingModeChange(writingMode ?? (writingTasks[0]?.id as WritingMode));
                     } else if (value === 'shadowing') {
                       handleVocabularyBookChange('di-shadowing');
                     } else if (value === 'vocabulary' || value === 'vocab-typing') {
@@ -322,24 +330,26 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Select.Root>
               </Flex>
 
-              {/* Writing Task (if Writing Practice is selected). Only one
-                  option exists today; more (e.g. SST) can be added here
-                  later without another routing/settings refactor. */}
+              {/* Writing Task (if Writing Practice is selected). Options come
+                  from learningModes, so a new writing task needs no change
+                  here. */}
               {practiceType === 'writing' && (
                 <Flex direction="column" gap="2">
                   <Text size="3" weight="medium">Writing Task</Text>
                   <Text size="2" color="gray" mb="1">
-                    Practice typing a PTE writing task's model answer
+                    Practice typing a writing task's exact target text
                   </Text>
                   <Select.Root
                     value={writingMode || ''}
-                    onValueChange={(value) => handleWritingModeChange(value as 'swt' | null)}
+                    onValueChange={(value) => handleWritingModeChange(value as WritingMode | null)}
                   >
                     <Select.Trigger placeholder="Select a writing task..." />
                     <Select.Content>
-                      <Select.Item value="swt">
-                        📝 SWT Answer Typing - 58 answers
-                      </Select.Item>
+                      {writingTasks.map((task: any) => (
+                        <Select.Item key={task.id} value={task.id}>
+                          📝 {task.name}{task.description ? ` - ${task.description}` : ''}
+                        </Select.Item>
+                      ))}
                     </Select.Content>
                   </Select.Root>
                 </Flex>

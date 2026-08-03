@@ -304,6 +304,7 @@ class PTEPronunciationTableExtractor {
 }
 
 const SWT_ANSWER_TYPING_SOURCE_FILE = 'swt-answer-typing.md';
+const ESSAY_B1_TERMS_SOURCE_FILE = 'pte-essay-b1-examples-vocabulary-with-ipa.md';
 
 /**
  * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
@@ -520,6 +521,68 @@ class SWTAnswerTypingMarkdownExtractor {
 }
 
 /**
+ * Parses the essay B1 fill in terms source, which groups numbered terms under
+ * one heading per essay example:
+ *
+ *   ## Example 1: Employee Decision Making
+ *   1. **employee participation in decision-making** | /IPA/ (sounds like) **respelling**
+ *
+ * Every term in the source becomes one typing target, in source order, with no
+ * deduplication and no rewriting of the term text. The example heading travels
+ * with each term as displayed context, and the IPA plus respelling are kept in
+ * metadata rather than discarded, since the same source also feeds a
+ * pronunciation vocabulary book.
+ */
+class EssayB1TermsMarkdownExtractor {
+  static extract(filePath, fsModule, sourceSet) {
+    if (!fsModule.existsSync(filePath)) {
+      throw new Error(`Essay B1 terms source file not found: ${filePath}`);
+    }
+
+    const content = fsModule.readFileSync(filePath, 'utf-8');
+    const items = [];
+    let exampleTitle = '';
+    let exampleIndex = 0;
+
+    for (const line of content.split('\n')) {
+      const trimmedLine = line.trim();
+      if (!trimmedLine) continue;
+
+      const headingMatch = trimmedLine.match(/^##\s+(.+?)\s*$/);
+      if (headingMatch) {
+        exampleTitle = headingMatch[1];
+        exampleIndex += 1;
+        continue;
+      }
+
+      const termMatch = trimmedLine.match(/^(\d+)\.\s+\*\*(.+?)\*\*(.*)$/);
+      if (!termMatch) continue;
+
+      const term = termMatch[2].trim();
+      if (!term) continue;
+
+      const remainder = termMatch[3];
+      const ipaMatch = remainder.match(/\/(.+?)\//);
+      const soundsLikeMatch = remainder.match(/sounds like\s*\*\*(.+?)\*\*/);
+
+      items.push({
+        termNumber: Number(termMatch[1]),
+        exampleIndex,
+        exampleTitle,
+        answer: term,
+        wordCount: term.split(/\s+/).filter(Boolean).length,
+        ipa: ipaMatch ? ipaMatch[1].trim() : '',
+        soundsLike: soundsLikeMatch ? soundsLikeMatch[1].trim() : '',
+        sourceSet,
+        difficulty: 'normal',
+      });
+    }
+
+    return items;
+  }
+}
+
+/**
  * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
  */
 class PTESegmentsExtractor {
@@ -619,6 +682,9 @@ class PTEDataPipeline {
       // Stage 2.6: Generate SWT (Summarize Written Text) dataset
       await this.generateSWTDataset();
 
+      // Stage 2.7: Generate Essay B1 terms typing dataset
+      await this.generateEssayB1TermsDataset();
+
       // Stage 3: Report
       this.generateReport();
 
@@ -701,6 +767,61 @@ class PTEDataPipeline {
 
     this.saveDataset('pte-swt-dataset.json', dataset);
     console.log(`\n📊 Stage 2.6 Summary: Generated ${items.length} SWT items\n`);
+  }
+
+  /**
+   * Generate the essay B1 terms typing dataset. Every term in the source
+   * becomes one typing target, so the count here is the total term count in
+   * the source, not a unique count.
+   */
+  async generateEssayB1TermsDataset() {
+    console.log('\n📝 STAGE 2.7: Generating Essay B1 Terms Dataset');
+
+    const vocabsDir = path.join(this.config.inputDir, 'vocabs');
+    const filePath = path.join(vocabsDir, ESSAY_B1_TERMS_SOURCE_FILE);
+    const sourceSet = ESSAY_B1_TERMS_SOURCE_FILE.replace(/\.md$/, '');
+    let parsedItems = [];
+
+    try {
+      parsedItems = EssayB1TermsMarkdownExtractor.extract(filePath, fs, sourceSet);
+      console.log(`   🔄 Parsed ${parsedItems.length} essay B1 typing targets from ${ESSAY_B1_TERMS_SOURCE_FILE}`);
+    } catch (e) {
+      console.warn(`   ⚠️  Failed to parse ${ESSAY_B1_TERMS_SOURCE_FILE}: ${e.message}`);
+    }
+
+    const items = parsedItems.map((item, index) => ({
+      id: `essay-b1-terms-${index + 1}`,
+      title: `${item.exampleTitle} term ${item.termNumber}`,
+      passage: item.exampleTitle,
+      answer: item.answer,
+      wordCount: item.wordCount,
+      sourceSet: item.sourceSet,
+      metadata: {
+        difficulty: item.difficulty,
+        category: 'pte-essay-b1-terms',
+        source: 'pte-essay-b1-terms',
+        tags: ['essay-b1-terms', 'answer-typing', 'monkeytype'],
+        exampleIndex: item.exampleIndex,
+        exampleTitle: item.exampleTitle,
+        termNumber: item.termNumber,
+        ipa: item.ipa,
+        soundsLike: item.soundsLike,
+      },
+    }));
+
+    const dataset = {
+      metadata: {
+        generated: new Date().toISOString(),
+        source: 'pte-essay-b1-terms',
+        description: 'Essay B1 fill in term typing practice targets',
+        totalTerms: items.length,
+        version: '1.0',
+      },
+      items,
+    };
+
+    this.saveDataset('pte-essay-b1-terms-dataset.json', dataset);
+    console.log(`\n📊 Stage 2.7 Summary: Generated ${items.length} essay B1 term items\n`);
   }
 
   /**
@@ -948,5 +1069,7 @@ export {
   SWTMarkdownExtractor,
   SWTAnswerTypingMarkdownExtractor,
   SWT_ANSWER_TYPING_SOURCE_FILE,
+  EssayB1TermsMarkdownExtractor,
+  ESSAY_B1_TERMS_SOURCE_FILE,
 };
 export default PTEDataPipeline;

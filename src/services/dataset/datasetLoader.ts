@@ -30,19 +30,20 @@ export interface LoadDatasetOptions {
 // 'practice' study type), but their files live in the shared byMode registry
 // under the task keys. This bridges the two id conventions so paths stay in
 // a single registry, until the mode model is unified (see audit: consolidate
-// the mode model). SWT is a writing task (nested under the reusable 'writing'
-// study type via settings.writingMode, not under 'practice'), so it is loaded
-// by its registry key directly; the entry below exists only so
-// isPracticeMode recognizes it as needing the same raw, practice-item-shaped
-// normalization as RS/ASQ/WFD.
+// the mode model). Writing tasks (nested under the reusable 'writing' study
+// type via settings.writingMode, not under 'practice') are loaded by their
+// registry key directly; their entries below exist only so isPracticeMode
+// recognizes them as needing the same raw, practice-item-shaped normalization
+// as RS/ASQ/WFD.
 const PRACTICE_MODE_TO_REGISTRY_KEY: Record<string, string> = {
   'practice-repeat-sentence': 'rs',
   'practice-answer-short-question': 'asq',
   'practice-write-from-dictation': 'wfd',
   'swt': 'swt',
+  'essay-b1-terms': 'essay-b1-terms',
 };
 
-/** True when the id is a dataset consumed raw by RS/ASQ/WFD/SWT, whether reached via the nested practice-* mode string or (for SWT) its own writing task key. */
+/** True when the id is a dataset consumed raw by a practice or writing task, whether reached via the nested practice-* mode string or (for writing tasks) its own registry key. */
 export function isPracticeMode(datasetId: string): boolean {
   return datasetId in PRACTICE_MODE_TO_REGISTRY_KEY;
 }

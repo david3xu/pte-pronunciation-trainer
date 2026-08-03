@@ -112,6 +112,7 @@ export class AppConfig {
               'asq': 'data/processed/pte-answer-short-question-dataset.json',
               'wfd': 'data/processed/pte-write-from-dictation-dataset.json',
               'swt': 'data/processed/pte-swt-dataset.json',
+              'essay-b1-terms': 'data/processed/pte-essay-b1-terms-dataset.json',
 
               // Shadowing modes
               'di-shadowing': 'data/processed/di-shadowing-natural.json'
@@ -165,10 +166,11 @@ export class AppConfig {
           { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
           { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
 
-          // Writing modes, nested under the reusable 'writing' study type
-          // (1 total today; a second writing task like SST can be added here
-          // later without another routing/settings refactor).
+          // Writing modes, nested under the reusable 'writing' study type.
+          // Both entries are exact text typing drills rather than PTE form
+          // scored writing; see src/config/typingTasks.ts.
           { id: 'swt', name: 'Summarize Written Text', category: 'writing', description: '58 practice passages' },
+          { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '722 essay fill in terms' },
 
           // Shadowing modes (1 total)
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }

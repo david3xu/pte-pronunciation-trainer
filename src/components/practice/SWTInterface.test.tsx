@@ -1,7 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
-import SWTInterface from './SWTInterface';
+import TypingInterface from './SWTInterface';
+
+// Every test in this file exercises the SWT typing task. The interface takes
+// its task explicitly now that a second writing task exists, so bind the task
+// once here instead of repeating it at every render call.
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+const SWTInterface = (props: any) => <TypingInterface typingMode="swt" {...props} />;
 
 // Pure typing metrics logic is task-neutral and tested on its own in
 // src/utils/typingPracticeMetrics.test.ts. These tests cover the component:

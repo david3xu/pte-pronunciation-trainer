@@ -305,6 +305,14 @@ class PTEPronunciationTableExtractor {
 
 const SWT_ANSWER_TYPING_SOURCE_FILE = 'swt-answer-typing.md';
 const ESSAY_B1_TERMS_SOURCE_FILE = 'pte-essay-b1-examples-vocabulary-with-ipa.md';
+// Only Example headings open an essay topic. The captured groups are the
+// example number and its title.
+const ESSAY_B1_EXAMPLE_HEADING_PATTERN = /^##\s+Example\s+(\d+)\s*:\s*(.+?)\s*$/;
+const ESSAY_B1_OTHER_HEADING_PATTERN = /^##\s+/;
+// A term line is a numbered list entry whose term is the first bold span.
+const ESSAY_B1_TERM_LINE_PATTERN = /^(\d+)\.\s+\*\*(.+?)\*\*/;
+// One topic is typed as a single line, so its terms are joined with this.
+const ESSAY_B1_TERMS_SEPARATOR = ', ';
 
 /**
  * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
@@ -540,45 +548,52 @@ class EssayB1TermsMarkdownExtractor {
     }
 
     const content = fsModule.readFileSync(filePath, 'utf-8');
-    const items = [];
-    let exampleTitle = '';
-    let exampleIndex = 0;
+    const topicsByNumber = new Map();
+    let currentTopic = null;
 
     for (const line of content.split('\n')) {
       const trimmedLine = line.trim();
       if (!trimmedLine) continue;
 
-      const headingMatch = trimmedLine.match(/^##\s+(.+?)\s*$/);
+      const headingMatch = trimmedLine.match(ESSAY_B1_EXAMPLE_HEADING_PATTERN);
       if (headingMatch) {
-        exampleTitle = headingMatch[1];
-        exampleIndex += 1;
+        const exampleNumber = Number(headingMatch[1]);
+        // One topic number can carry more than one heading block in this
+        // source, so terms accumulate onto the topic rather than starting a
+        // second one. This is what makes the topic count the number of
+        // distinct essays rather than the number of headings.
+        if (!topicsByNumber.has(exampleNumber)) {
+          topicsByNumber.set(exampleNumber, {
+            exampleNumber,
+            exampleTitle: headingMatch[2],
+            terms: [],
+            sourceSet,
+          });
+        }
+        currentTopic = topicsByNumber.get(exampleNumber);
         continue;
       }
 
-      const termMatch = trimmedLine.match(/^(\d+)\.\s+\*\*(.+?)\*\*(.*)$/);
+      // Any other level two section closes the current topic. The trailing
+      // Summary Statistics and How to Use sections hold numbered lines that
+      // are prose, not terms, and must not be collected.
+      if (ESSAY_B1_OTHER_HEADING_PATTERN.test(trimmedLine)) {
+        currentTopic = null;
+        continue;
+      }
+
+      if (!currentTopic) continue;
+
+      const termMatch = trimmedLine.match(ESSAY_B1_TERM_LINE_PATTERN);
       if (!termMatch) continue;
 
       const term = termMatch[2].trim();
-      if (!term) continue;
-
-      const remainder = termMatch[3];
-      const ipaMatch = remainder.match(/\/(.+?)\//);
-      const soundsLikeMatch = remainder.match(/sounds like\s*\*\*(.+?)\*\*/);
-
-      items.push({
-        termNumber: Number(termMatch[1]),
-        exampleIndex,
-        exampleTitle,
-        answer: term,
-        wordCount: term.split(/\s+/).filter(Boolean).length,
-        ipa: ipaMatch ? ipaMatch[1].trim() : '',
-        soundsLike: soundsLikeMatch ? soundsLikeMatch[1].trim() : '',
-        sourceSet,
-        difficulty: 'normal',
-      });
+      if (term) currentTopic.terms.push(term);
     }
 
-    return items;
+    return [...topicsByNumber.values()].sort(
+      (left, right) => left.exampleNumber - right.exampleNumber
+    );
   }
 }
 
@@ -770,9 +785,9 @@ class PTEDataPipeline {
   }
 
   /**
-   * Generate the essay B1 terms typing dataset. Every term in the source
-   * becomes one typing target, so the count here is the total term count in
-   * the source, not a unique count.
+   * Generate the essay B1 terms typing dataset. One item is one essay topic,
+   * and its typing target is that topic's terms joined onto a single line, so
+   * the item count is the number of distinct essays and not the term count.
    */
   async generateEssayB1TermsDataset() {
     console.log('\n📝 STAGE 2.7: Generating Essay B1 Terms Dataset');
@@ -780,48 +795,51 @@ class PTEDataPipeline {
     const vocabsDir = path.join(this.config.inputDir, 'vocabs');
     const filePath = path.join(vocabsDir, ESSAY_B1_TERMS_SOURCE_FILE);
     const sourceSet = ESSAY_B1_TERMS_SOURCE_FILE.replace(/\.md$/, '');
-    let parsedItems = [];
+    let topics = [];
 
     try {
-      parsedItems = EssayB1TermsMarkdownExtractor.extract(filePath, fs, sourceSet);
-      console.log(`   🔄 Parsed ${parsedItems.length} essay B1 typing targets from ${ESSAY_B1_TERMS_SOURCE_FILE}`);
+      topics = EssayB1TermsMarkdownExtractor.extract(filePath, fs, sourceSet);
+      const termTotal = topics.reduce((sum, topic) => sum + topic.terms.length, 0);
+      console.log(`   🔄 Parsed ${topics.length} topics and ${termTotal} terms from ${ESSAY_B1_TERMS_SOURCE_FILE}`);
     } catch (e) {
       console.warn(`   ⚠️  Failed to parse ${ESSAY_B1_TERMS_SOURCE_FILE}: ${e.message}`);
     }
 
-    const items = parsedItems.map((item, index) => ({
-      id: `essay-b1-terms-${index + 1}`,
-      title: `${item.exampleTitle} term ${item.termNumber}`,
-      passage: item.exampleTitle,
-      answer: item.answer,
-      wordCount: item.wordCount,
-      sourceSet: item.sourceSet,
-      metadata: {
-        difficulty: item.difficulty,
-        category: 'pte-essay-b1-terms',
-        source: 'pte-essay-b1-terms',
-        tags: ['essay-b1-terms', 'answer-typing', 'monkeytype'],
-        exampleIndex: item.exampleIndex,
-        exampleTitle: item.exampleTitle,
-        termNumber: item.termNumber,
-        ipa: item.ipa,
-        soundsLike: item.soundsLike,
-      },
-    }));
+    const items = topics.map((topic) => {
+      const target = topic.terms.join(ESSAY_B1_TERMS_SEPARATOR);
+      return {
+        id: `essay-b1-terms-${topic.exampleNumber}`,
+        title: `Example ${topic.exampleNumber}: ${topic.exampleTitle}`,
+        passage: topic.exampleTitle,
+        answer: target,
+        wordCount: target.split(/\s+/).filter(Boolean).length,
+        sourceSet: topic.sourceSet,
+        metadata: {
+          difficulty: 'normal',
+          category: 'pte-essay-b1-terms',
+          source: 'pte-essay-b1-terms',
+          tags: ['essay-b1-terms', 'answer-typing', 'monkeytype'],
+          exampleNumber: topic.exampleNumber,
+          exampleTitle: topic.exampleTitle,
+          termCount: topic.terms.length,
+        },
+      };
+    });
 
     const dataset = {
       metadata: {
         generated: new Date().toISOString(),
         source: 'pte-essay-b1-terms',
-        description: 'Essay B1 fill in term typing practice targets',
-        totalTerms: items.length,
-        version: '1.0',
+        description: 'Essay B1 fill in term typing practice targets, one topic per item',
+        totalTopics: items.length,
+        totalTerms: topics.reduce((sum, topic) => sum + topic.terms.length, 0),
+        version: '2.0',
       },
       items,
     };
 
     this.saveDataset('pte-essay-b1-terms-dataset.json', dataset);
-    console.log(`\n📊 Stage 2.7 Summary: Generated ${items.length} essay B1 term items\n`);
+    console.log(`\n📊 Stage 2.7 Summary: Generated ${items.length} essay B1 topic items\n`);
   }
 
   /**

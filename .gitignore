@@ -62,6 +62,9 @@ coverage/
 .cache/
 .parcel-cache/
 
+# Build profiling byproducts
+*.cpuprofile
+
 # Local iOS build tooling
 .contextpatch-derived-data/
 

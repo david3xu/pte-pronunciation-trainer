@@ -185,7 +185,6 @@ export interface LearningMode {
 export interface DataConfig {
   paths: DataPathsConfig;
   learningModes: LearningMode[];
-  defaultMode: VocabularyCategory;
 }
 
 /* ============================================
@@ -258,8 +257,6 @@ export interface DelaysConfig {
 export interface LimitsConfig {
   conversationHistory: number;
   recommendations: number;
-  ttsCacheSize: number;
-  ttsCacheMaxAge: number;
 }
 
 /* ============================================

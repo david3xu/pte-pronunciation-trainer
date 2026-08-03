@@ -1,23 +1,41 @@
 /**
  * Centralized Configuration Management (TypeScript)
  *
- * Type-safe configuration for the PTE Pronunciation Trainer.
- * This will gradually replace src/js/shared/Config.js during the TypeScript migration.
+ * Type-safe configuration for the PTE Pronunciation Trainer. This is the
+ * single source of truth for dataset paths, learning modes, API endpoints,
+ * delays, and limits.
  */
 
 import { AppConfig as AppConfigType, ConfigPath } from '../types';
 
-const NATIVE_API_BASE_URL = 'https://ccl-pronunciation-trainer.vercel.app';
+// The native shell loads the web bundle from capacitor://localhost, where a
+// relative API path has no server to resolve against. Native builds must be
+// given an absolute API origin explicitly at build time.
+const CAPACITOR_PROTOCOL = 'capacitor:';
+
+// A browser deployment serves the bundle and the /api routes from one origin,
+// so relative API paths are correct there by construction. This constant
+// encodes the meaning of "same origin", it is not a stand in for absent
+// operator configuration.
+const SAME_ORIGIN_API_BASE_URL = '';
+
+const isNativeRuntime = (): boolean =>
+  typeof window !== 'undefined' && window.location.protocol === CAPACITOR_PROTOCOL;
 
 const getApiBaseUrl = (): string => {
   const configuredBaseUrl = import.meta.env['VITE_API_BASE_URL'];
-  if (configuredBaseUrl) return configuredBaseUrl;
-
-  if (typeof window !== 'undefined' && window.location.protocol === 'capacitor:') {
-    return NATIVE_API_BASE_URL;
+  if (typeof configuredBaseUrl === 'string' && configuredBaseUrl.length > 0) {
+    return configuredBaseUrl;
   }
 
-  return '';
+  if (isNativeRuntime()) {
+    throw new Error(
+      'AppConfig: VITE_API_BASE_URL must be set to an absolute API origin for native builds, ' +
+        'because capacitor://localhost cannot resolve relative API paths'
+    );
+  }
+
+  return SAME_ORIGIN_API_BASE_URL;
 };
 
 /**
@@ -154,9 +172,7 @@ export class AppConfig {
 
           // Shadowing modes (1 total)
           { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }
-        ],
-
-        defaultMode: 'pte-fib-listening'
+        ]
       },
 
       // ===== AI CONFIGURATION =====
@@ -180,9 +196,10 @@ export class AppConfig {
 
       // ===== API ENDPOINTS =====
       api: {
-        // Optional override; empty string means same-origin (relative) API paths.
-        // Native Capacitor builds run from capacitor://localhost, so they need
-        // an absolute production API origin even if the env var was omitted.
+        // Empty base URL means same origin (relative) API paths, which is
+        // correct for browser deployments. Native Capacitor builds run from
+        // capacitor://localhost and therefore require VITE_API_BASE_URL to be
+        // set explicitly; startup fails loudly when it is missing.
         baseUrl: getApiBaseUrl(),
         endpoints: {
           // AI endpoints
@@ -223,11 +240,7 @@ export class AppConfig {
       limits: {
         // AI context
         conversationHistory: 10,
-        recommendations: 5,
-
-        // Caching
-        ttsCacheSize: 100,
-        ttsCacheMaxAge: 3600000 // 1 hour in ms
+        recommendations: 5
       },
 
       // ===== TTS CONFIGURATION =====

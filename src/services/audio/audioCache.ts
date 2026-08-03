@@ -2,11 +2,11 @@
  * AudioCache
  *
  * Persistent client side cache for generated premium TTS audio, sitting in
- * front of `/api/premium-tts`. This is a result cache for queue playback and
- * prefetch, separate from `persistentTTSCache`/`ttsCache` (base64 in
- * localStorage, no rate/engine/outputFormat dimension); it stores raw Blobs
- * in IndexedDB instead. Neither `backgroundAudioService.ts` nor
- * `api/premium-tts.ts` are touched by this module.
+ * front of `/api/premium-tts`. This is the only TTS result cache in the app,
+ * serving queue playback and prefetch, and it stores raw Blobs in IndexedDB
+ * keyed by every playback parameter that changes the audio. Neither
+ * `backgroundAudioService.ts` nor `api/premium-tts.ts` are touched by this
+ * module.
  */
 
 import { appConfig } from '../../config/AppConfig';

@@ -505,49 +505,6 @@ export class AppConfig {
           PTEQuestionExtractor: 'src/js/data/extractors/PTEQuestionExtractor.js',
           DIAnswerExtractor: 'src/js/data/extractors/DIAnswerExtractor.js'
         }
-      },
-
-      // ===== BUILD CONFIGURATION =====
-      build: {
-        // Development
-        devServerPort: 3001,
-        previewServerPort: 3002,
-
-        // Production
-        chunkSizeWarningLimit: 1000, // KB
-
-        // Environment (Vite mode: 'development' | 'production' | 'test')
-        nodeEnv: import.meta.env.MODE,
-
-        // Legacy build files (vanilla JS - archived)
-        cssFiles: [
-          'src/css/variables.css',
-          'src/css/animations.css',
-          'src/css/components.css',
-          'src/css/style.css',
-          'src/css/responsive.css'
-        ],
-        jsFiles: [
-          'src/js/shared/Config.js',
-          'src/js/shared/DataSchema.js',
-          'src/js/utils/EventBus.js',
-          'src/js/utils/Storage.js',
-          'src/js/utils/CacheMigration.js',
-          'src/js/data/DatasetManager.js',
-          'src/js/core/InitializationManager.js',
-          'src/js/core/SettingsModule.js',
-          'src/js/core/PTEVocabularyManager.js',
-          'src/js/core/ProgressTracker.js',
-          'src/js/audio/TTSEngine.js',
-          'src/js/audio/VoiceSelector.js',
-          'src/js/audio/AudioControls.js',
-          'src/js/ui/UIController.js',
-          'src/js/ui/SettingsPanel.js',
-          'src/js/core/PTEApp.js'
-        ],
-        outputDir: 'dist',
-        minify: true,
-        sourceMaps: true
       }
     };
   }

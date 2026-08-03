@@ -8,7 +8,9 @@
  * the source text.
  */
 
-export type TypingMode = 'swt';
+import type { TaskType } from '../types/database';
+
+export type TypingMode = 'swt' | 'essay-b1-terms';
 
 export interface TypingTaskConfig {
   id: TypingMode;
@@ -19,6 +21,10 @@ export interface TypingTaskConfig {
   shortName: string;
   /** Minimum accuracy percent (0 to 100) for a completed attempt to count as correct. */
   accuracyThresholdPercent: number;
+  /** The PTE task whose source text this drill types, used for session and
+   * analytics attribution. A typing drill is not itself a PTE task, so this
+   * maps onto the existing task taxonomy instead of extending it. */
+  taskType: TaskType;
 }
 
 export const TYPING_TASKS: Record<TypingMode, TypingTaskConfig> = {
@@ -27,5 +33,13 @@ export const TYPING_TASKS: Record<TypingMode, TypingTaskConfig> = {
     title: 'SWT Answer Typing',
     shortName: 'SWT',
     accuracyThresholdPercent: 95,
+    taskType: 'swt',
+  },
+  'essay-b1-terms': {
+    id: 'essay-b1-terms',
+    title: 'Essay B1 Terms Typing',
+    shortName: 'B1 Terms',
+    accuracyThresholdPercent: 95,
+    taskType: 'vocabulary',
   },
 };

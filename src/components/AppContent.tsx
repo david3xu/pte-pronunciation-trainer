@@ -8,6 +8,7 @@ import {
 import { Button, Flex, Theme } from '@radix-ui/themes';
 import React, { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { appConfig } from '../config/AppConfig';
+import { TYPING_TASKS } from '../config/typingTasks';
 import { loadDataset } from '../services/dataset/datasetLoader';
 import { useMigration } from '../hooks/useMigration';
 import { useOnboarding } from '../hooks/useOnboarding';
@@ -119,7 +120,9 @@ export const AppContent: React.FC = () => {
                   ? 'asq'
                   : 'wfd';
           } else if (practiceType === 'writing' && writingMode) {
-            taskType = writingMode;
+            // A typing drill is not itself a PTE task, so attribute the session
+            // to the task its source text comes from, declared in TYPING_TASKS.
+            taskType = TYPING_TASKS[writingMode].taskType;
           }
           const sessionId = await sessionManager.startSession(
             taskType,
@@ -255,17 +258,33 @@ export const AppContent: React.FC = () => {
     setItemsCompletedInSession((prev) => prev + 1);
   };
 
+  // The task the user is currently practicing, mapped onto the PTE task
+  // taxonomy. Interface ids are not task ids (vocab-typing and typing are
+  // interfaces, not PTE tasks), so this is resolved from settings rather than
+  // cast from the interface type.
+  const getCurrentTaskType = (): TaskType => {
+    if (settings.practiceType === 'writing' && settings.writingMode) {
+      return TYPING_TASKS[settings.writingMode].taskType;
+    }
+    if (settings.practiceType === 'practice' && settings.practiceMode) {
+      if (settings.practiceMode === 'practice-repeat-sentence') return 'rs';
+      if (settings.practiceMode === 'practice-answer-short-question') return 'asq';
+      return 'wfd';
+    }
+    return 'vocabulary';
+  };
+
   // Determine which interface to render. vocab-typing and writing tasks are
   // checked directly against settings, not vocabulary.mode, since they are
-  // not practice-* mode strings nested under 'practice'. Writing checks
-  // writingMode explicitly (not just practiceType === 'writing') so adding a
-  // second writing task later is a new branch here, not a redesign.
-  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' | 'swt' => {
+  // not practice-* mode strings nested under 'practice'. Every writing task is
+  // an exact text typing drill served by one interface, so a new writing task
+  // needs no branch here, only a TYPING_TASKS entry and a learningModes entry.
+  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' | 'typing' => {
     if (settings.practiceType === 'vocab-typing') {
       return 'vocab-typing';
     }
-    if (settings.practiceType === 'writing' && settings.writingMode === 'swt') {
-      return 'swt';
+    if (settings.practiceType === 'writing' && settings.writingMode) {
+      return 'typing';
     }
 
     const mode = vocabulary.mode.toLowerCase();
@@ -412,7 +431,7 @@ export const AppContent: React.FC = () => {
           <AITutorChat
             isOpen={showAITutor}
             onClose={() => setShowAITutor(false)}
-            taskType={interfaceType as TaskType}
+            taskType={getCurrentTaskType()}
             sessionId={currentSessionId || undefined}
             useEnhancedContext={auth.isAuthenticated}
           />
@@ -492,9 +511,10 @@ export const AppContent: React.FC = () => {
                         onComplete={handleItemComplete}
                       />
                     )}
-                    {interfaceType === 'swt' && (
+                    {interfaceType === 'typing' && settings.writingMode && (
                       <SWTInterface
                         item={currentItem as any}
+                        typingMode={settings.writingMode}
                         sessionManager={sessionManager}
                         onNext={handleNext}
                         onPrevious={handlePrevious}

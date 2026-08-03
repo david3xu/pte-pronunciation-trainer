@@ -1,17 +1,17 @@
 /**
- * SWT Answer Typing Interface Component
+ * Typing Practice Interface Component
  *
- * Monkeytype-style exact-text typing practice using a real PTE Summarize
- * Written Text model answer as the target text. This is deliberately not a
- * real PTE SWT test: there is no free-form summary writing and no PTE form
- * validation (word count bounds, sentence count) here. The user types the
- * exact target answer, the same way Monkeytype has one exact target text,
- * and is scored on typing accuracy and speed instead. The original passage
- * is kept only as a small, collapsed reference, never the typing target.
+ * Monkeytype-style exact-text typing practice, driven by whichever typing task
+ * is selected (see src/config/typingTasks.ts). This is deliberately not a real
+ * PTE test: there is no free-form writing and no PTE form validation (word
+ * count bounds, sentence count) here. The user types the exact target text, the
+ * same way Monkeytype has one exact target text, and is scored on typing
+ * accuracy and speed instead. Any accompanying passage or context is kept only
+ * as a small, collapsed reference, never the typing target.
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import { TYPING_TASKS } from '../../config/typingTasks';
+import { TYPING_TASKS, type TypingMode } from '../../config/typingTasks';
 import type { SessionManager } from '../../services/session/sessionManager';
 import type { ItemType } from '../../types/database';
 import type { PracticeItem } from '../../types/dataset.types';
@@ -20,13 +20,12 @@ import { formatTimer } from '../../utils/writingTaskValidation';
 
 interface SWTInterfaceProps {
   item: PracticeItem;
+  typingMode: TypingMode;
   sessionManager?: SessionManager;
   onNext?: () => void;
   onPrevious?: () => void;
   onComplete?: (isCorrect?: boolean) => void;
 }
-
-const task = TYPING_TASKS.swt;
 
 const monkeytypeColors = {
   background: '#ffffff',
@@ -39,11 +38,13 @@ const monkeytypeColors = {
 
 const SWTInterface: React.FC<SWTInterfaceProps> = ({
   item,
+  typingMode,
   sessionManager,
   onNext,
   onPrevious,
   onComplete,
 }) => {
+  const task = TYPING_TASKS[typingMode];
   /* eslint-disable @typescript-eslint/no-explicit-any -- raw dataset item is a union; fields are read defensively */
   const swtItem = item as any;
   const passage: string = swtItem?.passage || '';

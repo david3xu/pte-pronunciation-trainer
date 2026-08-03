@@ -1,8 +1,17 @@
 /**
  * Configuration for Vercel Serverless Functions
  *
- * This file provides access to Config.ts for API routes running in Node.js environment.
- * Centralized configuration eliminates hardcoded values in API routes.
+ * Server owned configuration only. Values the browser reads live in
+ * src/config/AppConfig.ts and are deliberately not repeated here: API endpoint
+ * paths and UI delays are consumed by the client, and duplicating them created
+ * two copies free to drift. What remains is what server code actually imports,
+ * namely the Gemini model settings, the recommendation cap, and the voice
+ * tables.
+ *
+ * The three voice defaults below are the one genuine overlap with AppConfig,
+ * since both sides need them. That is recorded rather than solved here, because
+ * sharing a module across the api boundary needs a deliberate check that Vercel
+ * bundles it.
  */
 
 // AI Configuration
@@ -18,34 +27,8 @@ export const AI_CONFIG = {
   },
 } as const;
 
-// API Endpoints
-export const API_ENDPOINTS = {
-  aiRecommendations: '/api/ai-recommendations',
-  aiChat: '/api/ai/chat',
-  aiTutor: '/api/ai-tutor',
-  pronunciationScore: '/api/pronunciation-score',
-  premiumTts: '/api/premium-tts',
-  voices: '/api/voices',
-  audioGenerate: '/api/audio/generate',
-} as const;
-
-// Delays & Timeouts
-export const DELAYS = {
-  autoPlayBetweenWords: 500,
-  autoPlayRestartPause: 1000,
-  recordingTimeout: 10000,
-  animationDuration: 500,
-  notificationTimeout: 5000,
-  modalHideDelay: 1500,
-  onboardingDelay: 500,
-  quickQuestionDelay: 100,
-  moduleInitTimeout: 5000,
-  exponentialBackoffBase: 1000,
-} as const;
-
 // Request Limits
 export const LIMITS = {
-  conversationHistory: 10,
   recommendations: 5,
 } as const;
 

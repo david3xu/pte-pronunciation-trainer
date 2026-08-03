@@ -20,7 +20,7 @@ interface ServerRecommendation {
 }
 
 /** Maps a server difficulty to the client recommendation priority. */
-const PRIORITY_BY_DIFFICULTY: Record<ServerRecommendation['difficulty'], Recommendation['priority']> = {
+const PRIORITY_BY_DIFFICULTY: Record<ServerRecommendation['difficulty'], AIRecommendation['priority']> = {
   hard: 'high',
   normal: 'medium',
   easy: 'low',
@@ -44,7 +44,7 @@ export interface UserProgress {
   }[];
 }
 
-export interface Recommendation {
+export interface AIRecommendation {
   type: 'vocabulary' | 'practice';
   priority: 'high' | 'medium' | 'low';
   category: string;
@@ -55,15 +55,19 @@ export interface Recommendation {
 }
 
 /**
- * Generate personalized recommendations.
+ * Request transient AI generated study suggestions.
  *
- * Delegates to the server-side /api/ai-recommendations endpoint (which holds
- * the Gemini key). Falls back to rule-based recommendations for guests or on
- * any error, so the UI always receives a usable result.
+ * Deliberately named apart from recommendationEngine.generateRecommendations,
+ * which is a different feature: that one derives weak areas from Supabase
+ * session history and persists rows with a status the user can accept or
+ * decline. This one is stateless, asks the Gemini backed
+ * /api/ai-recommendations endpoint (which holds the key), keeps nothing, and
+ * falls back to rule based suggestions for guests or on any error so the UI
+ * always receives a usable result. The two are not interchangeable.
  */
-export async function generateRecommendations(
+export async function requestAIRecommendations(
   userProgress: UserProgress
-): Promise<Recommendation[]> {
+): Promise<AIRecommendation[]> {
   const state = useAppStore.getState();
   const userId = state.auth.user?.id;
 
@@ -115,10 +119,10 @@ export async function generateRecommendations(
 /**
  * Fallback recommendations if the server is unavailable or the user is a guest
  */
-function getFallbackRecommendations(userProgress: UserProgress): Recommendation[] {
+function getFallbackRecommendations(userProgress: UserProgress): AIRecommendation[] {
   const { accuracy, weakAreas, completedItems, totalItems } = userProgress;
 
-  const recommendations: Recommendation[] = [];
+  const recommendations: AIRecommendation[] = [];
 
   // If accuracy is low, suggest beginner content
   if (accuracy < 60) {

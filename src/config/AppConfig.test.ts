@@ -9,16 +9,6 @@ import { describe, expect, it } from 'vitest';
 import { appConfig } from './AppConfig';
 
 describe('Config Validation', () => {
-  describe('AI Configuration', () => {
-    it('should have Gemini model configuration', () => {
-      expect(appConfig.get('ai.gemini.defaultModel')).toBe('gemini-2.5-flash');
-      expect(appConfig.get('ai.gemini.fallbackModel')).toBe('gemini-1.5-flash');
-      expect(appConfig.get('ai.gemini.conversationHistoryLimit')).toBe(10);
-      expect(appConfig.get('ai.gemini.maxTokens')).toBe(2048);
-      expect(appConfig.get('ai.gemini.temperature')).toBe(0.7);
-    });
-  });
-
   describe('API Endpoints', () => {
     it('should have all API endpoints defined', () => {
       expect(appConfig.get('api.endpoints.aiChat')).toBe('/api/ai/chat');
@@ -42,18 +32,6 @@ describe('Config Validation', () => {
     });
   });
 
-  describe('Request Limits', () => {
-    it('should have conversation history limit', () => {
-      expect(appConfig.get('limits.conversationHistory')).toBe(10);
-      expect(appConfig.get('limits.recommendations')).toBe(5);
-    });
-
-    it('should have positive limit values', () => {
-      expect(appConfig.get('limits.conversationHistory')).toBeGreaterThan(0);
-      expect(appConfig.get('limits.recommendations')).toBeGreaterThan(0);
-    });
-  });
-
   describe('Voice Configuration', () => {
     it('should have voice settings', () => {
       expect(appConfig.get('voice.defaultVoiceId')).toBe('en-AU-WilliamNeural');
@@ -72,9 +50,9 @@ describe('Config Validation', () => {
     });
 
     it('should handle nested paths correctly', () => {
-      const geminiConfig = appConfig.get('ai.gemini');
-      expect(geminiConfig).toHaveProperty('defaultModel');
-      expect(geminiConfig).toHaveProperty('temperature');
+      const voiceConfig = appConfig.get('voice');
+      expect(voiceConfig).toHaveProperty('defaultVoiceId');
+      expect(voiceConfig).toHaveProperty('defaultLanguage');
     });
   });
 
@@ -149,12 +127,6 @@ describe('Config Validation', () => {
       const delays = appConfig.get('delays');
       expect(delays).toBeDefined();
       expect(Object.keys(delays).length).toBeGreaterThanOrEqual(4);
-    });
-
-    it('should not have hardcoded model versions', () => {
-      const model = appConfig.get('ai.gemini.defaultModel');
-      expect(model).toBeDefined();
-      expect(model).toContain('gemini');
     });
   });
 });

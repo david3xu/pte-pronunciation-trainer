@@ -180,23 +180,9 @@ export class AppConfig {
       },
 
       // ===== AI CONFIGURATION =====
-      ai: {
-        gemini: {
-          // Model versions - standardized to gemini-2.5-flash across all routes
-          defaultModel: 'gemini-2.5-flash',
-          fallbackModel: 'gemini-1.5-flash',
-
-          // Request limits
-          conversationHistoryLimit: 10,
-          requestsPerDay: 1500,
-
-          // Generation parameters
-          maxTokens: 2048,
-          temperature: 0.7,
-          topP: 0.95,
-          topK: 40
-        }
-      },
+      // Gemini settings are server owned and live in api/config.ts, which is
+      // the only place that reads them. They are not mirrored here: nothing in
+      // the browser bundle touches a model name, and a second copy would drift.
 
       // ===== API ENDPOINTS =====
       api: {
@@ -241,11 +227,9 @@ export class AppConfig {
       },
 
       // ===== REQUEST LIMITS =====
-      limits: {
-        // AI context
-        conversationHistory: 10,
-        recommendations: 5
-      },
+      // Server owned, in api/config.ts. The recommendation cap is applied by
+      // the serverless route that produces recommendations, and the browser
+      // never enforces it, so it is not repeated here.
 
       // ===== TTS CONFIGURATION =====
       tts: {

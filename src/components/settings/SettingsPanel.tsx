@@ -13,7 +13,7 @@ import { Badge, Button, Card, Flex, Select, Slider, Switch, Tabs, Text } from '@
 import React, { useEffect, useMemo } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { appConfig } from '../../config/AppConfig';
-import type { WritingMode } from '../../config/writingTasks';
+import type { TypingMode } from '../../config/typingTasks';
 import { useAudioState, useProgress, useSettings, useVocabulary } from '../../stores';
 import { clearLocalAppData } from '../../services/appDataReset';
 import { backgroundAudioService } from '../../services/audio/backgroundAudioService';
@@ -162,9 +162,9 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
 
   // Handle writing task change, nested under the reusable writing study type
   // the same way handlePracticeModeChange nests RS/ASQ/WFD under practice. A
-  // new writing task is a new WritingMode union member plus a learningModes
+  // new writing task is a new TypingMode union member plus a learningModes
   // entry, not another top level practiceType or handler.
-  const handleWritingModeChange = async (mode: WritingMode | null) => {
+  const handleWritingModeChange = async (mode: TypingMode | null) => {
     console.log('[SettingsPanel] Changing writing task to:', mode);
 
     if (typeof updateSetting !== 'function') {
@@ -308,7 +308,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                       // otherwise fall to the first writing task declared in
                       // learningModes rather than a hardcoded task id, always
                       // reloading it explicitly.
-                      handleWritingModeChange(writingMode ?? (writingTasks[0]?.id as WritingMode));
+                      handleWritingModeChange(writingMode ?? (writingTasks[0]?.id as TypingMode));
                     } else if (value === 'shadowing') {
                       handleVocabularyBookChange('di-shadowing');
                     } else if (value === 'vocabulary' || value === 'vocab-typing') {
@@ -346,7 +346,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   </Text>
                   <Select.Root
                     value={writingMode || ''}
-                    onValueChange={(value) => handleWritingModeChange(value as WritingMode | null)}
+                    onValueChange={(value) => handleWritingModeChange(value as TypingMode | null)}
                   >
                     <Select.Trigger placeholder="Select a writing task..." />
                     <Select.Content>

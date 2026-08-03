@@ -62,13 +62,6 @@ describe('Config Validation', () => {
     });
   });
 
-  describe('Build Configuration', () => {
-    it('should have server ports defined', () => {
-      expect(appConfig.get('build.devServerPort')).toBe(3001);
-      expect(appConfig.get('build.previewServerPort')).toBe(3002);
-    });
-  });
-
   describe('Config Getter Method', () => {
     it('should return value for valid path', () => {
       expect(appConfig.get('app.name')).toBe('PTE Pronunciation Trainer');

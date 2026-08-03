@@ -47,7 +47,6 @@ export type {
   UIConfig,
   SettingsDefaults,
   PipelineConfig,
-  BuildConfig,
   AppConfig,
   DeepPartial,
   ConfigPath,

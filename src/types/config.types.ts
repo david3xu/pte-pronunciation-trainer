@@ -365,25 +365,6 @@ export interface PipelineConfig {
 }
 
 /* ============================================
-   BUILD TYPES
-   ============================================ */
-
-/**
- * Build configuration
- */
-export interface BuildConfig {
-  devServerPort: number;
-  previewServerPort: number;
-  chunkSizeWarningLimit: number;
-  nodeEnv: string;
-  cssFiles: string[];
-  jsFiles: string[];
-  outputDir: string;
-  minify: boolean;
-  sourceMaps: boolean;
-}
-
-/* ============================================
    APP CONFIG (ROOT)
    ============================================ */
 
@@ -419,7 +400,6 @@ export interface AppConfig {
   };
   events: EventsConfig;
   pipeline: PipelineConfig;
-  build: BuildConfig;
 }
 
 /* ============================================

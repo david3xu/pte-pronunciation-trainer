@@ -60,6 +60,46 @@ export function sameRegion(left, right) {
 }
 
 /**
+ * Normalise the runtime list returned by az webapp list-runtimes.
+ *
+ * The command has returned two shapes across CLI versions: a flat array of
+ * runtime strings, and an array of objects carrying the runtime under one of
+ * several property names. Filtering for strings alone silently produced an empty
+ * list against the object shape, which reported the requested runtime as
+ * unverified even when it was advertised.
+ *
+ * @param {unknown} value
+ * @returns {string[]}
+ */
+export function normaliseRuntimeList(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  const runtimes = [];
+
+  for (const entry of value) {
+    if (typeof entry === 'string') {
+      runtimes.push(entry);
+      continue;
+    }
+    if (typeof entry !== 'object' || entry === null) {
+      continue;
+    }
+    const record = /** @type {Record<string, unknown>} */ (entry);
+    for (const property of ['name', 'runtimeVersion', 'displayName', 'linuxFxVersion']) {
+      const candidate = record[property];
+      if (typeof candidate === 'string' && candidate !== '') {
+        runtimes.push(candidate);
+        break;
+      }
+    }
+  }
+
+  return runtimes;
+}
+
+/**
  * Run the capacity validation stage.
  *
  * @param {{
@@ -100,6 +140,7 @@ export async function checkCapacity(options = {}) {
   report.beginStage(STAGE_LABELS.existingSpeech);
   await checkExistingSpeechAccount(report, {
     subscriptionId,
+    location,
     resourceGroup,
     speechAccountName,
   });
@@ -114,7 +155,10 @@ export async function checkCapacity(options = {}) {
         : `quantity ${resource.quantity}, requested ${requestedSku}`,
     );
 
-    let conclusive = false;
+    // Every strategy runs. Stopping at the first conclusive answer meant a
+    // resource whose SKU probe passed never had its quota checked, so a SKU that
+    // is offered but has no remaining quota read as available capacity.
+    const statuses = [];
 
     for (const strategy of resource.capacityStrategies) {
       const outcome = await applyStrategy(strategy, {
@@ -133,13 +177,19 @@ export async function checkCapacity(options = {}) {
         evidence: outcome.evidence,
       });
 
-      if (outcome.status === CHECK_STATUS.pass || outcome.status === CHECK_STATUS.fail) {
-        conclusive = true;
-        break;
-      }
+      statuses.push(outcome.status);
     }
 
-    if (!conclusive) {
+    const anyFailed = statuses.includes(CHECK_STATUS.fail);
+    const anyPassed = statuses.includes(CHECK_STATUS.pass);
+
+    if (anyFailed) {
+      report.record({
+        name: `${resource.id} capacity conclusion`,
+        status: CHECK_STATUS.fail,
+        detail: 'at least one probe refused this resource, so provisioning is blocked',
+      });
+    } else if (!anyPassed) {
       report.record({
         name: `${resource.id} capacity conclusion`,
         status: CHECK_STATUS.inconclusive,
@@ -226,7 +276,18 @@ async function checkLinuxRuntime(report, context) {
     return;
   }
 
-  const advertised = result.value.filter((entry) => typeof entry === 'string');
+  const advertised = normaliseRuntimeList(result.value);
+
+  if (advertised.length === 0) {
+    report.record({
+      name: 'linux runtime advertised',
+      status: CHECK_STATUS.inconclusive,
+      detail: `the runtime list was returned in an unrecognised shape, so ${requested} is unverified`,
+      evidence: [result.commandLine],
+    });
+    return;
+  }
+
   const matched = advertised.some((entry) => entry.toLowerCase() === requested.toLowerCase());
 
   report.record({
@@ -246,7 +307,7 @@ async function checkLinuxRuntime(report, context) {
  * one.
  *
  * @param {DeploymentReport} report
- * @param {{ subscriptionId: string, resourceGroup: string | undefined, speechAccountName: string | undefined }} context
+ * @param {{ subscriptionId: string, location: string, resourceGroup: string | undefined, speechAccountName: string | undefined }} context
  */
 async function checkExistingSpeechAccount(report, context) {
   if (context.resourceGroup === undefined || context.speechAccountName === undefined) {
@@ -286,14 +347,30 @@ async function checkExistingSpeechAccount(report, context) {
   }
 
   const account = /** @type {Record<string, unknown>} */ (result.value);
-  const kindMatches = account.kind === SPEECH_ACCOUNT_KIND;
+  const mismatches = [];
+
+  if (account.kind !== SPEECH_ACCOUNT_KIND) {
+    mismatches.push(
+      `kind is ${String(account.kind)} rather than ${SPEECH_ACCOUNT_KIND}, so this is not a speech account`,
+    );
+  }
+
+  // A region mismatch is a blocker rather than a warning. The deployment declares
+  // the account at the target region, so applying it against an account in another
+  // region either fails or, worse, is accepted as an unintended move.
+  if (typeof account.location === 'string' && !sameRegion(account.location, context.location)) {
+    mismatches.push(
+      `region is ${account.location} but the deployment targets ${context.location}, which the in place update cannot reconcile`,
+    );
+  }
 
   report.record({
     name: 'speech account identified',
-    status: kindMatches ? CHECK_STATUS.pass : CHECK_STATUS.fail,
-    detail: kindMatches
-      ? `exists with current sku ${String(account.sku)}, so the deployment updates it in place`
-      : `the named account reports kind ${String(account.kind)} rather than ${SPEECH_ACCOUNT_KIND}`,
+    status: mismatches.length === 0 ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    detail:
+      mismatches.length === 0
+        ? `exists in ${String(account.location)} with current sku ${String(account.sku)}, so the deployment updates it in place`
+        : `the named account does not match the requested deployment: ${mismatches.join('; ')}`,
     evidence: [result.commandLine],
   });
 }
@@ -550,16 +627,106 @@ async function probeQuota(context) {
     };
   }
 
-  const exhausted = numeric.filter((entry) => entry.properties.limit.value < context.resource.quantity);
+  // A limit alone is not headroom. Current usage has to be subtracted, or a fully
+  // consumed quota reads as available because its limit is larger than the one
+  // resource being requested.
+  const usageResult = await azJson(['quota', 'usage', 'list', FLAGS.scope, scope], {
+    timeoutMs: TIMEOUTS_MS.capacityProbe,
+  });
+
+  if (!usageResult.ok || !Array.isArray(usageResult.value)) {
+    return {
+      status: CHECK_STATUS.inconclusive,
+      detail: `${numeric.length} quota limits were read but current usage could not be, so remaining headroom is unknown. A limit without usage is not a capacity statement.`,
+      evidence: [result.commandLine, usageResult.commandLine],
+    };
+  }
+
+  const assessed = assessQuotaHeadroom(numeric, usageResult.value, context.resource.quantity);
+
+  if (assessed.unmatched.length > 0 && assessed.exhausted.length === 0) {
+    return {
+      status: CHECK_STATUS.inconclusive,
+      detail: `usage could not be matched to ${assessed.unmatched.length} quota entry or entries (${assessed.unmatched.join(', ')}), so remaining headroom is unconfirmed for those`,
+      evidence: [result.commandLine, usageResult.commandLine],
+    };
+  }
 
   return {
-    status: exhausted.length === 0 ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    status: assessed.exhausted.length === 0 ? CHECK_STATUS.pass : CHECK_STATUS.fail,
     detail:
-      exhausted.length === 0
-        ? `${numeric.length} numeric quota entries all admit at least the requested quantity of ${context.resource.quantity}`
-        : `insufficient quota on ${exhausted.map((entry) => String(entry.name)).join(', ')}`,
-    evidence: [result.commandLine],
+      assessed.exhausted.length === 0
+        ? `${assessed.checked} quota entries have at least ${context.resource.quantity} remaining after current usage`
+        : `insufficient remaining quota on ${assessed.exhausted.join(', ')}`,
+    evidence: [result.commandLine, usageResult.commandLine],
   };
+}
+
+/**
+ * Compare quota limits against current usage.
+ *
+ * Entries are matched on the quota name, which both surfaces report. An entry
+ * whose usage cannot be found is reported as unmatched rather than assumed to be
+ * unused.
+ *
+ * @param {Array<Record<string, any>>} limitEntries
+ * @param {unknown[]} usageEntries
+ * @param {number} requiredQuantity
+ * @returns {{ checked: number, exhausted: string[], unmatched: string[] }}
+ */
+export function assessQuotaHeadroom(limitEntries, usageEntries, requiredQuantity) {
+  /** @type {Map<string, number>} */
+  const usageByName = new Map();
+
+  for (const entry of usageEntries) {
+    if (typeof entry !== 'object' || entry === null) {
+      continue;
+    }
+    const record = /** @type {Record<string, any>} */ (entry);
+    const name = quotaEntryName(record);
+    const used = record?.properties?.usages?.value ?? record?.properties?.usages;
+    if (name !== undefined && typeof used === 'number') {
+      usageByName.set(name, used);
+    }
+  }
+
+  const exhausted = [];
+  const unmatched = [];
+  let checked = 0;
+
+  for (const entry of limitEntries) {
+    const name = quotaEntryName(entry) ?? 'unnamed quota';
+    const limit = entry.properties.limit.value;
+    const used = usageByName.get(name);
+
+    if (used === undefined) {
+      unmatched.push(name);
+      continue;
+    }
+
+    checked += 1;
+    if (limit - used < requiredQuantity) {
+      exhausted.push(`${name} (limit ${limit}, used ${used})`);
+    }
+  }
+
+  return { checked, exhausted, unmatched };
+}
+
+/**
+ * Quota name, which appears either at the top level or under the properties.
+ *
+ * @param {Record<string, any>} entry
+ * @returns {string | undefined}
+ */
+function quotaEntryName(entry) {
+  const candidates = [entry?.name?.value, entry?.name, entry?.properties?.name?.value];
+  for (const candidate of candidates) {
+    if (typeof candidate === 'string' && candidate !== '') {
+      return candidate;
+    }
+  }
+  return undefined;
 }
 
 /**

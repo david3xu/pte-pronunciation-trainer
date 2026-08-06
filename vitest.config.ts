@@ -56,10 +56,13 @@ export default defineConfig({
       },
       {
         test: {
-          name: 'server',
+          name: 'node',
           globals: true,
           environment: 'node',
-          include: ['server/**/*.{test,spec}.ts'],
+          include: [
+            'server/**/*.{test,spec}.ts',
+            'scripts/azure/**/*.{test,spec}.js',
+          ],
         },
       },
     ],

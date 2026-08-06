@@ -44,6 +44,7 @@
     "azure:package": "pnpm run data:pte && pnpm run build && pnpm run build:server && node scripts/azure/build-package.js",
     "azure:package:check": "node scripts/azure/build-package.js --check",
     "azure:smoke:server": "pnpm run build:server && node scripts/azure/smoke-server.js",
+    "azure:validate:redis": "node scripts/azure/validate-redis.js",
     "azure:prepare:subscription": "node scripts/azure/prepare-subscription.js",
     "azure:verify:template": "node scripts/azure/verify-template-invariants.js",
     "azure:bicep:build": "node scripts/azure/build-bicep.js",

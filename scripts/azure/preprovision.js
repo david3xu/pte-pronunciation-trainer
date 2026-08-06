@@ -16,8 +16,10 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { checkCapacity } from './check-capacity.js';
+import { confirmProvisioning } from './confirm-provisioning.js';
 import { registerProviders } from './register-providers.js';
 import { validateEnvironment } from './validate-environment.js';
+import { loadBicepParameters } from './lib/bicep-params.js';
 import { CHECK_STATUS, DeploymentReport } from './lib/report.js';
 import { REPO_PATHS, toRepoRelative } from './lib/paths.js';
 import {
@@ -86,7 +88,28 @@ export async function runPreprovision(options = {}) {
     return finish(report, writeEvidence);
   }
 
-  await checkCapacity({ report, resolved: environment.resolved, dryRun });
+  const capacity = await checkCapacity({ report, resolved: environment.resolved, dryRun });
+
+  if (report.blocked) {
+    report.beginStage('preflight halted');
+    report.record({
+      name: 'continue to provisioning confirmation',
+      status: CHECK_STATUS.skip,
+      detail: 'capacity validation refused, so there is nothing to confirm',
+    });
+    return finish(report, writeEvidence);
+  }
+
+  // Last gate before anything bills. Runs only once every read only check has
+  // passed, so the operator is agreeing to a deployment that is known to be
+  // viable rather than to a hopeful one.
+  const parameters = await loadBicepParameters();
+  confirmProvisioning({
+    report,
+    requestedSpeechSku: parameters.values.speechSku,
+    currentSpeechSku: capacity.observedSpeechSku,
+    dryRun,
+  });
 
   return finish(report, writeEvidence);
 }

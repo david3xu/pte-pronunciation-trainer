@@ -358,34 +358,79 @@ timed rollback before it proceeds.
 
 ## 13. Provider registration and quota evidence
 
-**Status: blocked. Not executed.**
+**Status: partially gathered by an authorised check mode run. Not deployment
+evidence.**
 
-No live Azure read has been performed for this plan. Nothing in this section is
-evidence and nothing in it may be treated as verified. The automation to gather it
-exists and has been exercised in check mode only.
+Gathered by `pnpm run azure:preflight:check`. That run performs Azure reads only. It
+installed no CLI extension, registered no provider, set no confirmation and modified
+no resource. Values below are what the run actually returned. Anything it could not
+establish is recorded as such and is not inferred.
 
-Providers requiring a registration check: `Microsoft.Web`,
-`Microsoft.DBforPostgreSQL`, `Microsoft.Cache`, `Microsoft.Storage`,
-`Microsoft.Cdn`, `Microsoft.ApiManagement`, `Microsoft.OperationalInsights`,
-`Microsoft.Insights`, `Microsoft.CognitiveServices`, `Microsoft.Network`,
-`Microsoft.Authorization`, `Microsoft.Quota`.
+Overall conclusion returned: no blocking finding, and 22 probes could not establish
+capacity.
 
-Previously reported as unregistered, unverified here: `Microsoft.Quota`,
-`Microsoft.Cache`, `Microsoft.Cdn`, `Microsoft.ApiManagement`.
+### 13.1 Provider registration, returned
 
-Checks that remain outstanding, each requiring authorised live execution:
-
-| Check | Status |
+| Namespace | State |
 | --- | --- |
-| Resource provider registration states | not executed |
-| App Service S1 with Linux workers offered in `australiaeast` | not executed |
-| Advertised Linux runtime list contains `NODE|22-lts` | not executed |
-| PostgreSQL `Standard_B2s`, Burstable, version 16 offered | not executed |
-| Redis Basic C1 still provisionable | not executed, and not establishable by regional support alone |
-| Front Door and API Management regional support and headroom | not executed |
-| Quota limits and remaining headroom after current usage | not executed |
-| Existing Speech account name, kind, region and current SKU | not executed |
-| Speech S0 offered for the existing account | not executed |
+| `Microsoft.Web` | Registered |
+| `Microsoft.DBforPostgreSQL` | Registered |
+| `Microsoft.Storage` | Registered |
+| `Microsoft.OperationalInsights` | Registered |
+| `Microsoft.Insights` | Registered |
+| `Microsoft.CognitiveServices` | Registered |
+| `Microsoft.Network` | Registered |
+| `Microsoft.Authorization` | Registered |
+| `Microsoft.Cache` | **NotRegistered** |
+| `Microsoft.Cdn` | **NotRegistered** |
+| `Microsoft.ApiManagement` | **NotRegistered** |
+| `Microsoft.Quota` | **NotRegistered** |
+
+Four namespaces are unregistered. Registration is a subscription level write and was
+not performed. A live run would submit and await them, gated behind the paid
+provisioning confirmation.
+
+Two consequences follow, and both are why several rows below are inconclusive rather
+than verified. `Microsoft.Quota` being unregistered is the likely reason the quota
+surface returned nothing. `Microsoft.Cache` being unregistered is why its supported
+location list could not be read at all.
+
+### 13.2 Capacity, returned
+
+| Check | Result |
+| --- | --- |
+| Subscription and region match | verified. Exported and stored values agree, region is `australiaeast` |
+| Azure CLI authenticated for the target subscription | verified |
+| App Service S1 with Linux workers offered in `australiaeast` | **verified, offered** |
+| PostgreSQL Burstable `Standard_B2s` on version 16 offered | **verified, offered** |
+| Existing Speech account | **verified. Exists in `australiaeast`, kind `SpeechServices`, current SKU `F0`** |
+| Speech `S0` offered for that account | **verified, offered. The in place upgrade is valid** |
+| Advertised Linux runtime contains `NODE|22-lts` | **inconclusive.** The runtime list returned in a shape the reader does not recognise, so the runtime is unverified. This is a defect in the reader, not evidence of unavailability. |
+| PostgreSQL quota and remaining headroom | **inconclusive.** The quota surface did not answer for `Microsoft.DBforPostgreSQL`. Not read as unlimited. |
+| Redis Basic C1 provisionable | **inconclusive.** Supported locations for `Microsoft.Cache/redis` could not be read. Zero existing caches in the subscription. Regional support would not establish this even if readable, because the classic product is retiring. |
+| Storage capacity | **inconclusive.** Regional support confirmed, which is not a capacity statement. Zero existing accounts. Documented limit 250 per region per subscription, unconfirmed. |
+| API Management capacity | **inconclusive.** Regional support confirmed. Zero existing services. Developer tier supports exactly one unit, unconfirmed. |
+| Front Door capacity | **inconclusive.** Global resource, so regional probes do not apply. Zero existing profiles. No limit figure asserted. |
+| Log Analytics and Application Insights capacity | **inconclusive.** Neither regional support nor headroom established. |
+
+No probe reported insufficient capacity. Every unresolved row above is unverified
+rather than negative, and no absent or unsupported quota answer has been read as
+unlimited capacity.
+
+### 13.3 Blockers that remain
+
+1. Four unregistered provider namespaces: `Microsoft.Cache`, `Microsoft.Cdn`,
+   `Microsoft.ApiManagement`, `Microsoft.Quota`. Registration requires approval
+   because it writes to the subscription.
+2. Redis Basic C1 availability. The single most consequential unknown, because the
+   classic product is retiring and a substitution is a plan change rather than an
+   automation fallback.
+3. Quota headroom for every service. Likely blocked by `Microsoft.Quota` being
+   unregistered.
+4. The `NODE|22-lts` runtime check, blocked by a reader defect rather than by Azure.
+
+The raw run output is written to `.azure/evidence/preprovision-evidence.md`, which is
+not tracked.
 
 Run `pnpm run azure:preflight` to gather these. It performs live reads and, in live
 mode, registers missing providers. Paste its evidence output into section 14.

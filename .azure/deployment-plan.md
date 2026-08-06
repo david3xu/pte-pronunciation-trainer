@@ -381,19 +381,25 @@ capacity.
 | `Microsoft.CognitiveServices` | Registered |
 | `Microsoft.Network` | Registered |
 | `Microsoft.Authorization` | Registered |
-| `Microsoft.Cache` | **NotRegistered** |
-| `Microsoft.Cdn` | **NotRegistered** |
-| `Microsoft.ApiManagement` | **NotRegistered** |
-| `Microsoft.Quota` | **NotRegistered** |
+| `Microsoft.Cache` | Registered, by authorised registration |
+| `Microsoft.Cdn` | Registered, by authorised registration |
+| `Microsoft.ApiManagement` | Registered, by authorised registration |
+| `Microsoft.Quota` | **Registering**, still settling at the time of the last read |
 
-Four namespaces are unregistered. Registration is a subscription level write and was
-not performed. A live run would submit and await them, gated behind the paid
-provisioning confirmation.
+Eleven of twelve namespaces are registered. `Microsoft.Quota` was submitted and is
+still in the `Registering` state, which is a normal intermediate state rather than a
+failure. Re run the preflight to confirm it has settled.
 
-Two consequences follow, and both are why several rows below are inconclusive rather
-than verified. `Microsoft.Quota` being unregistered is the likely reason the quota
-surface returned nothing. `Microsoft.Cache` being unregistered is why its supported
-location list could not be read at all.
+Registration was performed by `pnpm run azure:prepare:subscription --confirm-registration`,
+which installs the quota and resource-graph CLI extensions and registers only
+namespaces reporting `NotRegistered`. It created no resource, changed no SKU, set no
+confirmation and deployed nothing.
+
+One operational note. The registration command exceeded the four minute ceiling of the
+tooling that invoked it and returned no result, so its outcome was unknown until a
+subsequent read confirmed it. The registration itself completed. Because already
+registered namespaces receive no write, the command is safe to repeat, which is what
+makes recovery from an ambiguous result straightforward.
 
 ### 13.2 Capacity, returned
 
@@ -405,9 +411,9 @@ location list could not be read at all.
 | PostgreSQL Burstable `Standard_B2s` on version 16 offered | **verified, offered** |
 | Existing Speech account | **verified. Exists in `australiaeast`, kind `SpeechServices`, current SKU `F0`** |
 | Speech `S0` offered for that account | **verified, offered. The in place upgrade is valid** |
-| Advertised Linux runtime contains `NODE|22-lts` | **inconclusive.** The runtime list returned in a shape the reader does not recognise, so the runtime is unverified. This is a defect in the reader, not evidence of unavailability. |
-| PostgreSQL quota and remaining headroom | **inconclusive.** The quota surface did not answer for `Microsoft.DBforPostgreSQL`. Not read as unlimited. |
-| Redis Basic C1 provisionable | **inconclusive.** Supported locations for `Microsoft.Cache/redis` could not be read. Zero existing caches in the subscription. Regional support would not establish this even if readable, because the classic product is retiring. |
+| Advertised Linux runtime contains `NODE|22-lts` | **verified, offered.** The reader defect is fixed; the value is carried in the `config` field of the returned objects. |
+| PostgreSQL quota and remaining headroom | **inconclusive.** The quota surface still did not answer for `Microsoft.DBforPostgreSQL` after `Microsoft.Cache`, `Microsoft.Cdn` and `Microsoft.ApiManagement` were registered. `Microsoft.Quota` was still `Registering` at the time of the read, so this may resolve once it settles. Not read as unlimited. |
+| Redis Basic C1 provisionable | **inconclusive, and now attributable to a probe defect rather than to Azure.** `Microsoft.Cache` is registered, yet supported locations for `Microsoft.Cache/redis` still could not be read and the error was empty. The probe filters resource types with a case sensitive comparison against the lowercase string `redis`, so it returns nothing if the provider reports `Redis`. This is unverified, not unavailable, and no substitution has been made. |
 | Storage capacity | **inconclusive.** Regional support confirmed, which is not a capacity statement. Zero existing accounts. Documented limit 250 per region per subscription, unconfirmed. |
 | API Management capacity | **inconclusive.** Regional support confirmed. Zero existing services. Developer tier supports exactly one unit, unconfirmed. |
 | Front Door capacity | **inconclusive.** Global resource, so regional probes do not apply. Zero existing profiles. No limit figure asserted. |
@@ -419,15 +425,18 @@ unlimited capacity.
 
 ### 13.3 Blockers that remain
 
-1. Four unregistered provider namespaces: `Microsoft.Cache`, `Microsoft.Cdn`,
-   `Microsoft.ApiManagement`, `Microsoft.Quota`. Registration requires approval
-   because it writes to the subscription.
-2. Redis Basic C1 availability. The single most consequential unknown, because the
-   classic product is retiring and a substitution is a plan change rather than an
-   automation fallback.
-3. Quota headroom for every service. Likely blocked by `Microsoft.Quota` being
-   unregistered.
-4. The `NODE|22-lts` runtime check, blocked by a reader defect rather than by Azure.
+1. `Microsoft.Quota` was still `Registering` at the last read. Confirm it has settled.
+2. Redis Basic C1 availability. Still the most consequential unknown, but the cause has
+   moved: the namespace is registered and the probe is at fault, most likely a case
+   sensitive resource type comparison. Fix the probe, then re read. If the offer is then
+   genuinely unavailable, that is a plan change requiring an approved substitution, not
+   an automation fallback. No substitution has been made.
+3. Quota headroom for every service. Possibly downstream of `Microsoft.Quota` still
+   settling.
+4. Capacity headroom for Log Analytics, Application Insights, App Service, Storage,
+   API Management and Front Door. Regional support is confirmed where readable and zero
+   resources of each type exist, but no numeric limit has been established, and an
+   absent limit is not read as unlimited.
 
 The raw run output is written to `.azure/evidence/preprovision-evidence.md`, which is
 not tracked.

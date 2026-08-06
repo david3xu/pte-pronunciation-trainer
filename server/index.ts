@@ -61,12 +61,24 @@ async function main(): Promise<void> {
     process.on(signal, () => shutdown(signal));
   }
 
-  // An unhandled rejection leaves the process in an unknown state. Logging and
-  // exiting is safer than continuing to serve, because App Service will restart a
-  // failed instance and a silently broken one keeps taking traffic.
+  // An unhandled rejection is logged and the process keeps serving.
+  //
+  // This deliberately does not shut down. Shutting down here meant a single
+  // malformed request could terminate an instance that was healthy for every other
+  // user, which converts a request level bug into an availability incident. Request
+  // level failures are handled inside the listener and answered with a status code.
+  // If a rejection still reaches here it is a defect to fix, and the log line plus
+  // Application Insights is how it gets found.
   process.on('unhandledRejection', (reason) => {
-    process.stderr.write(`unhandled rejection: ${String(reason)}\n`);
-    shutdown('unhandledRejection');
+    process.stderr.write(`unhandled rejection, continuing to serve: ${String(reason)}\n`);
+  });
+
+  // An uncaught exception is different. The process state is unknown at that point,
+  // so draining and letting App Service restart the instance is safer than serving
+  // from it.
+  process.on('uncaughtException', (error) => {
+    process.stderr.write(`uncaught exception: ${error.message}\n`);
+    shutdown('uncaughtException');
   });
 
   await new Promise<void>((settle, reject) => {

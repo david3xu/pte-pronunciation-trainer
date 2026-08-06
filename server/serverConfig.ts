@@ -9,6 +9,7 @@
  * read is how connection strings end up in log aggregation.
  */
 
+import { existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -76,9 +77,44 @@ export function loadServerConfig(
     port: parsedPort,
     isProduction: environment[ENV_KEYS.nodeEnv] === 'production',
     distDirectory:
-      environment[ENV_KEYS.distDirectory] ?? join(packageRoot, PACKAGE_LAYOUT.clientAssets),
+      environment[ENV_KEYS.distDirectory] ??
+      firstExistingRoot(packageRoot, PACKAGE_LAYOUT.clientAssets),
     processedDataDirectory:
       environment[ENV_KEYS.processedDataDirectory] ??
-      join(packageRoot, PACKAGE_LAYOUT.processedData),
+      firstExistingRoot(packageRoot, PACKAGE_LAYOUT.processedData),
   };
+}
+
+/**
+ * Resolve an asset root, tolerating the two layouts the server runs under.
+ *
+ * In the deployed package the compiled server sits at <root>/server, so the assets
+ * are one level up at <root>/dist. Running the compiled output in place locally the
+ * entry point is <repo>/dist-server/server, where the same arithmetic points at
+ * <repo>/dist-server/dist, which does not exist. Checking the parent as well is
+ * what makes the local production start behave like the deployed one without
+ * requiring environment variables in a package script, which would not be portable
+ * across shells anyway.
+ *
+ * An explicit environment override always wins and is checked before this runs.
+ *
+ * @param {string} packageRoot
+ * @param {string} relativePath
+ * @returns {string}
+ */
+function firstExistingRoot(packageRoot: string, relativePath: string): string {
+  const candidates = [
+    join(packageRoot, relativePath),
+    join(resolve(packageRoot, '..'), relativePath),
+  ];
+
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) {
+      return candidate;
+    }
+  }
+
+  // Neither exists. Return the deployed layout so the failure names the location
+  // the package is supposed to contain rather than a local fallback path.
+  return candidates[0] as string;
 }

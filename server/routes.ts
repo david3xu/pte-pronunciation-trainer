@@ -27,7 +27,6 @@ export const HEALTH_PATH = '/health';
 export const DECLARED_CLIENT_ENDPOINTS = [
   '/api/ai-recommendations',
   '/api/ai/chat',
-  '/api/ai-tutor',
   '/api/pronunciation-score',
   '/api/premium-tts',
   '/api/voices',
@@ -38,15 +37,14 @@ export const DECLARED_CLIENT_ENDPOINTS = [
  * Endpoints declared by the client that intentionally have no server route yet,
  * each with the reason. An entry here is a recorded decision, not an oversight.
  *
- * `/api/ai-tutor` is the odd one: it is configured but no Vercel handler has ever
- * existed for it, so there is nothing to port. It is resolved with the tutor work
- * rather than by inventing a route, and the coverage test asserts it stays listed
- * here until then.
+ * Note on /api/audio/generate: a call site audit found no client code reading
+ * `api.endpoints.audioGenerate`. The handler is real and is ported for parity, but
+ * it receives no traffic today. That matters for any argument that depends on it
+ * generating load.
  */
 export const UNREGISTERED_ENDPOINTS: Readonly<Record<string, string>> = {
   '/api/ai-recommendations': 'ported with the remaining handler migration',
   '/api/ai/chat': 'ported with the remaining handler migration',
-  '/api/ai-tutor': 'declared in AppConfig with no handler in any host; resolved with the tutor work',
   '/api/pronunciation-score': 'ported with the remaining handler migration',
   '/api/premium-tts': 'ported with the remaining handler migration',
   '/api/audio/generate': 'ported with the remaining handler migration',

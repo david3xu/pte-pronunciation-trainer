@@ -108,6 +108,7 @@ export async function runPreprovision(options = {}) {
     report,
     requestedSpeechSku: parameters.values.speechSku,
     currentSpeechSku: capacity.observedSpeechSku,
+    deploymentStage: environment.resolved[AZD_ENV_KEYS.deploymentStage] ?? 'staging',
     dryRun,
   });
 

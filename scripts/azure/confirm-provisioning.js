@@ -26,6 +26,7 @@ import {
 const STAGE_LABEL = 'paid provisioning confirmation';
 const SPEECH_RESOURCE_ID = 'speech';
 const FREE_SPEECH_SKU = 'F0';
+const PRODUCTION_STAGE = 'production';
 
 /**
  * Total the fixed monthly estimates, and list the resources that are usage billed
@@ -119,6 +120,30 @@ export function confirmProvisioning(options = {}) {
       ? 'operator has agreed to create billable resources'
       : `not confirmed. Provisioning is refused. Set it with: azd env set ${CONFIRMATION_KEYS.paidProvisioning} ${CONFIRMATION_VALUE}`,
   });
+
+  // Production stage gate. Separate from the cost gate, because declaring this
+  // estate production is a product decision about where real traffic goes, not a
+  // spending decision. Handler parity is incomplete, so the default is staging and
+  // promoting requires saying so explicitly.
+  const requestedStage = options.deploymentStage;
+
+  if (requestedStage === PRODUCTION_STAGE) {
+    const productionConfirmed = isConfirmed(environment[CONFIRMATION_KEYS.productionStage]);
+
+    report.record({
+      name: CONFIRMATION_KEYS.productionStage,
+      status: productionConfirmed ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+      detail: productionConfirmed
+        ? 'operator has agreed to deploy this estate as production'
+        : `not confirmed. The deployment requests the production stage while handler parity is incomplete and only the voices route is exposed. Set it with: azd env set ${CONFIRMATION_KEYS.productionStage} ${CONFIRMATION_VALUE}`,
+    });
+  } else {
+    report.record({
+      name: CONFIRMATION_KEYS.productionStage,
+      status: CHECK_STATUS.skip,
+      detail: `stage is ${requestedStage ?? 'unset, treated as staging'}, so no production confirmation is required`,
+    });
+  }
 
   // The Speech gate only applies when the deployment would actually change the SKU.
   // Asking for confirmation on a no op change trains an operator to confirm without

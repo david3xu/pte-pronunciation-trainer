@@ -25,6 +25,13 @@ param resourceGroupName string
 @description('AZD environment name. Recorded as a tag so resources are attributable to a deployment.')
 param environmentName string
 
+@description('Deployment stage. Staging runs beside production rather than replacing it. Production requires separate explicit approval.')
+@allowed([
+  'staging'
+  'production'
+])
+param deploymentStage string = 'staging'
+
 @description('Short suffix distinguishing globally unique resource names. Derived from the subscription and environment so repeated deployments of the same environment reuse the same names.')
 param nameSuffix string = uniqueString(subscription().id, environmentName)
 
@@ -165,11 +172,14 @@ param apimPublisherEmail string
 @description('Publisher organisation name for API Management.')
 param apimPublisherName string
 
-// Tags. Two products share this subscription, so every resource is attributable.
+// Tags. Two products share this subscription, so every resource is attributable to
+// a product, a deployment and a stage. The stage tag is what distinguishes this
+// parallel staging estate from anything that later serves production.
 var commonTags = {
   product: 'ccl-pronunciation-trainer'
   'azd-env-name': environmentName
   managedBy: 'azd'
+  deploymentStage: deploymentStage
 }
 
 resource appResourceGroup 'Microsoft.Resources/resourceGroups@2024-03-01' = {
@@ -202,6 +212,7 @@ module appService 'app-service.bicep' = {
     planName: appServicePlanName
     webAppName: webAppName
     azdServiceName: webAppAzdServiceName
+    deploymentStage: deploymentStage
     planSkuName: appServicePlanSkuName
     planSkuTier: appServicePlanSkuTier
     linuxFxVersion: appServiceLinuxFxVersion
@@ -339,16 +350,57 @@ module frontDoor 'front-door.bicep' = {
 
 // Outputs are named exactly as the AZD environment keys the hooks expect, so the
 // deployment contract in scripts/azure and this template cannot disagree about
-// what a value is called. Nothing secret appears here.
+// what a value is called.
+//
+// Nothing secret appears here. Connection strings, access keys, the Application
+// Insights ingestion key and the database credential are all absent by design,
+// because deployment outputs stay readable in deployment history to anyone holding
+// reader access. Identifiers and host names only.
+output DEPLOYMENT_STAGE string = deploymentStage
 output AZURE_RESOURCE_GROUP_NAME string = appResourceGroup.name
+
+// Public staging entry points. Labelled staging because handler parity is
+// incomplete and production traffic continues to be served elsewhere.
+output STAGING_PUBLIC_URL string = 'https://${frontDoor.outputs.endpointHostName}'
+output STAGING_APP_SERVICE_URL string = 'https://${appService.outputs.defaultHostName}'
+output STAGING_APIM_GATEWAY_URL string = apim.outputs.gatewayUrl
+output STAGING_HEALTH_URL string = 'https://${appService.outputs.defaultHostName}/health'
+
+output WEB_APP_NAME string = appService.outputs.webAppName
+output WEB_APP_ID string = appService.outputs.webAppId
 output WEB_APP_HOST_NAME string = appService.outputs.defaultHostName
 output WEB_APP_PRINCIPAL_ID string = appService.outputs.principalId
+output APP_SERVICE_PLAN_NAME string = appService.outputs.planName
+
+output FRONT_DOOR_PROFILE_NAME string = frontDoor.outputs.profileName
 output FRONT_DOOR_ENDPOINT_HOST_NAME string = frontDoor.outputs.endpointHostName
+output FRONT_DOOR_WAF_POLICY_NAME string = frontDoor.outputs.wafPolicyName
+output FRONT_DOOR_MANAGED_RULES_ATTACHED bool = frontDoor.outputs.managedRulesAttached
+
+output APIM_SERVICE_NAME string = apim.outputs.serviceName
 output APIM_GATEWAY_URL string = apim.outputs.gatewayUrl
+output APIM_PRINCIPAL_ID string = apim.outputs.principalId
+
+output POSTGRES_SERVER_NAME string = postgres.outputs.serverName
+output POSTGRES_SERVER_ID string = postgres.outputs.serverId
 output POSTGRES_SERVER_FQDN string = postgres.outputs.serverFqdn
 output POSTGRES_DATABASE_NAME string = postgres.outputs.databaseName
+
+output REDIS_CACHE_NAME string = redis.outputs.cacheName
+output REDIS_CACHE_ID string = redis.outputs.cacheId
 output REDIS_HOST_NAME string = redis.outputs.cacheHostName
+
+output STORAGE_ACCOUNT_NAME string = storage.outputs.storageAccountName
+output STORAGE_ACCOUNT_ID string = storage.outputs.storageAccountId
 output BLOB_ENDPOINT string = storage.outputs.blobEndpoint
 output AUDIO_CONTAINER_NAME string = storage.outputs.audioContainerName
+
+output LOG_ANALYTICS_WORKSPACE_NAME string = monitoring.outputs.workspaceName
+output LOG_ANALYTICS_WORKSPACE_ID string = monitoring.outputs.workspaceId
+output APP_INSIGHTS_NAME string = monitoring.outputs.componentName
+output APP_INSIGHTS_ID string = monitoring.outputs.componentId
+
+output SPEECH_ACCOUNT_NAME string = speech.outputs.speechAccountName
+output SPEECH_ACCOUNT_ID string = speech.outputs.speechAccountId
 output SPEECH_ENDPOINT string = speech.outputs.speechEndpoint
 output SPEECH_SKU string = speechSku

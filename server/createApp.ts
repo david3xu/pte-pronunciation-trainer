@@ -171,7 +171,10 @@ export function createApp(
           {
             status: HTTP_STATUS.ok,
             headers: { [HEADER.cacheControl]: 'no-store' },
-            body: { status: HEALTH_STATUS_OK },
+            // The stage is part of the health contract so a probe, a dashboard or a
+            // person reading the endpoint can tell a parallel staging deployment
+            // from production without consulting a document.
+            body: { status: HEALTH_STATUS_OK, stage: config.deploymentStage },
           },
           correlationId,
           bodyless,

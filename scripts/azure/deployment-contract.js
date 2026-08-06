@@ -31,6 +31,7 @@ export const AZD_ENV_KEYS = Object.freeze({
   capacitorAllowedOrigins: 'CAPACITOR_ALLOWED_ORIGINS',
   webAllowedOrigins: 'WEB_ALLOWED_ORIGINS',
   speechAccountName: 'SPEECH_ACCOUNT_NAME',
+  deploymentStage: 'DEPLOYMENT_STAGE',
 });
 
 /** Value shapes the environment validator can enforce. */
@@ -547,6 +548,7 @@ export const APPLICATION_PACKAGE = Object.freeze({
 export const CONFIRMATION_KEYS = Object.freeze({
   paidProvisioning: 'AZURE_CONFIRM_PAID_PROVISIONING',
   speechSkuUpgrade: 'AZURE_CONFIRM_SPEECH_SKU_UPGRADE',
+  productionStage: 'AZURE_CONFIRM_PRODUCTION_STAGE',
 });
 
 /** The only accepted confirmation value. Anything else is treated as absent. */

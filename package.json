@@ -44,6 +44,7 @@
     "azure:package": "pnpm run data:pte && pnpm run build && pnpm run build:server && node scripts/azure/build-package.js",
     "azure:package:check": "node scripts/azure/build-package.js --check",
     "azure:smoke:server": "pnpm run build:server && node scripts/azure/smoke-server.js",
+    "azure:verify:template": "node scripts/azure/verify-template-invariants.js",
     "azure:bicep:build": "node scripts/azure/build-bicep.js",
     "azure:validate": "pnpm run azure:preflight:check && pnpm run azure:package:check",
     "clean": "rm -rf dist/",

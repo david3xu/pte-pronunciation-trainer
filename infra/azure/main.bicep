@@ -16,7 +16,10 @@ targetScope = 'subscription'
 // absent from the outputs below, because deployment outputs are recorded in
 // deployment history and readable by anyone with reader access.
 
-@description('Azure region for the resource group and all regional resources.')
+@description('Azure region for the resource group and all regional resources. Constrained to the approved region, so a mistyped or copied value fails at validation rather than provisioning a parallel estate somewhere else.')
+@allowed([
+  'australiaeast'
+])
 param location string
 
 @description('Resource group that contains app Azure resources.')
@@ -37,10 +40,16 @@ param nameSuffix string = uniqueString(subscription().id, environmentName)
 
 // Speech. Existing deployed account, name pinned to reality rather than generated.
 // Do not reintroduce a uniqueString default here; it drifted from what is running.
+//
+// The allowed list has exactly one entry deliberately. The deployment updates this
+// account in place, so any other name would create a second Speech account rather
+// than upgrading the one already serving traffic. Constraining it here means that
+// mistake fails at template validation, before the preflight and before ARM.
 
-@description('Deployed Azure AI Speech account name.')
-@minLength(3)
-@maxLength(64)
+@description('Deployed Azure AI Speech account name. Exactly one approved value.')
+@allowed([
+  'ccl-pronunciation-speech-david'
+])
 param speechAccountName string
 
 @description('Azure AI Speech SKU. F0 bills zero and cannot satisfy the daily spend floor.')
@@ -359,12 +368,13 @@ module frontDoor 'front-door.bicep' = {
 output DEPLOYMENT_STAGE string = deploymentStage
 output AZURE_RESOURCE_GROUP_NAME string = appResourceGroup.name
 
-// Public staging entry points. Labelled staging because handler parity is
-// incomplete and production traffic continues to be served elsewhere.
-output STAGING_PUBLIC_URL string = 'https://${frontDoor.outputs.endpointHostName}'
-output STAGING_APP_SERVICE_URL string = 'https://${appService.outputs.defaultHostName}'
-output STAGING_APIM_GATEWAY_URL string = apim.outputs.gatewayUrl
-output STAGING_HEALTH_URL string = 'https://${appService.outputs.defaultHostName}/health'
+// Public entry points. Named neutrally rather than by stage, because an output name
+// that encodes the environment has to be renamed to promote it, and a rename is a
+// consumer breaking change. The stage is reported separately above.
+output PUBLIC_URL string = 'https://${frontDoor.outputs.endpointHostName}'
+output FRONT_DOOR_URL string = 'https://${frontDoor.outputs.endpointHostName}'
+output APP_SERVICE_URL string = 'https://${appService.outputs.defaultHostName}'
+output HEALTH_URL string = 'https://${appService.outputs.defaultHostName}/health'
 
 output WEB_APP_NAME string = appService.outputs.webAppName
 output WEB_APP_ID string = appService.outputs.webAppId

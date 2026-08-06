@@ -102,6 +102,40 @@ export function normaliseRuntimeList(value) {
 }
 
 /**
+ * Find the supported locations for a resource type, matching the type name without
+ * regard to case.
+ *
+ * Azure reports resource type names with provider chosen casing, for example `Redis`
+ * under `Microsoft.Cache` while the ARM type is written `Microsoft.Cache/redis`. A
+ * case sensitive match therefore finds nothing and looks like an unreadable response.
+ *
+ * @param {unknown[]} resourceTypes
+ * @param {string} shortType Type name without the provider namespace.
+ * @returns {string[] | undefined} Locations, or undefined when the type is absent.
+ */
+export function findResourceTypeLocations(resourceTypes, shortType) {
+  const wanted = shortType.toLowerCase();
+
+  for (const entry of resourceTypes) {
+    if (typeof entry !== 'object' || entry === null) {
+      continue;
+    }
+    const record = /** @type {Record<string, unknown>} */ (entry);
+    if (typeof record.resourceType !== 'string') {
+      continue;
+    }
+    if (record.resourceType.toLowerCase() !== wanted) {
+      continue;
+    }
+    return Array.isArray(record.locations)
+      ? record.locations.filter((location) => typeof location === 'string')
+      : [];
+  }
+
+  return undefined;
+}
+
+/**
  * Run the capacity validation stage.
  *
  * @param {{
@@ -559,24 +593,40 @@ async function probeSpeechSku(context) {
  */
 async function probeProviderLocation(context) {
   const shortType = context.resource.resourceType.split('/').slice(1).join('/');
-  const query = `resourceTypes[?resourceType=='${shortType}'].locations | [0]`;
 
+  // The whole resourceTypes array is fetched and filtered here rather than in a
+  // JMESPath expression, because JMESPath equality is case sensitive. Filtering with
+  // == against a lowercase literal returned nothing whenever the provider reported a
+  // different casing, which read as an unreadable location list rather than as a
+  // mismatch, with an empty error to explain it.
   const result = await azJson(
     ['provider', 'show', FLAGS.namespace, context.resource.providerNamespace],
-    { subscriptionId: context.subscriptionId, query, timeoutMs: TIMEOUTS_MS.capacityProbe },
+    {
+      subscriptionId: context.subscriptionId,
+      query: 'resourceTypes[].{resourceType: resourceType, locations: locations}',
+      timeoutMs: TIMEOUTS_MS.capacityProbe,
+    },
   );
 
   if (!result.ok || !Array.isArray(result.value)) {
     return {
       status: CHECK_STATUS.inconclusive,
-      detail: `supported locations for ${context.resource.resourceType} could not be read: ${firstLine(result.stderr)}`,
+      detail: `the resource type list for ${context.resource.providerNamespace} could not be read: ${firstLine(result.stderr) || 'no detail reported'}`,
       evidence: [result.commandLine],
     };
   }
 
-  const supported = result.value
-    .filter((entry) => typeof entry === 'string')
-    .some((entry) => sameRegion(String(entry), context.location));
+  const locations = findResourceTypeLocations(result.value, shortType);
+
+  if (locations === undefined) {
+    return {
+      status: CHECK_STATUS.inconclusive,
+      detail: `${context.resource.resourceType} was not present in the provider's resource type list, so its regional support is unknown`,
+      evidence: [result.commandLine],
+    };
+  }
+
+  const supported = locations.some((entry) => sameRegion(entry, context.location));
 
   if (!supported) {
     return {

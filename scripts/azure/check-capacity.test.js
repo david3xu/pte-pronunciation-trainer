@@ -7,7 +7,49 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { assessQuotaHeadroom, normaliseRuntimeList, sameRegion } from './check-capacity.js';
+import { assessQuotaHeadroom, findResourceTypeLocations, normaliseRuntimeList, sameRegion } from './check-capacity.js';
+
+describe('findResourceTypeLocations', () => {
+  /**
+   * Sanitized excerpt of az provider show --namespace Microsoft.Cache. Note the
+   * casing: the ARM type is written Microsoft.Cache/redis while the provider reports
+   * the type name as Redis. A case sensitive filter finds nothing here, which is what
+   * made the Redis probe look like an unreadable response with an empty error.
+   */
+  const cacheResourceTypes = [
+    { resourceType: 'Redis', locations: ['Australia East', 'East US', 'West Europe'] },
+    { resourceType: 'redisEnterprise', locations: ['East US'] },
+    { resourceType: 'locations/operationResults', locations: [] },
+  ];
+
+  it('matches the resource type without regard to case', () => {
+    const locations = findResourceTypeLocations(cacheResourceTypes, 'redis');
+
+    expect(locations).toEqual(['Australia East', 'East US', 'West Europe']);
+  });
+
+  it('does not match a different type that merely shares a prefix', () => {
+    const locations = findResourceTypeLocations(cacheResourceTypes, 'redis');
+
+    expect(locations).not.toContain('East US only');
+    expect(findResourceTypeLocations(cacheResourceTypes, 'redisenterprise')).toEqual(['East US']);
+  });
+
+  it('resolves the target region through the display name form', () => {
+    const locations = findResourceTypeLocations(cacheResourceTypes, 'redis') ?? [];
+
+    expect(locations.some((entry) => sameRegion(entry, 'australiaeast'))).toBe(true);
+  });
+
+  it('distinguishes an absent type from a type with no locations', () => {
+    expect(findResourceTypeLocations(cacheResourceTypes, 'notAType')).toBeUndefined();
+    expect(findResourceTypeLocations([{ resourceType: 'Redis' }], 'redis')).toEqual([]);
+  });
+
+  it('ignores malformed entries rather than throwing', () => {
+    expect(findResourceTypeLocations([null, 42, {}], 'redis')).toBeUndefined();
+  });
+});
 
 describe('normaliseRuntimeList', () => {
   /**

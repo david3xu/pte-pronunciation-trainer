@@ -80,7 +80,7 @@ export function isConfirmed(value) {
  * }} [options]
  * @returns {{ report: DeploymentReport }}
  */
-export function confirmProvisioning(options = {}) {
+export function confirmPaidProvisioning(options = {}) {
   const report = options.report ?? new DeploymentReport('Provisioning confirmation');
   const environment = options.processEnvironment ?? process.env;
   const dryRun = options.dryRun ?? false;
@@ -145,6 +145,40 @@ export function confirmProvisioning(options = {}) {
     });
   }
 
+  return { report };
+}
+
+/**
+ * Speech SKU upgrade gate.
+ *
+ * Separate from the cost gate and run separately, because it needs the currently
+ * deployed SKU, which is only known after a live read. The SKU change itself happens
+ * in ARM during provisioning, well after this gate, so gating here still precedes
+ * the mutation.
+ *
+ * @param {{
+ *   report?: DeploymentReport,
+ *   processEnvironment?: Record<string, string | undefined>,
+ *   requestedSpeechSku?: unknown,
+ *   currentSpeechSku?: string | undefined,
+ *   dryRun?: boolean,
+ * }} [options]
+ * @returns {{ report: DeploymentReport }}
+ */
+export function confirmSpeechUpgrade(options = {}) {
+  const report = options.report ?? new DeploymentReport('Speech upgrade confirmation');
+  const environment = options.processEnvironment ?? process.env;
+  const dryRun = options.dryRun ?? false;
+
+  if (dryRun) {
+    report.record({
+      name: CONFIRMATION_KEYS.speechSkuUpgrade,
+      status: CHECK_STATUS.skip,
+      detail: 'check mode does not gate, because check mode changes no sku',
+    });
+    return { report };
+  }
+
   // The Speech gate only applies when the deployment would actually change the SKU.
   // Asking for confirmation on a no op change trains an operator to confirm without
   // reading, which is worse than not asking.
@@ -192,6 +226,19 @@ export function confirmProvisioning(options = {}) {
         }. Set it with: azd env set ${CONFIRMATION_KEYS.speechSkuUpgrade} ${CONFIRMATION_VALUE}`,
   });
 
+  return { report };
+}
+
+/**
+ * Both gates together. Retained for callers and tests that assess the pair.
+ *
+ * @param {Parameters<typeof confirmPaidProvisioning>[0] & Parameters<typeof confirmSpeechUpgrade>[0]} [options]
+ * @returns {{ report: DeploymentReport }}
+ */
+export function confirmProvisioning(options = {}) {
+  const report = options.report ?? new DeploymentReport('Provisioning confirmation');
+  confirmPaidProvisioning({ ...options, report });
+  confirmSpeechUpgrade({ ...options, report });
   return { report };
 }
 

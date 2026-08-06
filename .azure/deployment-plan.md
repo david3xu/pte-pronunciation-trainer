@@ -122,32 +122,52 @@ stage is reported separately.
 
 ## 6. AZD environment values
 
+### 6.0 Where values live
+
+The selected AZD environment is `staging`. Its values are stored in
+`.azure/staging/.env`, which is ignored by `.azure/.gitignore` and is not committed.
+No value from that file is reproduced in this document or anywhere else under
+version control. Only configuration status is recorded here.
+
+To inspect the configured values, run `azd env get-values` locally. To change one,
+use `azd env set`.
+
 ### 6.1 Required. Provisioning is refused without these.
 
-| Key | Purpose | How to obtain |
+| Key | Purpose | Status |
 | --- | --- | --- |
-| `APIM_PUBLISHER_EMAIL` | API Management notification recipient. Real mail is delivered there, so it is never inferred. | operator supplied |
-| `APIM_PUBLISHER_NAME` | Publisher organisation shown in the developer portal | operator supplied |
-| `POSTGRES_ENTRA_ADMIN_OBJECT_ID` | Sole administrative path. Password authentication is disabled, so a wrong value leaves the server unreachable. | `az ad signed-in-user show --query id --output tsv` |
-| `POSTGRES_ENTRA_ADMIN_PRINCIPAL_NAME` | Recorded with the administrator | `az ad signed-in-user show --query userPrincipalName --output tsv` |
-| `AZURE_CONFIRM_PAID_PROVISIONING` | Exactly `yes`. See section 7. | operator decision |
+| `APIM_PUBLISHER_EMAIL` | API Management notification recipient. Real mail is delivered there, so it is never inferred. | configured locally |
+| `APIM_PUBLISHER_NAME` | Publisher organisation shown in the developer portal | configured locally |
+| `POSTGRES_ENTRA_ADMIN_OBJECT_ID` | Sole administrative path. Password authentication is disabled, so a wrong value leaves the server unreachable. | configured locally |
+| `POSTGRES_ENTRA_ADMIN_PRINCIPAL_NAME` | Recorded with the administrator | configured locally |
+| `AZURE_CONFIRM_PAID_PROVISIONING` | Exactly `yes`. See section 7. | **not set, deliberately** |
+
+The four operator inputs are configured. The paid provisioning confirmation is not,
+and is now the only value in this table blocking a provisioning attempt.
 
 ### 6.2 Conditional. Required only when the condition holds.
 
-| Key | Condition |
-| --- | --- |
-| `AZURE_CONFIRM_SPEECH_SKU_UPGRADE` | The deployed Speech SKU differs from the requested SKU |
-| `AZURE_CONFIRM_PRODUCTION_STAGE` | `DEPLOYMENT_STAGE` is `production` |
+| Key | Condition | Status |
+| --- | --- | --- |
+| `AZURE_CONFIRM_SPEECH_SKU_UPGRADE` | The deployed Speech SKU differs from the requested SKU | **not set, deliberately** |
+| `AZURE_CONFIRM_PRODUCTION_STAGE` | `DEPLOYMENT_STAGE` is `production` | not set, and not applicable while the stage is `staging` |
 
 ### 6.3 Defaulted. Override only to target a different environment.
 
-| Key | Default |
-| --- | --- |
-| `AZURE_LOCATION` | `australiaeast` |
-| `AZURE_RESOURCE_GROUP` | `ccl-pronunciation-trainer-rg` |
-| `SPEECH_ACCOUNT_NAME` | `ccl-pronunciation-speech-david` |
-| `AZURE_ENV_NAME` | `staging` |
-| `DEPLOYMENT_STAGE` | `staging` |
+All five are also set explicitly in the local environment, so the effective value
+matches the default rather than relying on it.
+
+| Key | Default | Status |
+| --- | --- | --- |
+| `AZURE_LOCATION` | `australiaeast` | set locally, matches default |
+| `AZURE_RESOURCE_GROUP` | `ccl-pronunciation-trainer-rg` | set locally, matches default |
+| `SPEECH_ACCOUNT_NAME` | `ccl-pronunciation-speech-david` | set locally, matches default |
+| `AZURE_ENV_NAME` | `staging` | set locally, matches default |
+| `DEPLOYMENT_STAGE` | `staging` | set locally, matches default |
+
+`AZURE_SUBSCRIPTION_ID` is also configured locally. It has no template default,
+because the preflight compares the exported value against the stored environment and
+a default would mask a disagreement rather than surface it.
 
 ### 6.4 Deferred. Absent is correct during the foundation stage.
 
@@ -369,6 +389,14 @@ Checks that remain outstanding, each requiring authorised live execution:
 
 Run `pnpm run azure:preflight` to gather these. It performs live reads and, in live
 mode, registers missing providers. Paste its evidence output into section 14.
+
+One caveat about check mode, recorded because the naming invites the wrong
+assumption. `pnpm run azure:preflight:check` is write free: it installs no CLI
+extension and registers no provider. It is **not** query free. It still calls
+`az account show`, the runtime and SKU listings, the quota surface and Resource
+Graph. So check mode is not a way to satisfy an instruction that prohibits querying
+Azure, and it was deliberately not run while gathering the configuration status in
+section 6.
 
 ## 14. Validation proof
 

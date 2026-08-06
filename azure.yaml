@@ -1,0 +1,92 @@
+# Azure Developer CLI orchestration.
+#
+# One command provisions the approved infrastructure and deploys the application:
+#
+#   azd up
+#
+# Ordering is enforced in three places and this file ties them together. The
+# preprovision hook owns steps one through three of the deployment sequence,
+# validating the selected environment, registering only the resource providers
+# that are missing, and refusing to continue when quota or regional capacity
+# cannot be established. The Bicep dependency graph under infra/azure owns the
+# provisioning steps. The prepackage, postprovision and deploy steps below own
+# the application.
+#
+# Parameter binding uses infra/azure/main.bicepparam. Deployment specific values
+# such as the PostgreSQL Entra administrator, the API Management publisher
+# details and the client origins are read from the selected azd environment by
+# that file, so nothing deployment specific is committed here.
+#
+# API Management provisioning commonly takes 30 to 45 minutes. That is normal and
+# is recorded in .azure/deployment-plan.md so a slow run is not mistaken for a
+# failed one.
+
+name: ccl-pronunciation-trainer
+
+metadata:
+  template: ccl-pronunciation-trainer
+
+infra:
+  provider: bicep
+  path: infra/azure
+  module: main
+
+services:
+  web:
+    project: .
+    language: js
+    host: appservice
+    # The deployed artifact is a staging directory rather than the repository
+    # root, so no source, test or development dependency reaches App Service.
+    # scripts/azure/build-package.js assembles it and fails loudly when an input
+    # is missing.
+    dist: .azure/package
+    hooks:
+      prepackage:
+        posix:
+          shell: sh
+          run: pnpm run azure:package
+          interactive: true
+          continueOnError: false
+        windows:
+          shell: pwsh
+          run: pnpm run azure:package
+          interactive: true
+          continueOnError: false
+
+hooks:
+  # Steps one through three. Read only apart from registering a provider
+  # namespace that is not already registered. Safe to repeat.
+  preprovision:
+    posix:
+      shell: sh
+      run: pnpm run azure:preflight
+      interactive: true
+      continueOnError: false
+    windows:
+      shell: pwsh
+      run: pnpm run azure:preflight
+      interactive: true
+      continueOnError: false
+
+  # Step fifteen for the infrastructure half. Confirms every required output was
+  # returned, derives the public and API origins from the Front Door endpoint so
+  # no client build embeds a production URL, and prints the endpoint summary. No
+  # connection string, access key or credential is read or printed.
+  postprovision:
+    posix:
+      shell: sh
+      run: pnpm run azure:postprovision
+      interactive: true
+      continueOnError: false
+    windows:
+      shell: pwsh
+      run: pnpm run azure:postprovision
+      interactive: true
+      continueOnError: false
+
+# A postdeploy hook running the schema bootstrap and the live health checks,
+# steps thirteen and fourteen, is added with the production server and the
+# PostgreSQL migration runner. It is deliberately absent until the scripts it
+# would call exist, because a hook that references a missing script turns a
+# working deployment into a confusing failure.

@@ -531,6 +531,63 @@ export const APPLICATION_PACKAGE = Object.freeze({
   ]),
 });
 
+/**
+ * Explicit confirmations required before anything is billed.
+ *
+ * The preflight is otherwise read only, so nothing in it warns an operator that
+ * the next step creates fixed monthly charges against a credit balance, or that
+ * the Speech account is about to move off a free tier. Both are one way in
+ * practice: a provisioned App Service plan bills from the hour it exists, and
+ * moving Speech from F0 to S0 starts charging for synthesis that used to be free.
+ *
+ * Each confirmation is a separate value, because they are separate decisions. An
+ * operator provisioning staging infrastructure has not necessarily agreed to
+ * change the SKU of an account already serving production traffic.
+ */
+export const CONFIRMATION_KEYS = Object.freeze({
+  paidProvisioning: 'AZURE_CONFIRM_PAID_PROVISIONING',
+  speechSkuUpgrade: 'AZURE_CONFIRM_SPEECH_SKU_UPGRADE',
+});
+
+/** The only accepted confirmation value. Anything else is treated as absent. */
+export const CONFIRMATION_VALUE = 'yes';
+
+/**
+ * Estimated fixed monthly cost in US dollars, by resource plan id.
+ *
+ * Estimates only, from the figures recorded in docs/AZURE_WORKLOAD_PLAN.md. Price
+ * each in the Azure calculator for the target region before accepting the
+ * provisioning step. A null value means the resource is usage billed and has no
+ * fixed floor, so it cannot be totalled here and is reported separately rather
+ * than silently counted as zero.
+ */
+export const ESTIMATED_MONTHLY_USD = Object.freeze({
+  appServicePlan: 70,
+  webApp: 0,
+  postgres: 40,
+  redis: 41,
+  apiManagement: 50,
+  frontDoor: 35,
+  storage: 5,
+  logAnalytics: null,
+  applicationInsights: null,
+  speech: null,
+});
+
+/**
+ * Deployment stage label.
+ *
+ * The Azure environment runs beside production rather than replacing it. Handler
+ * parity is incomplete, so the App Service endpoint must not be presented as a
+ * production URL. This value is set as an app setting and reported by the health
+ * endpoint so the distinction is visible from the outside rather than only in a
+ * document.
+ */
+export const DEPLOYMENT_STAGE = Object.freeze({
+  key: 'DEPLOYMENT_STAGE',
+  stagingIncomplete: 'staging-incomplete',
+});
+
 /** Exit codes returned by the hook entry points. */
 export const EXIT_CODES = Object.freeze({
   success: 0,

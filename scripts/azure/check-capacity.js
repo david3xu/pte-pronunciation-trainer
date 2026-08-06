@@ -138,7 +138,7 @@ export async function checkCapacity(options = {}) {
   await checkLinuxRuntime(report, { subscriptionId, parameters });
 
   report.beginStage(STAGE_LABELS.existingSpeech);
-  await checkExistingSpeechAccount(report, {
+  const observedSpeechSku = await checkExistingSpeechAccount(report, {
     subscriptionId,
     location,
     resourceGroup,
@@ -206,7 +206,7 @@ export async function checkCapacity(options = {}) {
     }
   }
 
-  return { report };
+  return { report, observedSpeechSku };
 }
 
 /**
@@ -373,6 +373,10 @@ async function checkExistingSpeechAccount(report, context) {
         : `the named account does not match the requested deployment: ${mismatches.join('; ')}`,
     evidence: [result.commandLine],
   });
+
+  // Returned so the confirmation gate can tell whether the deployment would
+  // actually change the sku, rather than asking for agreement to a no op.
+  return typeof account.sku === 'string' ? account.sku : undefined;
 }
 
 /**

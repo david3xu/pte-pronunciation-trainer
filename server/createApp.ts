@@ -115,6 +115,20 @@ function writeApiResponse(
 }
 
 /**
+ * Parse a request target, returning undefined rather than throwing.
+ *
+ * The origin is a placeholder: only the path and query are used. Node accepts some
+ * targets the URL parser rejects, so this cannot be assumed to succeed.
+ */
+export function parseRequestTarget(requestUrl: string | undefined): URL | undefined {
+  try {
+    return new URL(requestUrl ?? '/', 'http://localhost');
+  } catch {
+    return undefined;
+  }
+}
+
+/**
  * Build the request listener.
  */
 export function createApp(
@@ -128,7 +142,26 @@ export function createApp(
     const method = (request.method ?? '').toUpperCase();
     const bodyless = method === HTTP_METHOD.head;
 
-    const url = new URL(request.url ?? '/', 'http://localhost');
+    // Parsed before the try block is entered, and never allowed to throw. A
+    // malformed request target used to throw synchronously here, which rejected the
+    // promise this listener returns, reached the unhandled rejection handler and
+    // took the process down. One bad URL should be a 400, not an outage.
+    const target = parseRequestTarget(request.url);
+
+    if (target === undefined) {
+      writeApiResponse(
+        response,
+        {
+          status: HTTP_STATUS.badRequest,
+          body: { success: false, error: 'Malformed request target' },
+        },
+        correlationId,
+        bodyless,
+      );
+      return;
+    }
+
+    const url = target;
     const path = url.pathname;
 
     try {

@@ -9,7 +9,7 @@
 
 import { createReadStream } from 'node:fs';
 import { stat } from 'node:fs/promises';
-import { extname, join, normalize, resolve, sep } from 'node:path';
+import { basename, extname, join, normalize, resolve, sep } from 'node:path';
 import type { ServerResponse } from 'node:http';
 
 import { HEADER, HTTP_STATUS } from '../api/handlers/contracts.js';
@@ -23,16 +23,48 @@ export const PROCESSED_DATA_PREFIX = '/data/processed/';
 /**
  * Cache policy.
  *
- * Vite emits content hashed asset filenames, so those are immutable for a year.
- * The entry document must never be cached, or a deployment leaves clients holding
- * a document that references assets which no longer exist. Generated content sits
- * between the two: it changes only when the pipeline reruns.
+ * Three distinct cases, and conflating them breaks things quietly.
+ *
+ * Fingerprinted assets carry a content hash in the filename, so the URL changes
+ * whenever the bytes do and the response can be immutable for a year.
+ *
+ * Stable named files must revalidate. The service worker is the important one: a
+ * year of immutable caching on sw.js means an installed progressive web app never
+ * learns that a new version exists, and no later deployment can reach it. The same
+ * applies to the manifest and to any other file served under a fixed name.
+ *
+ * Generated practice content sits between the two. It changes only when the
+ * pipeline reruns, so it is cacheable but never immutable.
  */
 export const CACHE_CONTROL = {
   immutableAsset: 'public, max-age=31536000, immutable',
   entryDocument: 'no-cache',
+  revalidate: 'no-cache, must-revalidate',
   generatedContent: 'public, max-age=3600',
 } as const;
+
+/**
+ * Files served under a fixed name that must always be revalidated, regardless of
+ * where they sit in the build output.
+ */
+export const ALWAYS_REVALIDATE_FILES: ReadonlySet<string> = new Set([
+  'sw.js',
+  'registerSW.js',
+  'manifest.json',
+  'manifest.webmanifest',
+  'robots.txt',
+  'favicon.ico',
+]);
+
+/**
+ * Filename carrying a build fingerprint, as Vite emits.
+ *
+ * Requires at least eight characters after the separating dash, which is the
+ * default hash length. A shorter suffix is treated as part of the name rather than
+ * a fingerprint, because wrongly reading a stable file as fingerprinted is the
+ * failure that cannot be undone by a later deployment.
+ */
+const FINGERPRINTED_FILENAME = /-[A-Za-z0-9_-]{8,}\.[A-Za-z0-9]+$/;
 
 const CONTENT_TYPES: Readonly<Record<string, string>> = {
   '.html': 'text/html; charset=utf-8',
@@ -90,16 +122,32 @@ export function contentTypeFor(filePath: string): string {
 }
 
 /**
+ * True when the filename carries a build fingerprint.
+ */
+export function isFingerprinted(filePath: string): boolean {
+  return FINGERPRINTED_FILENAME.test(basename(filePath));
+}
+
+/**
  * Cache policy for a resolved file.
  *
- * The entry document is matched by name rather than by directory, because it is
- * served both at the root and as the SPA fallback for every deep link.
+ * Immutable caching is reserved for fingerprinted filenames. Everything served
+ * under a stable name revalidates, so a deployment can always reach an installed
+ * client.
  */
 export function cacheControlFor(filePath: string, isGeneratedContent: boolean): string {
-  if (filePath.endsWith(INDEX_DOCUMENT)) {
+  const name = basename(filePath);
+
+  if (name === INDEX_DOCUMENT) {
     return CACHE_CONTROL.entryDocument;
   }
-  return isGeneratedContent ? CACHE_CONTROL.generatedContent : CACHE_CONTROL.immutableAsset;
+  if (ALWAYS_REVALIDATE_FILES.has(name)) {
+    return CACHE_CONTROL.revalidate;
+  }
+  if (isGeneratedContent) {
+    return CACHE_CONTROL.generatedContent;
+  }
+  return isFingerprinted(name) ? CACHE_CONTROL.immutableAsset : CACHE_CONTROL.revalidate;
 }
 
 async function readableFile(candidate: string | undefined): Promise<string | undefined> {

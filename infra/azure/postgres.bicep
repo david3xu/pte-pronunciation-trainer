@@ -3,8 +3,9 @@ targetScope = 'resourceGroup'
 // PostgreSQL flexible server.
 //
 // Password authentication is disabled and Entra authentication is the only path
-// in, so the administrator values the caller supplies decide whether the server is
-// reachable at all.
+// in. The administrator is deliberately created by the postprovision hook after
+// this server reports Ready. Azure rejected the child resource when it ran while
+// the newly created server was still becoming ready.
 //
 // The firewall admits exactly the App Service outbound addresses. The former
 // Vercel egress ranges are gone: they were never a published stable set, and the
@@ -47,20 +48,6 @@ param backupRetentionDays int
 @description('Application database name created on the server.')
 param databaseName string
 
-@description('Object ID of the Entra principal granted server administrator.')
-param entraAdminObjectId string
-
-@description('UPN or display name of the Entra administrator principal.')
-param entraAdminPrincipalName string
-
-@description('Entra principal type of the administrator.')
-@allowed([
-  'User'
-  'Group'
-  'ServicePrincipal'
-])
-param entraAdminPrincipalType string
-
 @description('App Service outbound addresses permitted to reach the server. Each becomes a single address firewall rule.')
 param allowedOutboundIpAddresses array
 
@@ -100,16 +87,6 @@ resource server 'Microsoft.DBforPostgreSQL/flexibleServers@2024-08-01' = {
   }
 }
 
-resource administrator 'Microsoft.DBforPostgreSQL/flexibleServers/administrators@2024-08-01' = {
-  parent: server
-  name: entraAdminObjectId
-  properties: {
-    principalName: entraAdminPrincipalName
-    principalType: entraAdminPrincipalType
-    tenantId: subscription().tenantId
-  }
-}
-
 resource database 'Microsoft.DBforPostgreSQL/flexibleServers/databases@2024-08-01' = {
   parent: server
   name: databaseName
@@ -117,9 +94,6 @@ resource database 'Microsoft.DBforPostgreSQL/flexibleServers/databases@2024-08-0
     charset: 'UTF8'
     collation: 'en_US.utf8'
   }
-  dependsOn: [
-    administrator
-  ]
 }
 
 // One rule per declared App Service outbound address. Single address ranges

@@ -57,6 +57,9 @@ param postgresDatabaseName string
 @description('Redis cache host name.')
 param redisHostName string
 
+@description('Redis TLS port.')
+param redisPort int
+
 @description('Storage account holding generated audio.')
 param storageAccountName string
 
@@ -158,6 +161,10 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
         {
           name: 'REDIS_HOST'
           value: redisHostName
+        }
+        {
+          name: 'REDIS_PORT'
+          value: '${redisPort}'
         }
         {
           name: 'STORAGE_ACCOUNT_NAME'

@@ -1,18 +1,20 @@
 /**
- * Redis only ARM validation and what if.
+ * Managed Redis only ARM validation and what if.
  *
- * Retained because Redis availability can change. Classic Azure Cache for Redis is a
- * retiring product, so evidence that Basic C1 is creatable has a shelf life and needs
- * to be reproducible rather than quoted from a past run.
+ * Retained because Redis availability can change. Classic Azure Cache for Redis
+ * passed this same kind of preview and was then rejected at provisioning because the
+ * product is retiring. The approved replacement therefore needs a reproducible
+ * preview that asserts the complete Managed Redis cluster and database contract.
  *
  * Runs against infra/azure/redis.bicep alone. Two operations only, both non creating:
  * ARM validate, which checks the template without persisting a resource, and what if,
  * which predicts changes without applying them. Neither reserves capacity. This script
  * never deploys and has no code path that could.
  *
- * Fails closed. The predicted change set is asserted, not merely printed: the Redis
- * cache and its diagnostic setting may be created, unrelated existing resources may
- * only be left unchanged, and anything else is a violation that exits non zero.
+ * Fails closed. The predicted change set is asserted, not merely printed: exactly one
+ * Managed Redis cluster, its required database and its diagnostic setting may be
+ * created, unrelated existing resources may only be left unchanged, and anything
+ * else is a violation that exits non zero.
  *
  * Scope comes from the selected AZD environment. The subscription identifier is
  * redacted from all output so a run can be pasted into a tracked document. No secret is
@@ -30,22 +32,26 @@ const AZ = process.platform === 'win32' ? 'az.cmd' : 'az';
 /** The only template this probe is permitted to touch. */
 export const REDIS_TEMPLATE = 'infra/azure/redis.bicep';
 
-/** Name for a cache that does not exist, so what if predicts a create. */
-export const PROBE_CACHE_NAME = 'ccl-redis-whatif-probe';
+/** Name for a cluster that does not exist, so what if predicts a create. */
+export const PROBE_CACHE_NAME = 'ccl-managed-redis-whatif-probe';
 
 /**
- * Resource types the probe expects to be created.
+ * Resource types the probe permits to be created.
  *
- * The diagnostic setting is declared inside redis.bicep, so validating that module as
- * written necessarily predicts it. It is not an additional service.
+ * The diagnostic setting is declared inside redis.bicep, so validating that module
+ * as written necessarily predicts it. It is not an additional service.
  */
 export const ALLOWED_CREATE_TYPES = Object.freeze([
-  'Microsoft.Cache/redis',
+  'Microsoft.Cache/redisEnterprise',
+  'Microsoft.Cache/redisEnterprise/databases',
   'Microsoft.Insights/diagnosticSettings',
 ]);
 
-/** The one type whose creation must actually be predicted for the run to mean anything. */
-export const REQUIRED_CREATE_TYPE = 'Microsoft.Cache/redis';
+/** Both resources are mandatory for a usable Managed Redis deployment. */
+export const REQUIRED_CREATE_TYPES = Object.freeze([
+  'Microsoft.Cache/redisEnterprise',
+  'Microsoft.Cache/redisEnterprise/databases',
+]);
 
 /**
  * Change types that assert nothing is altered.
@@ -60,13 +66,28 @@ export const NO_CHANGE_TYPES = Object.freeze(['Ignore', 'NoChange']);
  * Assert a predicted change set.
  *
  * @param {unknown} changes
- * @param {{ skuName?: unknown, skuFamily?: unknown, skuCapacity?: unknown }} [requestedSku]
+ * @param {{
+ *   subscriptionId?: unknown,
+ *   resourceGroup?: unknown,
+ *   cacheName?: unknown,
+ *   location?: unknown,
+ *   skuName?: unknown,
+ *   databaseName?: unknown,
+ *   port?: unknown,
+ *   minimumTlsVersion?: unknown,
+ *   publicNetworkAccess?: unknown,
+ *   accessKeysAuthentication?: unknown,
+ *   clientProtocol?: unknown,
+ *   clusteringPolicy?: unknown,
+ *   evictionPolicy?: unknown,
+ * }} [requested]
  * @returns {{ ok: boolean, violations: string[], created: string[], unchanged: string[] }}
  */
-export function assessChangeSet(changes, requestedSku = {}) {
+export function assessChangeSet(changes, requested = {}) {
   const violations = [];
   const created = [];
   const unchanged = [];
+  const createCounts = new Map();
 
   if (!Array.isArray(changes)) {
     return {
@@ -84,7 +105,11 @@ export function assessChangeSet(changes, requestedSku = {}) {
     }
     const change = /** @type {Record<string, any>} */ (entry);
     const changeType = typeof change.changeType === 'string' ? change.changeType : 'unknown';
-    const type = change?.after?.type ?? change?.before?.type ?? 'unknown type';
+    const reportedType = String(change?.after?.type ?? change?.before?.type ?? 'unknown type');
+    const type =
+      ALLOWED_CREATE_TYPES.find(
+        (allowed) => allowed.toLowerCase() === reportedType.toLowerCase(),
+      ) ?? reportedType;
 
     if (NO_CHANGE_TYPES.includes(changeType)) {
       unchanged.push(`${type} (${changeType})`);
@@ -102,34 +127,149 @@ export function assessChangeSet(changes, requestedSku = {}) {
     }
 
     created.push(String(type));
+    createCounts.set(type, (createCounts.get(type) ?? 0) + 1);
 
-    if (type === REQUIRED_CREATE_TYPE) {
-      const sku = change?.after?.properties?.sku ?? {};
-      const mismatches = [];
-      if (requestedSku.skuName !== undefined && sku.name !== requestedSku.skuName) {
-        mismatches.push(`name ${String(sku.name)} rather than ${String(requestedSku.skuName)}`);
-      }
-      if (requestedSku.skuFamily !== undefined && sku.family !== requestedSku.skuFamily) {
-        mismatches.push(`family ${String(sku.family)} rather than ${String(requestedSku.skuFamily)}`);
-      }
-      if (requestedSku.skuCapacity !== undefined && sku.capacity !== requestedSku.skuCapacity) {
-        mismatches.push(
-          `capacity ${String(sku.capacity)} rather than ${String(requestedSku.skuCapacity)}`,
-        );
-      }
-      if (mismatches.length > 0) {
-        violations.push(`the predicted cache sku does not match the request: ${mismatches.join(', ')}`);
-      }
+    if (type === 'Microsoft.Cache/redisEnterprise') {
+      assessCluster(change.after, requested, violations);
+    }
+    if (type === 'Microsoft.Cache/redisEnterprise/databases') {
+      assessDatabase(change.after, requested, violations);
     }
   }
 
-  if (!created.includes(REQUIRED_CREATE_TYPE)) {
-    violations.push(
-      `${REQUIRED_CREATE_TYPE} was not predicted as a Create, so the run proves nothing about its availability`,
-    );
+  for (const requiredType of REQUIRED_CREATE_TYPES) {
+    if (!created.includes(requiredType)) {
+      violations.push(
+        `${requiredType} was not predicted as a Create, so the run does not prove the approved deployment is available`,
+      );
+    }
+  }
+
+  for (const [type, count] of createCounts) {
+    if (count !== 1) {
+      violations.push(`${type} was predicted as Create ${String(count)} times rather than exactly once`);
+    }
   }
 
   return { ok: violations.length === 0, violations, created, unchanged };
+}
+
+/**
+ * @param {unknown} after
+ * @param {Record<string, unknown>} requested
+ * @param {string[]} violations
+ */
+function assessCluster(after, requested, violations) {
+  if (typeof after !== 'object' || after === null) {
+    violations.push('the predicted Managed Redis cluster has no after state');
+    return;
+  }
+
+  const resource = /** @type {Record<string, any>} */ (after);
+  const mismatches = [];
+  compareValue(mismatches, 'name', resource.name, requested.cacheName);
+  compareValue(mismatches, 'location', resource.location, requested.location);
+  compareValue(mismatches, 'sku.name', resource?.sku?.name, requested.skuName);
+  compareValue(
+    mismatches,
+    'properties.minimumTlsVersion',
+    resource?.properties?.minimumTlsVersion,
+    requested.minimumTlsVersion,
+  );
+  compareValue(
+    mismatches,
+    'properties.publicNetworkAccess',
+    resource?.properties?.publicNetworkAccess,
+    requested.publicNetworkAccess,
+  );
+
+  if (mismatches.length > 0) {
+    violations.push(`the predicted Managed Redis cluster differs from the request: ${mismatches.join(', ')}`);
+  }
+}
+
+/**
+ * @param {unknown} after
+ * @param {Record<string, unknown>} requested
+ * @param {string[]} violations
+ */
+function assessDatabase(after, requested, violations) {
+  if (typeof after !== 'object' || after === null) {
+    violations.push('the predicted Managed Redis database has no after state');
+    return;
+  }
+
+  const resource = /** @type {Record<string, any>} */ (after);
+  const mismatches = [];
+  const expectedId =
+    requested.subscriptionId === undefined ||
+    requested.resourceGroup === undefined ||
+    requested.cacheName === undefined ||
+    requested.databaseName === undefined
+      ? undefined
+      : `/subscriptions/${String(requested.subscriptionId)}/resourceGroups/${String(requested.resourceGroup)}/providers/Microsoft.Cache/redisEnterprise/${String(requested.cacheName)}/databases/${String(requested.databaseName)}`;
+
+  compareValue(mismatches, 'name', resource.name, requested.databaseName);
+  compareResourceId(mismatches, 'id', resource.id, expectedId);
+  compareValue(
+    mismatches,
+    'properties.accessKeysAuthentication',
+    resource?.properties?.accessKeysAuthentication,
+    requested.accessKeysAuthentication,
+  );
+  compareValue(
+    mismatches,
+    'properties.clientProtocol',
+    resource?.properties?.clientProtocol,
+    requested.clientProtocol,
+  );
+  compareValue(
+    mismatches,
+    'properties.clusteringPolicy',
+    resource?.properties?.clusteringPolicy,
+    requested.clusteringPolicy,
+  );
+  compareValue(
+    mismatches,
+    'properties.evictionPolicy',
+    resource?.properties?.evictionPolicy,
+    requested.evictionPolicy,
+  );
+  compareValue(mismatches, 'properties.port', resource?.properties?.port, requested.port);
+
+  if (mismatches.length > 0) {
+    violations.push(`the predicted Managed Redis database differs from the request: ${mismatches.join(', ')}`);
+  }
+}
+
+/**
+ * @param {string[]} mismatches
+ * @param {string} label
+ * @param {unknown} actual
+ * @param {unknown} expected
+ */
+function compareValue(mismatches, label, actual, expected) {
+  if (expected !== undefined && actual !== expected) {
+    mismatches.push(`${label} is ${String(actual)} rather than ${String(expected)}`);
+  }
+}
+
+/**
+ * Azure resource IDs are case insensitive even though their returned casing varies.
+ *
+ * @param {string[]} mismatches
+ * @param {string} label
+ * @param {unknown} actual
+ * @param {unknown} expected
+ */
+function compareResourceId(mismatches, label, actual, expected) {
+  if (
+    expected !== undefined &&
+    (typeof actual !== 'string' ||
+      actual.toLowerCase() !== String(expected).toLowerCase())
+  ) {
+    mismatches.push(`${label} is ${String(actual)} rather than ${String(expected)}`);
+  }
 }
 
 /**
@@ -151,16 +291,26 @@ async function main() {
   }
 
   const parameters = await loadBicepParameters();
-  const requestedSku = {
+  const requested = {
+    subscriptionId,
+    resourceGroup,
+    cacheName: PROBE_CACHE_NAME,
+    location: parameters.values.redisLocation,
     skuName: parameters.values.redisSkuName,
-    skuFamily: parameters.values.redisSkuFamily,
-    skuCapacity: parameters.values.redisSkuCapacity,
+    databaseName: parameters.values.redisDatabaseName,
+    port: parameters.values.redisPort,
+    minimumTlsVersion: '1.2',
+    publicNetworkAccess: 'Enabled',
+    accessKeysAuthentication: 'Disabled',
+    clientProtocol: 'Encrypted',
+    clusteringPolicy: 'OSSCluster',
+    evictionPolicy: 'AllKeysLRU',
   };
 
   const redact = (text) => text.replaceAll(subscriptionId, '<subscription-id>');
 
   process.stdout.write(
-    `template ${REDIS_TEMPLATE}\nrequested sku ${String(requestedSku.skuName)} family ${String(requestedSku.skuFamily)} capacity ${String(requestedSku.skuCapacity)}\nregion ${location}\n\n`,
+    `template ${REDIS_TEMPLATE}\nrequested sku ${String(requested.skuName)}, database ${String(requested.databaseName)}, port ${String(requested.port)}\nregion ${String(requested.location)}\n\n`,
   );
 
   // No workspace exists yet. A syntactically valid identifier for one that does not
@@ -173,15 +323,15 @@ async function main() {
     '--template-file',
     REDIS_TEMPLATE,
     '--parameters',
-    `location=${location}`,
+    `location=${String(requested.location)}`,
     '--parameters',
     `cacheName=${PROBE_CACHE_NAME}`,
     '--parameters',
-    `skuFamily=${String(requestedSku.skuFamily)}`,
+    `skuName=${String(requested.skuName)}`,
     '--parameters',
-    `skuName=${String(requestedSku.skuName)}`,
+    `databaseName=${String(requested.databaseName)}`,
     '--parameters',
-    `skuCapacity=${String(requestedSku.skuCapacity)}`,
+    `port=${String(requested.port)}`,
     '--parameters',
     `workspaceId=${workspaceId}`,
     '--parameters',
@@ -229,7 +379,7 @@ async function main() {
     return EXIT_CODES.blocked;
   }
 
-  const assessment = assessChangeSet(parsed?.changes, requestedSku);
+  const assessment = assessChangeSet(parsed?.changes, requested);
 
   for (const type of assessment.created) {
     process.stdout.write(`     Create ${type}\n`);
@@ -247,7 +397,7 @@ async function main() {
   }
 
   process.stdout.write(
-    '\nPASS the predicted change set contains only the redis cache and its diagnostic setting\n',
+    '\nPASS the predicted change set contains exactly the approved Managed Redis cluster, database and diagnostic setting\n',
   );
   process.stdout.write(
     'capacity is not reserved. A what if predicts a create against current conditions only.\n',

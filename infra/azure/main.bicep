@@ -16,11 +16,17 @@ targetScope = 'subscription'
 // absent from the outputs below, because deployment outputs are recorded in
 // deployment history and readable by anyone with reader access.
 
-@description('Azure region for the resource group and all regional resources. Constrained to the approved region, so a mistyped or copied value fails at validation rather than provisioning a parallel estate somewhere else.')
+@description('Azure region for the resource group and all regional resources except Managed Redis. Constrained to the approved region, so a mistyped or copied value fails before provisioning.')
 @allowed([
   'australiaeast'
 ])
 param location string
+
+@description('Azure region for Managed Redis. The approved Balanced_B3 replacement is deployed in Australia Central.')
+@allowed([
+  'australiacentral'
+])
+param redisLocation string
 
 @description('Resource group that contains app Azure resources.')
 param resourceGroupName string
@@ -82,15 +88,6 @@ param postgresBackupRetentionDays int
 @description('Application database name.')
 param postgresDatabaseName string
 
-@description('Object ID of the Entra principal granted PostgreSQL administrator.')
-param entraAdminObjectId string
-
-@description('UPN or display name of the Entra administrator principal.')
-param entraAdminPrincipalName string
-
-@description('Entra principal type of the administrator.')
-param entraAdminPrincipalType string
-
 // App Service. Hosts the Vite dist build and the migrated api handlers.
 
 @description('App Service plan name.')
@@ -114,19 +111,20 @@ param appServiceAllowedCorsOrigins array
 @description('AZD service name for the web app. Must match the service key under services in azure.yaml.')
 param webAppAzdServiceName string = 'web'
 
-// Redis. Caches Foundry responses for repeated vocabulary items, plus session state.
+// Managed Redis. Caches Foundry responses for repeated vocabulary items, plus
+// session state. The application does not consume it until identity wiring lands.
 
 @description('Redis cache name.')
 param redisCacheName string = 'ccl-redis-${nameSuffix}'
 
-@description('Redis SKU family.')
-param redisSkuFamily string
-
-@description('Redis SKU name.')
+@description('Managed Redis SKU name.')
 param redisSkuName string
 
-@description('Redis capacity index.')
-param redisSkuCapacity int
+@description('Managed Redis database name.')
+param redisDatabaseName string
+
+@description('Managed Redis TLS port.')
+param redisPort int
 
 // Storage. Generated TTS audio. Private container, shared key access disabled.
 
@@ -230,7 +228,10 @@ module appService 'app-service.bicep' = {
     workspaceId: monitoring.outputs.workspaceId
     postgresServerFqdn: '${postgresServerName}.postgres.database.azure.com'
     postgresDatabaseName: postgresDatabaseName
-    redisHostName: '${redisCacheName}.redis.cache.windows.net'
+    // Deterministic rather than read from the Redis module output. App Service is
+    // deployed before the cache and this avoids introducing a dependency cycle.
+    redisHostName: '${redisCacheName}.${redisLocation}.redis.azure.net'
+    redisPort: redisPort
     storageAccountName: storageAccountName
     audioContainerName: audioContainerName
     speechAccountName: speechAccountName
@@ -256,9 +257,6 @@ module postgres 'postgres.bicep' = {
     postgresVersion: postgresVersion
     backupRetentionDays: postgresBackupRetentionDays
     databaseName: postgresDatabaseName
-    entraAdminObjectId: entraAdminObjectId
-    entraAdminPrincipalName: entraAdminPrincipalName
-    entraAdminPrincipalType: entraAdminPrincipalType
     allowedOutboundIpAddresses: appService.outputs.possibleOutboundIpAddresses
     workspaceId: monitoring.outputs.workspaceId
   }
@@ -268,12 +266,12 @@ module redis 'redis.bicep' = {
   name: 'redis-${uniqueString(resourceGroupName, redisCacheName)}'
   scope: appResourceGroup
   params: {
-    location: location
+    location: redisLocation
     tags: commonTags
     cacheName: redisCacheName
-    skuFamily: redisSkuFamily
     skuName: redisSkuName
-    skuCapacity: redisSkuCapacity
+    databaseName: redisDatabaseName
+    port: redisPort
     workspaceId: monitoring.outputs.workspaceId
   }
 }
@@ -399,6 +397,8 @@ output POSTGRES_DATABASE_NAME string = postgres.outputs.databaseName
 output REDIS_CACHE_NAME string = redis.outputs.cacheName
 output REDIS_CACHE_ID string = redis.outputs.cacheId
 output REDIS_HOST_NAME string = redis.outputs.cacheHostName
+output REDIS_PORT int = redis.outputs.cachePort
+output REDIS_DATABASE_NAME string = redis.outputs.databaseName
 
 output STORAGE_ACCOUNT_NAME string = storage.outputs.storageAccountName
 output STORAGE_ACCOUNT_ID string = storage.outputs.storageAccountId

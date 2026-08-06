@@ -10,21 +10,60 @@ import { describe, expect, it } from 'vitest';
 
 import {
   ALLOWED_CREATE_TYPES,
-  REQUIRED_CREATE_TYPE,
+  REQUIRED_CREATE_TYPES,
   assessChangeSet,
 } from './validate-redis.js';
 
-const REQUESTED = { skuName: 'Basic', skuFamily: 'C', skuCapacity: 1 };
+const REQUESTED = Object.freeze({
+  subscriptionId: '00000000-0000-0000-0000-000000000000',
+  resourceGroup: 'ccl-pronunciation-trainer-rg',
+  cacheName: 'ccl-managed-redis-whatif-probe',
+  location: 'australiacentral',
+  skuName: 'Balanced_B3',
+  databaseName: 'default',
+  port: 10000,
+  minimumTlsVersion: '1.2',
+  publicNetworkAccess: 'Enabled',
+  accessKeysAuthentication: 'Disabled',
+  clientProtocol: 'Encrypted',
+  clusteringPolicy: 'OSSCluster',
+  evictionPolicy: 'AllKeysLRU',
+});
 
-/** The Redis create as ARM actually returned it. */
-function redisCreate(sku = { name: 'Basic', family: 'C', capacity: 1 }) {
+function clusterCreate(overrides = {}) {
   return {
     changeType: 'Create',
     before: null,
     after: {
-      type: 'Microsoft.Cache/redis',
-      location: 'australiaeast',
-      properties: { sku },
+      type: 'Microsoft.Cache/redisEnterprise',
+      name: REQUESTED.cacheName,
+      location: REQUESTED.location,
+      sku: { name: REQUESTED.skuName },
+      properties: {
+        minimumTlsVersion: REQUESTED.minimumTlsVersion,
+        publicNetworkAccess: REQUESTED.publicNetworkAccess,
+      },
+      ...overrides,
+    },
+  };
+}
+
+function databaseCreate(overrides = {}) {
+  return {
+    changeType: 'Create',
+    before: null,
+    after: {
+      type: 'Microsoft.Cache/redisEnterprise/databases',
+      id: `/subscriptions/${REQUESTED.subscriptionId}/resourceGroups/${REQUESTED.resourceGroup}/providers/Microsoft.Cache/redisEnterprise/${REQUESTED.cacheName}/databases/${REQUESTED.databaseName}`,
+      name: REQUESTED.databaseName,
+      properties: {
+        accessKeysAuthentication: REQUESTED.accessKeysAuthentication,
+        clientProtocol: REQUESTED.clientProtocol,
+        clusteringPolicy: REQUESTED.clusteringPolicy,
+        evictionPolicy: REQUESTED.evictionPolicy,
+        port: REQUESTED.port,
+      },
+      ...overrides,
     },
   };
 }
@@ -48,9 +87,9 @@ function speechIgnored(changeType = 'Ignore') {
 }
 
 describe('accepted change sets', () => {
-  it('accepts the cache, its diagnostic setting and an ignored unrelated resource', () => {
+  it('accepts the cluster, database, diagnostic setting and an ignored unrelated resource', () => {
     const assessment = assessChangeSet(
-      [redisCreate(), diagnosticCreate(), speechIgnored()],
+      [clusterCreate(), databaseCreate(), diagnosticCreate(), speechIgnored()],
       REQUESTED,
     );
 
@@ -60,20 +99,36 @@ describe('accepted change sets', () => {
   });
 
   it('treats NoChange on an unrelated resource as no alteration', () => {
-    expect(assessChangeSet([redisCreate(), speechIgnored('NoChange')], REQUESTED).ok).toBe(true);
+    expect(
+      assessChangeSet([clusterCreate(), databaseCreate(), speechIgnored('NoChange')], REQUESTED)
+        .ok,
+    ).toBe(true);
+  });
+
+  it('normalises ARM resource type casing', () => {
+    const cluster = clusterCreate();
+    cluster.after.type = 'microsoft.cache/redisenterprise';
+
+    expect(assessChangeSet([cluster, databaseCreate()], REQUESTED).ok).toBe(true);
   });
 });
 
 describe('refused change sets', () => {
   it('refuses a Modify on an unrelated resource', () => {
-    const assessment = assessChangeSet([redisCreate(), speechIgnored('Modify')], REQUESTED);
+    const assessment = assessChangeSet(
+      [clusterCreate(), databaseCreate(), speechIgnored('Modify')],
+      REQUESTED,
+    );
 
     expect(assessment.ok).toBe(false);
     expect(assessment.violations[0]).toContain('Modify');
   });
 
   it('refuses a Delete on an unrelated resource', () => {
-    const assessment = assessChangeSet([redisCreate(), speechIgnored('Delete')], REQUESTED);
+    const assessment = assessChangeSet(
+      [clusterCreate(), databaseCreate(), speechIgnored('Delete')],
+      REQUESTED,
+    );
 
     expect(assessment.ok).toBe(false);
     expect(assessment.violations[0]).toContain('Delete');
@@ -82,7 +137,8 @@ describe('refused change sets', () => {
   it('refuses a Create of any other resource type', () => {
     const assessment = assessChangeSet(
       [
-        redisCreate(),
+        clusterCreate(),
+        databaseCreate(),
         { changeType: 'Create', after: { type: 'Microsoft.Web/serverfarms' } },
       ],
       REQUESTED,
@@ -92,33 +148,101 @@ describe('refused change sets', () => {
     expect(assessment.violations[0]).toContain('unexpected Create');
   });
 
-  it('refuses a change set that never predicts the cache', () => {
-    const assessment = assessChangeSet([diagnosticCreate(), speechIgnored()], REQUESTED);
+  it.each(REQUIRED_CREATE_TYPES)('refuses a change set missing %s', (missingType) => {
+    const changes = [clusterCreate(), databaseCreate()].filter(
+      (entry) => entry.after.type !== missingType,
+    );
+    const assessment = assessChangeSet(changes, REQUESTED);
 
     expect(assessment.ok).toBe(false);
-    expect(assessment.violations.join(' ')).toContain(REQUIRED_CREATE_TYPE);
+    expect(assessment.violations.join(' ')).toContain(missingType);
   });
 
-  it('refuses a predicted sku that differs from the request', () => {
-    // A silently substituted tier would otherwise read as success and prove the wrong
-    // thing, which is the failure this probe exists to prevent.
+  it('refuses a duplicate cluster prediction', () => {
     const assessment = assessChangeSet(
-      [redisCreate({ name: 'Standard', family: 'C', capacity: 1 })],
+      [clusterCreate(), clusterCreate(), databaseCreate()],
       REQUESTED,
     );
 
     expect(assessment.ok).toBe(false);
-    expect(assessment.violations[0]).toContain('Standard');
+    expect(assessment.violations.join(' ')).toContain('exactly once');
   });
 
-  it('refuses a differing capacity', () => {
+  it.each([
+    ['sku', clusterCreate({ sku: { name: 'MemoryOptimized_M10' } }), 'MemoryOptimized_M10'],
+    ['region', clusterCreate({ location: 'australiaeast' }), 'australiaeast'],
+    [
+      'tls',
+      clusterCreate({
+        properties: { minimumTlsVersion: '1.0', publicNetworkAccess: 'Enabled' },
+      }),
+      '1.0',
+    ],
+    [
+      'public network',
+      clusterCreate({
+        properties: { minimumTlsVersion: '1.2', publicNetworkAccess: 'Disabled' },
+      }),
+      'Disabled',
+    ],
+  ])('refuses a differing cluster %s', (_label, cluster, expectedDetail) => {
     const assessment = assessChangeSet(
-      [redisCreate({ name: 'Basic', family: 'C', capacity: 2 })],
+      [cluster, databaseCreate()],
       REQUESTED,
     );
 
     expect(assessment.ok).toBe(false);
-    expect(assessment.violations[0]).toContain('capacity 2');
+    expect(assessment.violations.join(' ')).toContain(expectedDetail);
+  });
+
+  it.each([
+    [
+      'access key authentication',
+      { accessKeysAuthentication: 'Enabled' },
+      'accessKeysAuthentication',
+    ],
+    ['client protocol', { clientProtocol: 'Plaintext' }, 'clientProtocol'],
+    ['clustering', { clusteringPolicy: 'EnterpriseCluster' }, 'clusteringPolicy'],
+    ['eviction', { evictionPolicy: 'NoEviction' }, 'evictionPolicy'],
+    ['port', { port: 6380 }, '6380'],
+  ])('refuses a differing database %s', (_label, propertyOverride, expectedDetail) => {
+    const database = databaseCreate({
+      properties: {
+        ...databaseCreate().after.properties,
+        ...propertyOverride,
+      },
+    });
+    const assessment = assessChangeSet([clusterCreate(), database], REQUESTED);
+
+    expect(assessment.ok).toBe(false);
+    expect(assessment.violations.join(' ')).toContain(expectedDetail);
+  });
+
+  it('refuses a database attached under a different cluster name', () => {
+    const assessment = assessChangeSet(
+      [
+        clusterCreate(),
+        databaseCreate({
+          id: `/subscriptions/${REQUESTED.subscriptionId}/resourceGroups/${REQUESTED.resourceGroup}/providers/Microsoft.Cache/redisEnterprise/other/databases/${REQUESTED.databaseName}`,
+        }),
+      ],
+      REQUESTED,
+    );
+
+    expect(assessment.ok).toBe(false);
+    expect(assessment.violations.join(' ')).toContain(
+      'redisEnterprise/other/databases/default',
+    );
+  });
+
+  it('refuses a database with a different leaf name', () => {
+    const assessment = assessChangeSet(
+      [clusterCreate(), databaseCreate({ name: 'other' })],
+      REQUESTED,
+    );
+
+    expect(assessment.ok).toBe(false);
+    expect(assessment.violations.join(' ')).toContain('name is other rather than default');
   });
 
   it('refuses a response with no change array rather than reporting success', () => {
@@ -127,13 +251,16 @@ describe('refused change sets', () => {
   });
 
   it('refuses a malformed change entry', () => {
-    const assessment = assessChangeSet([redisCreate(), null], REQUESTED);
+    const assessment = assessChangeSet([clusterCreate(), databaseCreate(), null], REQUESTED);
 
     expect(assessment.ok).toBe(false);
   });
 
   it('refuses an unrecognised change type', () => {
-    const assessment = assessChangeSet([redisCreate(), speechIgnored('Deploy')], REQUESTED);
+    const assessment = assessChangeSet(
+      [clusterCreate(), databaseCreate(), speechIgnored('Deploy')],
+      REQUESTED,
+    );
 
     expect(assessment.ok).toBe(false);
   });

@@ -35,6 +35,25 @@ export const APPROVED_SPEECH = Object.freeze({
   type: 'Microsoft.CognitiveServices/accounts',
 });
 
+/** The complete approved replacement for the rejected Classic Redis cache. */
+export const APPROVED_MANAGED_REDIS = Object.freeze({
+  clusterType: 'Microsoft.Cache/redisEnterprise',
+  databaseType: 'Microsoft.Cache/redisEnterprise/databases',
+  location: 'australiacentral',
+  skuName: 'Balanced_B3',
+  databaseName: 'default',
+  port: 10000,
+  minimumTlsVersion: '1.2',
+  publicNetworkAccess: 'Enabled',
+  accessKeysAuthentication: 'Disabled',
+  clientProtocol: 'Encrypted',
+  clusteringPolicy: 'OSSCluster',
+  evictionPolicy: 'AllKeysLRU',
+});
+
+/** Classic Azure Cache for Redis is retiring and rejected the live deployment. */
+export const FORBIDDEN_CLASSIC_REDIS_TYPE = 'Microsoft.Cache/redis';
+
 /**
  * Resource types that must never appear. Matched case insensitively on a prefix, so
  * a child type such as accounts/deployments is caught by its parent entry.
@@ -76,14 +95,24 @@ export const FORBIDDEN_ACCOUNT_KINDS = Object.freeze([
  *
  * @param {unknown} template
  * @param {string} path Location description used in findings.
- * @returns {Array<{ type: string, name: string, kind: string | undefined, at: string }>}
+ * @param {Record<string, any>} bindings Values passed by the containing deployment.
+ * @returns {Array<{
+ *   type: string,
+ *   name: string,
+ *   kind: string | undefined,
+ *   at: string,
+ *   declaration: Record<string, any>,
+ *   template: Record<string, any>,
+ *   bindings: Record<string, any>,
+ * }>}
  */
-export function collectResources(template, path = 'main') {
+export function collectResources(template, path = 'main', bindings = {}) {
   if (typeof template !== 'object' || template === null) {
     return [];
   }
 
-  const resources = /** @type {Record<string, any>} */ (template).resources;
+  const containingTemplate = /** @type {Record<string, any>} */ (template);
+  const resources = containingTemplate.resources;
   if (resources === undefined) {
     return [];
   }
@@ -102,11 +131,25 @@ export function collectResources(template, path = 'main') {
     const name = typeof resource.name === 'string' ? resource.name : '';
     const kind = typeof resource.kind === 'string' ? resource.kind : undefined;
 
-    collected.push({ type, name, kind, at: path });
+    collected.push({
+      type,
+      name,
+      kind,
+      at: path,
+      declaration: resource,
+      template: containingTemplate,
+      bindings,
+    });
 
     const nested = resource?.properties?.template;
     if (nested !== undefined) {
-      collected.push(...collectResources(nested, `${path} > ${name || type}`));
+      collected.push(
+        ...collectResources(
+          nested,
+          `${path} > ${name || type}`,
+          resource?.properties?.parameters ?? {},
+        ),
+      );
     }
   }
 
@@ -192,6 +235,179 @@ export function resolveApprovedName(template, nameExpression) {
 }
 
 /**
+ * Check a literal or a parameter expression that is constrained to one value.
+ *
+ * Integer parameters use identical minimum and maximum values instead of
+ * allowedValues in compiled Bicep, so both constraint forms are accepted.
+ *
+ * @param {Record<string, any>} template
+ * @param {unknown} expression
+ * @param {string | number} expected
+ * @returns {boolean}
+ */
+function isPinnedValue(template, expression, expected) {
+  if (expression === expected) {
+    return true;
+  }
+  if (typeof expression !== 'string') {
+    return false;
+  }
+
+  const parameterMatch = expression.match(/^\[parameters\('([^']+)'\)\]$/);
+  if (parameterMatch === null) {
+    return false;
+  }
+
+  const parameter = template?.parameters?.[parameterMatch[1]];
+  if (Array.isArray(parameter?.allowedValues)) {
+    return parameter.allowedValues.length === 1 && parameter.allowedValues[0] === expected;
+  }
+
+  return parameter?.minValue === expected && parameter?.maxValue === expected;
+}
+
+/**
+ * Verify that the compiled template contains exactly the approved Managed Redis
+ * cluster/database pair and cannot fall back to Classic Redis.
+ *
+ * @param {unknown} rootTemplate
+ * @param {ReturnType<typeof collectResources>} resources
+ * @param {DeploymentReport} report
+ */
+function verifyManagedRedis(rootTemplate, resources, report) {
+  const classicType = FORBIDDEN_CLASSIC_REDIS_TYPE.toLowerCase();
+  const classic = resources.filter((resource) => {
+    const type = resource.type.toLowerCase();
+    return type === classicType || type.startsWith(`${classicType}/`);
+  });
+
+  report.record({
+    name: 'no classic azure cache for redis',
+    status: classic.length === 0 ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    detail:
+      classic.length === 0
+        ? 'no Classic Redis resource or child is declared'
+        : `forbidden Classic Redis declarations: ${classic
+            .map((resource) => `${resource.type} at ${resource.at}`)
+            .join(', ')}`,
+  });
+
+  const clusters = resources.filter(
+    (resource) =>
+      resource.type.toLowerCase() === APPROVED_MANAGED_REDIS.clusterType.toLowerCase(),
+  );
+  const databases = resources.filter(
+    (resource) =>
+      resource.type.toLowerCase() === APPROVED_MANAGED_REDIS.databaseType.toLowerCase(),
+  );
+  const failures = [];
+
+  if (clusters.length !== 1) {
+    failures.push(`${String(clusters.length)} Managed Redis clusters rather than one`);
+  }
+  if (databases.length !== 1) {
+    failures.push(`${String(databases.length)} Managed Redis databases rather than one`);
+  }
+
+  const cluster = clusters[0];
+  const database = databases[0];
+  const root = /** @type {Record<string, any>} */ (rootTemplate);
+
+  if (cluster !== undefined && database !== undefined) {
+    if (cluster.at !== database.at) {
+      failures.push('cluster and database are declared in different modules');
+    }
+
+    if (
+      cluster.bindings?.location?.value !== "[parameters('redisLocation')]" ||
+      !isPinnedValue(root, "[parameters('redisLocation')]", APPROVED_MANAGED_REDIS.location)
+    ) {
+      failures.push(`location is not pinned to ${APPROVED_MANAGED_REDIS.location}`);
+    }
+
+    if (
+      !isPinnedValue(
+        cluster.template,
+        cluster.declaration?.sku?.name,
+        APPROVED_MANAGED_REDIS.skuName,
+      )
+    ) {
+      failures.push(`sku is not pinned to ${APPROVED_MANAGED_REDIS.skuName}`);
+    }
+
+    if (
+      cluster.declaration?.properties?.minimumTlsVersion !==
+      APPROVED_MANAGED_REDIS.minimumTlsVersion
+    ) {
+      failures.push(`minimum TLS is not ${APPROVED_MANAGED_REDIS.minimumTlsVersion}`);
+    }
+    if (
+      cluster.declaration?.properties?.publicNetworkAccess !==
+      APPROVED_MANAGED_REDIS.publicNetworkAccess
+    ) {
+      failures.push(`public network access is not ${APPROVED_MANAGED_REDIS.publicNetworkAccess}`);
+    }
+
+    const expectedDatabaseName =
+      "[format('{0}/{1}', parameters('cacheName'), parameters('databaseName'))]";
+    if (database.name !== expectedDatabaseName) {
+      failures.push('database is not a child of the declared cluster name');
+    }
+    if (
+      !isPinnedValue(
+        database.template,
+        "[parameters('databaseName')]",
+        APPROVED_MANAGED_REDIS.databaseName,
+      )
+    ) {
+      failures.push(`database name is not pinned to ${APPROVED_MANAGED_REDIS.databaseName}`);
+    }
+    if (
+      !isPinnedValue(
+        database.template,
+        database.declaration?.properties?.port,
+        APPROVED_MANAGED_REDIS.port,
+      )
+    ) {
+      failures.push(`database port is not pinned to ${String(APPROVED_MANAGED_REDIS.port)}`);
+    }
+
+    for (const [property, expected] of [
+      ['accessKeysAuthentication', APPROVED_MANAGED_REDIS.accessKeysAuthentication],
+      ['clientProtocol', APPROVED_MANAGED_REDIS.clientProtocol],
+      ['clusteringPolicy', APPROVED_MANAGED_REDIS.clusteringPolicy],
+      ['evictionPolicy', APPROVED_MANAGED_REDIS.evictionPolicy],
+    ]) {
+      if (database.declaration?.properties?.[property] !== expected) {
+        failures.push(`${property} is not ${String(expected)}`);
+      }
+    }
+
+    const dependencies = Array.isArray(database.declaration?.dependsOn)
+      ? database.declaration.dependsOn
+      : [];
+    if (
+      !dependencies.some((dependency) =>
+        String(dependency)
+          .toLowerCase()
+          .includes(APPROVED_MANAGED_REDIS.clusterType.toLowerCase()),
+      )
+    ) {
+      failures.push('database does not depend on the Managed Redis cluster');
+    }
+  }
+
+  report.record({
+    name: 'approved managed redis cluster and database',
+    status: failures.length === 0 ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    detail:
+      failures.length === 0
+        ? `${APPROVED_MANAGED_REDIS.skuName} in ${APPROVED_MANAGED_REDIS.location} with encrypted keyless database ${APPROVED_MANAGED_REDIS.databaseName} on port ${String(APPROVED_MANAGED_REDIS.port)}`
+        : failures.join('; '),
+  });
+}
+
+/**
  * Apply every invariant to a parsed template.
  *
  * @param {unknown} template
@@ -202,6 +418,7 @@ export function verifyInvariants(template, report) {
   const outputs = collectOutputNames(template);
 
   report.note(`walked ${resources.length} resource declarations including nested deployments`);
+  verifyManagedRedis(template, resources, report);
 
   const cognitiveAccounts = resources.filter(
     (resource) => resource.type.toLowerCase() === APPROVED_SPEECH.type.toLowerCase(),

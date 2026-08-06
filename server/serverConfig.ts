@@ -17,9 +17,21 @@ import { fileURLToPath } from 'node:url';
 export const ENV_KEYS = {
   port: 'PORT',
   nodeEnv: 'NODE_ENV',
+  deploymentStage: 'DEPLOYMENT_STAGE',
   distDirectory: 'DIST_DIRECTORY',
   processedDataDirectory: 'PROCESSED_DATA_DIRECTORY',
 } as const;
+
+/**
+ * Deployment stage reported by the health endpoint.
+ *
+ * Defaults to staging rather than production. This server runs beside the existing
+ * production deployment with incomplete handler parity, so anything reading the
+ * health endpoint should be told that unless a deployment explicitly says
+ * otherwise. Defaulting the other way would let an unset value misrepresent a
+ * partial environment as the real one.
+ */
+export const DEFAULT_DEPLOYMENT_STAGE = 'staging';
 
 /**
  * App Service supplies the listening port. The fallback exists only for local
@@ -37,6 +49,8 @@ const PACKAGE_LAYOUT = {
 export interface ServerConfig {
   readonly port: number;
   readonly isProduction: boolean;
+  /** Reported by the health endpoint. Staging unless a deployment says otherwise. */
+  readonly deploymentStage: string;
   /** Absolute path to the built client assets. */
   readonly distDirectory: string;
   /** Absolute path to the generated practice content. */
@@ -76,6 +90,7 @@ export function loadServerConfig(
   return {
     port: parsedPort,
     isProduction: environment[ENV_KEYS.nodeEnv] === 'production',
+    deploymentStage: environment[ENV_KEYS.deploymentStage] ?? DEFAULT_DEPLOYMENT_STAGE,
     distDirectory:
       environment[ENV_KEYS.distDirectory] ??
       firstExistingRoot(packageRoot, PACKAGE_LAYOUT.clientAssets),

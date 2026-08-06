@@ -66,7 +66,13 @@ beforeAll(async () => {
 
   server = createServer(
     createApp(
-      { port: 0, isProduction: true, distDirectory, processedDataDirectory },
+      {
+        port: 0,
+        isProduction: true,
+        deploymentStage: 'staging',
+        distDirectory,
+        processedDataDirectory,
+      },
       () => undefined,
     ),
   );
@@ -90,7 +96,19 @@ describe('health endpoint', () => {
 
     expect(response.status).toBe(HTTP_STATUS.ok);
     expect(response.headers.get(HEADER.cacheControl)).toBe('no-store');
-    await expect(response.json()).resolves.toEqual({ status: HEALTH_STATUS_OK });
+    await expect(response.json()).resolves.toEqual({
+      status: HEALTH_STATUS_OK,
+      stage: 'staging',
+    });
+  });
+
+  it('reports the deployment stage so a parallel environment is identifiable', async () => {
+    const response = await get(HEALTH_PATH);
+    const body = await response.json();
+
+    // Handler parity is incomplete, so the endpoint must not present itself as
+    // production. Defaulting the other way would misrepresent a partial deployment.
+    expect(body.stage).not.toBe('production');
   });
 
   it('answers a bodyless probe without a body', async () => {
@@ -255,7 +273,13 @@ describe('malformed request targets', () => {
     process.on('unhandledRejection', capture);
 
     const listener = createApp(
-      { port: 0, isProduction: true, distDirectory: workspace, processedDataDirectory: workspace },
+      {
+        port: 0,
+        isProduction: true,
+        deploymentStage: 'staging',
+        distDirectory: workspace,
+        processedDataDirectory: workspace,
+      },
       () => undefined,
     );
 
@@ -321,6 +345,16 @@ describe('asset root resolution', () => {
     const config = loadServerConfig({ DIST_DIRECTORY: '/explicit/assets' }, workspace);
 
     expect(config.distDirectory).toBe('/explicit/assets');
+  });
+
+  it('defaults the deployment stage to staging rather than production', () => {
+    expect(loadServerConfig({}, workspace).deploymentStage).toBe('staging');
+  });
+
+  it('reports the stage a deployment supplies', () => {
+    expect(loadServerConfig({ DEPLOYMENT_STAGE: 'production' }, workspace).deploymentStage).toBe(
+      'production',
+    );
   });
 });
 

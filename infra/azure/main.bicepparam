@@ -20,15 +20,24 @@ using 'main.bicep'
 // Set them with azd env set, for example:
 //   azd env set APIM_PUBLISHER_EMAIL <address>
 
-param location = readEnvironmentVariable('AZURE_LOCATION')
-param resourceGroupName = readEnvironmentVariable('AZURE_RESOURCE_GROUP')
-param environmentName = readEnvironmentVariable('AZURE_ENV_NAME')
+// Pinned project values. These identify one specific deployment target that is
+// not expected to change, so they carry defaults rather than forcing an operator
+// to restate them. An environment value still overrides, which is what keeps a
+// second environment possible without editing this file.
+param location = readEnvironmentVariable('AZURE_LOCATION', 'australiaeast')
+param resourceGroupName = readEnvironmentVariable('AZURE_RESOURCE_GROUP', 'ccl-pronunciation-trainer-rg')
+param environmentName = readEnvironmentVariable('AZURE_ENV_NAME', 'staging')
 
-// Speech. The account already exists and is updated in place. The name is read
-// from the environment rather than committed, because it is the one value whose
-// accuracy decides between upgrading the deployed account and creating a second
-// one. S0, not F0. F0 bills zero and cannot clear the floor.
-param speechAccountName = readEnvironmentVariable('SPEECH_ACCOUNT_NAME')
+// Deployment stage. Defaults to staging because this infrastructure runs beside
+// production rather than replacing it, and handler parity is incomplete. Moving to
+// production is a separate explicit approval, not a default.
+param deploymentStage = readEnvironmentVariable('DEPLOYMENT_STAGE', 'staging')
+
+// Speech. The account already exists and is updated in place. The name is pinned
+// to the deployed account, because its accuracy is what decides between upgrading
+// that account and creating a second one. S0, not F0. F0 bills zero and cannot
+// clear the floor. The upgrade itself is gated on an explicit confirmation.
+param speechAccountName = readEnvironmentVariable('SPEECH_ACCOUNT_NAME', 'ccl-pronunciation-speech-david')
 param speechSku = 'S0'
 
 // PostgreSQL. B2s rather than B1ms purely for the daily floor.
@@ -60,9 +69,12 @@ param appServicePlanSkuTier = 'Standard'
 param appServiceLinuxFxVersion = 'NODE|22-lts'
 
 // Browser origins permitted by App Service CORS. Supplied as a comma separated
-// list and split here, so the environment holds one readable value rather than a
-// JSON array an operator has to quote correctly.
-param appServiceAllowedCorsOrigins = split(readEnvironmentVariable('WEB_ALLOWED_ORIGINS'), ',')
+// list. Empty during the foundation stage, because no browser client points at the
+// staging endpoint yet and an empty allow list is the correct answer rather than a
+// missing one. Production client origins are unchanged and stay on Vercel.
+param appServiceAllowedCorsOrigins = empty(readEnvironmentVariable('WEB_ALLOWED_ORIGINS', ''))
+  ? []
+  : split(readEnvironmentVariable('WEB_ALLOWED_ORIGINS', ''), ',')
 
 // Redis. Basic C1 clears the floor; C0 does not. Classic Azure Cache for Redis
 // is a retiring product. If Basic C1 stops being provisionable in the target

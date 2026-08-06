@@ -21,6 +21,9 @@ param tags object
 @description('AZD service name. Must match the service key under services in azure.yaml, because that tag is how azd discovers which site to deploy the packaged application to. Without it, azd provisions successfully and then reports no matching service.')
 param azdServiceName string
 
+@description('Deployment stage, surfaced to the application so the running site can report that it is not production.')
+param deploymentStage string
+
 @description('App Service plan name.')
 param planName string
 
@@ -132,6 +135,13 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
         {
           name: 'NODE_ENV'
           value: 'production'
+        }
+        {
+          // Surfaced by the health endpoint. The site runs beside production with
+          // incomplete handler parity, so the running application says so rather
+          // than leaving that fact only in a document.
+          name: 'DEPLOYMENT_STAGE'
+          value: deploymentStage
         }
         {
           name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'

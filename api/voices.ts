@@ -1,37 +1,15 @@
 /**
- * Voice List API Route (Vercel Serverless Function)
- *
- * Returns available premium voices for Azure AI Speech TTS.
+ * Voice List API Route, Vercel entry point.
  *
  * Endpoint: /api/voices
  * Method: GET
+ *
+ * The implementation lives in api/handlers/voices.ts and is shared with the App
+ * Service production server. This file is only the platform binding, so the two
+ * hosts cannot drift apart while Vercel remains the rollback target.
  */
 
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { PREMIUM_VOICES } from './config.js';
+import { voicesHandler } from './handlers/voices.js';
+import { toVercelHandler } from './handlers/vercelAdapter.js';
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-) {
-  // Only allow GET requests
-  if (req.method !== 'GET') {
-    return res.status(405).json({
-      success: false,
-      error: 'Method not allowed',
-    });
-  }
-
-  try {
-    return res.status(200).json({
-      success: true,
-      data: PREMIUM_VOICES,
-    });
-  } catch (error: any) {
-    console.error('Voice list error:', error);
-    return res.status(500).json({
-      success: false,
-      error: error.message || 'Failed to fetch voice list',
-    });
-  }
-}
+export default toVercelHandler(voicesHandler);

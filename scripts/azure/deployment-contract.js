@@ -524,7 +524,7 @@ export const APPLICATION_PACKAGE = Object.freeze({
     {
       id: 'productionServer',
       source: 'dist-server',
-      target: 'server',
+      target: '.',
       required: true,
       producedBy: 'the server typescript build',
     },

@@ -1,0 +1,40 @@
+{
+  // Build for the App Service production server.
+  //
+  // Both `server` and `api` are compiled, because the handler cores under
+  // api/handlers are shared by two hosts: the node server in this repository and
+  // the Vercel functions that remain the rollback path. Compiling them once is
+  // what keeps a single implementation rather than a copy per host.
+  //
+  // Emitted layout mirrors the source, so dist-server/server/index.js is the
+  // entry point and dist-server/api/... are its imports. The package assembly in
+  // scripts/azure/build-package.js copies dist-server to the package root, which
+  // is why the startup command is `node server/index.js`.
+  //
+  // This config is standalone rather than extending tsconfig.json, because the
+  // browser config enables JSX and the DOM library, neither of which belongs in a
+  // node build. A shared base would silently widen the server's ambient types.
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "rootDir": ".",
+    "outDir": "dist-server",
+    "noEmit": false,
+    "sourceMap": true,
+    "declaration": false,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["server/**/*.ts", "api/**/*.ts"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "node_modules", "dist", "dist-server"]
+}

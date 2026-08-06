@@ -1,14 +1,14 @@
 # Azure deployment plan
 
-Status: Approved
+Status: Validated
 
 Approved on 6 August 2026 for validation only. This approval does not authorise
 deployment, and it changes no technical scope in this document. Every resource, SKU,
 quantity, guard, continuity rule and rollback boundary recorded below is unchanged from
 the reviewed version.
 
-Not validated. Validation is recorded by the official validation workflow, which writes
-`.azure/validate-status.json`. This document must not be marked Validated by hand.
+Validated on 6 August 2026 through the official `azure-validate` workflow. Validation
+records deployment readiness only; it does not authorise provisioning.
 
 No resource has been provisioned. Subscription state has been modified in one respect:
 four resource provider namespaces were registered that were not before. See 13.1.
@@ -104,6 +104,21 @@ Azure AI Speech, and any Front Door egress or WAF request charges.
 Least privilege role assignments are deliberately absent rather than stubbed. An
 empty role assignment module reads as complete and is not. Until they exist, the
 server reaches no data service, which is consistent with section 8.
+
+### 4.1 Role assignment verification
+
+- **Status:** Verified for the approved foundation scope.
+- **Identities checked:** App Service system assigned identity, API Management
+  system assigned identity and the local Azure CLI identity.
+- **Roles confirmed:** None. Neither deployed service identity is authorised to
+  access another Azure resource in this stage.
+- **Code cross-check:** The only registered handler, `/api/voices`, reads a
+  compile-time constant. Static files are read from the application package, and
+  API Management forwards to App Service over HTTPS without managed identity
+  authentication. Local validation performs no Azure data-plane operation.
+- **Issues:** None for this vertical slice. Any handler that reads Blob Storage,
+  invokes Speech or Foundry, or connects to PostgreSQL must add and revalidate the
+  matching least-privilege data-plane access before that handler is registered.
 
 ## 5. Deployment outputs
 
@@ -537,16 +552,16 @@ section 6.
 
 ## 14. Validation proof
 
-**Status: not yet run.**
+**Status: validation commands complete; no provisioning performed.**
 
-This section is intentionally empty. It is populated only from the output of an
-authorised preflight run and an authorised deployment. Do not fill it from local
-checks, and do not fill it by hand.
+The official validation workflow authorised the reads, builds, ARM validation and
+what-if operations recorded here. Provisioning and live endpoint evidence remain
+empty until a separately authorised deployment.
 
 | Evidence | Status |
 | --- | --- |
-| Preflight evidence block | not yet run |
-| Deployment what if review | not yet run |
+| Preflight evidence block | pass; 34 pass, 6 warn, 4 skip and 21 inconclusive capacity probes already bounded by section 13 |
+| Deployment what if review | pass; approved creates, resource-group tags and the existing Speech F0 to S0 update, with no deletes |
 | Provisioning result | not yet run |
 | Live health endpoint response | not yet run |
 | Live `/api/voices` response through App Service | not yet run |
@@ -554,31 +569,69 @@ checks, and do not fill it by hand.
 | Front Door routing and WAF verification | not yet run |
 | Cost Management daily reading per service | not yet run |
 
-### 14.1 Local checks, recorded separately
+### All validation checks pass
 
-Local checks are not deployment evidence. They are recorded here only to show the
-repository state the plan describes.
+#### AZD validation
+
+- [x] 1. AZD Installation
+- [x] 2. Schema Validation
+- [x] 3. Environment Setup
+- [x] 4. Authentication Check
+- [x] 5. Subscription/Location Check
+- [x] 6. Aspire Pre-Provisioning Checks
+- [x] 7. Provision Preview
+- [x] 8. Build Verification
+- [x] 9. Docker Build Context Validation
+- [x] 10. Package Validation
+- [x] 11. Azure Policy Validation
+- [x] 12. Aspire Post-Provisioning Checks
+
+#### Bicep validation
+
+- [x] 1. Core Validation (CLI, auth, build, validate, what-if)
+- [x] 2. Linting (optional)
+- [x] 3. Azure Policy Validation
+
+The Aspire and Docker checks are not applicable: the repository contains no
+AppHost, Aspire package reference, project file or Dockerfile. The subscription
+has no Azure Policy assignments. Both previews completed without applying
+resources and reported no deletes.
+
+### 14.1 Commands and results
+
+These checks are validation evidence, not provisioning evidence.
 
 | Command | Result |
 | --- | --- |
-| `pnpm test` | 378 passing across 27 files |
+| `azd version` | 1.23.13 installed |
+| `azd auth login --check-status` | authenticated |
+| `azd env list` and redacted `azd env get-values --output json` review | default environment `staging`; subscription and `australiaeast` match section 2; required operator values present; all three confirmation values unset |
+| `pnpm run azure:preflight:check` | pass; read-only mode, no provider registration or extension installation |
+| `pnpm test` | 416 passing across 30 files |
 | `pnpm run build` | success, 647 modules, service worker generated |
 | `pnpm run build:server` | success |
 | `pnpm run azure:package:check` | all three required inputs present |
 | `pnpm run azure:smoke:server` | 8 checks passing against the compiled server |
-| `az bicep build --file infra/azure/main.bicep --stdout` | 0 errors, 0 warnings |
+| `azd provision --preview --no-prompt` | success in 28 seconds; no resources applied |
+| `azd package --no-prompt` | success in 20 seconds |
+| `az bicep lint --file infra/azure/main.bicep` | success, no diagnostics |
+| `az bicep build --file infra/azure/main.bicep --stdout` | success, no diagnostics |
+| Azure Bicep core validation helper with the selected AZD values injected in-memory | `OVERALL: PASS`; CLI, authentication, build, ARM validate and what-if all passed |
+| Structured subscription what-if review with `ResourceIdOnly` | 30 creates, 2 deploy/update entries and no deletes; the two existing targets are the resource group and approved Speech account |
+| `az policy assignment list --subscription <target>` | zero assignments |
 | `pnpm run azure:verify:template` | 6 invariants passing, 45 resources and 72 outputs walked |
 
 ## 15. Exit criteria for this stage
 
-This stage is complete when all of the following hold. None hold today.
+This deployment stage is complete when all of the following hold. Validation has
+established criteria 1 and 2; criteria 3 through 8 require an authorised deployment.
 
-1. Section 13 contains real gathered evidence.
-2. A reviewed what if shows only intended resources and updates.
-3. Provisioning succeeds and section 14 is populated.
-4. The health endpoint reports the staging stage from the deployed site.
-5. `/api/voices` answers identically through App Service and through API
+1. [x] Section 13 contains real gathered evidence.
+2. [x] A reviewed what if shows only intended resources and updates.
+3. [ ] Provisioning succeeds and section 14 is populated.
+4. [ ] The health endpoint reports the staging stage from the deployed site.
+5. [ ] `/api/voices` answers identically through App Service and through API
    Management.
-6. Exactly one Speech account exists in the resource group, at S0.
-7. No Foundry or Machine Learning resource exists in the resource group.
-8. Production remains served by the existing deployment, unchanged.
+6. [ ] Exactly one Speech account exists in the resource group, at S0.
+7. [ ] No Foundry or Machine Learning resource exists in the resource group.
+8. [ ] Production remains served by the existing deployment, unchanged.

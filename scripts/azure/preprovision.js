@@ -16,7 +16,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { checkCapacity } from './check-capacity.js';
-import { confirmProvisioning } from './confirm-provisioning.js';
+import { confirmPaidProvisioning, confirmSpeechUpgrade } from './confirm-provisioning.js';
 import { registerProviders } from './register-providers.js';
 import { validateEnvironment } from './validate-environment.js';
 import { loadBicepParameters } from './lib/bicep-params.js';
@@ -65,9 +65,34 @@ export async function runPreprovision(options = {}) {
   if (report.blocked) {
     report.beginStage('preflight halted');
     report.record({
+      name: 'continue to the paid provisioning gate',
+      status: CHECK_STATUS.skip,
+      detail: 'the environment stage produced a blocking finding, so nothing further runs',
+    });
+    return finish(report, writeEvidence);
+  }
+
+  const parameters = await loadBicepParameters();
+
+  // The paid gate runs before provider registration, not after it.
+  //
+  // Registering a resource provider is a subscription level write. An earlier
+  // version of this hook ran the gate last, which meant a live run registered
+  // providers and installed CLI extensions before the operator was asked to agree
+  // to anything. Reads may precede consent. Writes may not.
+  confirmPaidProvisioning({
+    report,
+    deploymentStage: environment.resolved[AZD_ENV_KEYS.deploymentStage] ?? 'staging',
+    dryRun,
+  });
+
+  if (report.blocked) {
+    report.beginStage('preflight halted');
+    report.record({
       name: 'continue to provider registration',
       status: CHECK_STATUS.skip,
-      detail: 'the environment stage produced a blocking finding, so no subscription write is attempted',
+      detail:
+        'provisioning was not confirmed, so no provider registration and no extension installation is attempted',
     });
     return finish(report, writeEvidence);
   }
@@ -93,22 +118,20 @@ export async function runPreprovision(options = {}) {
   if (report.blocked) {
     report.beginStage('preflight halted');
     report.record({
-      name: 'continue to provisioning confirmation',
+      name: 'continue to the speech upgrade gate',
       status: CHECK_STATUS.skip,
       detail: 'capacity validation refused, so there is nothing to confirm',
     });
     return finish(report, writeEvidence);
   }
 
-  // Last gate before anything bills. Runs only once every read only check has
-  // passed, so the operator is agreeing to a deployment that is known to be
-  // viable rather than to a hopeful one.
-  const parameters = await loadBicepParameters();
-  confirmProvisioning({
+  // Runs here because it needs the deployed sku, which is only known after the
+  // capacity read. The sku change itself happens in ARM during provisioning, long
+  // after this point.
+  confirmSpeechUpgrade({
     report,
     requestedSpeechSku: parameters.values.speechSku,
     currentSpeechSku: capacity.observedSpeechSku,
-    deploymentStage: environment.resolved[AZD_ENV_KEYS.deploymentStage] ?? 'staging',
     dryRun,
   });
 

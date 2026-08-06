@@ -137,15 +137,17 @@ export const REQUIRED_ENVIRONMENT_VALUES = Object.freeze([
   {
     key: AZD_ENV_KEYS.webAllowedOrigins,
     shape: VALUE_SHAPE.originList,
-    gate: REQUIREMENT_GATE.provision,
-    purpose: 'Browser origins permitted by App Service CORS and by the API Management CORS policy.',
+    gate: REQUIREMENT_GATE.deploy,
+    purpose:
+      'Browser origins permitted by App Service CORS and by the API Management CORS policy. Deferred during the foundation stage: no browser client points at this estate yet, and an empty allow list is the correct answer rather than a missing one. The parameter file defaults it to empty.',
     howToObtain: 'Supplied by the operator as a comma separated list of https origins.',
   },
   {
     key: AZD_ENV_KEYS.capacitorAllowedOrigins,
     shape: VALUE_SHAPE.originList,
-    gate: REQUIREMENT_GATE.provision,
-    purpose: 'Native application origins permitted by the API Management CORS policy.',
+    gate: REQUIREMENT_GATE.deploy,
+    purpose:
+      'Native application origins permitted by the API Management CORS policy. Deferred until a native build targets this estate.',
     howToObtain:
       'Supplied by the operator. Capacitor presents a scheme specific origin rather than an https origin.',
   },

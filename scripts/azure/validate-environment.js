@@ -60,34 +60,14 @@ export async function validateEnvironment(options = {}) {
   /** @type {Record<string, string>} */
   const resolved = {};
 
-  report.beginStage(STAGE_LABELS.identity);
-
-  const subscriptionId = readTrimmed(processEnvironment, AZD_ENV_KEYS.subscriptionId);
-  const location = readTrimmed(processEnvironment, AZD_ENV_KEYS.location);
-
-  const subscriptionShape = validateShape(VALUE_SHAPE.guid, subscriptionId);
-  report.record({
-    name: AZD_ENV_KEYS.subscriptionId,
-    status: subscriptionShape.valid ? CHECK_STATUS.pass : CHECK_STATUS.fail,
-    detail: subscriptionShape.valid
-      ? 'present and correctly shaped'
-      : `unusable: ${subscriptionShape.reason}`,
-  });
-
-  const locationShape = validateShape(VALUE_SHAPE.azureRegion, location);
-  report.record({
-    name: AZD_ENV_KEYS.location,
-    status: locationShape.valid ? CHECK_STATUS.pass : CHECK_STATUS.fail,
-    detail: locationShape.valid ? `present, target region ${location}` : `unusable: ${locationShape.reason}`,
-  });
-
-  if (subscriptionShape.valid && subscriptionId !== undefined) {
-    resolved[AZD_ENV_KEYS.subscriptionId] = subscriptionId;
-  }
-  if (locationShape.valid && location !== undefined) {
-    resolved[AZD_ENV_KEYS.location] = location;
-  }
-
+  // The stored environment is read first, and identity is validated against the two
+  // sources merged.
+  //
+  // azd exports its values into the process only when azd itself invokes the hook.
+  // Run directly, process.env carries none of them, so validating identity from
+  // process.env alone failed on a correctly configured environment. Mismatch
+  // detection still compares the two sources independently, so merging cannot hide
+  // a disagreement.
   report.beginStage(STAGE_LABELS.consistency);
 
   const stored = await readAzdEnvironment({ timeoutMs: TIMEOUTS_MS.cliProbe });
@@ -126,6 +106,39 @@ export async function validateEnvironment(options = {}) {
         resolved[key] = value.trim();
       }
     }
+  }
+
+  report.beginStage(STAGE_LABELS.identity);
+
+  // Exported value wins where both are set, because a mismatch has already been
+  // reported above and the exported value is what a real azd run would use.
+  const subscriptionId =
+    readTrimmed(processEnvironment, AZD_ENV_KEYS.subscriptionId) ??
+    resolved[AZD_ENV_KEYS.subscriptionId];
+  const location =
+    readTrimmed(processEnvironment, AZD_ENV_KEYS.location) ?? resolved[AZD_ENV_KEYS.location];
+
+  const subscriptionShape = validateShape(VALUE_SHAPE.guid, subscriptionId);
+  report.record({
+    name: AZD_ENV_KEYS.subscriptionId,
+    status: subscriptionShape.valid ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    detail: subscriptionShape.valid
+      ? 'present and correctly shaped'
+      : `unusable: ${subscriptionShape.reason}`,
+  });
+
+  const locationShape = validateShape(VALUE_SHAPE.azureRegion, location);
+  report.record({
+    name: AZD_ENV_KEYS.location,
+    status: locationShape.valid ? CHECK_STATUS.pass : CHECK_STATUS.fail,
+    detail: locationShape.valid ? `present, target region ${location}` : `unusable: ${locationShape.reason}`,
+  });
+
+  if (subscriptionShape.valid && subscriptionId !== undefined) {
+    resolved[AZD_ENV_KEYS.subscriptionId] = subscriptionId;
+  }
+  if (locationShape.valid && location !== undefined) {
+    resolved[AZD_ENV_KEYS.location] = location;
   }
 
   report.beginStage(STAGE_LABELS.values);

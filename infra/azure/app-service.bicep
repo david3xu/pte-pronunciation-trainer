@@ -18,6 +18,9 @@ param location string
 @description('Tags applied to every resource in this module.')
 param tags object
 
+@description('AZD service name. Must match the service key under services in azure.yaml, because that tag is how azd discovers which site to deploy the packaged application to. Without it, azd provisions successfully and then reports no matching service.')
+param azdServiceName string
+
 @description('App Service plan name.')
 param planName string
 
@@ -90,7 +93,9 @@ resource plan 'Microsoft.Web/serverfarms@2023-12-01' = {
 resource webApp 'Microsoft.Web/sites@2023-12-01' = {
   name: webAppName
   location: location
-  tags: tags
+  tags: union(tags, {
+    'azd-service-name': azdServiceName
+  })
   kind: 'app,linux'
   identity: {
     type: 'SystemAssigned'

@@ -95,6 +95,9 @@ param appServiceLinuxFxVersion string
 @description('Origins permitted to call the web app.')
 param appServiceAllowedCorsOrigins array
 
+@description('AZD service name for the web app. Must match the service key under services in azure.yaml.')
+param webAppAzdServiceName string = 'web'
+
 // Redis. Caches Foundry responses for repeated vocabulary items, plus session state.
 
 @description('Redis cache name.')
@@ -198,6 +201,7 @@ module appService 'app-service.bicep' = {
     tags: commonTags
     planName: appServicePlanName
     webAppName: webAppName
+    azdServiceName: webAppAzdServiceName
     planSkuName: appServicePlanSkuName
     planSkuTier: appServicePlanSkuTier
     linuxFxVersion: appServiceLinuxFxVersion

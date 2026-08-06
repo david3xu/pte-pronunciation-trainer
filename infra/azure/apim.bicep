@@ -44,7 +44,19 @@ param backendHostName string
 @description('Log Analytics workspace resource id for diagnostics.')
 param workspaceId string
 
-var backendUrl = 'https://${backendHostName}'
+@description('Path segment the gateway exposes the api under. Also the path the backend serves it on.')
+param apiPathSegment string = 'api'
+
+var backendOrigin = 'https://${backendHostName}'
+
+// Forwarding arithmetic, stated because getting it wrong is silent.
+//
+// A gateway request to /api/voices has the api path segment stripped, leaving
+// /voices, which matches the operation url template below. That remainder is
+// appended to the service url. So the service url must itself end in the same
+// segment, or the backend receives /voices and the production server answers not
+// found for a route it does have.
+var backendServiceUrl = '${backendOrigin}/${apiPathSegment}'
 
 resource apim 'Microsoft.ApiManagement/service@2024-05-01' = {
   name: serviceName
@@ -68,7 +80,7 @@ resource handlerBackend 'Microsoft.ApiManagement/service/backends@2024-05-01' = 
   name: 'handler-backend'
   properties: {
     protocol: 'http'
-    url: backendUrl
+    url: backendServiceUrl
     title: 'Trainer api handlers on App Service'
     tls: {
       validateCertificateChain: true
@@ -82,7 +94,7 @@ resource handlerApi 'Microsoft.ApiManagement/service/apis@2024-05-01' = {
   name: 'trainer-api'
   properties: {
     displayName: 'Trainer API'
-    path: 'api'
+    path: apiPathSegment
     protocols: [
       'https'
     ]
@@ -91,11 +103,33 @@ resource handlerApi 'Microsoft.ApiManagement/service/apis@2024-05-01' = {
     // inference operations comes from per operation rate limiting and from
     // identity checks, added with the handler migration.
     subscriptionRequired: false
-    serviceUrl: backendUrl
+    serviceUrl: backendServiceUrl
   }
   dependsOn: [
     handlerBackend
   ]
+}
+
+// Vertical slice operation. Gateway /api/voices forwards to App Service
+// /api/voices, which is the route the production server registers.
+resource voicesOperation 'Microsoft.ApiManagement/service/apis/operations@2024-05-01' = {
+  parent: handlerApi
+  name: 'get-voices'
+  properties: {
+    displayName: 'List premium voices'
+    method: 'GET'
+    urlTemplate: '/voices'
+    responses: [
+      {
+        statusCode: 200
+        description: 'Premium voice table'
+      }
+      {
+        statusCode: 405
+        description: 'Method not allowed'
+      }
+    ]
+  }
 }
 
 // Gateway diagnostics to Log Analytics. Request and response bodies are not
@@ -124,3 +158,5 @@ output serviceName string = apim.name
 output gatewayUrl string = apim.properties.gatewayUrl
 output gatewayHostName string = replace(apim.properties.gatewayUrl, 'https://', '')
 output principalId string = apim.identity.principalId
+output backendServiceUrl string = backendServiceUrl
+output voicesOperationName string = voicesOperation.name

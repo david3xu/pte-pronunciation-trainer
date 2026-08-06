@@ -384,22 +384,21 @@ capacity.
 | `Microsoft.Cache` | Registered, by authorised registration |
 | `Microsoft.Cdn` | Registered, by authorised registration |
 | `Microsoft.ApiManagement` | Registered, by authorised registration |
-| `Microsoft.Quota` | **Registering**, still settling at the time of the last read |
+| `Microsoft.Quota` | Registered, by authorised registration |
 
-Eleven of twelve namespaces are registered. `Microsoft.Quota` was submitted and is
-still in the `Registering` state, which is a normal intermediate state rather than a
-failure. Re run the preflight to confirm it has settled.
+All twelve namespaces are registered. Confirmed by a read at 2026-08-06T13:00Z.
 
 Registration was performed by `pnpm run azure:prepare:subscription --confirm-registration`,
 which installs the quota and resource-graph CLI extensions and registers only
 namespaces reporting `NotRegistered`. It created no resource, changed no SKU, set no
-confirmation and deployed nothing.
+confirmation and deployed nothing. It did modify subscription state: four namespaces
+were registered that were not before.
 
 One operational note. The registration command exceeded the four minute ceiling of the
 tooling that invoked it and returned no result, so its outcome was unknown until a
-subsequent read confirmed it. The registration itself completed. Because already
-registered namespaces receive no write, the command is safe to repeat, which is what
-makes recovery from an ambiguous result straightforward.
+subsequent read confirmed it. Because already registered namespaces receive no write,
+the command is safe to repeat, which is what makes recovery from an ambiguous result
+straightforward.
 
 ### 13.2 Capacity, returned
 
@@ -425,18 +424,30 @@ unlimited capacity.
 
 ### 13.3 Blockers that remain
 
-1. `Microsoft.Quota` was still `Registering` at the last read. Confirm it has settled.
-2. Redis Basic C1 availability. Still the most consequential unknown, but the cause has
-   moved: the namespace is registered and the probe is at fault, most likely a case
-   sensitive resource type comparison. Fix the probe, then re read. If the offer is then
-   genuinely unavailable, that is a plan change requiring an approved substitution, not
-   an automation fallback. No substitution has been made.
-3. Quota headroom for every service. Possibly downstream of `Microsoft.Quota` still
-   settling.
-4. Capacity headroom for Log Analytics, Application Insights, App Service, Storage,
-   API Management and Front Door. Regional support is confirmed where readable and zero
-   resources of each type exist, but no numeric limit has been established, and an
-   absent limit is not read as unlimited.
+1. **Redis Basic C1 creatability is not positively established, and this is the one
+   blocker holding the plan at Planning.** The probe defect is fixed and the type is
+   confirmed offered in the region, but regional type support is not an SKU offer. No
+   read only Azure surface lists classic Cache for Redis SKUs per region, so the only
+   definitive check is a provisioning preview, which is out of scope here. Because the
+   classic product is retiring, the absence of positive evidence cannot be treated as
+   availability. A decision is required: either authorise a preview scoped to Redis
+   alone, or approve a replacement SKU. No substitution has been made.
+2. Quota headroom remains unanswered for every service even with `Microsoft.Quota`
+   registered. The quota surface returns nothing for these resource types rather than
+   returning a limit. Recorded as unverified. An empty response is not unlimited
+   capacity.
+3. Capacity headroom for Log Analytics, Application Insights, App Service, Storage,
+   API Management and Front Door. Regional support is confirmed for each type and zero
+   resources of each type exist in the subscription, but no numeric limit has been
+   established against documented service limits.
+
+### 13.4 Why this plan is not yet Ready for Approval
+
+The instruction that authorised this evidence gathering conditioned approval on
+positive evidence that Redis Basic C1 is creatable in the target region, and required a
+stop for a replacement SKU decision otherwise. That evidence does not exist and cannot
+be produced by a read only probe. The status therefore remains Planning pending the
+decision in blocker one, rather than being advanced on evidence that is absent.
 
 The raw run output is written to `.azure/evidence/preprovision-evidence.md`, which is
 not tracked.

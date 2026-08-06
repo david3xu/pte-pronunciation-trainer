@@ -62,11 +62,13 @@ export function sameRegion(left, right) {
 /**
  * Normalise the runtime list returned by az webapp list-runtimes.
  *
- * The command has returned two shapes across CLI versions: a flat array of
- * runtime strings, and an array of objects carrying the runtime under one of
- * several property names. Filtering for strings alone silently produced an empty
- * list against the object shape, which reported the requested runtime as
- * unverified even when it was advertised.
+ * The command has returned several shapes across CLI versions: a flat array of
+ * runtime strings, and an array of objects. The object form carries the value that
+ * matters in `config`, alongside a friendly `runtime` label, for example
+ * `{"runtime":"Node","config":"NODE|22-lts"}`. An earlier fix guessed at property
+ * names from fixtures and missed `config`, so the real payload still read as an
+ * empty list. `config` is checked first because it is the field App Service actually
+ * consumes as linuxFxVersion.
  *
  * @param {unknown} value
  * @returns {string[]}
@@ -87,7 +89,7 @@ export function normaliseRuntimeList(value) {
       continue;
     }
     const record = /** @type {Record<string, unknown>} */ (entry);
-    for (const property of ['name', 'runtimeVersion', 'displayName', 'linuxFxVersion']) {
+    for (const property of ['config', 'linuxFxVersion', 'name', 'runtimeVersion', 'displayName']) {
       const candidate = record[property];
       if (typeof candidate === 'string' && candidate !== '') {
         runtimes.push(candidate);

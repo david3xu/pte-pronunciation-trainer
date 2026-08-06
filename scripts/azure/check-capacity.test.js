@@ -10,6 +10,44 @@ import { describe, expect, it } from 'vitest';
 import { assessQuotaHeadroom, normaliseRuntimeList, sameRegion } from './check-capacity.js';
 
 describe('normaliseRuntimeList', () => {
+  /**
+   * Sanitized excerpt of the shape az webapp list-runtimes --os linux actually
+   * returns. This is the fixture that was missing: earlier fixtures invented property
+   * names and passed while the real payload read as an empty list.
+   */
+  const realLinuxRuntimePayload = [
+    { runtime: 'Node', config: 'NODE|22-lts' },
+    { runtime: 'Node', config: 'NODE|20-lts' },
+    { runtime: 'Python', config: 'PYTHON|3.12' },
+    { runtime: 'DotNet', config: 'DOTNETCORE|8.0' },
+  ];
+
+  it('detects the requested runtime in the real object payload', () => {
+    const advertised = normaliseRuntimeList(realLinuxRuntimePayload);
+
+    expect(advertised).toContain('NODE|22-lts');
+  });
+
+  it('reads the config field rather than the friendly runtime label', () => {
+    const advertised = normaliseRuntimeList(realLinuxRuntimePayload);
+
+    // The label is Node, which would never match a linuxFxVersion comparison.
+    expect(advertised).not.toContain('Node');
+    expect(advertised).toEqual([
+      'NODE|22-lts',
+      'NODE|20-lts',
+      'PYTHON|3.12',
+      'DOTNETCORE|8.0',
+    ]);
+  });
+
+  it('matches the requested runtime case insensitively as the probe does', () => {
+    const advertised = normaliseRuntimeList(realLinuxRuntimePayload);
+    const requested = 'node|22-lts';
+
+    expect(advertised.some((entry) => entry.toLowerCase() === requested.toLowerCase())).toBe(true);
+  });
+
   it('reads a flat array of runtime strings', () => {
     expect(normaliseRuntimeList(['NODE|22-lts', 'NODE|20-lts'])).toEqual([
       'NODE|22-lts',

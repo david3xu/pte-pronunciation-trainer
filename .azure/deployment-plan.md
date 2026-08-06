@@ -1,13 +1,20 @@
 # Azure deployment plan
 
-Status: Planning
+Status: Approved
 
-Ready for user approval. Evidence gathering is complete to the extent that read only and
-non creating operations allow, and section 13 records what was returned. This plan is
-not approved and not validated. A person approves it; nothing here approves itself.
+Approved on 6 August 2026 for validation only. This approval does not authorise
+deployment, and it changes no technical scope in this document. Every resource, SKU,
+quantity, guard, continuity rule and rollback boundary recorded below is unchanged from
+the reviewed version.
+
+Not validated. Validation is recorded by the official validation workflow, which writes
+`.azure/validate-status.json`. This document must not be marked Validated by hand.
 
 No resource has been provisioned. Subscription state has been modified in one respect:
 four resource provider namespaces were registered that were not before. See 13.1.
+
+Paid provisioning and the Speech F0 to S0 upgrade each still require their own separate
+explicit confirmation. Neither is set, and approval of this plan does not supply either.
 
 ## 1. Goal and scope
 

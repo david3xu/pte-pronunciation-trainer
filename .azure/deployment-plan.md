@@ -2,8 +2,12 @@
 
 Status: Planning
 
-This plan is under review. It is not approved and it is not validated. No
-provisioning has occurred and no live Azure read has been performed to support it.
+Ready for user approval. Evidence gathering is complete to the extent that read only and
+non creating operations allow, and section 13 records what was returned. This plan is
+not approved and not validated. A person approves it; nothing here approves itself.
+
+No resource has been provisioned. Subscription state has been modified in one respect:
+four resource provider namespaces were registered that were not before. See 13.1.
 
 ## 1. Goal and scope
 
@@ -260,11 +264,23 @@ argument depending on it generating load is unsupported.
 
 ## 10. Deployment method
 
-The only supported command is:
+Assisted deployment runs in two steps, in this order:
 
 ```
-azd up
+azure-validate
+azure-deploy
 ```
+
+`azure-validate` gathers and reviews evidence. `azure-deploy` provisions and deploys
+only after that evidence is accepted.
+
+### 10.0 Direct azd up is prohibited
+
+Do not run `azd up`. It collapses validation and provisioning into one action, which
+removes the review point between them, and that review point is where the paid
+provisioning and Speech upgrade decisions are actually made. The hooks still run under
+`azd up`, so the guards would still fire, but the operator would be answering them mid
+deployment rather than in advance.
 
 ### 10.1 Direct Bicep deployment is prohibited
 
@@ -412,7 +428,7 @@ straightforward.
 | Speech `S0` offered for that account | **verified, offered. The in place upgrade is valid** |
 | Advertised Linux runtime contains `NODE|22-lts` | **verified, offered.** The reader defect is fixed; the value is carried in the `config` field of the returned objects. |
 | PostgreSQL quota and remaining headroom | **inconclusive.** The quota surface still did not answer for `Microsoft.DBforPostgreSQL` after `Microsoft.Cache`, `Microsoft.Cdn` and `Microsoft.ApiManagement` were registered. `Microsoft.Quota` was still `Registering` at the time of the read, so this may resolve once it settles. Not read as unlimited. |
-| Redis Basic C1 provisionable | **inconclusive, and now attributable to a probe defect rather than to Azure.** `Microsoft.Cache` is registered, yet supported locations for `Microsoft.Cache/redis` still could not be read and the error was empty. The probe filters resource types with a case sensitive comparison against the lowercase string `redis`, so it returns nothing if the provider reports `Redis`. This is unverified, not unavailable, and no substitution has been made. |
+| Redis Basic C1 provisionable | **verified as creatable by ARM.** See 13.5. |
 | Storage capacity | **inconclusive.** Regional support confirmed, which is not a capacity statement. Zero existing accounts. Documented limit 250 per region per subscription, unconfirmed. |
 | API Management capacity | **inconclusive.** Regional support confirmed. Zero existing services. Developer tier supports exactly one unit, unconfirmed. |
 | Front Door capacity | **inconclusive.** Global resource, so regional probes do not apply. Zero existing profiles. No limit figure asserted. |
@@ -424,30 +440,79 @@ unlimited capacity.
 
 ### 13.3 Blockers that remain
 
-1. **Redis Basic C1 creatability is not positively established, and this is the one
-   blocker holding the plan at Planning.** The probe defect is fixed and the type is
-   confirmed offered in the region, but regional type support is not an SKU offer. No
-   read only Azure surface lists classic Cache for Redis SKUs per region, so the only
-   definitive check is a provisioning preview, which is out of scope here. Because the
-   classic product is retiring, the absence of positive evidence cannot be treated as
-   availability. A decision is required: either authorise a preview scoped to Redis
-   alone, or approve a replacement SKU. No substitution has been made.
-2. Quota headroom remains unanswered for every service even with `Microsoft.Quota`
+1. Quota headroom remains unanswered for every service even with `Microsoft.Quota`
    registered. The quota surface returns nothing for these resource types rather than
    returning a limit. Recorded as unverified. An empty response is not unlimited
    capacity.
-3. Capacity headroom for Log Analytics, Application Insights, App Service, Storage,
+2. Capacity headroom for Log Analytics, Application Insights, App Service, Storage,
    API Management and Front Door. Regional support is confirmed for each type and zero
    resources of each type exist in the subscription, but no numeric limit has been
    established against documented service limits.
 
-### 13.4 Why this plan is not yet Ready for Approval
+The Redis blocker is resolved. See 13.5.
 
-The instruction that authorised this evidence gathering conditioned approval on
-positive evidence that Redis Basic C1 is creatable in the target region, and required a
-stop for a replacement SKU decision otherwise. That evidence does not exist and cannot
-be produced by a read only probe. The status therefore remains Planning pending the
-decision in blocker one, rather than being advanced on evidence that is absent.
+### 13.4 Status
+
+Evidence gathering is complete to the extent read only and non creating operations
+allow. The plan is ready for user approval. It is not approved and not validated, and
+the status remains Planning until a person approves it.
+
+The two items above are known unverified capacity, not blockers. Neither probe reported
+insufficient capacity; both are absent answers, and an absent answer is recorded as
+unverified rather than read as headroom.
+
+### 13.5 Redis Basic C1, ARM validation and what if
+
+Run at 2026-08-06T13:06Z against `infra/azure/redis.bicep` alone. Neither operation
+creates a resource and neither reserves capacity.
+
+Redacted commands:
+
+```
+az deployment group validate --resource-group ccl-pronunciation-trainer-rg \
+  --template-file infra/azure/redis.bicep \
+  --parameters location=australiaeast cacheName=<probe-name> \
+  --parameters skuFamily=C skuName=Basic skuCapacity=1 \
+  --parameters workspaceId=<non-existent-workspace-id> tags={} \
+  --subscription <subscription-id>
+
+az deployment group what-if --resource-group ccl-pronunciation-trainer-rg \
+  --template-file infra/azure/redis.bicep \
+  --parameters location=australiaeast cacheName=<probe-name> \
+  --parameters skuFamily=C skuName=Basic skuCapacity=1 \
+  --parameters workspaceId=<non-existent-workspace-id> tags={} \
+  --subscription <subscription-id> --no-pretty-print
+```
+
+Results:
+
+| Operation | Result |
+| --- | --- |
+| validate | `provisioningState: Succeeded`, `error: null`. ARM reported `Microsoft.Cache` resource type `redis` with `locations: [australiaeast]`. |
+| what if | `Microsoft.Cache/redis` returned `changeType: Create` with `sku: {name: Basic, family: C, capacity: 1}` at `location: australiaeast`. |
+
+ARM accepted Basic C1 in the target region and predicted a successful create. That is
+positive, non creating evidence that the SKU is offered and the template is valid.
+
+**Capacity is not reserved.** A successful what if predicts a create against current
+conditions. It does not hold quota, does not guarantee a later create will succeed, and
+says nothing about the retirement timeline of the classic product. It answers the
+availability question that regional provider support could not.
+
+Two deviations from a strictly Redis only what if, both recorded rather than suppressed:
+
+1. `Microsoft.Insights/diagnosticSettings` also returned `Create`. That resource is
+   declared inside `redis.bicep` itself, so it is unavoidable when validating that
+   module as written. It is not an additional service.
+2. `Microsoft.CognitiveServices/accounts` for the existing Speech account returned
+   `changeType: Ignore`, with identical before and after state at SKU `F0`. ARM lists
+   existing resource group resources that the template does not manage. `Ignore` means
+   no change was predicted, and it independently confirms the Speech account is still
+   `F0` and untouched.
+
+Subscription side effects of this run: ARM returned a deployment object named `redis`
+from the validate call, so a validation entry may appear in the resource group
+deployment history. No resource was created, no SKU changed and no capacity reserved.
 
 The raw run output is written to `.azure/evidence/preprovision-evidence.md`, which is
 not tracked.

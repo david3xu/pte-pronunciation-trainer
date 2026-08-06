@@ -43,6 +43,7 @@
     "azure:postprovision:check": "node scripts/azure/postprovision.js --check",
     "azure:package": "pnpm run data:pte && pnpm run build && pnpm run build:server && node scripts/azure/build-package.js",
     "azure:package:check": "node scripts/azure/build-package.js --check",
+    "azure:bicep:build": "node scripts/azure/build-bicep.js",
     "azure:validate": "pnpm run azure:preflight:check && pnpm run azure:package:check",
     "clean": "rm -rf dist/",
     "start": "pnpm run data:pte && pnpm run dev",

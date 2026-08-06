@@ -227,6 +227,7 @@ export const CAPACITY_STRATEGY = Object.freeze({
  * @property {string} resourceType Fully qualified ARM type.
  * @property {number} quantity
  * @property {string[]} skuParameterNames Parameter names in main.bicepparam.
+ * @property {string} [locationParameterName] Optional region parameter in main.bicepparam.
  * @property {string[]} capacityStrategies Applied in order until one is conclusive.
  * @property {string | null} documentedLimit Stated only where it is known with confidence.
  * @property {string} documentedLimitReference
@@ -304,16 +305,17 @@ export const RESOURCE_PLAN = Object.freeze([
   },
   {
     id: 'redis',
-    displayName: 'Azure Cache for Redis',
+    displayName: 'Azure Managed Redis',
     providerNamespace: 'Microsoft.Cache',
-    resourceType: 'Microsoft.Cache/redis',
+    resourceType: 'Microsoft.Cache/redisEnterprise',
     quantity: 1,
-    skuParameterNames: ['redisSkuFamily', 'redisSkuName', 'redisSkuCapacity'],
+    skuParameterNames: ['redisSkuName', 'redisDatabaseName', 'redisPort'],
+    locationParameterName: 'redisLocation',
     capacityStrategies: [CAPACITY_STRATEGY.providerLocationSupport, CAPACITY_STRATEGY.resourceGraphCount],
     documentedLimit: null,
-    documentedLimitReference: 'Azure Cache for Redis planning and retirement guidance',
+    documentedLimitReference: 'Azure Managed Redis service limits',
     note:
-      'Classic Azure Cache for Redis is a retiring product. Regional provider support is not the same statement as continued availability of the Basic C1 offer, so this resource is reported as inconclusive until an operator preview confirms it. Substituting Azure Managed Redis is a plan change, not an automation fallback.',
+      'Balanced_B3 is the approved replacement for the Classic cache that Azure rejected at provisioning. Regional provider support is not a capacity guarantee, so the dedicated ARM validate and what-if probe remains required.',
   },
   {
     id: 'storage',
@@ -376,15 +378,14 @@ export const REQUIRED_BICEP_PARAMETERS = Object.freeze([
   'postgresSkuTier',
   'postgresVersion',
   'postgresDatabaseName',
-  'entraAdminObjectId',
-  'entraAdminPrincipalName',
-  'entraAdminPrincipalType',
   'appServicePlanSkuName',
   'appServicePlanSkuTier',
   'appServiceLinuxFxVersion',
   'appServiceAllowedCorsOrigins',
-  'redisSkuFamily',
+  'redisLocation',
   'redisSkuName',
+  'redisDatabaseName',
+  'redisPort',
   'storageSku',
   'audioContainerName',
   'frontDoorSku',
@@ -400,6 +401,11 @@ export const REQUIRED_BICEP_PARAMETERS = Object.freeze([
 export const RETIRED_BICEP_PARAMETERS = Object.freeze([
   'handlerBackendUrl',
   'postgresAllowedClientRanges',
+  'entraAdminObjectId',
+  'entraAdminPrincipalName',
+  'entraAdminPrincipalType',
+  'redisSkuFamily',
+  'redisSkuCapacity',
 ]);
 
 /**
@@ -468,9 +474,13 @@ export const DEPLOYMENT_OUTPUTS = Object.freeze([
   { key: 'WEB_APP_PRINCIPAL_ID', label: 'App Service managed identity principal', endpoint: false },
   { key: 'FRONT_DOOR_ENDPOINT_HOST_NAME', label: 'Front Door endpoint', endpoint: true },
   { key: 'APIM_GATEWAY_URL', label: 'API Management gateway', endpoint: true },
+  { key: 'POSTGRES_SERVER_NAME', label: 'PostgreSQL server name', endpoint: false },
   { key: 'POSTGRES_SERVER_FQDN', label: 'PostgreSQL server', endpoint: false },
   { key: 'POSTGRES_DATABASE_NAME', label: 'PostgreSQL database', endpoint: false },
+  { key: 'REDIS_CACHE_NAME', label: 'Managed Redis cluster', endpoint: false },
   { key: 'REDIS_HOST_NAME', label: 'Redis host', endpoint: false },
+  { key: 'REDIS_PORT', label: 'Redis TLS port', endpoint: false },
+  { key: 'REDIS_DATABASE_NAME', label: 'Redis database', endpoint: false },
   { key: 'BLOB_ENDPOINT', label: 'Blob endpoint', endpoint: false },
   { key: 'AUDIO_CONTAINER_NAME', label: 'Generated audio container', endpoint: false },
   { key: 'SPEECH_ENDPOINT', label: 'Speech endpoint', endpoint: false },
@@ -569,7 +579,7 @@ export const ESTIMATED_MONTHLY_USD = Object.freeze({
   appServicePlan: 70,
   webApp: 0,
   postgres: 40,
-  redis: 41,
+  redis: 59,
   apiManagement: 50,
   frontDoor: 35,
   storage: 5,

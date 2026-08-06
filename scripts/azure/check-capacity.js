@@ -136,6 +136,29 @@ export function findResourceTypeLocations(resourceTypes, shortType) {
 }
 
 /**
+ * Resolve the region a planned resource must be checked in.
+ *
+ * Most resources use AZURE_LOCATION. A resource can instead name a committed
+ * Bicep parameter when the approved architecture deliberately places it in a
+ * different region, as Managed Redis does.
+ *
+ * @param {import('./deployment-contract.js').PlannedResource} resource
+ * @param {import('./lib/bicep-params.js').BicepParameterFile} parameters
+ * @param {string} defaultLocation
+ * @returns {string | undefined}
+ */
+export function resolveResourceLocation(resource, parameters, defaultLocation) {
+  if (resource.locationParameterName === undefined) {
+    return defaultLocation;
+  }
+
+  const configured = parameters.values[resource.locationParameterName];
+  return typeof configured === 'string' && configured.trim() !== ''
+    ? configured.trim()
+    : undefined;
+}
+
+/**
  * Run the capacity validation stage.
  *
  * @param {{
@@ -184,11 +207,21 @@ export async function checkCapacity(options = {}) {
   for (const resource of RESOURCE_PLAN) {
     report.beginStage(`${resource.providerNamespace} ${resource.displayName}`);
 
+    const resourceLocation = resolveResourceLocation(resource, parameters, location);
+    if (resourceLocation === undefined) {
+      report.record({
+        name: `${resource.id} target region`,
+        status: CHECK_STATUS.fail,
+        detail: `parameter ${String(resource.locationParameterName)} does not resolve to a region, so capacity would be checked against the wrong location`,
+      });
+      continue;
+    }
+
     const requestedSku = describeRequestedSku(resource, parameters);
     report.note(
       requestedSku === ''
-        ? `quantity ${resource.quantity}`
-        : `quantity ${resource.quantity}, requested ${requestedSku}`,
+        ? `quantity ${resource.quantity}, region ${resourceLocation}`
+        : `quantity ${resource.quantity}, region ${resourceLocation}, requested ${requestedSku}`,
     );
 
     // Every strategy runs. Stopping at the first conclusive answer meant a
@@ -201,7 +234,7 @@ export async function checkCapacity(options = {}) {
         resource,
         parameters,
         subscriptionId,
-        location,
+        location: resourceLocation,
         resourceGroup,
         speechAccountName,
       });

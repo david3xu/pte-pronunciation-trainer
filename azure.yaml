@@ -1,8 +1,12 @@
 # Azure Developer CLI orchestration.
 #
-# One command provisions the approved infrastructure and deploys the application:
+# The governed workflow validates first, then provisions and deploys:
 #
-#   azd up
+#   azure-validate
+#   azure-deploy
+#
+# Do not invoke azd up directly; it removes the review boundary between validation
+# and paid provisioning.
 #
 # Ordering is enforced in three places and this file ties them together. The
 # preprovision hook owns steps one through three of the deployment sequence,

@@ -49,18 +49,15 @@ param postgresVersion = '16'
 param postgresBackupRetentionDays = 7
 param postgresDatabaseName = 'trainer'
 
-// Password authentication is disabled on the server, so without a valid Entra
-// administrator the database is unreachable. Retrieve the values with:
-//   az ad signed-in-user show --query id --output tsv
-//   az ad signed-in-user show --query userPrincipalName --output tsv
-param entraAdminObjectId = readEnvironmentVariable('POSTGRES_ENTRA_ADMIN_OBJECT_ID')
-param entraAdminPrincipalName = readEnvironmentVariable('POSTGRES_ENTRA_ADMIN_PRINCIPAL_NAME')
-param entraAdminPrincipalType = 'User'
-
 // The former postgresAllowedClientRanges parameter is gone. It existed to admit
 // Vercel egress, which is not a published stable set. Server access now comes
 // from the App Service outbound addresses, which the deployment reads from the
 // site itself. The browser has no database path at all.
+//
+// The Entra administrator is also no longer a Bicep child resource. Azure
+// rejected that child while the new server was still becoming ready. The
+// postprovision hook now waits for Ready, creates only the approved administrator
+// if absent, and re-reads it before reporting success.
 
 // App Service. S1 rather than B3: fifteen dollars more, and defensible on
 // capability (slots, autoscale, backups) rather than on price alone.
@@ -76,13 +73,13 @@ param appServiceAllowedCorsOrigins = empty(readEnvironmentVariable('WEB_ALLOWED_
   ? []
   : split(readEnvironmentVariable('WEB_ALLOWED_ORIGINS', ''), ',')
 
-// Redis. Basic C1 clears the floor; C0 does not. Classic Azure Cache for Redis
-// is a retiring product. If Basic C1 stops being provisionable in the target
-// region, that is a plan change requiring an approved substitution, not a silent
-// move to Azure Managed Redis.
-param redisSkuFamily = 'C'
-param redisSkuName = 'Basic'
-param redisSkuCapacity = 1
+// Azure Managed Redis. Classic Basic C1 was rejected at real provisioning because
+// the product is retiring. Balanced_B3 in Australia Central is the approved
+// replacement; the rest of the estate remains in Australia East.
+param redisLocation = 'australiacentral'
+param redisSkuName = 'Balanced_B3'
+param redisDatabaseName = 'default'
+param redisPort = 10000
 
 // Storage. Uncounted extra under the daily reading, kept because it is cheap
 // and counts for free if the floor turns out to be cumulative. The container is

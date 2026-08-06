@@ -1,73 +1,74 @@
 targetScope = 'resourceGroup'
 
-// Azure Cache for Redis.
-//
-// Classic Azure Cache for Redis is a retiring product. Basic C1 is the approved
-// tier and it clears the daily spend floor where C0 does not. If Basic C1 stops
-// being provisionable in the target region, that is a blocker requiring an
-// approved substitution recorded in the deployment plan, not a silent move to
 // Azure Managed Redis.
 //
-// Basic tier has no Entra authentication and no replica, so the cache is reached
-// with an access key held as an App Service reference rather than by managed
-// identity. That is a property of the tier, not a design preference, and it is why
-// only safe deterministic inference results are cached here.
+// Classic Azure Cache for Redis rejected the approved deployment because that
+// product is retiring. Balanced_B3 is the approved replacement. It is deployed
+// in Australia Central because the approved SKU is available there while the
+// rest of the estate stays in Australia East.
+//
+// Access keys are disabled. The application does not consume this cache yet, so
+// the host and port settings are preparatory and no credential is generated or
+// surfaced by this module.
 
-@description('Azure region for the Redis cache.')
+@description('Azure region for the Managed Redis cluster.')
 param location string
 
 @description('Tags applied to every resource in this module.')
 param tags object
 
-@description('Globally unique Redis cache name.')
+@description('Globally unique Managed Redis cluster name.')
+@minLength(1)
+@maxLength(60)
 param cacheName string
 
-@description('Redis SKU family. C is Basic and Standard.')
+@description('Approved Azure Managed Redis SKU.')
 @allowed([
-  'C'
-  'P'
-])
-param skuFamily string
-
-@description('Redis SKU name.')
-@allowed([
-  'Basic'
-  'Standard'
-  'Premium'
+  'Balanced_B3'
 ])
 param skuName string
 
-@description('Redis capacity index. Sized to clear the daily spend floor.')
-@minValue(0)
-@maxValue(6)
-param skuCapacity int
+@description('Name of the required Redis database child.')
+@allowed([
+  'default'
+])
+param databaseName string
+
+@description('TLS database endpoint port.')
+@minValue(10000)
+@maxValue(10000)
+param port int
 
 @description('Log Analytics workspace resource id for diagnostics.')
 param workspaceId string
 
-resource cache 'Microsoft.Cache/redis@2024-03-01' = {
+resource cache 'Microsoft.Cache/redisEnterprise@2025-07-01' = {
   name: cacheName
   location: location
   tags: tags
+  sku: {
+    name: skuName
+  }
   properties: {
-    sku: {
-      family: skuFamily
-      name: skuName
-      capacity: skuCapacity
-    }
-    enableNonSslPort: false
     minimumTlsVersion: '1.2'
     publicNetworkAccess: 'Enabled'
-    redisConfiguration: {
-      'maxmemory-policy': 'allkeys-lru'
-    }
   }
 }
 
-// Basic tier exposes connection metrics only. No log categories are available, so
-// requesting a log category group here would fail the deployment.
+resource database 'Microsoft.Cache/redisEnterprise/databases@2025-07-01' = {
+  parent: cache
+  name: databaseName
+  properties: {
+    accessKeysAuthentication: 'Disabled'
+    clientProtocol: 'Encrypted'
+    clusteringPolicy: 'OSSCluster'
+    evictionPolicy: 'AllKeysLRU'
+    port: port
+  }
+}
+
 resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
-  name: 'redis-diagnostics'
+  name: 'managed-redis-diagnostics'
   scope: cache
   properties: {
     workspaceId: workspaceId
@@ -83,4 +84,5 @@ resource diagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' 
 output cacheName string = cache.name
 output cacheId string = cache.id
 output cacheHostName string = cache.properties.hostName
-output cacheSslPort int = cache.properties.sslPort
+output cachePort int = database.properties.port
+output databaseName string = database.name

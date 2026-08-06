@@ -9,7 +9,9 @@
 import { describe, expect, it } from 'vitest';
 
 import {
+  APPROVED_MANAGED_REDIS,
   APPROVED_SPEECH,
+  FORBIDDEN_CLASSIC_REDIS_TYPE,
   collectOutputNames,
   collectResources,
   resolveApprovedName,
@@ -25,11 +27,64 @@ function statusOf(report, name) {
   return report.findings.find((finding) => finding.name === name)?.status;
 }
 
+function managedRedisModule() {
+  return {
+    type: 'Microsoft.Resources/deployments',
+    name: 'redis-module',
+    properties: {
+      parameters: {
+        location: { value: "[parameters('redisLocation')]" },
+      },
+      template: {
+        parameters: {
+          cacheName: { type: 'string' },
+          skuName: { type: 'string', allowedValues: [APPROVED_MANAGED_REDIS.skuName] },
+          databaseName: {
+            type: 'string',
+            allowedValues: [APPROVED_MANAGED_REDIS.databaseName],
+          },
+          port: {
+            type: 'int',
+            minValue: APPROVED_MANAGED_REDIS.port,
+            maxValue: APPROVED_MANAGED_REDIS.port,
+          },
+        },
+        resources: [
+          {
+            type: APPROVED_MANAGED_REDIS.clusterType,
+            name: "[parameters('cacheName')]",
+            sku: { name: "[parameters('skuName')]" },
+            properties: {
+              minimumTlsVersion: APPROVED_MANAGED_REDIS.minimumTlsVersion,
+              publicNetworkAccess: APPROVED_MANAGED_REDIS.publicNetworkAccess,
+            },
+          },
+          {
+            type: APPROVED_MANAGED_REDIS.databaseType,
+            name: "[format('{0}/{1}', parameters('cacheName'), parameters('databaseName'))]",
+            properties: {
+              accessKeysAuthentication: APPROVED_MANAGED_REDIS.accessKeysAuthentication,
+              clientProtocol: APPROVED_MANAGED_REDIS.clientProtocol,
+              clusteringPolicy: APPROVED_MANAGED_REDIS.clusteringPolicy,
+              evictionPolicy: APPROVED_MANAGED_REDIS.evictionPolicy,
+              port: "[parameters('port')]",
+            },
+            dependsOn: [
+              "[resourceId('Microsoft.Cache/redisEnterprise', parameters('cacheName'))]",
+            ],
+          },
+        ],
+      },
+    },
+  };
+}
+
 /** A template shaped like the real compiled output: parameterised name, nested module. */
 function approvedTemplate(overrides = {}) {
   return {
     parameters: {
       speechAccountName: { type: 'string', allowedValues: [APPROVED_SPEECH.name] },
+      redisLocation: { type: 'string', allowedValues: [APPROVED_MANAGED_REDIS.location] },
     },
     outputs: { SPEECH_ENDPOINT: { type: 'string' } },
     resources: [
@@ -49,6 +104,7 @@ function approvedTemplate(overrides = {}) {
           },
         },
       },
+      managedRedisModule(),
     ],
     ...overrides,
   };
@@ -58,8 +114,9 @@ describe('collectResources', () => {
   it('descends into nested deployment templates', () => {
     const resources = collectResources(approvedTemplate());
 
-    expect(resources).toHaveLength(2);
+    expect(resources).toHaveLength(5);
     expect(resources.map((entry) => entry.type)).toContain(APPROVED_SPEECH.type);
+    expect(resources.map((entry) => entry.type)).toContain(APPROVED_MANAGED_REDIS.databaseType);
   });
 
   it('handles the symbolic object form as well as the array form', () => {
@@ -139,6 +196,58 @@ describe('verifyInvariants', () => {
     verifyInvariants(template, report);
 
     expect(statusOf(report, 'exactly one cognitive services account')).toBe(CHECK_STATUS.fail);
+  });
+
+  it('refuses Classic Redis even when the approved Managed Redis pair exists', () => {
+    const template = approvedTemplate();
+    template.resources.push({
+      type: FORBIDDEN_CLASSIC_REDIS_TYPE,
+      name: 'classic-cache',
+    });
+
+    const report = silentReport();
+    verifyInvariants(template, report);
+
+    expect(statusOf(report, 'no classic azure cache for redis')).toBe(CHECK_STATUS.fail);
+  });
+
+  it('refuses a missing Managed Redis database child', () => {
+    const template = approvedTemplate();
+    template.resources[1].properties.template.resources.pop();
+
+    const report = silentReport();
+    verifyInvariants(template, report);
+
+    expect(statusOf(report, 'approved managed redis cluster and database')).toBe(
+      CHECK_STATUS.fail,
+    );
+  });
+
+  it('refuses a Managed Redis tier other than the approved tier', () => {
+    const template = approvedTemplate();
+    template.resources[1].properties.template.parameters.skuName.allowedValues = [
+      'MemoryOptimized_M10',
+    ];
+
+    const report = silentReport();
+    verifyInvariants(template, report);
+
+    expect(statusOf(report, 'approved managed redis cluster and database')).toBe(
+      CHECK_STATUS.fail,
+    );
+  });
+
+  it('refuses weaker Managed Redis database security settings', () => {
+    const template = approvedTemplate();
+    template.resources[1].properties.template.resources[1].properties.clientProtocol =
+      'Plaintext';
+
+    const report = silentReport();
+    verifyInvariants(template, report);
+
+    expect(statusOf(report, 'approved managed redis cluster and database')).toBe(
+      CHECK_STATUS.fail,
+    );
   });
 
   it('refuses an openai account kind', () => {

@@ -7,7 +7,13 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { assessQuotaHeadroom, findResourceTypeLocations, normaliseRuntimeList, sameRegion } from './check-capacity.js';
+import {
+  assessQuotaHeadroom,
+  findResourceTypeLocations,
+  normaliseRuntimeList,
+  resolveResourceLocation,
+  sameRegion,
+} from './check-capacity.js';
 
 describe('findResourceTypeLocations', () => {
   /**
@@ -18,7 +24,7 @@ describe('findResourceTypeLocations', () => {
    */
   const cacheResourceTypes = [
     { resourceType: 'Redis', locations: ['Australia East', 'East US', 'West Europe'] },
-    { resourceType: 'redisEnterprise', locations: ['East US'] },
+    { resourceType: 'redisEnterprise', locations: ['Australia Central', 'East US'] },
     { resourceType: 'locations/operationResults', locations: [] },
   ];
 
@@ -32,7 +38,10 @@ describe('findResourceTypeLocations', () => {
     const locations = findResourceTypeLocations(cacheResourceTypes, 'redis');
 
     expect(locations).not.toContain('East US only');
-    expect(findResourceTypeLocations(cacheResourceTypes, 'redisenterprise')).toEqual(['East US']);
+    expect(findResourceTypeLocations(cacheResourceTypes, 'redisenterprise')).toEqual([
+      'Australia Central',
+      'East US',
+    ]);
   });
 
   it('resolves the target region through the display name form', () => {
@@ -48,6 +57,40 @@ describe('findResourceTypeLocations', () => {
 
   it('ignores malformed entries rather than throwing', () => {
     expect(findResourceTypeLocations([null, 42, {}], 'redis')).toBeUndefined();
+  });
+});
+
+describe('resolveResourceLocation', () => {
+  const parameters = {
+    values: { redisLocation: 'australiacentral' },
+    expressions: {},
+    sourcePath: 'infra/azure/main.bicepparam',
+  };
+
+  it('uses the estate region when a resource has no dedicated region parameter', () => {
+    expect(resolveResourceLocation(/** @type {any} */ ({}), parameters, 'australiaeast')).toBe(
+      'australiaeast',
+    );
+  });
+
+  it('uses the committed resource-specific region for Managed Redis', () => {
+    expect(
+      resolveResourceLocation(
+        /** @type {any} */ ({ locationParameterName: 'redisLocation' }),
+        parameters,
+        'australiaeast',
+      ),
+    ).toBe('australiacentral');
+  });
+
+  it('fails closed when the named region parameter is absent', () => {
+    expect(
+      resolveResourceLocation(
+        /** @type {any} */ ({ locationParameterName: 'missingLocation' }),
+        parameters,
+        'australiaeast',
+      ),
+    ).toBeUndefined();
   });
 });
 

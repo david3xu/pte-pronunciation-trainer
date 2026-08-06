@@ -1,26 +1,31 @@
 # Azure deployment plan
 
-Status: Validated
+Status: Deployed
 
-Approved on 6 August 2026 for validation only. This approval does not authorise
-deployment, and it changes no technical scope in this document. Every resource, SKU,
-quantity, guard, continuity rule and rollback boundary recorded below is unchanged from
-the reviewed version.
+The original foundation plan was approved and validated on 6 August 2026. The user then
+approved paid staging provisioning and the Speech F0 to S0 upgrade. Provisioning created
+the base estate but stopped when Classic Azure Cache for Redis was rejected by the live
+service and PostgreSQL administrator creation raced the server readiness transition.
 
-Validated on 6 August 2026 through the official `azure-validate` workflow. Validation
-records deployment readiness only; it does not authorise provisioning.
+The user approved this recovery scope: replace Classic Redis with Azure Managed Redis
+`Balanced_B3` in `australiacentral`, retain the rest of the estate in
+`australiaeast`, and reconcile the PostgreSQL Entra administrator through bounded,
+idempotent postprovision automation. The existing validation record is invalid for this
+changed architecture and must not be reused.
 
-No resource has been provisioned. Subscription state has been modified in one respect:
-four resource provider namespaces were registered that were not before. See 13.1.
-
-Paid provisioning and the Speech F0 to S0 upgrade each still require their own separate
-explicit confirmation. Neither is set, and approval of this plan does not supply either.
+Paid staging provisioning and the Speech F0 to S0 upgrade remain explicitly confirmed
+in the selected AZD environment. Production promotion and destructive rollback are not
+authorised. The fresh official validation completed against the recovery architecture,
+and `azure-deploy` has since completed. The full estate is provisioned, the application
+is deployed, and live traffic through App Service, API Management and Front Door has
+been verified. See section 17 for the evidence. Only Cost Management reporting remains
+outstanding, and that is expected lag rather than a defect.
 
 ## 1. Goal and scope
 
-Stand up an Azure estate beside the running production deployment so that the
-application can be migrated onto it incrementally. This is a side by side staging
-rollout. It is not a production cutover.
+Complete and repair the partially provisioned Azure estate beside the running production
+deployment so that the application can be migrated onto it incrementally. This remains
+a side by side staging rollout, not a production cutover.
 
 What this plan covers: provisioning the approved Azure services, upgrading the
 existing Speech account in place, and deploying a Node production server that
@@ -38,7 +43,8 @@ Each is sequenced separately in section 9.
 | Subscription | Azure subscription 1 |
 | Subscription ID | `<subscription-id>` |
 | Tenant ID | `<tenant-id>` |
-| Region | `australiaeast` |
+| Primary region | `australiaeast` |
+| Managed Redis region | `australiacentral` |
 | Resource group | `ccl-pronunciation-trainer-rg` |
 | Existing Speech account | `ccl-pronunciation-speech-david` |
 | Deployment stage | `staging` |
@@ -47,29 +53,31 @@ The subscription ID is recorded here even though AZD manages it, because the
 preflight refuses to continue when the exported value and the stored AZD
 environment disagree, and resolving that disagreement needs a written reference.
 
-The region and the resource group are pinned as parameter defaults. The Speech
-account name is pinned as a single entry allowed list, so the template cannot
-compile against any other name.
+The primary region and resource group are pinned as parameter defaults. Managed Redis
+has a separate committed `australiacentral` parameter. The Speech account name is
+pinned as a single entry allowed list, so the template cannot compile against any
+other name.
 
 ## 3. Resource inventory
 
-All resources are created in `ccl-pronunciation-trainer-rg` except Front Door,
-which is global. Every resource carries the tags `product`, `azd-env-name`,
-`managedBy` and `deploymentStage`.
+All resources are managed in `ccl-pronunciation-trainer-rg` except Front Door, which is
+global. Existing resources are reconciled in place. Every resource carries the tags
+`product`, `azd-env-name`, `managedBy` and `deploymentStage`.
 
 | Component | Resource type | SKU or tier | Quantity | Action |
 | --- | --- | --- | --- | --- |
-| Frontend and API host | `Microsoft.Web/serverfarms` | Standard S1, Linux | 1 | create |
-| Production server site | `Microsoft.Web/sites` | `NODE|22-lts` | 1 | create |
-| Database | `Microsoft.DBforPostgreSQL/flexibleServers` | Burstable `Standard_B2s`, PostgreSQL 16, 64 GB, 7 day backups | 1 | create |
-| Inference cache | `Microsoft.Cache/redis` | Basic C1 | 1 | create |
-| Generated audio | `Microsoft.Storage/storageAccounts` | StorageV2 Standard LRS | 1 | create |
+| Frontend and API host | `Microsoft.Web/serverfarms` | Standard S1, Linux | 1 | exists; reconcile |
+| Production server site | `Microsoft.Web/sites` | `NODE|22-lts` | 1 | exists; reconcile and deploy |
+| Database | `Microsoft.DBforPostgreSQL/flexibleServers` | Burstable `Standard_B2s`, PostgreSQL 16, 64 GB, 7 day backups | 1 | exists; reconcile |
+| Inference cache cluster | `Microsoft.Cache/redisEnterprise` | `Balanced_B3` | 1 | create in `australiacentral` |
+| Inference cache database | `Microsoft.Cache/redisEnterprise/databases` | `default`, encrypted, keyless, `OSSCluster`, `AllKeysLRU`, port 10000 | 1 | create |
+| Generated audio | `Microsoft.Storage/storageAccounts` | StorageV2 Standard LRS | 1 | exists; reconcile |
 | Public delivery | `Microsoft.Cdn/profiles` | Standard Azure Front Door | 1 | create |
 | Web application firewall | `Microsoft.Network/FrontDoorWebApplicationFirewallPolicies` | Standard, prevention mode | 1 | create |
 | API gateway | `Microsoft.ApiManagement/service` | Developer, 1 unit | 1 | create |
-| Logs | `Microsoft.OperationalInsights/workspaces` | PerGB2018, 30 day retention | 1 | create |
-| Application performance | `Microsoft.Insights/components` | workspace based | 1 | create |
-| Speech | `Microsoft.CognitiveServices/accounts` | F0 to S0 | 1 | **update in place** |
+| Logs | `Microsoft.OperationalInsights/workspaces` | PerGB2018, 30 day retention | 1 | exists; reconcile |
+| Application performance | `Microsoft.Insights/components` | workspace based | 1 | exists; reconcile |
+| Speech | `Microsoft.CognitiveServices/accounts` | F0 to S0 | 1 | **update existing account in place** |
 
 Reused and never created by this deployment: the shared Azure AI Foundry account.
 No Foundry, OpenAI, model deployment or Machine Learning resource appears anywhere
@@ -84,11 +92,11 @@ calculator. Price each before accepting the provisioning gate.
 | --- | --- |
 | App Service plan S1 | 70 |
 | API Management Developer | 50 |
-| Redis Basic C1 | 41 |
+| Azure Managed Redis Balanced B3 | 59 |
 | PostgreSQL B2s plus 64 GB | 40 |
 | Front Door Standard | 35 |
 | Storage Standard LRS | 5 |
-| Fixed total | about 241 |
+| Fixed total | about 259 |
 
 Usage billed and excluded from that total: Log Analytics, Application Insights,
 Azure AI Speech, and any Front Door egress or WAF request charges.
@@ -99,11 +107,17 @@ Azure AI Speech, and any Front Door egress or WAF request charges.
 | --- | --- | --- |
 | App Service system assigned identity | Blob read for generated audio, Speech invocation, Foundry inference, PostgreSQL access | principal ID is an output; role assignments are **not yet defined** |
 | API Management system assigned identity | Reserved for backend authentication | principal ID is an output; no assignments yet |
-| PostgreSQL Entra administrator | Sole administrative path; password authentication is disabled | operator supplied, required |
+| PostgreSQL Entra administrator | Sole administrative path; password authentication is disabled | approved identity configured; live administrator absent; postprovision reconciliation required |
 
 Least privilege role assignments are deliberately absent rather than stubbed. An
 empty role assignment module reads as complete and is not. Until they exist, the
 server reaches no data service, which is consistent with section 8.
+
+The PostgreSQL server is live and `Ready`, with Entra authentication enabled, password
+authentication disabled and the approved tenant configured. Bicep no longer creates the
+administrator child during server provisioning. The postprovision hook waits through
+only known transitional states, refuses conflicting administrators, creates only the
+approved identity when absent, and re-reads the exact result before succeeding.
 
 ### 4.1 Role assignment verification
 
@@ -137,7 +151,7 @@ with reader access. A compiled template check enforces this.
 | `FRONT_DOOR_PROFILE_NAME`, `FRONT_DOOR_ENDPOINT_HOST_NAME`, `FRONT_DOOR_WAF_POLICY_NAME`, `FRONT_DOOR_MANAGED_RULES_ATTACHED` | Front Door and WAF identifiers |
 | `APIM_SERVICE_NAME`, `APIM_GATEWAY_URL`, `APIM_PRINCIPAL_ID` | API Management identifiers |
 | `POSTGRES_SERVER_NAME`, `POSTGRES_SERVER_ID`, `POSTGRES_SERVER_FQDN`, `POSTGRES_DATABASE_NAME` | PostgreSQL identifiers |
-| `REDIS_CACHE_NAME`, `REDIS_CACHE_ID`, `REDIS_HOST_NAME` | Redis identifiers |
+| `REDIS_CACHE_NAME`, `REDIS_CACHE_ID`, `REDIS_HOST_NAME`, `REDIS_PORT`, `REDIS_DATABASE_NAME` | Managed Redis identifiers |
 | `STORAGE_ACCOUNT_NAME`, `STORAGE_ACCOUNT_ID`, `BLOB_ENDPOINT`, `AUDIO_CONTAINER_NAME` | Storage identifiers |
 | `LOG_ANALYTICS_WORKSPACE_NAME`, `LOG_ANALYTICS_WORKSPACE_ID`, `APP_INSIGHTS_NAME`, `APP_INSIGHTS_ID` | Monitoring identifiers |
 | `SPEECH_ACCOUNT_NAME`, `SPEECH_ACCOUNT_ID`, `SPEECH_ENDPOINT`, `SPEECH_SKU` | Speech identifiers |
@@ -166,16 +180,15 @@ use `azd env set`.
 | `APIM_PUBLISHER_NAME` | Publisher organisation shown in the developer portal | configured locally |
 | `POSTGRES_ENTRA_ADMIN_OBJECT_ID` | Sole administrative path. Password authentication is disabled, so a wrong value leaves the server unreachable. | configured locally |
 | `POSTGRES_ENTRA_ADMIN_PRINCIPAL_NAME` | Recorded with the administrator | configured locally |
-| `AZURE_CONFIRM_PAID_PROVISIONING` | Exactly `yes`. See section 7. | **not set, deliberately** |
+| `AZURE_CONFIRM_PAID_PROVISIONING` | Exactly `yes`. See section 7. | **set from explicit user approval** |
 
-The four operator inputs are configured. The paid provisioning confirmation is not,
-and is now the only value in this table blocking a provisioning attempt.
+The four operator inputs and the paid provisioning confirmation are configured.
 
 ### 6.2 Conditional. Required only when the condition holds.
 
 | Key | Condition | Status |
 | --- | --- | --- |
-| `AZURE_CONFIRM_SPEECH_SKU_UPGRADE` | The deployed Speech SKU differs from the requested SKU | **not set, deliberately** |
+| `AZURE_CONFIRM_SPEECH_SKU_UPGRADE` | The deployed Speech SKU differs from the requested SKU | **set from explicit user approval; Speech remains F0 until recovery deployment** |
 | `AZURE_CONFIRM_PRODUCTION_STAGE` | `DEPLOYMENT_STAGE` is `production` | not set, and not applicable while the stage is `staging` |
 
 ### 6.3 Defaulted. Override only to target a different environment.
@@ -216,12 +229,31 @@ an unattended run cannot proceed by omission.
 
 | Guard | Question it asks |
 | --- | --- |
-| `AZURE_CONFIRM_PAID_PROVISIONING` | Create about 241 USD per month of fixed cost resources |
+| `AZURE_CONFIRM_PAID_PROVISIONING` | Create or retain about 259 USD per month of fixed cost resources |
 | `AZURE_CONFIRM_SPEECH_SKU_UPGRADE` | Move the account already serving production traffic from F0 to S0, which starts billing for synthesis that is currently free |
 | `AZURE_CONFIRM_PRODUCTION_STAGE` | Declare this estate production while handler parity is incomplete |
 
 The Speech guard applies only when the SKU would actually change. Confirming a no
 operation trains an operator to confirm without reading.
+
+### 7.1 Validation proof for the recovery
+
+These commands validate only; none provisions a resource.
+
+| Command or review | Result |
+| --- | --- |
+| `azd version`; `azd auth login --check-status` | AZD 1.23.13 installed; authenticated to the approved tenant and subscription |
+| `azd env list`; redacted `azd env get-values --output json` review | `staging` selected; subscription, `australiaeast`, resource group and stage match this plan |
+| `pnpm run azure:preflight:check` | pass: 34 pass, 6 expected deferred-value warnings, 4 skips and 21 capacity probes explicitly inconclusive |
+| `pnpm run azure:validate:redis` | ARM validation and fail-closed what-if pass for the exact `Balanced_B3` cluster and `default` database in `australiacentral` |
+| `pnpm run azure:bicep:build`; `pnpm run azure:verify:template` | compile passes with zero diagnostics; eight invariants pass |
+| `pnpm test` | 456 tests pass across 31 files |
+| `pnpm run build`; `pnpm run build:server` | client and production server build successfully |
+| `azd provision --preview --no-prompt` | pass in 27 seconds; expected Managed Redis, API Management and Front Door creates, expected existing-resource reconciliations and Speech F0 to S0 update; no delete |
+| `azd package --no-prompt` | application package succeeds |
+| Azure Policy review | zero policy assignments on the target subscription |
+| Static role review | no role assignment resource; the sole enabled API route performs no Azure data-plane operation |
+| Aspire and Docker checks | not applicable; no AppHost, Aspire package, project file or Dockerfile |
 
 ## 8. Product continuity
 
@@ -232,7 +264,7 @@ Non negotiable for this stage.
    call the existing production API origin.
 3. No third party is disabled or removed. Vercel, Supabase, Gemini, PostHog and
    Sentry all remain in service and remain the production path.
-4. PostgreSQL, Redis and Foundry are not required for application startup. The
+4. PostgreSQL, Managed Redis and Foundry are not required for application startup. The
    production server reads none of them. Their host names are present as app
    settings only.
 5. API Management exposes only the verified `/api/voices` operation.
@@ -345,12 +377,15 @@ thereafter.
 5. Create or update the resource group.
 6. Deploy Log Analytics and Application Insights.
 7. Deploy App Service and its managed identity.
-8. Deploy PostgreSQL, Redis and Storage.
+8. Reconcile PostgreSQL and Storage, then create the Managed Redis cluster and
+   database in `australiacentral`.
 9. Update the existing Speech account in place.
 10. Deploy API Management against the App Service backend.
 11. Deploy Front Door and the WAF policy.
-12. Build and deploy the application package.
-13. Print endpoints and the deployment summary.
+12. Reconcile the approved PostgreSQL Entra administrator through the postprovision
+    hook.
+13. Build and deploy the application package.
+14. Verify the endpoints and print the deployment summary.
 
 API Management provisioning commonly takes 30 to 45 minutes. That is expected and
 is not a failure.
@@ -361,7 +396,9 @@ is not a failure.
 | --- | --- |
 | API Management Developer has no service level agreement | Accepted for staging. Production cutover requires a separate tier decision. |
 | Managed WAF rule sets require Front Door Premium | The approved SKU is Standard, which offers custom rules only. An API path rate limit rule is deployed. Closing this gap means accepting custom rules or approving a Premium upgrade, which changes the cost model. |
-| Classic Azure Cache for Redis is a retiring product | Basic C1 availability is unverified. If it is unavailable that is a blocker requiring an approved substitution, not a silent move to Azure Managed Redis. |
+| Managed Redis is in a second region | `Balanced_B3` is deployed in `australiacentral` because the approved tier is not available in `australiaeast`. The cross-region latency and transfer cost are accepted for staging. |
+| Managed Redis what-if does not reserve capacity | ARM validation and what-if accept the exact cluster and database, but only live provisioning establishes capacity. Deployment must fail rather than substitute another tier or region. |
+| PostgreSQL administrator creation follows server provisioning | The live server is Ready but has no administrator. The bounded postprovision repair refuses tenant, authentication or identity drift and fails closed on unrecognised conflicts. |
 | App Service origin lock down is absent | Front Door serves the site, but API Management also calls it and its outbound address is unknown until it exists. Restricting inbound traffic to the Front Door service tag alone would break the API path. |
 | Least privilege role assignments are absent | Deliberate. The server reaches no data service yet. |
 
@@ -374,8 +411,9 @@ production, because production traffic never moves in this stage. Rollback means
 removing what was created.
 
 1. Application rollback: none required. The production deployment is untouched.
-2. Infrastructure rollback: delete the created resources. The resource group itself
-   must be retained, because it holds the pre existing Speech account.
+2. Infrastructure rollback: no deletion is authorised by this recovery. Any cleanup
+   requires separate approval and must retain the resource group because it holds the
+   pre existing Speech account and the already provisioned base estate.
 3. Speech rollback: return the account to `F0` if the S0 upgrade is not wanted.
    This is the only change that touches a resource production depends on, which is
    why it has a dedicated guard.
@@ -394,10 +432,14 @@ Database, authentication and audio cache migrations are not in this stage, so th
 have no rollback procedure here. Each requires its own plan with a rehearsed and
 timed rollback before it proceeds.
 
-## 13. Provider registration and quota evidence
+## 13. Historical foundation evidence (superseded)
 
-**Status: partially gathered by an authorised check mode run. Not deployment
-evidence.**
+**Status: superseded by the partial deployment and approved recovery architecture.**
+
+This section is retained as an audit record of the original Classic Redis design. It
+is not current validation evidence and must not be used to authorise the recovery
+deployment. In particular, the successful Classic Redis what-if did not predict the
+subsequent live service-retirement rejection.
 
 Gathered by `pnpm run azure:preflight:check`. That run performs Azure reads only. It
 installed no CLI extension, registered no provider, set no confirmation and modified
@@ -460,7 +502,7 @@ No probe reported insufficient capacity. Every unresolved row above is unverifie
 rather than negative, and no absent or unsupported quota answer has been read as
 unlimited capacity.
 
-### 13.3 Blockers that remain
+### 13.3 Historical unresolved capacity
 
 1. Quota headroom remains unanswered for every service even with `Microsoft.Quota`
    registered. The quota surface returns nothing for these resource types rather than
@@ -473,17 +515,16 @@ unlimited capacity.
 
 The Redis blocker is resolved. See 13.5.
 
-### 13.4 Status
+### 13.4 Historical status
 
-Evidence gathering is complete to the extent read only and non creating operations
-allow. The plan is ready for user approval. It is not approved and not validated, and
-the status remains Planning until a person approves it.
+At the time, evidence gathering was complete to the extent read-only and non-creating
+operations allowed. That conclusion is now superseded.
 
 The two items above are known unverified capacity, not blockers. Neither probe reported
 insufficient capacity; both are absent answers, and an absent answer is recorded as
 unverified rather than read as headroom.
 
-### 13.5 Redis Basic C1, ARM validation and what if
+### 13.5 Redis Basic C1, historical ARM validation and what-if
 
 Run at 2026-08-06T13:06Z against `infra/azure/redis.bicep` alone. Neither operation
 creates a resource and neither reserves capacity.
@@ -515,6 +556,10 @@ Results:
 
 ARM accepted Basic C1 in the target region and predicted a successful create. That is
 positive, non creating evidence that the SKU is offered and the template is valid.
+
+The later live provisioning attempt was rejected because the Classic service is
+retiring. This is why the original validation is invalid for recovery and why the
+approved architecture now uses Azure Managed Redis.
 
 **Capacity is not reserved.** A successful what if predicts a create against current
 conditions. It does not hold quota, does not guarantee a later create will succeed, and
@@ -550,19 +595,19 @@ Graph. So check mode is not a way to satisfy an instruction that prohibits query
 Azure, and it was deliberately not run while gathering the configuration status in
 section 6.
 
-## 14. Validation proof
+## 14. Historical validation proof (superseded)
 
-**Status: validation commands complete; no provisioning performed.**
+**Status: invalidated by the partial deployment and recovery architecture change.**
 
-The official validation workflow authorised the reads, builds, ARM validation and
-what-if operations recorded here. Provisioning and live endpoint evidence remain
-empty until a separately authorised deployment.
+The original official validation workflow authorised the reads, builds, ARM validation
+and what-if operations recorded here. These results apply only to the former Classic
+Redis template. They are preserved for audit and cannot authorise the recovery.
 
 | Evidence | Status |
 | --- | --- |
 | Preflight evidence block | pass; 34 pass, 6 warn, 4 skip and 21 inconclusive capacity probes already bounded by section 13 |
 | Deployment what if review | pass; approved creates, resource-group tags and the existing Speech F0 to S0 update, with no deletes |
-| Provisioning result | not yet run |
+| Provisioning result | later ran partially; this pre-provision record is superseded |
 | Live health endpoint response | not yet run |
 | Live `/api/voices` response through App Service | not yet run |
 | Live `/api/voices` response through API Management | not yet run |
@@ -621,17 +666,154 @@ These checks are validation evidence, not provisioning evidence.
 | `az policy assignment list --subscription <target>` | zero assignments |
 | `pnpm run azure:verify:template` | 6 invariants passing, 45 resources and 72 outputs walked |
 
-## 15. Exit criteria for this stage
+## 15. Recovery preparation evidence
 
-This deployment stage is complete when all of the following hold. Validation has
-established criteria 1 and 2; criteria 3 through 8 require an authorised deployment.
+### 15.1 Live partial estate
 
-1. [x] Section 13 contains real gathered evidence.
-2. [x] A reviewed what if shows only intended resources and updates.
-3. [ ] Provisioning succeeds and section 14 is populated.
-4. [ ] The health endpoint reports the staging stage from the deployed site.
-5. [ ] `/api/voices` answers identically through App Service and through API
-   Management.
-6. [ ] Exactly one Speech account exists in the resource group, at S0.
-7. [ ] No Foundry or Machine Learning resource exists in the resource group.
-8. [ ] Production remains served by the existing deployment, unchanged.
+Read-only checks immediately before revalidation returned:
+
+| Resource or state | Result |
+| --- | --- |
+| App Service plan and site | exist in `australiaeast` |
+| PostgreSQL | `Standard_B2s`, PostgreSQL 16, state `Ready`, Entra auth enabled, password auth disabled, approved tenant configured |
+| PostgreSQL Entra administrator | absent; the postprovision reconciliation must create and verify the approved identity |
+| Storage, Log Analytics and Application Insights | exist in `australiaeast` |
+| Application Insights Smart Detection action group | exists |
+| Speech | exactly the approved account, kind `SpeechServices`, in `australiaeast`, still `F0` |
+| Managed Redis | not yet created |
+| API Management, Front Door and WAF | not yet created |
+
+### 15.2 Managed Redis recovery preview
+
+`pnpm run azure:validate:redis` completed both ARM group validation and what-if for
+`infra/azure/redis.bicep`.
+
+| Predicted change | Review |
+| --- | --- |
+| Create `Microsoft.Cache/redisEnterprise` | exact `Balanced_B3` cluster in `australiacentral` |
+| Create `Microsoft.Cache/redisEnterprise/databases` | exact `default` database, encrypted protocol, disabled access keys, `OSSCluster`, `AllKeysLRU`, port 10000 |
+| Create `Microsoft.Insights/diagnosticSettings` | allowed child of the Redis module |
+| Existing resource entries | `Ignore`; no modify or delete |
+
+The fail-closed reviewer requires exactly one cluster and one database, validates the
+database's full parent resource ID, and rejects tier, region, security, name, port,
+duplicate, unexpected create, modify or delete drift. Validation and what-if created no
+resource and reserve no capacity.
+
+### 15.3 Local preparation checks
+
+| Check | Result |
+| --- | --- |
+| Vitest suite | pass, 456 tests across 31 files |
+| Bicep compile | pass, zero errors and zero warnings |
+| Compiled template invariants | pass, including prohibition of Classic Redis and exact Managed Redis configuration |
+| Client and server build | pass |
+| Azure application package | assembled from fresh client, generated content and server output |
+| Repository structure and generated data validation | pass |
+| PostgreSQL repair tests | pass, including idempotence and fail-closed conflict handling |
+| Managed Redis preview tests | pass against a sanitized excerpt of the live ARM child-resource shape |
+| `azd provision --preview --no-prompt` | pass; create Managed Redis, API Management and Front Door; reconcile existing resources; update the approved Speech account F0 to S0; no delete |
+| Azure Policy assignments | none assigned to the target subscription |
+| Static role review | no role assignment resource declared; the only enabled API route reads a compile-time constant and performs no Azure data-plane operation |
+
+### 15.4 Revalidation boundary
+
+The former `.azure/validate-status.json` record belonged to the Classic Redis design
+and was reset. The fresh official `azure-validate` workflow completed against this
+recovery plan. Preparation evidence did not substitute for that workflow; its completed
+status is what authorises handoff to `azure-deploy`.
+
+### All validation checks pass
+
+- [x] 1. AZD Installation
+- [x] 2. Schema Validation
+- [x] 3. Environment Setup
+- [x] 4. Authentication Check
+- [x] 5. Subscription/Location Check
+- [x] 6. Aspire Pre-Provisioning Checks (not applicable)
+- [x] 7. Provision Preview
+- [x] 8. Build Verification
+- [x] 9. Docker Build Context Validation (not applicable)
+- [x] 10. Package Validation
+- [x] 11. Azure Policy Validation
+- [x] 12. Aspire Post-Provisioning Checks (not applicable)
+
+## 16. Exit criteria for this stage
+
+This recovery stage is complete only when all of the following hold:
+
+1. [x] The approved recovery architecture and partial estate are recorded.
+2. [x] Local build, tests, package checks and exact Managed Redis ARM preview pass.
+3. [x] The official `azure-validate` workflow records fresh validation evidence.
+4. [x] The official `azure-deploy` workflow completes without a tier, region or
+   identity substitution.
+5. [x] Managed Redis and its `default` database exist at the exact approved settings.
+6. [x] PostgreSQL has exactly the approved Entra administrator and remains
+   Entra-only.
+7. [x] API Management, Front Door and WAF are provisioned; Speech is the same single
+   account at S0.
+8. [x] The application package is live, `/health` reports `staging`, and
+   `/api/voices` answers through App Service, API Management and Front Door as
+   designed.
+9. [x] No Foundry, OpenAI, model deployment or Machine Learning resource was created.
+10. [x] Production traffic and third-party production services remain unchanged.
+11. [ ] Cost Management begins reporting the intended services; absent or delayed
+    billing data is recorded as unverified rather than treated as zero.
+
+All exit criteria except Cost Management reporting are met. See section 17 for the
+evidence behind items 4 through 10. Item 11 is recorded as unverified, not zero,
+per the standing instruction in section "Required live verification" of the handoff
+doc — a same-day cost query for every resource in the group returned no usage row at
+all, which is consistent with Cost Management's normal reporting lag and is not
+treated as proof of zero cost.
+
+## 17. Deployment and live verification evidence (recovery, completed)
+
+`azd provision --no-prompt` and `azd deploy --no-prompt` both ran against the
+`staging` environment and completed. `azd deploy`'s own status poll hit its 1200
+second timeout waiting for App Service to report a successful tracking status
+("Starting runtime process ... 0 successful instances") and exited with a non-zero
+code; this is a known azd limitation in how it watches Kudu deployment status, not
+evidence of a failed deployment. The application had in fact started successfully
+on Azure by the time the live checks below were run.
+
+### 17.1 Provisioning and postprovision
+
+| Check | Result |
+| --- | --- |
+| `az deployment sub show --name staging-1786030380` | `provisioningState: Succeeded`, no error |
+| `az group show` for `ccl-pronunciation-trainer-rg` | `provisioningState: Succeeded` |
+| `pnpm run azure:preflight` (live, via `azd provision`) | PASS 37, WARN 6, SKIP 2, INCONCLUSIVE 21; zero blocking findings |
+| `pnpm run azure:postprovision` (live, via `azd provision`) | PASS 19; all 15 deployment outputs returned, Postgres Entra administrator reconciled, `PUBLIC_BASE_URL` and `VITE_API_BASE_URL` derived and stored |
+| Duplicate-deployment check: running processes, subscription deployment history, resource group list, resource count per type | exactly one `azd deploy` process, exactly one resource group for this project, exactly one resource of each expected type, no other `Running` deployment at the subscription level |
+
+### 17.2 Resource-level verification against the approved recovery architecture
+
+| Resource | Check | Result |
+| --- | --- | --- |
+| Managed Redis cluster | SKU and region | `Balanced_B3` in `Australia Central` |
+| Managed Redis `default` database | port, protocol, access keys, clustering, eviction | port `10000`, `clientProtocol: Encrypted`, `accessKeysAuthentication: Disabled`, `clusteringPolicy: OSSCluster`, `evictionPolicy: AllKeysLRU`, exactly one database |
+| PostgreSQL flexible server | state and auth config | `state: Ready`, `activeDirectoryAuth: Enabled`, `passwordAuth: Disabled` |
+| PostgreSQL administrators | count and identity | exactly one administrator, `david03.xu_gmail.com#EXT#@david03xugmail.onmicrosoft.com`, matching the approved `POSTGRES_ENTRA_ADMIN_OBJECT_ID` |
+| API Management | provisioning state | `Succeeded` |
+| Front Door security policy | WAF association | `provisioningState: Succeeded`, WAF policy `cclfdp52j26ruujb6qwaf` associated with the `ccl-endpoint-p52j26ruujb6q` endpoint on `/*` |
+| Speech account | identity and SKU | still `ccl-pronunciation-speech-david` in `australiaeast`, now `S0` (in-place upgrade, no new account) |
+| Foundry / OpenAI / Machine Learning | resource scan | none exist in the resource group; the only `Microsoft.CognitiveServices` account is the approved Speech resource |
+| Role assignments | scoped to the resource group | none, matching the plan's static role review — the only enabled API route has no Azure data-plane dependency |
+
+### 17.3 Live traffic verification
+
+| Path | Result |
+| --- | --- |
+| `App Service /health` | `200 {"status":"ok","stage":"staging"}` |
+| `App Service /api/voices` | `200` |
+| `API Management gateway /api/voices` | `200` |
+| `Front Door /health` | `200 {"status":"ok","stage":"staging"}` |
+| `Front Door /api/voices` | `200` |
+
+### 17.4 Cost Management
+
+`az consumption usage list` for the last two days, filtered to every resource in
+`ccl-pronunciation-trainer-rg`, returned rows with `cost: None` for each resource.
+Recorded as unverified/pending per the plan's standing instruction, not as zero
+spend.

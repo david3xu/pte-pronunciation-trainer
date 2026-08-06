@@ -233,9 +233,12 @@ describe('client endpoint coverage', () => {
     expect(unaccounted).toEqual([]);
   });
 
-  it('keeps the tutor endpoint recorded as declared without a handler', () => {
-    expect(UNREGISTERED_ENDPOINTS['/api/ai-tutor']).toBeDefined();
+  it('no longer declares the tutor endpoint in either inventory', () => {
+    // Removed as dead configuration: no handler existed in any host and no call
+    // site read it. Asserted here so it cannot be reintroduced without a decision.
+    expect(UNREGISTERED_ENDPOINTS['/api/ai-tutor']).toBeUndefined();
     expect(API_ROUTES['/api/ai-tutor']).toBeUndefined();
+    expect(DECLARED_CLIENT_ENDPOINTS).not.toContain('/api/ai-tutor');
   });
 });
 

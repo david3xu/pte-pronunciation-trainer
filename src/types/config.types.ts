@@ -199,7 +199,6 @@ export interface APIConfig {
   endpoints: {
     aiRecommendations: string;
     aiChat: string;
-    aiTutor: string;
     pronunciationScore: string;
     premiumTts: string;
     voices: string;

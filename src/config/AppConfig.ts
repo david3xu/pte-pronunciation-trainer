@@ -195,7 +195,6 @@ export class AppConfig {
           // AI endpoints
           aiRecommendations: '/api/ai-recommendations',
           aiChat: '/api/ai/chat',
-          aiTutor: '/api/ai-tutor',
           pronunciationScore: '/api/pronunciation-score',
 
           // TTS endpoints

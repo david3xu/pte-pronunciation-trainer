@@ -44,6 +44,9 @@ param deploymentStage string = 'staging'
 @description('Short suffix distinguishing globally unique resource names. Derived from the subscription and environment so repeated deployments of the same environment reuse the same names.')
 param nameSuffix string = uniqueString(subscription().id, environmentName)
 
+@description('Per-attempt salt for the monitor VM nested deployment name only. Three consecutive azd provision attempts against a fixed template returned the identical stale SkuNotAvailable error for a size the template no longer requested, all sharing one deployment name derived only from resourceGroupName and monitorVmName. An isolated az deployment group validate with a fresh name succeeded against the same subscription and region in between, isolating the deployment name as the shared variable. utcNow evaluates fresh on every real deployment, which is what a cache keyed on a stable name needs broken.')
+param monitorVmDeploymentSalt string = utcNow('yyyyMMddHHmmss')
+
 // Speech. Existing deployed account, name pinned to reality rather than generated.
 // Do not reintroduce a uniqueString default here; it drifted from what is running.
 //
@@ -374,7 +377,7 @@ module frontDoor 'front-door.bicep' = {
 // Step twelve. The synthetic monitor polls the public Front Door path, so it is
 // deployed last, after there is a Front Door endpoint to point it at.
 module monitorVm 'monitor-vm.bicep' = {
-  name: 'monitor-vm-${uniqueString(resourceGroupName, monitorVmName)}'
+  name: 'monitor-vm-${uniqueString(resourceGroupName, monitorVmName)}-${monitorVmDeploymentSalt}'
   scope: appResourceGroup
   params: {
     location: location

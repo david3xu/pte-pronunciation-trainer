@@ -267,7 +267,9 @@ Non negotiable for this stage.
 4. PostgreSQL, Managed Redis and Foundry are not required for application startup. The
    production server reads none of them. Their host names are present as app
    settings only.
-5. API Management exposes only the verified `/api/voices` operation.
+5. API Management exposes only the routes ported under §9's deferred migration
+   (`/api/voices`, then `/api/premium-tts` as of this operation addition), each
+   added deliberately per §9.2 item 6, never as a blanket or wildcard proxy.
 6. The endpoint is not production. The health endpoint reports
    `{"status":"ok","stage":"staging"}`, and the server defaults to `staging` when
    the setting is absent, so an unset value cannot misrepresent a partial estate.

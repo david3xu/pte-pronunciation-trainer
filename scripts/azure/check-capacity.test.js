@@ -9,11 +9,144 @@ import { describe, expect, it } from 'vitest';
 
 import {
   assessQuotaHeadroom,
+  assessVirtualMachineSkuRestrictions,
   findResourceTypeLocations,
   normaliseRuntimeList,
   resolveResourceLocation,
   sameRegion,
 } from './check-capacity.js';
+
+describe('assessVirtualMachineSkuRestrictions', () => {
+  /**
+   * Sanitized excerpt of az vm list-skus --resource-type virtualMachines
+   * --location australiaeast, reduced to the fields the assessment reads.
+   *
+   * The shape that matters: Standard_B2s is listed for the region and carries a
+   * location scoped restriction at the same time. Three consecutive deployments
+   * failed with SkuNotAvailable on this size while every by hand check confirmed it
+   * appeared in this list.
+   */
+  const australiaEastSizes = [
+    {
+      name: 'Standard_B2s',
+      resourceType: 'virtualMachines',
+      locations: ['australiaeast'],
+      restrictions: [
+        { type: 'Location', values: ['australiaeast'], reasonCode: 'NotAvailableForSubscription' },
+      ],
+    },
+    {
+      name: 'Standard_B2ps_v2',
+      resourceType: 'virtualMachines',
+      locations: ['australiaeast'],
+      restrictions: [],
+    },
+    {
+      name: 'Standard_D2s_v5',
+      resourceType: 'virtualMachines',
+      locations: ['australiaeast'],
+      restrictions: [{ type: 'Zone', values: ['australiaeast'], reasonCode: 'NotAvailableForSubscription' }],
+    },
+  ];
+
+  it('refuses a size that is listed for the region but restricted in it', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(australiaEastSizes, 'Standard_B2s', 'australiaeast');
+
+    // Listed and blocked at once. Reading presence alone is what reported capacity
+    // that had not been established.
+    expect(assessment.listed).toBe(true);
+    expect(assessment.blockedReasons).toEqual(['NotAvailableForSubscription']);
+  });
+
+  it('accepts a size whose restrictions collection is empty', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(australiaEastSizes, 'Standard_B2ps_v2', 'australiaeast');
+
+    expect(assessment.listed).toBe(true);
+    expect(assessment.blockedReasons).toEqual([]);
+    expect(assessment.zoneOnlyReasons).toEqual([]);
+  });
+
+  it('separates a zone scoped restriction from a refusal of the region', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(australiaEastSizes, 'Standard_D2s_v5', 'australiaeast');
+
+    // A deployment that pins no zone is unaffected, so this must not read as a
+    // blocker, and must not read as unrestricted either.
+    expect(assessment.blockedReasons).toEqual([]);
+    expect(assessment.zoneOnlyReasons).toEqual(['NotAvailableForSubscription']);
+  });
+
+  it('distinguishes an absent size from a present unrestricted one', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(australiaEastSizes, 'Standard_NV48s_v3', 'australiaeast');
+
+    expect(assessment.listed).toBe(false);
+    expect(assessment.blockedReasons).toEqual([]);
+  });
+
+  it('matches the size name without regard to case', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(australiaEastSizes, 'standard_b2ps_V2', 'australiaeast');
+
+    expect(assessment.listed).toBe(true);
+  });
+
+  it('resolves the region through the spaced display name form', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(
+      [{ name: 'Standard_B2ps_v2', resourceType: 'virtualMachines', locations: ['Australia East'], restrictions: [] }],
+      'Standard_B2ps_v2',
+      'australiaeast',
+    );
+
+    expect(assessment.listed).toBe(true);
+  });
+
+  it('ignores an entry for a different resource type that shares the name', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(
+      [{ name: 'Standard_B2s', resourceType: 'availabilitySets', locations: ['australiaeast'], restrictions: [] }],
+      'Standard_B2s',
+      'australiaeast',
+    );
+
+    expect(assessment.listed).toBe(false);
+  });
+
+  it('treats a restriction of unrecognised scope as blocking rather than as permission', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(
+      [
+        {
+          name: 'Standard_B2s',
+          resourceType: 'virtualMachines',
+          locations: ['australiaeast'],
+          restrictions: [{ type: 'SomethingNew', reasonCode: 'QuotaId' }],
+        },
+      ],
+      'Standard_B2s',
+      'australiaeast',
+    );
+
+    expect(assessment.blockedReasons).toEqual(['QuotaId']);
+  });
+
+  it('reports a restriction that omits a reason code rather than dropping it', () => {
+    const assessment = assessVirtualMachineSkuRestrictions(
+      [
+        {
+          name: 'Standard_B2s',
+          resourceType: 'virtualMachines',
+          locations: ['australiaeast'],
+          restrictions: [{ type: 'Location' }],
+        },
+      ],
+      'Standard_B2s',
+      'australiaeast',
+    );
+
+    expect(assessment.blockedReasons).toHaveLength(1);
+  });
+
+  it('ignores malformed entries rather than throwing', () => {
+    expect(() => assessVirtualMachineSkuRestrictions([null, 42, {}], 'Standard_B2s', 'australiaeast')).not.toThrow();
+    expect(assessVirtualMachineSkuRestrictions([null, 42, {}], 'Standard_B2s', 'australiaeast').listed).toBe(false);
+  });
+});
 
 describe('findResourceTypeLocations', () => {
   /**

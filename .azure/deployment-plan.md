@@ -819,3 +819,62 @@ on Azure by the time the live checks below were run.
 `ccl-pronunciation-trainer-rg`, returned rows with `cost: None` for each resource.
 Recorded as unverified/pending per the plan's standing instruction, not as zero
 spend.
+
+## 18. Premium text to speech migration (first route ported under §9.2)
+
+Scope: port `/api/premium-tts` from Vercel to the App Service server, register it
+with API Management, and rate-limit it. AI-backed routes (`/api/ai/chat`,
+`/api/pronunciation-score`, `/api/ai-recommendations`) remain deliberately out of
+scope for this stage.
+
+### 18.1 What changed
+
+| Commit | Content |
+| --- | --- |
+| `ceae89b` | `api/handlers/premiumTts.ts` handler core, registered in `server/routes.ts`. One behavioural fix versus the Vercel original: a synthesis failure never echoes the thrown error message to the client (it can name `AZURE_SPEECH_KEY`), only the fixed string `Failed to synthesize speech`; the detail goes to the log, keyed by correlation id. `AZURE_SPEECH_KEY`/`AZURE_SPEECH_REGION` are derived in `app-service.bicep` via `listKeys()` against the existing Speech account, the same pattern already used for the Application Insights connection string, so the credential survives `azd provision` rather than depending on a manual, erasable app setting. |
+| `8c30784` | `get-premium-tts`/`post-premium-tts`/`options-premium-tts` operations added to `trainer-api` in `apim.bicep`, mirroring the existing voices operation. A `rate-limit-by-key` policy (60 calls / 60 seconds, keyed by caller IP since the API is not subscription gated) is attached to the two synthesis operations; OPTIONS is excluded since a preflight synthesises nothing. A `*` wildcard method was considered and rejected: it deploys successfully but answers every request 404 at runtime, which is a worse failure mode than the extra verbosity of three explicit operations. |
+
+### 18.2 Live verification, App Service / APIM / Front Door
+
+| Check | Result |
+| --- | --- |
+| App Service direct: POST `/api/premium-tts` | 200, `success: true`, real synthesized audio (base64 MP3, `en-AU-WilliamNeural`) |
+| App Service direct: missing text | 400 `Text is required` |
+| App Service direct: GET `?format=audio` | 200, `audio/mpeg` binary |
+| Front Door → APIM → App Service: POST `/api/premium-tts` | 200, `success: true`, real audio |
+| APIM gateway direct: POST `/api/premium-tts` | 200 |
+| Rate-limit policy on `get-premium-tts`, read back from the live ARM resource (not just the template) | `calls="60" renewal-period="60" counter-key="@(context.Request.IpAddress)"`, confirmed attached |
+| Regression: `/health`, `/api/voices` through App Service, APIM and Front Door | unaffected, still 200 |
+
+### 18.3 Client wiring verified, not assumed
+
+`src/config/AppConfig.ts` resolves the API base URL to same-origin (`''`) for
+browser deployments whenever `VITE_API_BASE_URL` is unset or empty at build time,
+throwing only for a Capacitor/native runtime. `azure.yaml`'s `prepackage` hook runs
+`pnpm run azure:package` on every `azd deploy`, which always performs a fresh
+`vite build` immediately before packaging, so a stale local build (for example
+`cap:sync:ios:prod`, which bakes in the production Vercel origin for native builds)
+cannot leak into a deployed bundle by sitting in `dist/` between deploys. No `.env`
+file exists in the repository that could bake in an unwanted value either. The
+deployed bundle was confirmed to reference `/api/premium-tts` as a relative path
+with no Vercel origin string present.
+
+### 18.4 Browser confirmation
+
+The staging Front Door URL was opened directly in a browser (not curl) and
+exercised through a real practice flow. Real synthesized audio played back
+correctly; the deployment is usable end to end for practice content, not just
+individually verified at the API layer.
+
+### 18.5 Deliberately deferred, not forgotten
+
+- `quota-by-key` spend cap over a longer window (the current rate limit bounds
+  burst abuse, not cost per billing period; flagged during implementation as a
+  follow-up, not added here).
+- `/api/ai/chat`, `/api/pronunciation-score`, `/api/ai-recommendations`,
+  `/api/audio/generate` remain unregistered on the Azure server. The first three
+  are AI-backed and explicitly out of scope for this stage; the fourth has no
+  client call site today per the handler contract matrix in §9.1.
+- §8 item 5's "exposes only `/api/voices`" language was updated when this
+  migration began; it now describes routes being added deliberately per §9.2
+  rather than frozen at exactly one.

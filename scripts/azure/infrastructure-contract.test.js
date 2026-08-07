@@ -32,6 +32,31 @@ const MONITOR_VM_RESOURCE_ID = 'monitorVm';
 const BASTION_RESOURCE_ID = 'bastion';
 const MONITOR_VM_SSH_KEY_PARAMETER = 'monitorVmAdminSshPublicKey';
 
+const SYNTHESIS_QUOTA_PARAMETERS = Object.freeze([
+  'synthesisQuotaCalls',
+  'synthesisQuotaWindowSeconds',
+]);
+
+// Azure Retail Prices API, product `Azure Speech`, meter
+// `S1 Neural Text To Speech Characters`, australiaeast, effective 2024-02-01.
+// There is no S0 meter for Azure Speech in any region, so an S0 account's
+// standard neural synthesis bills against this S1 character meter.
+const SPEECH_NEURAL_TTS_USD_PER_MILLION_CHARACTERS = 15;
+
+// Mirrors PREMIUM_TTS_MAX_TEXT_LENGTH in api/handlers/premiumTts.ts, restated
+// because Bicep cannot read it. If the handler's limit moves, the ceiling this
+// quota guarantees moves with it and this test is where that surfaces.
+const PREMIUM_TTS_MAX_TEXT_LENGTH = 3000;
+
+// The ceiling the derivation comment in apim.bicep commits to, in USD per window.
+// Asserted rather than recomputed loosely, so the comment and the parameter cannot
+// drift apart silently.
+const SYNTHESIS_QUOTA_STATED_CEILING_USD = 22.5;
+const SECONDS_PER_DAY = 86400;
+
+// Hard floor the quota-by-key policy reference places on renewal-period.
+const QUOTA_MINIMUM_RENEWAL_SECONDS = 300;
+
 async function read(path) {
   return readFile(path, 'utf8');
 }
@@ -219,5 +244,117 @@ describe('postgres administrator recovery contract', () => {
 
     expect(postgresBicep).not.toContain('flexibleServers/administrators');
     expect(outputKeys).toContain('POSTGRES_SERVER_NAME');
+  });
+});
+
+describe('premium tts spend quota', () => {
+  it('applies both a burst limit and a longer window quota to each synthesis operation', async () => {
+    const apimBicep = await read(APIM_MODULE);
+    const policy = capture(apimBicep, /var synthesisThrottlePolicyXml = '([^']+)'/);
+
+    // Both controls, in the one inbound section, on the one document both
+    // synthesis operations attach. The burst limit is asserted too because it had
+    // no test before this one and nothing else pins its presence.
+    expect(policy).toContain('<rate-limit-by-key');
+    expect(policy).toContain('<quota-by-key');
+    expect(policy).toMatch(/<inbound><base \/><rate-limit-by-key[^>]*\/><quota-by-key[^>]*\/><\/inbound>/);
+
+    // Same caller-address counter as the burst limit, because the api is still not
+    // subscription gated and there is no subscription key to count against.
+    const quota = policy.match(/<quota-by-key[^>]*\/>/)?.[0];
+    expect(quota).toContain('counter-key="@(context.Request.IpAddress)"');
+
+    // Parameterised, not literal, matching the burst limit's shape.
+    expect(quota).toContain('calls="${synthesisQuotaCalls}"');
+    expect(quota).toContain('renewal-period="${synthesisQuotaWindowSeconds}"');
+
+    // Both operation policies reuse the one document, so neither can drift.
+    expect(apimBicep).toMatch(
+      /resource premiumTtsGetPolicy[\s\S]*?value: synthesisThrottlePolicyXml/,
+    );
+    expect(apimBicep).toMatch(
+      /resource premiumTtsPostPolicy[\s\S]*?value: synthesisThrottlePolicyXml/,
+    );
+  });
+
+  it('declares every quota value as a bounded parameter', async () => {
+    const apimBicep = await read(APIM_MODULE);
+
+    for (const parameter of SYNTHESIS_QUOTA_PARAMETERS) {
+      // Every quota value must carry a lower bound: a zero calls quota would
+      // deploy and then refuse every request.
+      expect(apimBicep).toMatch(
+        new RegExp(`@minValue\\(\\d+\\)\\nparam ${parameter} int = \\d+`),
+      );
+    }
+
+    // The policy reference sets a hard floor of 300 seconds on renewal-period, so
+    // the parameter's own bound must not permit a window the platform rejects.
+    expect(apimBicep).toMatch(
+      /@minValue\((\d+)\)\nparam synthesisQuotaWindowSeconds int/,
+    );
+    const windowMinimum = Number(
+      capture(apimBicep, /@minValue\((\d+)\)\nparam synthesisQuotaWindowSeconds int/),
+    );
+    expect(windowMinimum).toBeGreaterThanOrEqual(QUOTA_MINIMUM_RENEWAL_SECONDS);
+  });
+
+  it('sets no bandwidth attribute, because request density is an attacker input', async () => {
+    const apimBicep = await read(APIM_MODULE);
+    const policy = capture(apimBicep, /var synthesisThrottlePolicyXml = '([^']+)'/);
+
+    // Measured against the live endpoint at the 3000 character maximum: prose
+    // returns about 149 bytes per billed character, but one word padded with
+    // whitespace returns 1.06. A kilobyte budget sized from prose admits about 135
+    // USD a day of characters at padding density. Bandwidth cannot bound spend when
+    // the caller picks the ratio, so its absence is the correctness property here,
+    // not an omission.
+    expect(policy).not.toContain('bandwidth=');
+    expect(apimBicep).not.toContain('synthesisQuotaBandwidthKilobytes');
+  });
+
+  it('states a ceiling that matches calls times the worst case cost per call', async () => {
+    const apimBicep = await read(APIM_MODULE);
+    const quotaCalls = Number(
+      capture(apimBicep, /param synthesisQuotaCalls int = (\d+)/),
+    );
+    const windowSeconds = Number(
+      capture(apimBicep, /param synthesisQuotaWindowSeconds int = (\d+)/),
+    );
+
+    // The only provable bound available: every call may carry the maximum text
+    // length, so the ceiling is calls times that worst case. Unlike an assertion
+    // about measured density, this holds for any content the caller sends.
+    const usdPerCharacter =
+      SPEECH_NEURAL_TTS_USD_PER_MILLION_CHARACTERS / 1_000_000;
+    const worstCaseUsdPerCall = PREMIUM_TTS_MAX_TEXT_LENGTH * usdPerCharacter;
+
+    expect(windowSeconds).toBe(SECONDS_PER_DAY);
+    expect(quotaCalls * worstCaseUsdPerCall).toBeCloseTo(
+      SYNTHESIS_QUOTA_STATED_CEILING_USD,
+      2,
+    );
+
+    // The comment must carry the same figure it commits to, so a parameter change
+    // without a comment change fails here.
+    expect(apimBicep).toContain(
+      `${SYNTHESIS_QUOTA_STATED_CEILING_USD.toFixed(2)} USD a day`,
+    );
+  });
+
+  it('leaves the preflight operation unthrottled and voices untouched', async () => {
+    const apimBicep = await read(APIM_MODULE);
+
+    // A preflight synthesises nothing, so throttling it would break the browser
+    // handshake for a caller still inside budget. /api/voices is static and
+    // non-billable, so it carries no quota either.
+    expect(apimBicep).not.toMatch(/premiumTtsOptionsPolicy/);
+    expect(apimBicep).not.toMatch(/voicesPolicy/);
+  });
+
+  it('keeps speech usage billed, because a quota caps a ceiling and not a floor', () => {
+    // A quota bounds the worst case. It commits no monthly spend, so speech must
+    // stay in the usage billed bucket rather than acquiring a fixed figure.
+    expect(ESTIMATED_MONTHLY_USD.speech).toBeNull();
   });
 });

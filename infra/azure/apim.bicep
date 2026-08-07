@@ -6,9 +6,14 @@ targetScope = 'resourceGroup'
 // There is no manually supplied backend URL, so the gateway cannot drift from the
 // site actually serving the handlers.
 //
-// Concrete operations, policies, rate limits and CORS are added with the handler
-// migration, once each route and its methods are verified from source. Defining
-// operations before the routes exist would encode a guess.
+// Operations, policies and rate limits arrive with each ported route, once that
+// route and its methods are verified from source. Defining them ahead of the
+// routes would encode a guess. Voices and premium text to speech are present.
+//
+// CORS is not set here for either. Both handlers answer the preflight and set
+// their own headers, and the deployment plan records that the remaining handlers
+// each need a different CORS surface, so a gateway wide policy would flatten a
+// difference that matters.
 
 @description('Azure region for the API Management instance.')
 param location string
@@ -47,6 +52,14 @@ param workspaceId string
 @description('Path segment the gateway exposes the api under. Also the path the backend serves it on.')
 param apiPathSegment string = 'api'
 
+@description('Calls per window allowed to one caller against each synthesis operation. Adjustable. Sized at roughly three times a heavy practice session, which requests a word every few seconds against a client side cache that suppresses repeats.')
+@minValue(1)
+param synthesisRateLimitCalls int = 60
+
+@description('Length of the synthesis rate limit window in seconds.')
+@minValue(1)
+param synthesisRateLimitWindowSeconds int = 60
+
 var backendOrigin = 'https://${backendHostName}'
 
 // Forwarding arithmetic, stated because getting it wrong is silent.
@@ -57,6 +70,35 @@ var backendOrigin = 'https://${backendHostName}'
 // segment, or the backend receives /voices and the production server answers not
 // found for a route it does have.
 var backendServiceUrl = '${backendOrigin}/${apiPathSegment}'
+
+// Throttle applied to the two synthesis operations.
+//
+// Written on one line because a Bicep multi line string cannot interpolate, and
+// the call and window values are parameters rather than literals. The effective
+// document is:
+//
+//   <policies>
+//     <inbound>
+//       <base />
+//       <rate-limit-by-key calls="..." renewal-period="..."
+//                          counter-key="@(context.Request.IpAddress)" />
+//     </inbound>
+//     <backend><base /></backend>
+//     <outbound><base /></outbound>
+//     <on-error><base /></on-error>
+//   </policies>
+//
+// Keyed by caller address because the api is not subscription gated, so there is
+// no subscription key to count against. The documentation names the caller address
+// as the best available key for an api that allows unauthenticated access.
+//
+// Every section carries `<base />`. No policy exists at api, product or global
+// scope today, so each is a no op now, and their absence is what would silently
+// skip an inherited policy added at one of those scopes later.
+//
+// No `increment-condition`, so a refused request counts too. A flood of malformed
+// requests synthesises nothing but still consumes gateway and site capacity.
+var synthesisThrottlePolicyXml = '<policies><inbound><base /><rate-limit-by-key calls="${synthesisRateLimitCalls}" renewal-period="${synthesisRateLimitWindowSeconds}" counter-key="@(context.Request.IpAddress)" /></inbound><backend><base /></backend><outbound><base /></outbound><on-error><base /></on-error></policies>'
 
 resource apim 'Microsoft.ApiManagement/service@2024-05-01' = {
   name: serviceName
@@ -129,6 +171,114 @@ resource voicesOperation 'Microsoft.ApiManagement/service/apis/operations@2024-0
         description: 'Method not allowed'
       }
     ]
+  }
+}
+
+// Premium text to speech, one operation per method.
+//
+// Three operations rather than one wildcard. A `*` method is accepted by ARM,
+// because the schema types `method` as a free form string to allow uncommon verbs,
+// so the deployment succeeds and the operation appears in the portal with no
+// method shown. It then answers every request with 404 Operation Not Found. That
+// failure mode is a green provision followed by a dead gateway path, which is
+// worse than the verbosity it would save. The wildcard support APIM does document
+// is for the url template, as in a GET against `/*`, and always alongside an
+// explicit method.
+//
+// OPTIONS is a real operation for the same reason. No CORS policy is attached
+// here, so the preflight has to reach App Service, where the handler answers it
+// and sets its own CORS headers. Without this operation the gateway would refuse
+// the preflight before the backend ever saw it, and a browser would report a CORS
+// failure on a route that works.
+//
+// Both 200 entries cover success and graceful failure. On a synthesis failure the
+// handler deliberately answers 200 with `fallback: true` rather than a 5xx,
+// because the client treats a non ok status as a transport fault worth retrying.
+resource premiumTtsGetOperation 'Microsoft.ApiManagement/service/apis/operations@2024-05-01' = {
+  parent: handlerApi
+  name: 'get-premium-tts'
+  properties: {
+    displayName: 'Synthesize premium speech (query)'
+    method: 'GET'
+    urlTemplate: '/premium-tts'
+    responses: [
+      {
+        statusCode: 200
+        description: 'Synthesized audio or JSON envelope'
+      }
+      {
+        statusCode: 400
+        description: 'Missing or invalid text'
+      }
+    ]
+  }
+}
+
+resource premiumTtsPostOperation 'Microsoft.ApiManagement/service/apis/operations@2024-05-01' = {
+  parent: handlerApi
+  name: 'post-premium-tts'
+  properties: {
+    displayName: 'Synthesize premium speech (body)'
+    method: 'POST'
+    urlTemplate: '/premium-tts'
+    responses: [
+      {
+        statusCode: 200
+        description: 'JSON envelope carrying base64 audio'
+      }
+      {
+        statusCode: 400
+        description: 'Missing or invalid text'
+      }
+    ]
+  }
+}
+
+resource premiumTtsOptionsOperation 'Microsoft.ApiManagement/service/apis/operations@2024-05-01' = {
+  parent: handlerApi
+  name: 'options-premium-tts'
+  properties: {
+    displayName: 'Premium speech preflight'
+    method: 'OPTIONS'
+    urlTemplate: '/premium-tts'
+    responses: [
+      {
+        statusCode: 200
+        description: 'Preflight acknowledgement with an empty body'
+      }
+    ]
+  }
+}
+
+// Throttles on the two operations that can reach Azure Speech, which bills per
+// character. The gateway host name is a template output, the api is not
+// subscription gated, and a caller can reach the gateway without passing through
+// the Front Door rate limit rule, so without these the synthesis path is open and
+// unbounded from the moment it provisions.
+//
+// OPTIONS is deliberately excluded. A preflight synthesises nothing, and
+// throttling it would break the browser handshake for a caller whose actual
+// synthesis requests are still within budget.
+//
+// A limit on calls bounds the exposure without making it cheap: at the default,
+// one address can still submit the maximum text length on every call. The control
+// that caps spend over a billing period is `quota-by-key` on a longer window,
+// which is a separate decision from this one.
+resource premiumTtsGetPolicy 'Microsoft.ApiManagement/service/apis/operations/policies@2024-05-01' = {
+  parent: premiumTtsGetOperation
+  name: 'policy'
+  properties: {
+    format: 'rawxml'
+    value: synthesisThrottlePolicyXml
+  }
+}
+
+resource premiumTtsPostPolicy 'Microsoft.ApiManagement/service/apis/operations/policies@2024-05-01' = {
+  parent: premiumTtsPostOperation
+  name: 'policy'
+  properties: {
+    format: 'rawxml'
+    value: synthesisThrottlePolicyXml
   }
 }
 

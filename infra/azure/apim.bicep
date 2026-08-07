@@ -60,6 +60,14 @@ param synthesisRateLimitCalls int = 60
 @minValue(1)
 param synthesisRateLimitWindowSeconds int = 60
 
+@description('Total calls one caller may make against each synthesis operation per quota window. This is the only provable spend bound available here; the ceiling it yields is stated in the derivation below.')
+@minValue(1)
+param synthesisQuotaCalls int = 500
+
+@description('Length of the synthesis quota window in seconds. One day, so the ceiling is expressed per day and resets predictably. The policy requires at least 300.')
+@minValue(300)
+param synthesisQuotaWindowSeconds int = 86400
+
 var backendOrigin = 'https://${backendHostName}'
 
 // Forwarding arithmetic, stated because getting it wrong is silent.
@@ -82,6 +90,8 @@ var backendServiceUrl = '${backendOrigin}/${apiPathSegment}'
 //       <base />
 //       <rate-limit-by-key calls="..." renewal-period="..."
 //                          counter-key="@(context.Request.IpAddress)" />
+//       <quota-by-key calls="..." renewal-period="..."
+//                     counter-key="@(context.Request.IpAddress)" />
 //     </inbound>
 //     <backend><base /></backend>
 //     <outbound><base /></outbound>
@@ -98,7 +108,55 @@ var backendServiceUrl = '${backendOrigin}/${apiPathSegment}'
 //
 // No `increment-condition`, so a refused request counts too. A flood of malformed
 // requests synthesises nothing but still consumes gateway and site capacity.
-var synthesisThrottlePolicyXml = '<policies><inbound><base /><rate-limit-by-key calls="${synthesisRateLimitCalls}" renewal-period="${synthesisRateLimitWindowSeconds}" counter-key="@(context.Request.IpAddress)" /></inbound><backend><base /></backend><outbound><base /></outbound><on-error><base /></on-error></policies>'
+//
+// Quota derivation, because the numbers are not obvious and the obvious ones are
+// wrong.
+//
+// The rate limit above bounds burst, not total. At its default one address may
+// make 60 calls every 60 seconds, which is 86400 calls a day, each carrying the
+// enforced 3000 character maximum from PREMIUM_TTS_MAX_TEXT_LENGTH. Priced against
+// the live retail meter that standard neural synthesis actually bills to, that is
+// a theoretical 3888 US dollars a day from one caller. The gateway hostname is
+// reachable without passing Front Door, so its WAF rate limit does not cover this.
+//
+// Price comes from the Azure Retail Prices API, not an estimate: product
+// `Azure Speech`, meter `S1 Neural Text To Speech Characters`, 15.00 USD per
+// 1,000,000 characters in australiaeast, effective 2024-02-01. Note the meter is
+// named S1 while the account SKU is S0; there is no S0 meter for Azure Speech in
+// any region, so S0 consumption bills against the S1 character meter. Every voice
+// in the premium table is a standard neural voice, so none of them reach the more
+// expensive HD synthesis meter.
+//
+// Worst case per call is therefore 3000 * 0.000015 = 0.045 USD.
+//
+// Why the ceiling is not expressed as a bandwidth value, which was the first
+// attempt and was wrong. Bandwidth appears to track spend, because billing is per
+// character and a kilobyte budget looks like a character budget. It does not,
+// because the caller chooses the ratio. Measured against this deployment at the
+// 3000 character maximum: ordinary prose returns about 149 bytes per character,
+// long vocabulary items about 171, but one word followed by whitespace padding
+// returns 3168 bytes for 3000 billed characters, or 1.06 bytes per character. That
+// is a 162 times spread across content this endpoint already accepts. A 9300 KB
+// daily budget sized from prose density admits 9,018,182 characters at padding
+// density, which is 135 USD a day rather than the 1 USD it was sized for. There is
+// no safe density to size from, because the density is an attacker input. So
+// bandwidth is not a spend control for a per-character-billed backend, and it is
+// deliberately not set. The policy reference also declines to say whether the
+// attribute counts request bytes, response bytes or both, which would matter if it
+// were load bearing.
+//
+// What a calls quota therefore guarantees, stated plainly rather than
+// optimistically: synthesisQuotaCalls * 0.045 USD per window. At the defaults that
+// is 500 * 0.045 = 22.50 USD a day per address. It is a real bound where none
+// existed, and 172 times tighter than the rate limit alone, but it is not a 1 USD
+// ceiling and must not be described as one.
+//
+// Closing the rest of the gap needs the worst case per call reduced, because a
+// calls quota cannot see request size. Capping the request body at the gateway
+// would do it: at a 300 character cap the worst case per call becomes 0.0045 USD,
+// and 222 calls a day would then be a genuine 1 USD ceiling. That changes what the
+// endpoint accepts, so it is a product decision and is not taken here.
+var synthesisThrottlePolicyXml = '<policies><inbound><base /><rate-limit-by-key calls="${synthesisRateLimitCalls}" renewal-period="${synthesisRateLimitWindowSeconds}" counter-key="@(context.Request.IpAddress)" /><quota-by-key calls="${synthesisQuotaCalls}" renewal-period="${synthesisQuotaWindowSeconds}" counter-key="@(context.Request.IpAddress)" /></inbound><backend><base /></backend><outbound><base /></outbound><on-error><base /></on-error></policies>'
 
 resource apim 'Microsoft.ApiManagement/service@2024-05-01' = {
   name: serviceName
@@ -260,10 +318,10 @@ resource premiumTtsOptionsOperation 'Microsoft.ApiManagement/service/apis/operat
 // throttling it would break the browser handshake for a caller whose actual
 // synthesis requests are still within budget.
 //
-// A limit on calls bounds the exposure without making it cheap: at the default,
-// one address can still submit the maximum text length on every call. The control
-// that caps spend over a billing period is `quota-by-key` on a longer window,
-// which is a separate decision from this one.
+// A limit on calls bounds burst without making it cheap: at the default, one
+// address can still submit the maximum text length on every call. The control that
+// caps a total over a longer window is the `quota-by-key` in the same inbound
+// section, derived above.
 resource premiumTtsGetPolicy 'Microsoft.ApiManagement/service/apis/operations/policies@2024-05-01' = {
   parent: premiumTtsGetOperation
   name: 'policy'

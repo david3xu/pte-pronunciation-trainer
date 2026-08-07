@@ -878,3 +878,63 @@ individually verified at the API layer.
 - §8 item 5's "exposes only `/api/voices`" language was updated when this
   migration began; it now describes routes being added deliberately per §9.2
   rather than frozen at exactly one.
+
+## 19. Synthetic monitor VM and Bastion
+
+Scope: turn every previous verification of App Service/APIM/Front Door in this
+plan (all one-off manual curl runs) into a standing check, and add reachable
+maintenance access for the VM that runs it. A fifth reliably time-based
+workload was a secondary, incidental effect of the VM having a real job, not
+the reason it was built.
+
+### 19.1 What changed
+
+| Commit | Content |
+| --- | --- |
+| `fc2dc2e` | `infra/azure/monitor-vm.bicep`: `Standard_B2ps_v2` Linux VM, dedicated VNet/subnet, NSG with an explicit inbound deny (no inbound access is opened at all), SSH key only. Polls `/health`, `/api/voices`, `/api/premium-tts` on the public Front Door endpoint every 5 minutes via a cloud-init-installed systemd service, reporting each result to Application Insights. |
+| `b98648e` | Azure Bastion (Basic, `$0.19/hour`) added in a dedicated `AzureBastionSubnet`, so the VM (deliberately built with no open inbound port) can still be reached for maintenance. |
+| `991b46a` | Superseded by `37cc591`; documented rather than removed. See 19.2. |
+| `37cc591` | The actual fix for three consecutive `SkuNotAvailable` failures on `Standard_B2s`: `main.bicep`'s own `monitorVmSize` parameter, not the submodule's default, is what `azd` deploys, and it had not been updated. Corrected to `Standard_B2ps_v2` (ARM64, confirmed to have real capacity in `australiaeast` where the x64 B-series did not) and verified at the compiled `main.bicep` level, not the submodule in isolation. |
+| `aa6d5c7` | Registers both resources in `scripts/azure/deployment-contract.js`: a `virtualMachineSkuList` capacity strategy reading the restrictions collection (not mere presence in the region list, which is what made every by-hand check during the incident look fine), `monitorVmAdminSshPublicKey` added to `REQUIRED_BICEP_PARAMETERS`, and both resources priced in `ESTIMATED_MONTHLY_USD` from real retail rates. |
+| `fd29f23` | Fixes the monitor script itself: it read only the first connection-string segment and posted to the global ingestion endpoint (`dc.services.visualstudio.com`), whose technical support ended 31 March 2025. Now derives `IngestionEndpoint` and `InstrumentationKey` from the full connection string by field name and refuses to start if either is missing. 12 tests execute the script's real setup logic against controlled inputs rather than pattern-matching it. |
+
+### 19.2 The SkuNotAvailable incident, recorded plainly
+
+Three consecutive `azd provision` attempts failed identically on `Standard_B2s`,
+including one after the template was changed to request `Standard_B2ps_v2` and
+committed. The first fix attempt (`991b46a`, salting the nested deployment
+name to rule out a stale-validation-cache theory) did not address the actual
+cause and is left in the history rather than squashed, because the commit
+message already states plainly that it was chasing the wrong lead. The real
+cause: `main.bicep` declares its own `monitorVmSize` parameter, separate from
+the submodule's, and passes it explicitly (`vmSize: monitorVmSize`) — which
+overrides whatever default the submodule declares. It still read
+`Standard_B2s` after the submodule fix, because only the submodule's own
+default had been changed.
+
+### 19.3 Live verification
+
+| Check | Result |
+| --- | --- |
+| VM provisioning | `Succeeded`, `Standard_B2ps_v2` in `australiaeast` |
+| Bastion provisioning | `Succeeded`, Basic tier, `AzureBastionSubnet` |
+| `synthetic-monitor.service` (checked via `az vm run-command invoke`, not SSH) | `active (running)`, no error in `journalctl` |
+| `Environment=MONITOR_CONNECTION_STRING=` (contains `;` and `=`) surviving systemd's unquoted `Environment=` parsing | confirmed clean — no "missing InstrumentationKey or IngestionEndpoint" stderr, no restart loop |
+| Real telemetry landing in Log Analytics (`AppEvents` table — this is a workspace-based Application Insights component, so the classic `customEvents` name does not resolve; `AppEvents` does) | confirmed for all three checks, both before and after the ingestion-endpoint fix |
+
+The pre-fix VM's telemetry (08:50–09:00 UTC) did reach Application Insights via
+the deprecated global endpoint — Microsoft's retirement notice ends technical
+support, not necessarily connectivity, and this window is consistent with
+that wording rather than with the endpoint being already non-functional. The
+bug was real and worth fixing regardless: relying on unsupported ingestion
+infrastructure that could stop working without further notice is not a
+sound place to leave a monitor that exists to catch failures. The recreated
+VM's telemetry (09:17 UTC onward) confirms the fix independently, via the
+correct regional endpoint (`australiaeast-1.in.applicationinsights.azure.com`).
+
+### 19.4 Known gap, not closed here
+
+`az bicep build` and `pnpm run azure:verify:template` were unrunnable in the
+environment that authored several of these commits (no `az` in that session's
+allowlist); those rounds were verified by the session that could run them
+before committing. Noted for completeness, not as an outstanding action.

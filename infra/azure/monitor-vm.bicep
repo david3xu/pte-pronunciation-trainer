@@ -30,8 +30,8 @@ param tags object
 @description('Virtual machine name.')
 param vmName string
 
-@description('VM size. B2s is the smallest burstable size that clears the US$1 per day floor on its own; B1s does not.')
-param vmSize string = 'Standard_B2s'
+@description('VM size. ARM64 (Bpsv2 family) rather than the x64 B-series: Standard_B2s and its x64 siblings reported SkuNotAvailable for capacity in australiaeast at the time this was written. Standard_B2ps_v2 clears the US$1 per day floor on its own; Standard_B2pts_v2 does not.')
+param vmSize string = 'Standard_B2ps_v2'
 
 @description('Admin username for the monitor VM. Used for SSH only; nothing here runs as this user.')
 param adminUsername string = 'ccladmin'
@@ -272,7 +272,10 @@ resource vm 'Microsoft.Compute/virtualMachines@2024-07-01' = {
       imageReference: {
         publisher: 'Canonical'
         offer: 'ubuntu-24_04-lts'
-        sku: 'server'
+        // arm64, matching the Bpsv2 vmSize. The monitor is bash and curl, which
+        // run identically on either architecture, so this is a capacity decision,
+        // not a functional one.
+        sku: 'server-arm64'
         version: 'latest'
       }
       osDisk: {

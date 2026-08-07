@@ -799,6 +799,7 @@ on Azure by the time the live checks below were run.
 | PostgreSQL administrators | count and identity | exactly one administrator, `david03.xu_gmail.com#EXT#@david03xugmail.onmicrosoft.com`, matching the approved `POSTGRES_ENTRA_ADMIN_OBJECT_ID` |
 | API Management | provisioning state | `Succeeded` |
 | Front Door security policy | WAF association | `provisioningState: Succeeded`, WAF policy `cclfdp52j26ruujb6qwaf` associated with the `ccl-endpoint-p52j26ruujb6q` endpoint on `/*` |
+| Front Door public origin, full hostname | `https://ccl-endpoint-p52j26ruujb6q-e7g5g6bhbbfpbdfr.z01.azurefd.net` (the generated `-e7g5g6bhbbfpbdfr` suffix wasn't recorded until §20; only the endpoint name was, above) |
 | Speech account | identity and SKU | still `ccl-pronunciation-speech-david` in `australiaeast`, now `S0` (in-place upgrade, no new account) |
 | Foundry / OpenAI / Machine Learning | resource scan | none exist in the resource group; the only `Microsoft.CognitiveServices` account is the approved Speech resource |
 | Role assignments | scoped to the resource group | none, matching the plan's static role review — the only enabled API route has no Azure data-plane dependency |
@@ -938,3 +939,57 @@ correct regional endpoint (`australiaeast-1.in.applicationinsights.azure.com`).
 environment that authored several of these commits (no `az` in that session's
 allowlist); those rounds were verified by the session that could run them
 before committing. Noted for completeness, not as an outstanding action.
+
+## 20. iOS staging test build
+
+Scope: a one-off native build pointed at Azure staging instead of production,
+to exercise the deployment from a real Capacitor client. Deliberately not a
+change to what a normal build does by default.
+
+### 20.1 The constraint this respects
+
+§8 item 2 states no client origin change: production web and Capacitor builds
+keep calling the existing production API origin. That still holds. This adds
+one new script, `cap:sync:ios:staging`, alongside the existing
+`cap:sync:ios:prod`; the production script and its behaviour are unchanged.
+
+### 20.2 What happened
+
+1. Confirmed the Front Door origin live, with a direct curl check, rather
+   than trusting a document match, since the full hostname wasn't recorded
+   in this plan until the row added to §17's table above.
+2. Installed the production build to the physical device first, deliberately,
+   to prove the build-and-install path worked before risking the device on an
+   incomplete backend.
+3. Built and installed the staging-pointed bundle. Confirmed via the synced
+   assets, not the exit code alone, that the Azure origin was actually baked
+   in.
+4. Restored the production build immediately after. Confirmed via the synced
+   assets that zero Azure references remained and the Vercel origin was back,
+   rather than trusting that step's exit code either.
+
+### 20.3 Live verification
+
+| Route | Result |
+| --- | --- |
+| `GET /health` | 200, `{"status":"ok","stage":"staging"}` |
+| `GET /api/voices` | 200 |
+| `POST /api/premium-tts` | 200, real base64 MP3 |
+| `POST /api/ai/chat` | 404 |
+| `POST /api/pronunciation-score` | 404 |
+| `POST /api/ai-recommendations` | 404 |
+
+The three 404s match §18.5's deferred list and are expected, not a fault.
+
+### 20.4 What this did not verify
+
+The build-and-install path is scriptable against a physical device; app
+launch and log capture are not, both being simctl-backed in the tooling used
+here and rejecting a physical device UDID. So this proves the Azure backend
+answers every route correctly for a real native client's origin, and that the
+client bundle was correctly built against it, but not that the app's own
+client-side handling of those responses is correct on the handset. That part
+needs a person holding the phone.
+
+The device was left on the production build, not staging, once this section's
+verification was complete.

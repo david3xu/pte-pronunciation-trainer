@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project summary
 
-PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, Azure AI Speech provides premium real-audio TTS through `/api/premium-tts`, and PostHog records analytics.
+PTE Pronunciation Trainer is a React 19 + TypeScript 5 app for pronunciation practice. The app is mostly client-side: generated local JSON powers vocabulary and practice content, while Supabase handles auth/progress/settings, Google Gemini powers AI tutor features, Azure AI Speech provides premium real-audio TTS, and PostHog records analytics. `package.json` requires Node `>=22.0.0` and pnpm `>=10.0.0` (`packageManager` pins `pnpm@10.32.1`).
 
 ## Common commands
 
@@ -32,10 +32,28 @@ npx vitest run -t "renders vocabulary word"
 
 pnpm run test:e2e
 npx playwright test tests/e2e/tts.spec.ts
+npx playwright test -g "tts"                  # Single E2E test by title
+npx playwright test --project=desktop-chromium
 
 pnpm run deploy           # data:pte + build + validate:all
 pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
+
+pnpm run build:server     # Compile server/ + api/ (tsconfig.server.json) to dist-server/
+pnpm run start:server     # Run the compiled Node production server (Azure App Service target)
+
+pnpm run cap:sync:ios     # Build + sync the Capacitor iOS native project
+pnpm run cap:open:ios     # Open the iOS project in Xcode
+pnpm run cap:run:ios      # Build, sync, and run on an iOS simulator/device
 ```
+
+### Azure deployment (azd)
+
+- `azure.yaml` orchestrates two governed steps: `azure-validate` then `azure-deploy`. **Never run `azd up` or invoke Bicep directly** — that skips the review boundary between validation and paid provisioning. See the header comment in `azure.yaml` and `.azure/deployment-plan.md` before touching deployment.
+- `pnpm run azure:preflight[:check]` / `azure:postprovision[:check]` — pre/postprovision hooks (environment validation, provider registration, capacity checks, Postgres admin reconciliation).
+- `pnpm run azure:package[:check]` — assembles the deployable server package (`data:pte` + `build` + `build:server` + `scripts/azure/build-package.js`).
+- `pnpm run azure:validate` — `azure:preflight:check` + `azure:package:check`, the read-only validation half of the governed workflow.
+- `pnpm run azure:smoke:server` / `azure:validate:redis` / `azure:verify:template` / `azure:bicep:build` / `azure:prepare:subscription` — targeted checks used during provisioning; see `scripts/azure/` for what each does.
+- Bicep modules live under `infra/azure/` (`main.bicep` plus per-service modules); deployment-specific parameters are read from the azd environment via `infra/azure/main.bicepparam`, not committed here.
 
 ## Architecture
 
@@ -53,11 +71,10 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 
 ### Configuration and mode routing
 
-- `src/config/AppConfig.ts` is the single source of truth for dataset paths, learning modes, API endpoints, Gemini defaults, TTS defaults, delays, and limits.
-- There are two related mode systems:
-  - `settings.practiceType` decides the broad UI family (`vocabulary`, `vocab-typing`, `practice`, `shadowing`).
-  - `vocabulary.mode` drives interface routing in `AppContent`.
-- Practice UIs use `practice-repeat-sentence`, `practice-answer-short-question`, and `practice-write-from-dictation` as runtime mode ids, but the underlying files are still registered in `AppConfig.data.paths.byMode` under `rs`, `asq`, and `wfd`. `src/services/dataset/datasetLoader.ts` contains the bridge.
+- `src/config/AppConfig.ts` is the single source of truth for *browser* configuration: dataset paths, learning modes, API endpoints, Gemini defaults, TTS defaults, delays, and limits. Server-only Gemini model settings, request limits, and Azure voice tables live in `api/config.ts` — do not duplicate server config into the client bundle.
+- Mode state is layered: `settings.practiceType` picks the broad UI family (`vocabulary`, `vocab-typing`, `practice`, `writing`, `shadowing`); `settings.practiceMode` and `settings.writingMode` pick nested task datasets within `practice`/`writing`; `vocabulary.mode` still drives several interface decisions directly in `AppContent`. Study-type transitions must explicitly reload the target dataset even when the remembered nested mode hasn't changed — `practiceMode`/`writingMode`/`vocabularyBook` can describe a stale prior selection.
+- Practice UIs use `practice-repeat-sentence`, `practice-answer-short-question`, and `practice-write-from-dictation` as runtime mode ids, but the underlying files are still registered in `AppConfig.data.paths.byMode` under `rs`, `asq`, and `wfd` (`swt` is a writing-mode key using the same raw practice-item normalization). `src/services/dataset/datasetLoader.ts` contains the bridge.
+- Writing Practice is exact-text typing configured by `TypingMode`/`TYPING_TASKS` in `src/config/typingTasks.ts`. `WRITING_TASKS` in `src/config/writingTasks.ts` describes form-validation rules only — it is not the Settings/runtime registry.
 
 ### Data pipeline and dataset normalization
 
@@ -82,7 +99,7 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 ### Build, API, and deployment shape
 
 - Vite config (`vite.config.ts`) sets up React, the PWA plugin, caching for `data/processed/*.json`, manual chunks, and dev middleware for `/api/ai/chat`.
-- Production API routes live under `api/` and are intended for Vercel serverless deployment.
+- API handlers have two hosts. `api/handlers/` holds framework-agnostic handler cores shared by both; `api/handlers/vercelAdapter.ts` wraps them for Vercel serverless functions (the original/rollback path), and `server/` (a small `node:http`-based server, no framework) wraps the same cores for Azure App Service. `server/routes.ts` documents which of the client's `data.api.endpoints` (in `AppConfig.ts`) are registered on the Azure server vs. still Vercel-only — check it before assuming a route exists on both hosts. `tsconfig.server.json` compiles `server/` + `api/` together to `dist-server/`, which `scripts/azure/build-package.js` packages as the App Service deployable (entry point `server/index.js`).
 - `supabase/migrations/` contains the database schema history used by cloud sync and AI-context features.
 
 ## Repo-specific guidance
@@ -91,7 +108,7 @@ pnpm run vercel-build     # data:pte + vite build + copy processed data to dist/
 - New UI should usually go in the nearest existing feature folder under `src/components/` and use Radix UI primitives with Tailwind utilities.
 - Long-lived components that fetch data should use `AbortController` and cancel on unmount, matching `AppContent`.
 - Stop active speech before navigation, dataset changes, and mode switches by following the existing TTS/audio service patterns.
-- Practice playback uses generated real audio through the shared audio service; keep server-only AWS credentials out of client code.
+- Practice playback uses generated real audio through the shared audio service; keep server-only Azure Speech credentials out of client code.
 - Tests use Vitest with `happy-dom` and `src/test/setup.ts`. Playwright E2E uses `playwright.config.ts`, which starts a dev server and regenerates data before running.
 
 ## When adding or changing datasets
@@ -123,3 +140,5 @@ Update all relevant surfaces together:
 - `docs/MODULES.md` - state/service interaction map
 - `docs/CODE_INTERACTIONS.md` - usage hotspots and coupling map
 - `docs/TESTING.md` and `docs/SETUP.md` - environment and test workflow details
+- `.azure/deployment-plan.md` - canonical, current state of the Azure staging rollout (resource inventory, environment values, deployment method, risks); check its `Status` line before trusting older Azure docs
+- `docs/AZURE_DEPLOYMENT_HANDOFF.md` and `docs/AZURE_WORKLOAD_PLAN.md` - background/history on the Azure App Service migration

@@ -6,11 +6,13 @@
  * The registry is exported so a test can assert that every configured client
  * endpoint has a server route, rather than that agreement being assumed.
  *
- * Only the vertical slice route is registered so far. The remaining handlers are
- * listed as declared but unregistered rather than omitted, so the gap is visible
- * in code and in the coverage test instead of being discovered at runtime.
+ * The voice slice and premium text to speech are registered. The remaining
+ * handlers are listed as declared but unregistered rather than omitted, so the gap
+ * is visible in code and in the coverage test instead of being discovered at
+ * runtime.
  */
 
+import { premiumTtsHandler } from '../api/handlers/premiumTts.js';
 import { voicesHandler } from '../api/handlers/voices.js';
 import type { ApiHandler } from '../api/handlers/contracts.js';
 
@@ -46,12 +48,12 @@ export const UNREGISTERED_ENDPOINTS: Readonly<Record<string, string>> = {
   '/api/ai-recommendations': 'ported with the remaining handler migration',
   '/api/ai/chat': 'ported with the remaining handler migration',
   '/api/pronunciation-score': 'ported with the remaining handler migration',
-  '/api/premium-tts': 'ported with the remaining handler migration',
   '/api/audio/generate': 'ported with the remaining handler migration',
 };
 
 /** Registered routes, path to handler core. */
 export const API_ROUTES: Readonly<Record<string, ApiHandler>> = {
+  '/api/premium-tts': premiumTtsHandler,
   '/api/voices': voicesHandler,
 };
 

@@ -40,6 +40,11 @@ const aliases = {
 //
 // Separating them keeps the client setup untouched rather than weakening it with
 // environment guards to accommodate server tests.
+//
+// The node project also covers `api`, because the handler cores under api/handlers
+// are shared by both hosts and their contract tests are node tests. Without that
+// entry a test file added beside a handler is collected by neither project and
+// passes by never running.
 export default defineConfig({
   test: {
     projects: [
@@ -60,6 +65,7 @@ export default defineConfig({
           globals: true,
           environment: 'node',
           include: [
+            'api/**/*.{test,spec}.ts',
             'server/**/*.{test,spec}.ts',
             'scripts/azure/**/*.{test,spec}.js',
           ],

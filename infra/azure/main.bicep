@@ -179,6 +179,22 @@ param apimPublisherEmail string
 @description('Publisher organisation name for API Management.')
 param apimPublisherName string
 
+// Synthetic monitor. A small VM that polls the public Front Door path on a
+// schedule and reports into Application Insights, replacing what was previously a
+// one off manual curl check with a standing one.
+
+@description('Monitor VM name.')
+param monitorVmName string = 'ccl-monitor-${nameSuffix}'
+
+@description('Monitor VM size.')
+param monitorVmSize string = 'Standard_B2s'
+
+@description('SSH public key authorised on the monitor VM. Operator supplied; this template does not generate a key.')
+param monitorVmAdminSshPublicKey string
+
+@description('Synthetic monitor polling interval in seconds.')
+param monitorPollIntervalSeconds int = 300
+
 // Tags. Two products share this subscription, so every resource is attributable to
 // a product, a deployment and a stage. The stage tag is what distinguishes this
 // parallel staging estate from anything that later serves production.
@@ -355,6 +371,24 @@ module frontDoor 'front-door.bicep' = {
   }
 }
 
+// Step twelve. The synthetic monitor polls the public Front Door path, so it is
+// deployed last, after there is a Front Door endpoint to point it at.
+module monitorVm 'monitor-vm.bicep' = {
+  name: 'monitor-vm-${uniqueString(resourceGroupName, monitorVmName)}'
+  scope: appResourceGroup
+  params: {
+    location: location
+    tags: commonTags
+    vmName: monitorVmName
+    vmSize: monitorVmSize
+    adminSshPublicKey: monitorVmAdminSshPublicKey
+    monitorTargetUrl: 'https://${frontDoor.outputs.endpointHostName}'
+    appInsightsName: monitoring.outputs.componentName
+    workspaceId: monitoring.outputs.workspaceId
+    pollIntervalSeconds: monitorPollIntervalSeconds
+  }
+}
+
 // Outputs are named exactly as the AZD environment keys the hooks expect, so the
 // deployment contract in scripts/azure and this template cannot disagree about
 // what a value is called.
@@ -414,3 +448,6 @@ output SPEECH_ACCOUNT_NAME string = speech.outputs.speechAccountName
 output SPEECH_ACCOUNT_ID string = speech.outputs.speechAccountId
 output SPEECH_ENDPOINT string = speech.outputs.speechEndpoint
 output SPEECH_SKU string = speechSku
+
+output MONITOR_VM_NAME string = monitorVm.outputs.vmName
+output MONITOR_VM_PUBLIC_IP string = monitorVm.outputs.publicIpAddress

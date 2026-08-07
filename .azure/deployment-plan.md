@@ -994,3 +994,55 @@ needs a person holding the phone.
 
 The device was left on the production build, not staging, once this section's
 verification was complete.
+
+## 21. Premium TTS spend quota, and the bandwidth control that had to be abandoned
+
+Scope: close the gap already flagged when the burst rate limit was added -
+`rate-limit-by-key` bounds burst, not total spend, and the gateway hostname is
+reachable without passing Front Door's WAF.
+
+### 21.1 The bandwidth attempt, and why it was wrong
+
+The first attempt sized a `quota-by-key` bandwidth (KB) budget from measured
+audio density, on the theory that bytes track spend since Speech bills per
+character. A review before provisioning questioned the direction of that
+sizing; re-measurement across nine content shapes at the enforced 3000
+character maximum found something worse than a sizing error. A single word
+followed by whitespace padding returns 1.06 bytes per character against
+roughly 149 to 171 for ordinary prose and long vocabulary items - a 162 times
+spread, all billing the same 3000 characters. A bandwidth budget sized from
+any density sample is defeatable to a fraction of its intended ceiling by a
+caller who controls that ratio: a 9300 KB/day budget sized from prose density
+admits about 135 USD/day at padding density, not the 1 USD/day it was sized
+for. There is no safe density to size from. Bandwidth was removed rather than
+resized.
+
+### 21.2 What ships: a provable, honestly bounded quota
+
+`quota-by-key calls="500" renewal-period="86400"`, same IP-keyed counter as
+the burst limit, on both `premium-tts` synthesis operations. The guarantee is
+exact and content-independent: `calls * enforced-character-maximum *
+retail-price-per-character`, which holds regardless of what a caller sends,
+because it never depends on measuring what was actually sent. At the
+defaults that is 500 * 3000 * 0.000015 = **22.50 USD/day per address**, not
+the 1 USD/day originally targeted, and the derivation comment in
+`infra/azure/apim.bicep` says so rather than overclaiming. Tightening further
+needs a smaller enforced per-request character cap, which changes what the
+endpoint accepts and is recorded as an open product decision, not taken here.
+
+### 21.3 Pricing correction
+
+The premium voice table is entirely standard neural voices. The retail meter
+they bill against is `S1 Neural Text To Speech Characters`, 15.00 USD per
+1,000,000 characters in `australiaeast` (Azure Retail Prices API, product
+`Azure Speech`) - confirmed there is no `S0` meter for Azure Speech in any
+region despite the account SKU being S0, and confirmed separately that the
+HD synthesis meter (48 USD/1M) is not reachable by any voice in the table.
+
+### 21.4 Live verification
+
+| Check | Result |
+| --- | --- |
+| Policy content read from the live APIM resource (not the template) | `<quota-by-key calls="500" renewal-period="86400" counter-key="@(context.Request.IpAddress)" />`, no `bandwidth` attribute |
+| Padding attack, reproduced independently against the deployed endpoint | 3000-character request, one word plus whitespace padding, returned 3168 bytes of audio - 1.056 bytes/char, matching the finding that killed the bandwidth approach |
+| Regression: `/health`, `/api/voices`, `/api/premium-tts` | unaffected, still 200 / `success: true` |

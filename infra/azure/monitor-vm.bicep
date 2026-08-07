@@ -222,8 +222,49 @@ var monitorScript = '''#!/bin/bash
 set -euo pipefail
 
 TARGET_URL="${MONITOR_TARGET_URL}"
-IKEY="${MONITOR_IKEY}"
+CONNECTION_STRING="${MONITOR_CONNECTION_STRING}"
 INTERVAL="${MONITOR_INTERVAL_SECONDS}"
+
+# Read one field out of an Application Insights connection string by name.
+#
+# Matching by prefix rather than by position, because the order of the segments is
+# not contracted anywhere. Pure parameter expansion, so this needs no tool beyond
+# the shell itself.
+connection_string_field() {
+  local key="$1" rest="$CONNECTION_STRING" segment
+
+  while [ -n "$rest" ]; do
+    segment="${rest%%;*}"
+    case "$segment" in
+      "$key"=*)
+        printf '%s' "${segment#*=}"
+        return 0
+        ;;
+    esac
+    if [ "$rest" = "$segment" ]; then
+      break
+    fi
+    rest="${rest#*;}"
+  done
+
+  return 1
+}
+
+IKEY="$(connection_string_field InstrumentationKey || true)"
+INGESTION_ENDPOINT="$(connection_string_field IngestionEndpoint || true)"
+
+# Refuse to start rather than post to an endpoint nobody chose. Global ingestion at
+# dc.services.visualstudio.com lost support in March 2025, so the regional endpoint
+# the connection string carries is the only correct destination, and guessing one
+# produces a monitor that reports nothing while looking healthy.
+if [ -z "$IKEY" ] || [ -z "$INGESTION_ENDPOINT" ]; then
+  echo "monitor: connection string is missing InstrumentationKey or IngestionEndpoint" >&2
+  exit 1
+fi
+
+# Connection strings carry a trailing slash on the endpoint.
+INGESTION_ENDPOINT="${INGESTION_ENDPOINT%/}"
+TRACK_URL="$INGESTION_ENDPOINT/v2/track"
 
 check_one() {
   local name="$1" path="$2" method="$3" body="${4:-}"
@@ -242,7 +283,7 @@ check_one() {
 
   local now
   now=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)
-  curl -sS -o /dev/null -m 10 -X POST "https://dc.services.visualstudio.com/v2/track" \
+  curl -sS -o /dev/null -m 10 -X POST "$TRACK_URL" \
     -H "content-type: application/json" \
     -d "{\"name\":\"Microsoft.ApplicationInsights.Event\",\"time\":\"$now\",\"iKey\":\"$IKEY\",\"data\":{\"baseType\":\"EventData\",\"baseData\":{\"ver\":2,\"name\":\"synthetic_check\",\"properties\":{\"check\":\"$name\",\"status\":\"$status\",\"success\":\"$success\",\"durationMs\":\"$duration\"}}}}" \
     || true
@@ -261,10 +302,11 @@ done
 // Bicep's, and must survive unevaluated). It is exactly wrong for this block,
 // which has to substitute real parameter values, so this is built as a joined
 // array of ordinary single-quoted strings instead, where `${...}` is interpreted.
-// The instrumentation key is extracted from the connection string's first
-// `key=value` segment rather than trusting segment order beyond that.
-var monitorInstrumentationKey = split(split(appInsights.properties.ConnectionString, ';')[0], '=')[1]
-
+// The whole connection string travels to the machine, rather than a key extracted
+// here. The script needs two fields from it and parsing them in bash is parsing
+// that a test can execute, where a Bicep expression doing the same work can only be
+// read. It also stops the ingestion endpoint being discarded, which is what sent
+// telemetry to the retired global endpoint.
 var cloudInitLines = [
   '#cloud-config'
   'write_files:'
@@ -283,7 +325,7 @@ var cloudInitLines = [
   '      [Service]'
   '      Type=simple'
   '      Environment=MONITOR_TARGET_URL=${monitorTargetUrl}'
-  '      Environment=MONITOR_IKEY=${monitorInstrumentationKey}'
+  '      Environment=MONITOR_CONNECTION_STRING=${appInsights.properties.ConnectionString}'
   '      Environment=MONITOR_INTERVAL_SECONDS=${pollIntervalSeconds}'
   '      ExecStart=/opt/monitor/check.sh'
   '      Restart=always'

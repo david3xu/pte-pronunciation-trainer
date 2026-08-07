@@ -189,8 +189,8 @@ param apimPublisherName string
 @description('Monitor VM name.')
 param monitorVmName string = 'ccl-monitor-${nameSuffix}'
 
-@description('Monitor VM size.')
-param monitorVmSize string = 'Standard_B2s'
+@description('Monitor VM size. ARM64 (Bpsv2 family): the x64 B-series, including Standard_B2s, reported SkuNotAvailable for capacity in australiaeast. This parameter, not monitor-vm.bicep own default, is what azd actually deploys - three failed provision attempts requested Standard_B2s from here even after the submodule default was corrected, because this value is passed explicitly and overrides it.')
+param monitorVmSize string = 'Standard_B2ps_v2'
 
 @description('SSH public key authorised on the monitor VM. Operator supplied; this template does not generate a key.')
 param monitorVmAdminSshPublicKey string

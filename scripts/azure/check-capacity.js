@@ -41,10 +41,26 @@ const FLAGS = Object.freeze({
   os: '--os',
   scope: '--scope',
   graphQuery: '--graph-query',
+  resourceType: '--resource-type',
 });
 
 const LINUX_OS_NAME = 'linux';
 const SPEECH_ACCOUNT_KIND = 'SpeechServices';
+
+/** Value az vm list-skus expects for the virtual machine surface. */
+const VIRTUAL_MACHINES_RESOURCE_TYPE = 'virtualMachines';
+
+/**
+ * Restriction scopes reported by az vm list-skus.
+ *
+ * A location scoped restriction refuses the region outright. A zone scoped one
+ * refuses named zones while leaving a regional deployment that pins no zone
+ * available, so the two must not be collapsed into one verdict.
+ */
+const SKU_RESTRICTION_TYPE = Object.freeze({
+  location: 'Location',
+  zone: 'Zone',
+});
 
 /**
  * Compare Azure region identifiers. Azure returns display names such as the
@@ -133,6 +149,75 @@ export function findResourceTypeLocations(resourceTypes, shortType) {
   }
 
   return undefined;
+}
+
+/**
+ * Assess whether a virtual machine size is deployable in a region.
+ *
+ * The distinction this function exists to make: `az vm list-skus --location` lists
+ * a size for the region whether or not it can currently be deployed there. The
+ * refusal lives in the restrictions collection, so reading only the name and the
+ * locations reports available capacity that was never established, which is how a
+ * size that failed three times looked fine every time it was checked by hand.
+ *
+ * A zone scoped restriction is reported separately rather than as a refusal,
+ * because a deployment that pins no zone is unaffected by it.
+ *
+ * @param {unknown[]} skus Parsed az vm list-skus output.
+ * @param {string} skuName Requested size, matched without regard to case.
+ * @param {string} location Target region.
+ * @returns {{ listed: boolean, blockedReasons: string[], zoneOnlyReasons: string[] }}
+ */
+export function assessVirtualMachineSkuRestrictions(skus, skuName, location) {
+  const wanted = skuName.toLowerCase();
+  let listed = false;
+  const blockedReasons = [];
+  const zoneOnlyReasons = [];
+
+  for (const entry of skus) {
+    if (typeof entry !== 'object' || entry === null) {
+      continue;
+    }
+    const record = /** @type {Record<string, unknown>} */ (entry);
+    if (typeof record.name !== 'string' || record.name.toLowerCase() !== wanted) {
+      continue;
+    }
+    if (typeof record.resourceType === 'string' && record.resourceType !== VIRTUAL_MACHINES_RESOURCE_TYPE) {
+      continue;
+    }
+
+    // An entry naming locations must name this one. An entry that names none is
+    // taken at face value, because the query was already scoped to the region.
+    const locations = Array.isArray(record.locations)
+      ? record.locations.filter((value) => typeof value === 'string')
+      : [];
+    if (locations.length > 0 && !locations.some((value) => sameRegion(String(value), location))) {
+      continue;
+    }
+
+    listed = true;
+
+    const restrictions = Array.isArray(record.restrictions) ? record.restrictions : [];
+    for (const restriction of restrictions) {
+      if (typeof restriction !== 'object' || restriction === null) {
+        continue;
+      }
+      const detail = /** @type {Record<string, unknown>} */ (restriction);
+      const reason =
+        typeof detail.reasonCode === 'string' ? detail.reasonCode : 'restriction reported without a reason code';
+
+      if (detail.type === SKU_RESTRICTION_TYPE.zone) {
+        zoneOnlyReasons.push(reason);
+        continue;
+      }
+
+      // Anything not explicitly zone scoped is treated as blocking. An unrecognised
+      // scope must not be read as permission.
+      blockedReasons.push(reason);
+    }
+  }
+
+  return { listed, blockedReasons, zoneOnlyReasons };
 }
 
 /**
@@ -472,6 +557,8 @@ async function applyStrategy(strategy, context) {
       return probePostgresSku(context);
     case CAPACITY_STRATEGY.cognitiveServicesSkuList:
       return probeSpeechSku(context);
+    case CAPACITY_STRATEGY.virtualMachineSkuList:
+      return probeVirtualMachineSku(context);
     case CAPACITY_STRATEGY.providerLocationSupport:
       return probeProviderLocation(context);
     case CAPACITY_STRATEGY.quotaApi:
@@ -521,6 +608,74 @@ async function probeAppServiceSku(context) {
     detail: available
       ? `sku ${sku} with linux workers is offered in ${context.location}`
       : `sku ${sku} with linux workers is not offered in ${context.location}. This is a blocker, not a reason to select a cheaper tier.`,
+    evidence: [result.commandLine],
+  };
+}
+
+/**
+ * Probe a virtual machine size against the region's restrictions collection.
+ *
+ * @param {Parameters<typeof applyStrategy>[1]} context
+ * @returns {Promise<StrategyOutcome>}
+ */
+async function probeVirtualMachineSku(context) {
+  const [sizeParameterName] = context.resource.skuParameterNames;
+  const requestedSize =
+    sizeParameterName === undefined ? undefined : context.parameters.values[sizeParameterName];
+
+  if (typeof requestedSize !== 'string' || requestedSize.trim() === '') {
+    // Not inconclusive. The parameter file pinning no size is itself the finding:
+    // the template default governs, unreviewed and unprobed, and this check cannot
+    // establish capacity for a value it cannot read.
+    return {
+      status: CHECK_STATUS.warn,
+      detail: `${String(sizeParameterName)} is not set in the committed parameter file, so the template default governs the size and no capacity check can be made against it. Pin the size to have it probed.`,
+      evidence: [],
+    };
+  }
+
+  const result = await azJson(
+    ['vm', 'list-skus', FLAGS.resourceType, VIRTUAL_MACHINES_RESOURCE_TYPE, FLAGS.location, context.location],
+    { subscriptionId: context.subscriptionId, timeoutMs: TIMEOUTS_MS.capacityProbe },
+  );
+
+  if (!result.ok || !Array.isArray(result.value)) {
+    return {
+      status: CHECK_STATUS.inconclusive,
+      detail: `the size list for ${context.location} could not be read: ${firstLine(result.stderr)}`,
+      evidence: [result.commandLine],
+    };
+  }
+
+  const assessment = assessVirtualMachineSkuRestrictions(result.value, requestedSize, context.location);
+
+  if (!assessment.listed) {
+    return {
+      status: CHECK_STATUS.fail,
+      detail: `size ${requestedSize} is not offered in ${context.location}`,
+      evidence: [result.commandLine],
+    };
+  }
+
+  if (assessment.blockedReasons.length > 0) {
+    return {
+      status: CHECK_STATUS.fail,
+      detail: `size ${requestedSize} is listed in ${context.location} but restricted for this subscription (${assessment.blockedReasons.join(', ')}), so a deployment requesting it fails with SkuNotAvailable. Select an unrestricted family rather than retrying.`,
+      evidence: [result.commandLine],
+    };
+  }
+
+  if (assessment.zoneOnlyReasons.length > 0) {
+    return {
+      status: CHECK_STATUS.warn,
+      detail: `size ${requestedSize} is deployable in ${context.location} with no zone pinned, but named zones are restricted (${assessment.zoneOnlyReasons.join(', ')})`,
+      evidence: [result.commandLine],
+    };
+  }
+
+  return {
+    status: CHECK_STATUS.pass,
+    detail: `size ${requestedSize} is offered in ${context.location} with an empty restrictions collection`,
     evidence: [result.commandLine],
   };
 }

@@ -15,6 +15,7 @@ import {
   APPLICATION_PACKAGE,
   DEPLOYMENT_OUTPUTS,
   ESTIMATED_MONTHLY_USD,
+  REQUIRED_BICEP_PARAMETERS,
   RESOURCE_PLAN,
 } from './deployment-contract.js';
 import { REPO_PATHS } from './lib/paths.js';
@@ -25,6 +26,11 @@ const APP_SERVICE_MODULE = join(REPO_PATHS.infraDirectory, 'app-service.bicep');
 const APIM_MODULE = join(REPO_PATHS.infraDirectory, 'apim.bicep');
 const REDIS_MODULE = join(REPO_PATHS.infraDirectory, 'redis.bicep');
 const POSTGRES_MODULE = join(REPO_PATHS.infraDirectory, 'postgres.bicep');
+const MONITOR_VM_MODULE = join(REPO_PATHS.infraDirectory, 'monitor-vm.bicep');
+
+const MONITOR_VM_RESOURCE_ID = 'monitorVm';
+const BASTION_RESOURCE_ID = 'bastion';
+const MONITOR_VM_SSH_KEY_PARAMETER = 'monitorVmAdminSshPublicKey';
 
 async function read(path) {
   return readFile(path, 'utf8');
@@ -100,6 +106,64 @@ describe('api management forwarding', () => {
 
     expect(apimBicep).toContain('service/apis/operations@');
     expect(apimBicep).toMatch(/method: 'GET'/);
+  });
+});
+
+describe('monitor vm and bastion registration', () => {
+  it('registers both resources against the arm types the module actually declares', async () => {
+    const monitorVmBicep = await read(MONITOR_VM_MODULE);
+
+    const vm = RESOURCE_PLAN.find((entry) => entry.id === MONITOR_VM_RESOURCE_ID);
+    const bastion = RESOURCE_PLAN.find((entry) => entry.id === BASTION_RESOURCE_ID);
+
+    expect(vm).toBeDefined();
+    expect(bastion).toBeDefined();
+
+    // A registration naming a type the module does not create probes the wrong
+    // surface and passes while the real resource goes unchecked.
+    expect(monitorVmBicep).toContain(`${String(vm?.resourceType)}@`);
+    expect(monitorVmBicep).toContain(`${String(bastion?.resourceType)}@`);
+  });
+
+  it('names a size parameter that main.bicep declares', async () => {
+    const mainBicep = await read(REPO_PATHS.bicepTemplate);
+    const vm = RESOURCE_PLAN.find((entry) => entry.id === MONITOR_VM_RESOURCE_ID);
+
+    expect(vm?.skuParameterNames).toHaveLength(1);
+
+    for (const name of vm?.skuParameterNames ?? []) {
+      expect(mainBicep).toMatch(new RegExp(`param ${name}\\s`));
+    }
+  });
+
+  it('registers no sku parameter for bastion, because the module fixes the sku', async () => {
+    const monitorVmBicep = await read(MONITOR_VM_MODULE);
+    const bastion = RESOURCE_PLAN.find((entry) => entry.id === BASTION_RESOURCE_ID);
+
+    // The empty list is only correct while the sku stays hardcoded. If it is ever
+    // parameterised, this fails and the registration has to name the parameter.
+    expect(bastion?.skuParameterNames).toEqual([]);
+    expect(monitorVmBicep).toMatch(/name: 'Basic'/);
+  });
+
+  it('requires the ssh key parameter, which main.bicep deliberately leaves without a default', async () => {
+    const mainBicep = await read(REPO_PATHS.bicepTemplate);
+
+    expect(REQUIRED_BICEP_PARAMETERS).toContain(MONITOR_VM_SSH_KEY_PARAMETER);
+
+    // Declared with no assignment. A default here would hand out a machine
+    // authorised for a key the operator never chose, so the preflight check is the
+    // only thing standing between a blank value and a live provision.
+    expect(mainBicep).toMatch(new RegExp(`param ${MONITOR_VM_SSH_KEY_PARAMETER} string\\s*\\n`));
+    expect(mainBicep).not.toMatch(new RegExp(`param ${MONITOR_VM_SSH_KEY_PARAMETER} string =`));
+  });
+
+  it('prices both resources, so neither is reported as carrying no fixed cost', () => {
+    // An unpriced id falls into the usage billed bucket of the confirmation gate.
+    // A Bastion host and a running vm are hourly fixed charges, so landing there
+    // would understate the monthly total the operator is agreeing to.
+    expect(ESTIMATED_MONTHLY_USD[MONITOR_VM_RESOURCE_ID]).toBeGreaterThan(0);
+    expect(ESTIMATED_MONTHLY_USD[BASTION_RESOURCE_ID]).toBeGreaterThan(0);
   });
 });
 

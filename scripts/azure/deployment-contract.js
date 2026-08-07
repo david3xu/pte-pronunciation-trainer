@@ -211,6 +211,15 @@ export const CAPACITY_STRATEGY = Object.freeze({
   postgresSkuList: 'postgresSkuList',
   /** az cognitiveservices account list-skus for the Speech kind. */
   cognitiveServicesSkuList: 'cognitiveServicesSkuList',
+  /**
+   * az vm list-skus for the region, reading the restrictions collection.
+   *
+   * Presence in the list is not availability. A size is listed for a region and
+   * still refused for new deployments when the restrictions collection names that
+   * region, which is how three consecutive attempts failed with SkuNotAvailable on
+   * a size the list reported as offered.
+   */
+  virtualMachineSkuList: 'virtualMachineSkuList',
   /** Provider resource type location list. Establishes regional support only. */
   providerLocationSupport: 'providerLocationSupport',
   /** az quota list for providers that expose a quota surface. */
@@ -365,6 +374,32 @@ export const RESOURCE_PLAN = Object.freeze([
     documentedLimitReference: 'Azure Front Door Standard and Premium limits',
     note: 'Global resource. Regional location probes do not apply.',
   },
+  {
+    id: 'monitorVm',
+    displayName: 'Synthetic monitor virtual machine',
+    providerNamespace: 'Microsoft.Compute',
+    resourceType: 'Microsoft.Compute/virtualMachines',
+    quantity: 1,
+    skuParameterNames: ['monitorVmSize'],
+    capacityStrategies: [CAPACITY_STRATEGY.virtualMachineSkuList, CAPACITY_STRATEGY.resourceGraphCount],
+    documentedLimit: null,
+    documentedLimitReference: 'Virtual machine limits in Azure subscription and service limits',
+    note:
+      'The size probe reads the restrictions collection rather than presence in the region list, because the size that failed three times was listed as offered in the region throughout.',
+  },
+  {
+    id: 'bastion',
+    displayName: 'Azure Bastion host',
+    providerNamespace: 'Microsoft.Network',
+    resourceType: 'Microsoft.Network/bastionHosts',
+    quantity: 1,
+    skuParameterNames: [],
+    capacityStrategies: [CAPACITY_STRATEGY.providerLocationSupport, CAPACITY_STRATEGY.resourceGraphCount],
+    documentedLimit: null,
+    documentedLimitReference: 'Azure Bastion limits in Azure subscription and service limits',
+    note:
+      'The sku is fixed at Basic inside monitor-vm.bicep rather than exposed as a parameter, so there is no sku parameter to probe. Billed for the host by the hour for as long as it exists, independent of whether anyone connects.',
+  },
 ]);
 
 /**
@@ -392,6 +427,11 @@ export const REQUIRED_BICEP_PARAMETERS = Object.freeze([
   'apimSkuName',
   'apimPublisherEmail',
   'apimPublisherName',
+  // Supplied by the operator from MONITOR_VM_SSH_PUBLIC_KEY and deliberately
+  // given no default, because a template that invents a key produces a machine
+  // nobody can reach. Listed here so a blank value is refused by name during
+  // preflight rather than surfacing partway through a live provision.
+  'monitorVmAdminSshPublicKey',
 ]);
 
 /**
@@ -583,6 +623,20 @@ export const ESTIMATED_MONTHLY_USD = Object.freeze({
   apiManagement: 50,
   frontDoor: 35,
   storage: 5,
+  // Both are fixed hourly charges, not usage billed. Registering either without a
+  // figure here is not neutral: an unpriced id falls into the usage billed bucket,
+  // so the confirmation gate would have told the operator that a Bastion host and a
+  // running virtual machine carry no committed monthly cost.
+  //
+  // Derived from retail hourly rates over a 730 hour month rather than guessed, so
+  // each figure can be rechecked against the calculator: Standard_B2ps_v2 at 0.0848
+  // an hour, and the Basic Bastion host at 0.19 an hour.
+  //
+  // Each covers its metered resource only. The os disk, the machine's public address
+  // and the address the Bastion host requires are not priced here and add single
+  // figures, so both entries read slightly low rather than slightly high.
+  monitorVm: 62,
+  bastion: 140,
   logAnalytics: null,
   applicationInsights: null,
   speech: null,

@@ -799,7 +799,7 @@ on Azure by the time the live checks below were run.
 | PostgreSQL administrators | count and identity | exactly one administrator, `david03.xu_gmail.com#EXT#@david03xugmail.onmicrosoft.com`, matching the approved `POSTGRES_ENTRA_ADMIN_OBJECT_ID` |
 | API Management | provisioning state | `Succeeded` |
 | Front Door security policy | WAF association | `provisioningState: Succeeded`, WAF policy `cclfdp52j26ruujb6qwaf` associated with the `ccl-endpoint-p52j26ruujb6q` endpoint on `/*` |
-| Front Door public origin, full hostname | `https://ccl-endpoint-p52j26ruujb6q-e7g5g6bhbbfpbdfr.z01.azurefd.net` (the generated `-e7g5g6bhbbfpbdfr` suffix wasn't recorded until §20; only the endpoint name was, above) |
+| Front Door endpoint | public origin, full hostname | `https://ccl-endpoint-p52j26ruujb6q-e7g5g6bhbbfpbdfr.z01.azurefd.net`, confirmed answering on 2026-08-07. The generated `e7g5g6bhbbfpbdfr` segment is assigned when the endpoint is created and is not derived from the endpoint name above, so it changes if the endpoint is ever torn down and recreated. Probe again after any Front Door recreation rather than trusting this value. |
 | Speech account | identity and SKU | still `ccl-pronunciation-speech-david` in `australiaeast`, now `S0` (in-place upgrade, no new account) |
 | Foundry / OpenAI / Machine Learning | resource scan | none exist in the resource group; the only `Microsoft.CognitiveServices` account is the approved Speech resource |
 | Role assignments | scoped to the resource group | none, matching the plan's static role review — the only enabled API route has no Azure data-plane dependency |
@@ -955,9 +955,10 @@ one new script, `cap:sync:ios:staging`, alongside the existing
 
 ### 20.2 What happened
 
-1. Confirmed the Front Door origin live, with a direct curl check, rather
-   than trusting a document match, since the full hostname wasn't recorded
-   in this plan until the row added to §17's table above.
+1. Confirmed the Front Door origin live, probing every route over HTTPS from
+   the build host, rather than trusting a document match, since the full
+   hostname wasn't recorded in this plan until the row added to §17's table
+   above.
 2. Installed the production build to the physical device first, deliberately,
    to prove the build-and-install path worked before risking the device on an
    incomplete backend.

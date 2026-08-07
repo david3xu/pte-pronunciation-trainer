@@ -59,6 +59,22 @@ var nicName = '${vmName}-nic'
 var addressPrefix = '10.20.0.0/24'
 var subnetPrefix = '10.20.0.0/27'
 
+// AzureBastionSubnet is a reserved name Azure requires exactly, and Bastion
+// requires a /26 or larger. Placed at .64/26 so it cannot overlap the monitor
+// subnet at .0/27, both inside the single /24 address space above.
+//
+// No NSG is attached to this subnet. Bastion's own required inbound and outbound
+// rule set (Internet and GatewayManager on 443, AzureLoadBalancer, host to host
+// on 8080 and 5701, egress to AzureCloud and to the target subnet) is exact and
+// undocumented drift from it silently breaks the service rather than failing
+// loudly. Omitting the NSG rather than risking a wrong hand-written copy of that
+// rule set is the deliberate choice here; Bastion is a managed gateway with its
+// own boundary, not a VM with an open port.
+var bastionSubnetName = 'AzureBastionSubnet'
+var bastionSubnetPrefix = '10.20.0.64/26'
+var bastionPublicIpName = '${vmName}-bastion-pip'
+var bastionHostName = '${vmName}-bastion'
+
 resource appInsights 'Microsoft.Insights/components@2020-02-02' existing = {
   name: appInsightsName
 }
@@ -104,6 +120,51 @@ resource vnet 'Microsoft.Network/virtualNetworks@2023-11-01' = {
           addressPrefix: subnetPrefix
           networkSecurityGroup: {
             id: nsg.id
+          }
+        }
+      }
+      {
+        name: bastionSubnetName
+        properties: {
+          addressPrefix: bastionSubnetPrefix
+        }
+      }
+    ]
+  }
+}
+
+resource bastionPublicIp 'Microsoft.Network/publicIPAddresses@2023-11-01' = {
+  name: bastionPublicIpName
+  location: location
+  tags: tags
+  sku: {
+    name: 'Standard'
+  }
+  properties: {
+    publicIPAllocationMethod: 'Static'
+  }
+}
+
+resource bastionHost 'Microsoft.Network/bastionHosts@2023-11-01' = {
+  name: bastionHostName
+  location: location
+  tags: tags
+  sku: {
+    // Basic. Native client support, the difference from Standard, is not needed:
+    // browser based access from the portal is enough for occasional maintenance
+    // on a VM whose ordinary operation needs no login at all.
+    name: 'Basic'
+  }
+  properties: {
+    ipConfigurations: [
+      {
+        name: 'bastion-ipconfig'
+        properties: {
+          subnet: {
+            id: vnet.properties.subnets[1].id
+          }
+          publicIPAddress: {
+            id: bastionPublicIp.id
           }
         }
       }
@@ -315,3 +376,4 @@ resource vmDiagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview
 output vmName string = vm.name
 output vmId string = vm.id
 output publicIpAddress string = publicIp.properties.ipAddress
+output bastionHostName string = bastionHost.name

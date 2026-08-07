@@ -82,6 +82,21 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' existing = {
   name: appInsightsName
 }
 
+// The Speech account the server synthesises through, referenced rather than
+// declared. This module must not declare it: speech.bicep owns that declaration,
+// and a second declaration would be a second upsert of a resource production
+// already depends on. An existing reference emits no resource, so the compiled
+// template still contains exactly one Cognitive Services account, which is what
+// scripts/azure/verify-template-invariants.js asserts.
+//
+// Reading its key here is safe against the deployment ordering. This module runs
+// before speech.bicep updates the account, but the account pre exists and the AZD
+// preflight refuses to continue when it is absent, so the key is always
+// resolvable by the time this is evaluated.
+resource speechAccount 'Microsoft.CognitiveServices/accounts@2023-05-01' existing = {
+  name: speechAccountName
+}
+
 resource plan 'Microsoft.Web/serverfarms@2023-12-01' = {
   name: planName
   location: location
@@ -180,6 +195,26 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
         }
         {
           name: 'SPEECH_REGION'
+          value: speechRegion
+        }
+        // The two variables api/config.ts getAzureSpeechConfig actually reads. The
+        // pre existing SPEECH_ACCOUNT_NAME and SPEECH_REGION above are descriptive
+        // and are read by nothing, so without these the premium text to speech
+        // route answers every request through its fallback path, at status 200,
+        // where no status based alert can see it.
+        //
+        // The key is derived from the existing account rather than supplied, for
+        // the same reason the Application Insights connection string is: a value
+        // passed in as a parameter lands in a nested deployment output and stays
+        // readable in deployment history. Deriving it also means no human fetches
+        // or types the key, and no imperative app setting is left to be erased by
+        // the next provision, because this array is what ARM replaces wholesale.
+        {
+          name: 'AZURE_SPEECH_KEY'
+          value: listKeys(speechAccount.id, speechAccount.apiVersion).key1
+        }
+        {
+          name: 'AZURE_SPEECH_REGION'
           value: speechRegion
         }
       ]

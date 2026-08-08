@@ -109,6 +109,81 @@ describe('BackgroundAudioService', () => {
     expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 
+  // ---- unusable payloads (named, not left to the element) ----
+  //
+  // A payload that cannot be played reaches the element as a blob URL that
+  // WebKit reports as an unreadable blob resource, and play() then rejects with
+  // a bare NotSupportedError. That error names neither the endpoint nor the
+  // payload, so a gateway returning a success envelope around no audio is
+  // indistinguishable from a device missing a codec. These pin the diagnosis to
+  // the boundary where the payload is still visible.
+
+  const payloadFetch = (data: unknown) =>
+    vi.fn(async () => ({
+      ok: true,
+      json: async () => ({ success: true, data }),
+    })) as unknown as typeof fetch;
+
+  it('rejects a success response that carries no audio', async () => {
+    const service = new BackgroundAudioService();
+    const fetchMock = payloadFetch({ audioBase64: '', contentType: 'audio/mpeg' });
+    vi.stubGlobal('fetch', fetchMock);
+
+    await expect(service.playText('hello world')).rejects.toThrow(/no audio/i);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('rejects a success response that declares no content type', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', payloadFetch({ audioBase64: btoa('audio-bytes'), contentType: '' }));
+
+    await expect(service.playText('hello world')).rejects.toThrow(/content type/i);
+  });
+
+  it('names base64 as the problem when the payload cannot be decoded', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', payloadFetch({ audioBase64: '<<not base64>>', contentType: 'audio/mpeg' }));
+
+    await expect(service.playText('hello world')).rejects.toThrow(/base64/i);
+  });
+
+  it('rejects a payload whose content type is not an audio media type', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', payloadFetch({ audioBase64: btoa('<html>error</html>'), contentType: 'text/html' }));
+
+    await expect(service.playText('hello world')).rejects.toThrow(/text\/html/);
+  });
+
+  it('never assigns the element a source built from an unusable payload', async () => {
+    const service = new BackgroundAudioService();
+    const createObjectUrlSpy = vi.fn(() => 'blob:should-not-be-created');
+    (URL as unknown as { createObjectURL: () => string }).createObjectURL = createObjectUrlSpy;
+    vi.stubGlobal('fetch', payloadFetch({ audioBase64: '', contentType: 'audio/mpeg' }));
+
+    await expect(service.playText('hello world')).rejects.toThrow(/no audio/i);
+    expect(createObjectUrlSpy).not.toHaveBeenCalled();
+  });
+
+  it('refuses an empty blob without tearing down the clip already playing', async () => {
+    const service = new BackgroundAudioService();
+    vi.stubGlobal('fetch', successFetch());
+    await service.playText('first clip');
+
+    const revokeSpy = vi.fn();
+    (URL as unknown as { revokeObjectURL: () => void }).revokeObjectURL = revokeSpy;
+    const sourceBefore = lastFakeAudio?.src;
+
+    await expect(
+      service.playBlob('second clip', new Blob([], { type: 'audio/mpeg' }))
+    ).rejects.toThrow(/bytes/i);
+
+    // The first clip's object URL is still live and still assigned: a
+    // replacement that was never going to play must not cost the one that is.
+    expect(revokeSpy).not.toHaveBeenCalled();
+    expect(lastFakeAudio?.src).toBe(sourceBefore);
+    expect(service.getLoadedText()).toBe('first clip');
+  });
+
   it('retries once and recovers when the first fetch stalls past the timeout, instead of leaving autoplay waiting forever', async () => {
     vi.useFakeTimers();
     try {

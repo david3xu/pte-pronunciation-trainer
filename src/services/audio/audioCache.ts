@@ -227,6 +227,13 @@ export class AudioCache {
       audioBlob,
       metadata: { ...metadata, createdAt: now, lastAccessedAt: now },
     };
+    // Writing an entry that `get` would immediately reject and evict costs a
+    // storage round trip on write, another on the next read, and a delete, to
+    // arrive back at the miss it started from. The read side already refuses
+    // these; refusing them here too keeps the store free of records that exist
+    // only to be thrown away, and stops an empty synthesis result from taking
+    // up quota under a key that will never serve a hit.
+    if (!this.isValidEntry(entry)) return;
     await this.storage.set(key, entry).catch(() => {
       // Cache write problems must not invalidate audio that already played.
     });
@@ -281,11 +288,19 @@ export class AudioCache {
     return { ...result, fromCache: false };
   }
 
+  /**
+   * The one definition of a usable entry, applied on both read and write.
+   *
+   * The size floor is the same AppConfig value `backgroundAudioService` checks a
+   * freshly synthesized payload against, so a blob rejected before playback and
+   * a blob rejected on cache read cannot disagree about what counts as audio.
+   */
   private isValidEntry(entry: CachedAudioEntry): boolean {
+    const minimumBytes = appConfig.get<number>('backgroundAudio.minimumAudioBytes');
     return (
       !!entry.audioBlob &&
       typeof entry.audioBlob.size === 'number' &&
-      entry.audioBlob.size > 0 &&
+      entry.audioBlob.size >= minimumBytes &&
       !!entry.metadata &&
       typeof entry.metadata.contentType === 'string' &&
       entry.metadata.contentType.length > 0

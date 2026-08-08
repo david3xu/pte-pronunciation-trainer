@@ -133,6 +133,21 @@ describe('AudioCache', () => {
     expect(storage.has('key-4')).toBe(false);
   });
 
+  it('refuses to store an entry it would reject on read', async () => {
+    // The read side already evicts a zero byte blob (above). Writing one first
+    // just spends a write, a read and a delete to arrive back at the same miss,
+    // and holds quota under a key that can never serve a hit.
+    await cache.set('key-5', new Blob([], { type: 'audio/mpeg' }), { contentType: 'audio/mpeg' });
+
+    expect(storage.has('key-5')).toBe(false);
+  });
+
+  it('refuses to store an entry with no content type', async () => {
+    await cache.set('key-6', makeBlob('fetched-audio'), { contentType: '' });
+
+    expect(storage.has('key-6')).toBe(false);
+  });
+
   it('falls back to a miss rather than throwing when storage itself fails', async () => {
     const failingStorage: AudioCacheStorage = {
       get: vi.fn(() => Promise.reject(new Error('IndexedDB unavailable'))),

@@ -270,6 +270,15 @@ export class AppConfig {
       backgroundAudio: {
         outputFormat: 'mp3', // Most broadly supported container for <audio> on mobile
         mediaSessionArtist: 'PTE Pronunciation Trainer',
+        // Boundary conditions a synthesis payload must clear before it is
+        // allowed near the audio element. A payload that decodes to no bytes,
+        // or that is not an audio media type, cannot be played: the element
+        // reports an unreadable blob resource and play() rejects with a bare
+        // NotSupportedError naming neither the endpoint nor the reason.
+        // Checking the payload here is what turns that into a diagnosable
+        // failure instead of an opaque one.
+        minimumAudioBytes: 1,
+        audioContentTypePrefix: 'audio/',
         // A stalled fetch (common on a degraded or backgrounded connection)
         // must fail within a bounded time instead of leaving the queue
         // waiting on a promise that may never settle, which looks like

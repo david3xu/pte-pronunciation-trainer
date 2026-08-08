@@ -207,14 +207,56 @@ export class AudioCache {
       return null;
     }
 
-    const touched: CachedAudioEntry = {
-      audioBlob: entry.audioBlob,
-      metadata: { ...entry.metadata, lastAccessedAt: Date.now() },
-    };
-    await this.storage.set(key, touched).catch(() => {
-      // A failed lastAccessedAt refresh must not block returning the hit.
-    });
-    return touched;
+    // Read the bytes out and hand back a blob that owns them.
+    //
+    // A Blob read from IndexedDB is a handle to a file the database owns, not
+    // the bytes themselves. Its `size` is metadata carried by the handle, so it
+    // still reports the right number after the file behind it has gone, and
+    // `URL.createObjectURL` still returns a usable looking URL. The failure only
+    // appears when something tries to read it: WebKit reports the blob resource
+    // as unavailable and a media element fed that URL rejects with a bare
+    // NotSupportedError, which reads exactly like a codec it cannot play.
+    //
+    // Copying the bytes into a blob with no file behind it removes the entire
+    // class of problem, since nothing the database subsequently does can reach
+    // it. It also turns the failure into one that can be handled: a handle that
+    // has already gone stale rejects here, where it becomes an eviction and a
+    // miss, so the caller refetches and plays instead of failing.
+    let detached: Blob;
+    try {
+      detached = await this.detachFromStorage(entry.audioBlob, entry.metadata.contentType);
+    } catch {
+      await this.storage.delete(key).catch(() => {
+        // Same as above: the unreadable entry is a miss either way.
+      });
+      return null;
+    }
+
+    // Deliberately no lastAccessedAt refresh. Nothing reads that field, and
+    // refreshing it meant writing the whole entry back, so every cache hit
+    // rewrote the entire audio payload to bump a timestamp no code consults.
+    // That write is also the operation most likely to invalidate the very
+    // handle just read, which is the failure described above. If an eviction
+    // policy ever needs a real access time, it has to live in a record separate
+    // from the payload so that refreshing it cannot rewrite the audio.
+    return { audioBlob: detached, metadata: entry.metadata };
+  }
+
+  /** Copies stored bytes into a standalone blob, rejecting if they cannot be
+   * read or do not amount to audio. Size is checked against the bytes actually
+   * read rather than the handle's reported size, because a stale handle reports
+   * the original size right up until someone tries to read it. */
+  private async detachFromStorage(stored: Blob, contentType: string): Promise<Blob> {
+    const minimumBytes = appConfig.get<number>('backgroundAudio.minimumAudioBytes');
+    const bytes = await stored.arrayBuffer();
+
+    if (bytes.byteLength < minimumBytes) {
+      throw new Error(
+        `Cached audio read back as ${bytes.byteLength} bytes, below the ${minimumBytes} byte minimum`
+      );
+    }
+
+    return new Blob([bytes], { type: contentType });
   }
 
   /** Persists a successful synthesis result. Never throws: a write failure

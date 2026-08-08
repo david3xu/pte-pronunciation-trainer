@@ -15,10 +15,47 @@ function readErrorFields(error: unknown): { name?: unknown; message?: unknown } 
   return error as { name?: unknown; message?: unknown };
 }
 
-/** True for a cancellation, which is an expected outcome rather than a failure. */
+/**
+ * True for a cancellation, which is an expected outcome rather than a failure.
+ *
+ * This predicate is only safe to treat as "ignore it" while every AbortError
+ * reaching it really was requested by a caller. A request that a fetch helper
+ * abandoned on its own timeout is not that: nobody cancelled it, the audio is
+ * genuinely unavailable, and swallowing it leaves the queue parked in
+ * 'buffering' with no error, no toast and no state change. Helpers that time
+ * themselves out therefore convert the resulting DOMException through
+ * createPlaybackTimeoutError below, which keeps that invariant true here.
+ */
 export function isAbortError(error: unknown): boolean {
   const fields = readErrorFields(error);
   return fields !== null && fields.name === 'AbortError';
+}
+
+/**
+ * Name carried by a request the app abandoned on its own timeout. Deliberately
+ * not 'AbortError', so isAbortError above cannot classify a timeout as a
+ * cancellation.
+ */
+export const PLAYBACK_TIMEOUT_ERROR_NAME = 'PlaybackTimeoutError';
+
+/**
+ * Rewrites a self inflicted timeout as the failure it actually is. The original
+ * DOMException is kept as `cause` so logs retain it, without its name reaching
+ * the predicates in this module.
+ */
+export function createPlaybackTimeoutError(timeoutMs: number, cause?: unknown): Error {
+  const error = new Error(`Audio request timed out after ${timeoutMs}ms`, { cause });
+  error.name = PLAYBACK_TIMEOUT_ERROR_NAME;
+  return error;
+}
+
+/**
+ * True for a request abandoned on the app's own timeout, as opposed to one a
+ * caller cancelled. Such an error must reach the normal failure path.
+ */
+export function isPlaybackTimeoutError(error: unknown): boolean {
+  const fields = readErrorFields(error);
+  return fields !== null && fields.name === PLAYBACK_TIMEOUT_ERROR_NAME;
 }
 
 /**

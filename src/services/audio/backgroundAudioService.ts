@@ -13,6 +13,7 @@
  */
 
 import { appConfig } from '../../config/AppConfig';
+import { createPlaybackTimeoutError, isAbortError } from './playbackErrors';
 
 // A short silent WAV loop. It is started synchronously inside a user gesture and
 // kept muted until the real Azure MP3 is ready. Mobile browsers, especially iOS
@@ -578,7 +579,15 @@ export class BackgroundAudioService {
     // signal, when it aborts, also aborts this attempt immediately.
     const requestOnce = async (): Promise<{ audioBase64: string; contentType: string }> => {
       const timeoutController = new AbortController();
-      const timeoutId = setTimeout(() => timeoutController.abort(), timeoutMs);
+      // Which side aborted has to be recorded here, because both sides abort the
+      // same controller and the DOMException fetch produces is identical either
+      // way. Without this flag a timeout is indistinguishable upstream from a
+      // deliberate cancellation.
+      let timedOut = false;
+      const timeoutId = setTimeout(() => {
+        timedOut = true;
+        timeoutController.abort();
+      }, timeoutMs);
       const onCallerAbort = () => timeoutController.abort();
       signal?.addEventListener('abort', onCallerAbort);
 
@@ -601,6 +610,17 @@ export class BackgroundAudioService {
         }
 
         return { audioBase64: payload.data.audioBase64, contentType: payload.data.contentType };
+      } catch (error) {
+        // This attempt ran out of time on its own. Nobody asked for it to stop,
+        // so it must not leave here looking like a cancellation: upstream treats
+        // a cancellation as an expected, silent outcome and would drop it,
+        // stranding the queue in 'buffering' with nothing reported at all. A
+        // caller abort still wins when both happened, matching the retry
+        // precedence below.
+        if (timedOut && !signal?.aborted && isAbortError(error)) {
+          throw createPlaybackTimeoutError(timeoutMs, error);
+        }
+        throw error;
       } finally {
         clearTimeout(timeoutId);
         signal?.removeEventListener('abort', onCallerAbort);
@@ -613,9 +633,10 @@ export class BackgroundAudioService {
       } catch (error) {
         // The caller superseded this fetch (a skip, a stop, a new clip
         // starting): never retry a deliberate cancellation, and never
-        // report it as a fetch failure. shouldIgnorePlaybackFailure
-        // upstream already treats AbortError this way; retrying here would
-        // just waste a request the caller no longer wants.
+        // report it as a fetch failure. Only this branch still surfaces an
+        // AbortError, which is what lets shouldIgnorePlaybackFailure upstream
+        // stay silent for cancellations without also silencing timeouts.
+        // Retrying here would just waste a request the caller no longer wants.
         if (signal?.aborted) {
           throw error;
         }

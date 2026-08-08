@@ -60,6 +60,8 @@ vi.mock('./audioCache', () => ({
 }));
 
 import { AudioQueueEngine, type QueueAudioCache, type QueueItem } from './audioQueueEngine';
+import { createPlaybackTimeoutError } from './playbackErrors';
+import { appConfig } from '../../config/AppConfig';
 
 const createItems = (): QueueItem[] => [
   {
@@ -357,6 +359,33 @@ describe('AudioQueueEngine', () => {
     expect(audioMocks.backgroundAudioService.stop).toHaveBeenCalled();
     expect(onPlaybackFailed).not.toHaveBeenCalled();
     expect(engine.getPlaybackState()).toBe('paused');
+  });
+
+  it('fails a buffering item whose fetch timed out instead of leaving it buffering forever', async () => {
+    // The reported symptom was autoplay working through several items and then
+    // stopping with nothing shown. A timed out fetch is not a cancellation, so
+    // it must not take the silent path: the queue has to leave 'buffering'.
+    const deferredFetch = createDeferred<{ blob: Blob; contentType: string }>();
+    const timeoutError = createPlaybackTimeoutError(
+      appConfig.get<number>('backgroundAudio.fetchTimeoutMs')
+    );
+    const onPlaybackFailed = vi.fn();
+    const engine = new AudioQueueEngine();
+    engine.setListeners({ onPlaybackFailed });
+    engine.load(createItems());
+    await engine.start();
+    audioMocks.backgroundAudioService.fetchAudioBlob.mockReturnValueOnce(deferredFetch.promise);
+
+    const moving = engine.next();
+    expect(engine.getPlaybackState()).toBe('buffering');
+    deferredFetch.reject(timeoutError);
+
+    await expect(moving).rejects.toBe(timeoutError);
+    expect(onPlaybackFailed).toHaveBeenCalledWith(expect.objectContaining({
+      item: expect.objectContaining({ id: 'second' }),
+      error: timeoutError,
+    }));
+    expect(engine.getPlaybackState()).toBe('error');
   });
 
   it('moves to error and emits onPlaybackFailed for a genuine playback failure', async () => {

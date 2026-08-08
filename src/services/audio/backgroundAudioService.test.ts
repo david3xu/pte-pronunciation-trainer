@@ -1,5 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { BackgroundAudioService } from './backgroundAudioService';
+import { appConfig } from '../../config/AppConfig';
+import { isAbortError, isPlaybackTimeoutError } from './playbackErrors';
 
 /**
  * These tests focus on mode-selection, failure behavior, pause/resume vs
@@ -143,6 +145,46 @@ describe('BackgroundAudioService', () => {
     }
   });
 
+  it('reports a fetch it timed out itself as a failure, not as a cancellation', async () => {
+    // Regression guard. Both sides abort the same controller, so a timeout used
+    // to reach callers as an AbortError, which the queue engine and TTSEngine
+    // both classify as an expected cancellation and silently drop: no failure
+    // event, no toast, and a queue left parked in 'buffering' forever. The
+    // distinction has to survive out of here for those callers to act at all.
+    vi.useFakeTimers();
+    try {
+      const service = new BackgroundAudioService();
+      const timeoutMs = appConfig.get<number>('backgroundAudio.fetchTimeoutMs');
+      const retryAttempts = appConfig.get<number>('backgroundAudio.fetchRetryAttempts');
+      const retryDelayMs = appConfig.get<number>('backgroundAudio.fetchRetryDelayMs');
+      const attempts = retryAttempts + 1;
+      // Every attempt's own timeout, every delay between them, and one spare
+      // delay so the last timer is comfortably inside the advanced window.
+      const totalMs = attempts * timeoutMs + attempts * retryDelayMs;
+
+      // Every attempt stalls and only ever reacts to an abort, as a real
+      // connection hanging on a slow backend would.
+      const fetchMock = vi.fn((_url: string, init?: RequestInit) => new Promise<Response>((_resolve, reject) => {
+        init?.signal?.addEventListener('abort', () => {
+          reject(new DOMException('The operation was aborted.', 'AbortError'));
+        });
+      }));
+      vi.stubGlobal('fetch', fetchMock as unknown as typeof fetch);
+
+      // No caller signal, which is exactly how the queue engine and the native
+      // service call in: nothing here could have been cancelled by anyone.
+      const settled = service.fetchAudioBlob('hello world').catch((error: unknown) => error);
+      await vi.advanceTimersByTimeAsync(totalMs);
+      const error = await settled;
+
+      expect(isPlaybackTimeoutError(error)).toBe(true);
+      expect(isAbortError(error)).toBe(false);
+      expect(fetchMock).toHaveBeenCalledTimes(attempts);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
   it('never retries a fetch the caller deliberately superseded', async () => {
     const service = new BackgroundAudioService();
     const controller = new AbortController();
@@ -153,10 +195,14 @@ describe('BackgroundAudioService', () => {
     }));
     vi.stubGlobal('fetch', fetchMock as unknown as typeof fetch);
 
-    const fetchPromise = service.fetchAudioBlob('hello world', {}, controller.signal);
+    const settled = service.fetchAudioBlob('hello world', {}, controller.signal).catch((error: unknown) => error);
     controller.abort();
 
-    await expect(fetchPromise).rejects.toMatchObject({ name: 'AbortError' });
+    const error = await settled;
+    // The other half of the invariant the timeout test above pins: a real
+    // cancellation must keep reading as one, so callers still stay silent for it.
+    expect(isAbortError(error)).toBe(true);
+    expect(isPlaybackTimeoutError(error)).toBe(false);
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 

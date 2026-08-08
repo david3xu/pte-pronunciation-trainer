@@ -1,7 +1,9 @@
+import { Capacitor } from '@capacitor/core';
 import { useEffect } from 'react';
 import { appConfig } from '../../../config/AppConfig';
 import { AudioQueueEngine, type QueueItem } from '../../../services/audio/audioQueueEngine';
 import { audioServiceForPlatform } from '../../../services/audio/audioServiceForPlatform';
+import { backgroundAudioService } from '../../../services/audio/backgroundAudioService';
 import { loadDataset } from '../../../services/dataset/datasetLoader';
 import { useAppStore, useAudioState, useSettings, useVocabulary } from '../../../stores';
 import type { Difficulty, PracticeItem, VocabularyItem } from '../../../types/dataset.types';
@@ -373,6 +375,19 @@ export const useAutoPlayController = () => {
     const items = getQueueItems();
     if (items.length === 0) return;
 
+    // Every branch below fetches the clip over the network before it can call
+    // play(), and Safari/PWA mode can let this click's user activation expire
+    // during that gap: a later play() then rejects with NotSupportedError even
+    // though nothing here did anything wrong. Priming a silent, muted clip
+    // synchronously inside the click (no await before it) keeps the element
+    // activated, the same fix already proven in
+    // SettingsPanel.handleVocabularyBookChange for the equivalent gap after a
+    // book switch. Native has no such policy, so nativeAudioService does not
+    // implement this method at all.
+    if (!Capacitor.isNativePlatform()) {
+      backgroundAudioService.primeForUserGesture();
+    }
+
     const opts = {
       rate: settings.ttsRate,
       volume: useAppStore.getState().audio.volume,
@@ -405,6 +420,12 @@ export const useAutoPlayController = () => {
    * call covers both the resume and start cases the tap needs to handle.
    */
   const handleResumeTap = () => {
+    // Same gesture-activation gap as handlePlay above: resume() can fall back
+    // to a fresh fetch-then-play, so this tap primes for the same reason.
+    if (!Capacitor.isNativePlatform()) {
+      backgroundAudioService.primeForUserGesture();
+    }
+
     // Update the store only after resume() actually succeeds, not before.
     // queueEngine.resume() already sets 'playing' synchronously for the
     // common (same item still loaded) recovery path, but the sync effect

@@ -25,6 +25,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 vi.mock('../../../services/audio/backgroundAudioService', () => ({
   backgroundAudioService: {
     stop: vi.fn(),
+    primeForUserGesture: vi.fn(),
   },
 }));
 
@@ -145,6 +146,32 @@ describe('useAutoPlayController - queue engine delegation', () => {
     // any await, so it is already recorded before the flush above.
     expect(engineMock.start).toHaveBeenCalledTimes(1);
     expect(engineMock.resume).not.toHaveBeenCalled();
+  });
+
+  it('primes the shared audio element synchronously inside the Play gesture, before the queue engine call', async () => {
+    // Regression guard. start()/resume() both fetch over the network before
+    // they can call play(), and Safari/PWA mode can let this click's user
+    // activation expire during that gap: a later play() then rejects with
+    // NotSupportedError even on a healthy server and a healthy network. Only
+    // priming with no await ahead of it, inside the same gesture, keeps the
+    // element activated for whatever play() eventually follows.
+    const { result } = renderHook(() => useAutoPlayController());
+    const primeOrder: string[] = [];
+    (backgroundAudioService.primeForUserGesture as ReturnType<typeof vi.fn>).mockImplementation(() => {
+      primeOrder.push('prime');
+    });
+    engineMock.start.mockImplementation(() => {
+      primeOrder.push('start');
+      return Promise.resolve(undefined);
+    });
+
+    act(() => {
+      result.current.handlePlay();
+    });
+    await flush();
+
+    expect(backgroundAudioService.primeForUserGesture).toHaveBeenCalledTimes(1);
+    expect(primeOrder).toEqual(['prime', 'start']);
   });
 
   it('sets difficulty-based default repeat counts on queued words', async () => {
@@ -412,6 +439,18 @@ describe('useAutoPlayController - queue engine delegation', () => {
     await flush();
 
     expect(engineMock.resume).toHaveBeenCalledTimes(1);
+  });
+
+  it('primes the shared audio element inside the resume tap gesture too, since resume() can also fall back to a fresh fetch-then-play', async () => {
+    const { result } = renderHook(() => useAutoPlayController());
+    await flush();
+
+    act(() => {
+      result.current.handleResumeTap();
+    });
+    await flush();
+
+    expect(backgroundAudioService.primeForUserGesture).toHaveBeenCalledTimes(1);
   });
 
   it('handleResumeTap clears isPaused explicitly, since needs-user-resume recovery has no other store write to undo its own pause mirror', async () => {

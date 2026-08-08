@@ -59,6 +59,28 @@ export function isPlaybackTimeoutError(error: unknown): boolean {
 }
 
 /**
+ * Name carried by a synthesis result that cannot be played at all: no bytes, an
+ * undecodable payload, or a media type the audio element will not accept.
+ * Deliberately its own name, because this is neither a timeout nor a
+ * cancellation nor a blocked autoplay, and the response differs from all three:
+ * there is nothing to retry and no gesture that would help.
+ */
+export const PLAYBACK_UNPLAYABLE_AUDIO_ERROR_NAME = 'PlaybackUnplayableAudioError';
+
+/**
+ * Builds the unplayable-payload error. Without this, an empty or non-audio
+ * response reaches the element and surfaces as the element's own
+ * NotSupportedError, which names neither the payload nor the endpoint that
+ * produced it, so a server or gateway returning a well formed envelope around
+ * no audio is indistinguishable from a codec the device lacks.
+ */
+export function createUnplayableAudioError(reason: string, cause?: unknown): Error {
+  const error = new Error(reason, { cause });
+  error.name = PLAYBACK_UNPLAYABLE_AUDIO_ERROR_NAME;
+  return error;
+}
+
+/**
  * True when the browser refused playback for want of a user gesture. Such an
  * error means the audio itself is fine and only the activation is missing, so
  * the correct response is to ask the user to tap rather than to try a different

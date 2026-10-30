@@ -79,8 +79,8 @@ describe('SettingsPanel reset actions', () => {
       store.settings.resetSettings();
       store.progress.resetProgress();
       store.vocabulary.clearDataset();
-      store.settings.updateSetting('practiceType', 'practice');
-      store.settings.updateSetting('practiceMode', 'practice-write-from-dictation');
+      store.settings.updateSetting('practiceType', 'writing');
+      store.settings.updateSetting('writingMode', 'essay-b1-terms');
       store.settings.updateSetting('ttsRate', 1.5);
       store.audio.setAutoPlay(false);
       store.audio.toggleRepeat();
@@ -106,7 +106,7 @@ describe('SettingsPanel reset actions', () => {
     expect(audioServiceMock.setRate).toHaveBeenCalledWith(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
     expect(audioServiceMock.setVolume).toHaveBeenCalledWith(1);
     expect(state.settings.practiceType).toBe('vocabulary');
-    expect(state.settings.practiceMode).toBeNull();
+    expect(state.settings.writingMode).toBeNull();
     expect(state.settings.ttsRate).toBe(appConfig.get<number>('settings.defaults.ttsRate', 0.7));
     expect(state.audio.autoPlayEnabled).toBe(true);
     expect(state.audio.repeatMode).toBe(true);

@@ -13,7 +13,11 @@
  */
 
 import { appConfig } from '../../config/AppConfig';
-import { createPlaybackTimeoutError, isAbortError } from './playbackErrors';
+import {
+  createPlaybackTimeoutError,
+  createUnplayableAudioError,
+  isAbortError,
+} from './playbackErrors';
 
 // A short silent WAV loop. It is started synchronously inside a user gesture and
 // kept muted until the real Azure MP3 is ready. Mobile browsers, especially iOS
@@ -207,7 +211,9 @@ export class BackgroundAudioService {
       throw new Error('Cannot play empty text in background audio mode');
     }
     const { audioBase64, contentType } = await this.fetchAudioBase64(text, options, signal);
-    return { blob: this.base64ToBlob(audioBase64, contentType), contentType };
+    const blob = this.base64ToBlob(audioBase64, contentType);
+    this.assertPlayableBlob(blob);
+    return { blob, contentType };
   }
 
   /**
@@ -224,6 +230,15 @@ export class BackgroundAudioService {
     if (!text || !text.trim()) {
       throw new Error('Cannot play empty text in background audio mode');
     }
+
+    // Checked before anything is torn down. This method is also reached with a
+    // blob the caller supplied (a cache hit, a prior fetchAudioBlob) rather
+    // than one this service just validated, and every step below is
+    // destructive: it supersedes the pending fetch, revokes the previous clip's
+    // object URL and overwrites the element's source. Discovering an unusable
+    // blob after all that has already destroyed a clip that was playing fine,
+    // for a replacement that was never going to play.
+    this.assertPlayableBlob(blob);
 
     // A real playback supersedes any in-flight priming or fetch, the same as
     // playText's existing guarantee.
@@ -609,7 +624,35 @@ export class BackgroundAudioService {
           throw new Error(payload.error || 'Premium TTS is unavailable for background audio');
         }
 
-        return { audioBase64: payload.data.audioBase64, contentType: payload.data.contentType };
+        // A success envelope is not proof of audio. The two fields below are
+        // what the element actually consumes, and a gateway or provider can
+        // return a well formed success with either one empty or missing. Read
+        // defensively rather than trusting the declared shape, because the
+        // response is parsed as unknown JSON and only asserted to be this type.
+        const { audioBase64, contentType } = payload.data;
+        if (typeof audioBase64 !== 'string' || audioBase64.length === 0) {
+          throw createUnplayableAudioError(
+            `Premium TTS returned a success response with no audio for ${endpoint}`
+          );
+        }
+        if (typeof contentType !== 'string' || contentType.length === 0) {
+          throw createUnplayableAudioError(
+            `Premium TTS returned audio with no content type for ${endpoint}`
+          );
+        }
+
+        // Checked here rather than against the decoded blob, because this is the
+        // only point where the media type is something the server declared
+        // rather than something a local caller happened to set. An HTML error
+        // page or a JSON fault body served with a 200 lands here.
+        const expectedPrefix = appConfig.get<string>('backgroundAudio.audioContentTypePrefix');
+        if (!contentType.toLowerCase().startsWith(expectedPrefix)) {
+          throw createUnplayableAudioError(
+            `Premium TTS declared content type ${contentType}, which is not ${expectedPrefix}*`
+          );
+        }
+
+        return { audioBase64, contentType };
       } catch (error) {
         // This attempt ran out of time on its own. Nobody asked for it to stop,
         // so it must not leave here looking like a cancellation: upstream treats
@@ -663,12 +706,52 @@ export class BackgroundAudioService {
   }
 
   private base64ToBlob(base64: string, contentType: string): Blob {
-    const byteCharacters = atob(base64);
+    let byteCharacters: string;
+    try {
+      byteCharacters = atob(base64);
+    } catch (error) {
+      // atob throws InvalidCharacterError, whose message names neither the
+      // field nor the endpoint. A payload that is not base64 at all (an error
+      // page, a data URI prefix a provider added, a truncated body) lands here,
+      // and the caller needs to be able to tell that apart from a device that
+      // cannot decode the codec.
+      throw createUnplayableAudioError(
+        'Premium TTS returned audio that is not valid base64',
+        error
+      );
+    }
     const byteNumbers = new Array<number>(byteCharacters.length);
     for (let i = 0; i < byteCharacters.length; i++) {
       byteNumbers[i] = byteCharacters.charCodeAt(i);
     }
     return new Blob([new Uint8Array(byteNumbers)], { type: contentType });
+  }
+
+  /**
+   * Rejects a blob the audio element cannot play, before it is ever assigned.
+   *
+   * Size is the whole check, and deliberately so. An empty blob is the case that
+   * hides: `URL.createObjectURL` accepts it, so the assignment looks like it
+   * worked, and the failure arrives as an unreadable blob resource in the
+   * console plus a `NotSupportedError` from `play()`, neither of which mentions
+   * the payload, so an endpoint returning no audio reads exactly like an
+   * unsupported codec.
+   *
+   * A blob's own `type` is not checked here, because it is not a declaration of
+   * anything: it is whatever the constructing caller passed, empty by default,
+   * and a caller handing over perfectly good audio bytes with no type set must
+   * not be refused. The media type is verified at the fetch boundary instead,
+   * against the value the server actually declared. The floor comes from
+   * AppConfig so this rule and the one the cache applies on read cannot drift.
+   */
+  private assertPlayableBlob(blob: Blob): void {
+    const minimumBytes = appConfig.get<number>('backgroundAudio.minimumAudioBytes');
+
+    if (blob.size < minimumBytes) {
+      throw createUnplayableAudioError(
+        `Audio payload is ${blob.size} bytes, below the ${minimumBytes} byte minimum for playback`
+      );
+    }
   }
 
   private releaseObjectUrl(): void {

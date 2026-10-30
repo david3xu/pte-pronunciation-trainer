@@ -32,6 +32,19 @@ class FakeAudioCacheStorage implements AudioCacheStorage {
 
 const makeBlob = (content = 'audio-bytes'): Blob => new Blob([content], { type: 'audio/mpeg' });
 
+/**
+ * A stored blob whose backing file has gone, which is what a Blob read from
+ * IndexedDB becomes once the database has moved on from it. The handle keeps
+ * reporting its original size, and only reading the bytes reveals the problem,
+ * which is exactly why the size on the handle cannot be trusted as a check.
+ */
+const makeStaleBlob = (reportedSize = 1024): Blob =>
+  ({
+    size: reportedSize,
+    type: 'audio/mpeg',
+    arrayBuffer: () => Promise.reject(new Error('WebKitBlobResource error 1')),
+  }) as unknown as Blob;
+
 describe('buildAudioCacheKey', () => {
   it('produces a stable, versioned key for the same input', () => {
     const input = {
@@ -131,6 +144,76 @@ describe('AudioCache', () => {
 
     expect(entry).toBeNull();
     expect(storage.has('key-4')).toBe(false);
+  });
+
+  it('refuses to store an entry it would reject on read', async () => {
+    // The read side already evicts a zero byte blob (above). Writing one first
+    // just spends a write, a read and a delete to arrive back at the same miss,
+    // and holds quota under a key that can never serve a hit.
+    await cache.set('key-5', new Blob([], { type: 'audio/mpeg' }), { contentType: 'audio/mpeg' });
+
+    expect(storage.has('key-5')).toBe(false);
+  });
+
+  it('refuses to store an entry with no content type', async () => {
+    await cache.set('key-6', makeBlob('fetched-audio'), { contentType: '' });
+
+    expect(storage.has('key-6')).toBe(false);
+  });
+
+  it('hands back a blob that owns its bytes, not the one storage holds', async () => {
+    const stored = makeBlob('fetched-audio');
+    await cache.set('key-7', stored, { contentType: 'audio/mpeg' });
+
+    const entry = await cache.get('key-7');
+
+    // Identity is the whole point: a caller that receives the stored blob is
+    // holding a handle the database can invalidate underneath it, and the object
+    // URL built from it then fails to load with nothing explaining why.
+    expect(entry?.audioBlob).not.toBe(stored);
+    expect(await entry?.audioBlob.text()).toBe('fetched-audio');
+    expect(entry?.audioBlob.type).toBe('audio/mpeg');
+  });
+
+  it('does not rewrite the stored entry just to read it', async () => {
+    await cache.set('key-8', makeBlob(), { contentType: 'audio/mpeg' });
+    const writeSpy = vi.spyOn(storage, 'set');
+
+    await cache.get('key-8');
+
+    // Rewriting the record on read meant re-storing the whole audio payload to
+    // bump a timestamp nothing reads, and that write is what can invalidate the
+    // handle just read from it.
+    expect(writeSpy).not.toHaveBeenCalled();
+  });
+
+  it('treats a stored blob whose bytes cannot be read as a miss and evicts it', async () => {
+    await storage.set('key-9', {
+      audioBlob: makeStaleBlob(),
+      metadata: { contentType: 'audio/mpeg', createdAt: 0, lastAccessedAt: 0 },
+    });
+
+    const entry = await cache.get('key-9');
+
+    // The handle passes every check that does not read it, including size.
+    expect(entry).toBeNull();
+    expect(storage.has('key-9')).toBe(false);
+  });
+
+  it('refetches and plays after a stale entry is evicted, rather than failing', async () => {
+    await storage.set('key-10', {
+      audioBlob: makeStaleBlob(),
+      metadata: { contentType: 'audio/mpeg', createdAt: 0, lastAccessedAt: 0 },
+    });
+    const fetcher = vi.fn(() =>
+      Promise.resolve({ blob: makeBlob('refetched'), contentType: 'audio/mpeg' })
+    );
+
+    const result = await cache.getOrFetch('key-10', fetcher);
+
+    expect(fetcher).toHaveBeenCalledTimes(1);
+    expect(result.fromCache).toBe(false);
+    expect(await result.blob.text()).toBe('refetched');
   });
 
   it('falls back to a miss rather than throwing when storage itself fails', async () => {

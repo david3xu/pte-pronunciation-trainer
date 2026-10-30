@@ -1,3 +1,4 @@
+import os
 import re
 
 def analyze_templates(file_path):
@@ -54,4 +55,4 @@ def analyze_templates(file_path):
     print("\nDeviant Examples:", ", ".join(deviants))
 
 if __name__ == "__main__":
-    analyze_templates('./data/source/pte/essay-examples/vocabulary-based/essay-examples-template-b1.md')
+    analyze_templates(os.path.join(os.path.dirname(__file__), '..', 'data/source/pte/essay-examples/vocabulary-based/essay-examples-template-b1.md'))

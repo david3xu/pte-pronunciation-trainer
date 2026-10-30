@@ -84,12 +84,10 @@ export interface TTSState {
 
 export interface SettingsState {
   // Practice settings
-  practiceType: 'vocabulary' | 'vocab-typing' | 'practice' | 'writing' | 'shadowing';
-  practiceMode: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null;
-  // Writing task, nested under practiceType 'writing' the same way practiceMode
-  // is nested under 'practice'. Only 'swt' exists today; a second writing task
-  // (e.g. SST) is meant to be added as another union member here, not another
-  // top level practiceType.
+  practiceType: 'vocabulary' | 'vocab-typing' | 'writing';
+  // Writing task, nested under practiceType 'writing'. A new writing task is
+  // meant to be added as another TypingMode union member, not another top
+  // level practiceType.
   writingMode: TypingMode | null;
   vocabularyBook: string;
   datasetId: string;

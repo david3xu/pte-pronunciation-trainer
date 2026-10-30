@@ -70,17 +70,6 @@ const PIPELINE_CONFIG = {
       extractorType: 'PTETermsExtractor',
       inputSubdir: 'rs-wfd',
       keepDuplicates: false
-    },
-    {
-      id: 'pte-phd-official-project-terms',
-      input: 'official-project-terms-pronunciation.md',
-      output: 'pte-phd-official-project-terms.json',
-      category: 'pte-phd-official-project-terms',
-      description: 'PhD official project terms pronunciation list',
-      sourceType: 'pte-phd-official-project-terms',
-      extractorType: 'PTEPronunciationTableExtractor',
-      inputSubdir: 'phd',
-      keepDuplicates: false
     }
   ]
 };
@@ -303,7 +292,6 @@ class PTEPronunciationTableExtractor {
   }
 }
 
-const SWT_ANSWER_TYPING_SOURCE_FILE = 'swt-answer-typing.md';
 const ESSAY_B1_TERMS_SOURCE_FILE = 'pte-essay-b1-examples-vocabulary-with-ipa.md';
 // Only Example headings open an essay topic. The captured groups are the
 // example number and its title.
@@ -313,228 +301,6 @@ const ESSAY_B1_OTHER_HEADING_PATTERN = /^##\s+/;
 const ESSAY_B1_TERM_LINE_PATTERN = /^(\d+)\.\s+\*\*(.+?)\*\*/;
 // One topic is typed as a single line, so its terms are joined with this.
 const ESSAY_B1_TERMS_SEPARATOR = ', ';
-
-const DI_ANSWERS_SOURCE_FILE = 'example-answers.md';
-// Captured groups are the image number and its title.
-const DI_IMAGE_HEADING_PATTERN = /^##\s+Image\s+(\d+)\s*-\s*(.+?)\s*$/;
-const DI_OTHER_HEADING_PATTERN = /^##\s+/;
-const DI_ANSWER_LABEL_PATTERN = /^\*\*Answer:\*\*/;
-// Each answer is one fully quoted line following the label.
-const DI_ANSWER_TEXT_PATTERN = /^"(.+)"$/;
-
-/**
- * SWTMarkdownExtractor - Parses PTE Summarize Written Text markdown files.
- *
- * Source format:
- *   ## Example N: Title (Difficulty)          (also "## Bonus Example N: ...")
- *   ### Original Passage
- *   <one or more paragraphs, may contain **bold** emphasis>
- *   ### SWT Answer
- *   **<one sentence model answer>**
- *   **Word count:** NN words \u2713
- *   ### Key Changes Made
- *   ...ignored...
- *   ---
- *
- * Only the passage and the answer sentence are extracted; the key-changes
- * and linking-words commentary are teaching content, not dataset fields.
- */
-class SWTMarkdownExtractor {
-  static extract(filePath, fsModule, sourceSet) {
-    if (!fsModule.existsSync(filePath)) {
-      throw new Error(`SWT source file not found: ${filePath}`);
-    }
-
-    const content = fsModule.readFileSync(filePath, 'utf-8');
-    const blocks = this.splitIntoBlocks(content);
-
-    const items = [];
-    for (const block of blocks) {
-      const item = this.parseBlock(block, sourceSet);
-      if (item) items.push(item);
-    }
-    return items;
-  }
-
-  /**
-   * Slice the file into per-example blocks. Each block starts at a line
-   * matching "## Example N: ..." (optionally "## Bonus Example N: ...") and
-   * runs until the next level-2 heading or end of file, so trailing sections
-   * like "## Practice Tips" and the copyright line are excluded naturally.
-   */
-  static splitIntoBlocks(content) {
-    // Some source files wrap the entire header line in bold, e.g.
-    // "## **Example 4: Natural Language (Medium)**" instead of the plain
-    // "## Example 4: Natural Language (Medium)" used elsewhere. The optional
-    // \*{0,2} on both ends tolerates that without changing anything for the
-    // plain, unwrapped form.
-    const headerRe = /^##\s+\*{0,2}(?:Bonus\s+)?Example\s+\d+:\s*(.+?)\s*\(([^)]+)\)\*{0,2}\s*$/;
-    const lines = content.split('\n');
-
-    const blocks = [];
-    let current = null;
-
-    for (const line of lines) {
-      const headerMatch = line.match(headerRe);
-      if (headerMatch) {
-        if (current) blocks.push(current);
-        current = {
-          title: headerMatch[1].replace(/\*\*/g, '').trim(),
-          rawDifficulty: headerMatch[2].replace(/\*\*/g, '').trim(),
-          lines: [],
-        };
-        continue;
-      }
-
-      if (current && /^##\s+/.test(line)) {
-        // A different level-2 heading (e.g. "## Practice Tips") ends the block.
-        blocks.push(current);
-        current = null;
-        continue;
-      }
-
-      if (current) current.lines.push(line);
-    }
-
-    if (current) blocks.push(current);
-    return blocks;
-  }
-
-  static parseBlock(block, sourceSet) {
-    const blockText = block.lines.join('\n');
-    const passageSection = this.extractSection(blockText, 'Original Passage');
-    const answerSection = this.extractSwtAnswerSection(blockText);
-
-    if (!passageSection || !answerSection) {
-      console.warn(`   \u26a0\ufe0f SWT example "${block.title}" is missing a passage or answer section, skipping`);
-      return null;
-    }
-
-    const passage = this.cleanParagraphs(passageSection);
-    const answer = this.cleanInline(this.firstParagraph(answerSection));
-
-    if (!passage || !answer) {
-      console.warn(`   \u26a0\ufe0f SWT example "${block.title}" had an empty passage or answer after cleaning, skipping`);
-      return null;
-    }
-
-    return {
-      title: block.title,
-      passage,
-      answer,
-      wordCount: answer.split(/\s+/).filter(Boolean).length,
-      sourceSet,
-      difficulty: this.mapDifficulty(block.rawDifficulty),
-    };
-  }
-
-  /**
-   * Most examples have a plain "### SWT Answer" heading. A few in Set 3 are
-   * authored as multiple draft attempts instead (First Attempt, Second
-   * Attempt, ...) with no "SWT Answer" heading at all. For those, fall back
-   * to the last heading the author themselves marked with a check mark as
-   * the accepted final draft, e.g. "### \u2705 Final Answer (SUCCESS)".
-   */
-  static extractSwtAnswerSection(blockText) {
-    const plain = this.extractSection(blockText, 'SWT Answer');
-    if (plain) return plain;
-
-    const headingRe = /^###\s+(.+)$/gm;
-    let match;
-    let lastCheckmarkHeading = null;
-    while ((match = headingRe.exec(blockText)) !== null) {
-      if (match[1].trim().startsWith('\u2705')) {
-        lastCheckmarkHeading = match[1].trim();
-      }
-    }
-    return lastCheckmarkHeading ? this.extractSection(blockText, lastCheckmarkHeading) : null;
-  }
-
-  /** Text between "### <heading>" and the next "### " heading, or null if the heading is absent. */
-  static extractSection(blockText, heading) {
-    const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const headingRe = new RegExp(`^###\\s+${escapedHeading}\\s*$`, 'm');
-    const match = headingRe.exec(blockText);
-    if (!match) return null;
-
-    const rest = blockText.slice(match.index + match[0].length);
-    const nextHeadingIndex = rest.search(/^###\s+/m);
-    const section = nextHeadingIndex === -1 ? rest : rest.slice(0, nextHeadingIndex);
-    return section.trim();
-  }
-
-  static firstParagraph(sectionText) {
-    const [first] = sectionText.split(/\n\s*\n/);
-    return (first || '').trim();
-  }
-
-  /** Strip markdown bold markers and collapse internal whitespace to single spaces. */
-  static cleanInline(text) {
-    return text.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
-  }
-
-  /** Clean each paragraph individually while keeping paragraph breaks. */
-  static cleanParagraphs(sectionText) {
-    return sectionText
-      .split(/\n\s*\n/)
-      .map((paragraph) => this.cleanInline(paragraph))
-      .filter(Boolean)
-      .join('\n\n');
-  }
-
-  /** Normalize source difficulty labels ("Easy", "Medium", "Hard", "Medium - Complex", ...) to the app's scale. */
-  static mapDifficulty(rawLabel) {
-    const normalized = rawLabel.toLowerCase();
-    if (normalized.includes('hard') || normalized.includes('complex')) return 'hard';
-    if (normalized.includes('medium')) return 'normal';
-    if (normalized.includes('easy')) return 'easy';
-    console.warn(`   \u26a0\ufe0f Unrecognized SWT difficulty label "${rawLabel}", defaulting to normal`);
-    return 'normal';
-  }
-}
-
-/**
- * Parses the clean SWT Monkeytype source used by the app.
- *
- * Source format:
- *   1. Exact target answer text
- *   2. Another exact target answer text
- *
- * The app is practicing typing the SWT model answer, not simulating the real
- * PTE SWT task, so this app-facing source deliberately contains answers only.
- */
-class SWTAnswerTypingMarkdownExtractor {
-  static extract(filePath, fsModule, sourceSet) {
-    if (!fsModule.existsSync(filePath)) {
-      throw new Error(`SWT answer typing source file not found: ${filePath}`);
-    }
-
-    const content = fsModule.readFileSync(filePath, 'utf-8');
-    const items = [];
-
-    for (const line of content.split('\n')) {
-      const trimmedLine = line.trim();
-      if (!trimmedLine || trimmedLine.startsWith('#') || trimmedLine.startsWith('<!--')) continue;
-
-      const match = trimmedLine.match(/^\d+\.\s+(.+)$/);
-      if (!match) continue;
-
-      const answer = SWTMarkdownExtractor.cleanInline(match[1]);
-      if (!answer) continue;
-
-      items.push({
-        title: `Answer ${items.length + 1}`,
-        passage: '',
-        answer,
-        wordCount: answer.split(/\s+/).filter(Boolean).length,
-        sourceSet,
-        difficulty: 'normal',
-      });
-    }
-
-    return items;
-  }
-}
 
 /**
  * Parses the essay B1 fill in terms source, which groups numbered terms under
@@ -605,145 +371,6 @@ class EssayB1TermsMarkdownExtractor {
   }
 }
 
-/**
- * Parses the DI example answers source, one model answer per image section:
- *
- *   ## Image 19 - Australia Share Market (S&P/ASX 200), June 2011
- *
- *   **Answer:**
- *
- *   "This line graph shows..."
- *
- * Parsing is line based rather than one large regex on purpose. The existing
- * shadowing generator matches a fixed single blank line between the heading and
- * the answer label, which silently drops any section formatted with an extra
- * blank line. Tracking state across lines tolerates that spacing instead.
- *
- * Item ids come from position in the file, not from the image number, because
- * the source repeats one image number across two different answers and ids have
- * to stay unique for progress tracking.
- */
-class DIAnswersMarkdownExtractor {
-  static extract(filePath, fsModule, sourceSet) {
-    if (!fsModule.existsSync(filePath)) {
-      throw new Error(`DI answers source file not found: ${filePath}`);
-    }
-
-    const content = fsModule.readFileSync(filePath, 'utf-8');
-    const answers = [];
-    let currentAnswer = null;
-    let awaitingAnswerText = false;
-
-    const closeCurrent = () => {
-      if (currentAnswer && currentAnswer.answer) answers.push(currentAnswer);
-      currentAnswer = null;
-      awaitingAnswerText = false;
-    };
-
-    for (const line of content.split('\n')) {
-      const trimmedLine = line.trim();
-      if (!trimmedLine) continue;
-
-      const headingMatch = trimmedLine.match(DI_IMAGE_HEADING_PATTERN);
-      if (headingMatch) {
-        closeCurrent();
-        currentAnswer = {
-          imageNumber: Number(headingMatch[1]),
-          imageTitle: headingMatch[2],
-          answer: '',
-          sourceSet,
-        };
-        continue;
-      }
-
-      if (DI_OTHER_HEADING_PATTERN.test(trimmedLine)) {
-        closeCurrent();
-        continue;
-      }
-
-      if (!currentAnswer) continue;
-
-      if (DI_ANSWER_LABEL_PATTERN.test(trimmedLine)) {
-        awaitingAnswerText = true;
-        continue;
-      }
-
-      if (!awaitingAnswerText) continue;
-
-      const answerMatch = trimmedLine.match(DI_ANSWER_TEXT_PATTERN);
-      if (!answerMatch) continue;
-
-      currentAnswer.answer = answerMatch[1].trim();
-      awaitingAnswerText = false;
-    }
-
-    closeCurrent();
-    return answers;
-  }
-}
-
-/**
- * PTESegmentsExtractor - Parses PTE segment markdown files (RS, WFD)
- */
-class PTESegmentsExtractor {
-  static async extract(filePath, fsModule, options = {}) {
-    if (!fsModule.existsSync(filePath)) {
-      throw new Error(`PTE segments file not found: ${filePath}`);
-    }
-
-    const content = fsModule.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
-    const items = [];
-
-    for (const line of lines) {
-      const trimmedLine = line.trim();
-
-      // Skip empty lines or non-content lines
-      if (!trimmedLine || trimmedLine.startsWith('#')) {
-        continue;
-      }
-
-      const segmentData = this.parsePTESegmentLine(trimmedLine);
-      if (segmentData) {
-        items.push(segmentData);
-      }
-    }
-
-    return items;
-  }
-
-  static parsePTESegmentLine(line) {
-    // Match format: Number. Sentence | /IPA/
-    // Example: 1350. I will be in my office | /aɪ wɪl bi ɪn maɪ ˈɒfɪs/
-    const match = line.match(/^\d+\.\s*(.+?)\s*\|\s*(\/.+\/)\s*$/);
-
-    if (!match) {
-      // Fallback for lines without IPA or different formatting
-      const simpleMatch = line.match(/^\d+\.\s*(.+?)$/);
-      if (simpleMatch) {
-        return {
-          content: {
-            sentence: simpleMatch[1].trim()
-          }
-        };
-      }
-      return null;
-    }
-
-    const sentence = match[1].trim();
-    const ipa = match[2].trim();
-
-    return {
-      content: {
-        sentence: sentence,
-        ipa: {
-          british: ipa
-        }
-      }
-    };
-  }
-}
-
 // ==========================================
 // PIPELINE CLASS
 // ==========================================
@@ -776,17 +403,8 @@ class PTEDataPipeline {
       // Stage 1: Generate datasets
       await this.generatePTEDatasets();
 
-      // Stage 2: Generate DI Shadowing data
-      await this.generateDIShadowingData();
-
-      // Stage 2.6: Generate SWT (Summarize Written Text) dataset
-      await this.generateSWTDataset();
-
       // Stage 2.7: Generate Essay B1 terms typing dataset
       await this.generateEssayB1TermsDataset();
-
-      // Stage 2.8: Generate DI answer typing dataset
-      await this.generateDIAnswersDataset();
 
       // Stage 3: Report
       this.generateReport();
@@ -797,79 +415,6 @@ class PTEDataPipeline {
       console.error(error);
       process.exit(1);
     }
-  }
-
-  /**
-   * Generate DI Shadowing natural data
-   */
-  async generateDIShadowingData() {
-    console.log('\n🎙️ STAGE 2.5: Generating DI Shadowing Data');
-
-    try {
-      // Import and execute the natural DI shadowing script
-      const scriptPath = path.join(__dirname, 'generate-natural-di-shadowing.js');
-      const { execSync } = await import('child_process');
-
-      // Run the script
-      execSync(`node "${scriptPath}"`, {
-        cwd: path.join(__dirname, '..'),
-        stdio: 'inherit'
-      });
-
-      console.log('   ✅ DI shadowing data generated successfully\n');
-    } catch (error) {
-      console.warn(`   ⚠️ Failed to generate DI shadowing data: ${error.message}\n`);
-    }
-  }
-
-  /**
-   * Generate SWT Answer Typing dataset from one clean answer-only markdown
-   * source. The older full SWT example files may remain as raw references,
-   * but they are not app-facing source data for Monkeytype mode.
-   */
-  async generateSWTDataset() {
-    console.log('\n📝 STAGE 2.6: Generating SWT Dataset');
-
-    const swtDir = path.join(this.config.inputDir, 'swt');
-    const filePath = path.join(swtDir, SWT_ANSWER_TYPING_SOURCE_FILE);
-    const sourceSet = SWT_ANSWER_TYPING_SOURCE_FILE.replace(/\.md$/, '');
-    let parsedItems = [];
-
-    try {
-      parsedItems = SWTAnswerTypingMarkdownExtractor.extract(filePath, fs, sourceSet);
-      console.log(`   🔄 Parsed ${parsedItems.length} SWT answer targets from ${SWT_ANSWER_TYPING_SOURCE_FILE}`);
-    } catch (e) {
-      console.warn(`   ⚠️  Failed to parse ${SWT_ANSWER_TYPING_SOURCE_FILE}: ${e.message}`);
-    }
-
-    const items = parsedItems.map((item, index) => ({
-      id: `swt-${index + 1}`,
-      title: item.title,
-      passage: item.passage,
-      answer: item.answer,
-      wordCount: item.wordCount,
-      sourceSet: item.sourceSet,
-      metadata: {
-        difficulty: item.difficulty,
-        category: 'pte-swt',
-        source: 'pte-swt',
-        tags: ['swt', 'answer-typing', 'monkeytype'],
-      },
-    }));
-
-    const dataset = {
-      metadata: {
-        generated: new Date().toISOString(),
-        source: 'pte-swt',
-        description: 'SWT answer typing practice targets',
-        totalTerms: items.length,
-        version: '1.0',
-      },
-      items,
-    };
-
-    this.saveDataset('pte-swt-dataset.json', dataset);
-    console.log(`\n📊 Stage 2.6 Summary: Generated ${items.length} SWT items\n`);
   }
 
   /**
@@ -931,57 +476,6 @@ class PTEDataPipeline {
   }
 
   /**
-   * Generate the DI answer typing dataset. One item is one image answer, so the
-   * item count is the number of answers the source declares.
-   */
-  async generateDIAnswersDataset() {
-    console.log('\n📝 STAGE 2.8: Generating DI Answers Dataset');
-
-    const diDir = path.join(this.config.inputDir, 'di');
-    const filePath = path.join(diDir, DI_ANSWERS_SOURCE_FILE);
-    const sourceSet = DI_ANSWERS_SOURCE_FILE.replace(/\.md$/, '');
-    let answers = [];
-
-    try {
-      answers = DIAnswersMarkdownExtractor.extract(filePath, fs, sourceSet);
-      console.log(`   🔄 Parsed ${answers.length} DI answers from ${DI_ANSWERS_SOURCE_FILE}`);
-    } catch (e) {
-      console.warn(`   ⚠️  Failed to parse ${DI_ANSWERS_SOURCE_FILE}: ${e.message}`);
-    }
-
-    const items = answers.map((answer, index) => ({
-      id: `di-answers-${index + 1}`,
-      title: `Image ${answer.imageNumber}: ${answer.imageTitle}`,
-      passage: answer.imageTitle,
-      answer: answer.answer,
-      wordCount: answer.answer.split(/\s+/).filter(Boolean).length,
-      sourceSet: answer.sourceSet,
-      metadata: {
-        difficulty: 'normal',
-        category: 'pte-di-answers',
-        source: 'pte-di-answers',
-        tags: ['di-answers', 'answer-typing', 'monkeytype'],
-        imageNumber: answer.imageNumber,
-        imageTitle: answer.imageTitle,
-      },
-    }));
-
-    const dataset = {
-      metadata: {
-        generated: new Date().toISOString(),
-        source: 'pte-di-answers',
-        description: 'DI model answer typing practice targets, one answer per item',
-        totalAnswers: items.length,
-        version: '1.0',
-      },
-      items,
-    };
-
-    this.saveDataset('pte-di-answers-dataset.json', dataset);
-    console.log(`\n📊 Stage 2.8 Summary: Generated ${items.length} DI answer items\n`);
-  }
-
-  /**
    * Generate PTE datasets
    */
   async generatePTEDatasets() {
@@ -989,25 +483,22 @@ class PTEDataPipeline {
 
     // Auto-discover vocabulary books
     const discoveredBooks = await this.discoverVocabularyBooks();
-    const segmentFiles = await this.discoverSegmentFiles();
-    console.log(`   🔎 Discovered ${discoveredBooks.length} vocabulary books and ${segmentFiles.length} segment files`);
+    console.log(`   🔎 Discovered ${discoveredBooks.length} vocabulary books`);
 
     // Merge discovered books with existing registry (avoiding duplicates by ID)
     const existingIds = new Set((this.config.registry || []).map(r => r.id));
     const registry = [
       ...(this.config.registry || []),
-      ...discoveredBooks.filter(book => !existingIds.has(book.id)),
-      ...segmentFiles
+      ...discoveredBooks.filter(book => !existingIds.has(book.id))
     ].filter(Boolean);
 
     if (registry.length > 0) {
       for (const entry of registry) {
         try {
-          // Support vocabulary, table vocabulary, and segment extractors
+          // Support vocabulary and table vocabulary extractors
           const supportedExtractors = new Set([
             'PTETermsExtractor',
             'PTEPronunciationTableExtractor',
-            'PTESegmentsExtractor',
           ]);
           if (!supportedExtractors.has(entry.extractorType)) {
             console.log(`   ℹ️ Skipping ${entry.id} (extractor ${entry.extractorType} not supported in build script)`);
@@ -1021,12 +512,7 @@ class PTEDataPipeline {
 
           let terms = [];
           try {
-            if (entry.extractorType === 'PTESegmentsExtractor') {
-              terms = await PTESegmentsExtractor.extract(inputPath, fs, {
-                category: entry.category,
-                source: entry.sourceType
-              });
-            } else if (entry.extractorType === 'PTEPronunciationTableExtractor') {
+            if (entry.extractorType === 'PTEPronunciationTableExtractor') {
               terms = await PTEPronunciationTableExtractor.extract(inputPath, fs, {
                 category: entry.category,
                 source: entry.sourceType
@@ -1159,39 +645,6 @@ class PTEDataPipeline {
   }
 
   /**
-   * Discover segment files (RS, WFD)
-   */
-  async discoverSegmentFiles() {
-    // Hardcoded segments configuration since they are specific files
-    const segments = [
-      {
-        id: 'pte-repeat-sentence-segments',
-        input: 'pte-repeat-sentence-segments.md',
-        output: 'pte-rs-segments-dataset.json',
-        category: 'pte-rs',
-        description: 'PTE Repeat Sentence Segments',
-        sourceType: 'pte-rs-segments',
-        extractorType: 'PTESegmentsExtractor',
-        inputSubdir: 'rs',
-        keepDuplicates: true
-      },
-      {
-        id: 'pte-wfd-segments',
-        input: 'pte-wfd-segments.md',
-        output: 'pte-wfd-segments-dataset.json',
-        category: 'pte-wfd',
-        description: 'PTE Write From Dictation Segments',
-        sourceType: 'pte-wfd-segments',
-        extractorType: 'PTESegmentsExtractor',
-        inputSubdir: 'wfd',
-        keepDuplicates: true
-      }
-    ];
-
-    return segments;
-  }
-
-  /**
    * Generate processing report
    */
   generateReport() {
@@ -1223,12 +676,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 export {
   PTEDataPipeline,
   PTEPronunciationTableExtractor,
-  SWTMarkdownExtractor,
-  SWTAnswerTypingMarkdownExtractor,
-  SWT_ANSWER_TYPING_SOURCE_FILE,
   EssayB1TermsMarkdownExtractor,
   ESSAY_B1_TERMS_SOURCE_FILE,
-  DIAnswersMarkdownExtractor,
-  DI_ANSWERS_SOURCE_FILE,
 };
 export default PTEDataPipeline;

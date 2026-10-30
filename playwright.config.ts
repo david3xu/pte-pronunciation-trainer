@@ -7,6 +7,11 @@ export default defineConfig({
     timeout: 10_000,
   },
   fullyParallel: true,
+  // The audio specs assert on mock-timer driven playback state and miss their
+  // 10s expectations under the default worker count (half the CPU cores), even
+  // though each passes reliably on its own. Two workers keeps the full suite
+  // green while still running files in parallel.
+  workers: 2,
   reporter: 'list',
   use: {
     baseURL: 'http://127.0.0.1:3001',

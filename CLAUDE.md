@@ -109,7 +109,7 @@ pnpm run cap:run:ios      # Build, sync, and run on an iOS simulator/device
 - Long-lived components that fetch data should use `AbortController` and cancel on unmount, matching `AppContent`.
 - Stop active speech before navigation, dataset changes, and mode switches by following the existing TTS/audio service patterns.
 - Practice playback uses generated real audio through the shared audio service; keep server-only Azure Speech credentials out of client code.
-- Tests use Vitest with `happy-dom` and `src/test/setup.ts`. Playwright E2E uses `playwright.config.ts`, which starts a dev server and regenerates data before running.
+- Tests use Vitest projects: `happy-dom` + `src/test/setup.ts` for `src/**`, Node for `api/`, `server/`, and Azure script tests. Unit tests sit beside their subjects (`Thing.test.ts(x)`); `tests/e2e/*.spec.ts` is for user flows only. Playwright E2E uses `playwright.config.ts`, which starts a dev server and regenerates data before running.
 
 ## When adding or changing datasets
 
@@ -133,6 +133,8 @@ Update all relevant surfaces together:
 - Premium TTS UI is gated by `VITE_PREMIUM_TTS_ENABLED`.
 
 ## Useful references
+
+- `AGENTS.md` - repo guidelines shared with other agents (style, naming, commit/PR conventions — Conventional Commits like `fix(audio): ...`)
 
 - `README.md` - user-facing product overview
 - `.github/copilot-instructions.md` - concise repo guidance aligned with the current architecture

@@ -1,6 +1,6 @@
 # Azure workload plan
 
-Status: implementation plan; infrastructure is not yet compiled or deployed
+Status: implementation plan. Infrastructure is deployed as of the 7-8 August recovery deployment; repository migration is not complete. Live spend and milestone-clock evidence are in "Current countable state" and "Dates", verified 21 August 2026.
 Scope: subscription `<subscription-id>`, spanning ccl-pronunciation-trainer, datacore-platform and contextpatch.
 
 Companion documents: `docs/operations/azure-workload-plan.md` in datacore-platform; `docs/azure-workload-position.md` in contextpatch.
@@ -48,13 +48,21 @@ Spend and schedule, not architecture.
 | --- | --- |
 | Consumed 1 to 6 August | A$986.15, almost entirely Foundry in `rg-openclaw-ai` |
 | August forecast at unthrottled rate | A$2.58K |
-| Credits remaining | US$3,633, no spending limit, Azure Plan |
+| Credits remaining | US$3,633 as recorded 6 August; **not re-read**, the billing balance API rejects this profile |
 | Planned steady rate after redesign | ~US$296/mo, about US$9.87/day |
+| **Actual steady rate, 7-20 August** | **~US$38.83/day, about US$1,140/mo**, verified 21 August |
 | Runway at planned rate | over twelve months |
+| **Runway at actual rate** | **roughly three months from 6 August**, if the 6 August balance still held then |
 | Credit expiry | 22 December 2026 |
-| Milestone clock | not started; T0 requires Cost Management verification |
+| Milestone clock | **running since 7 August**, verified; see "Dates" |
 
-**The exhaustion problem is gone.** At roughly US$296 a month the US$3,633 balance lasts just over a year, so credits now outlive both the 60 day window and the 22 December expiry. Expiry becomes the binding constraint again, which means the milestone's two year extension is what preserves the unused remainder rather than merely funding the window.
+**The exhaustion problem is not gone; it moved.** The 6 August draft of this section concluded that at roughly US$296 a month the US$3,633 balance outlives both the 60 day window and the 22 December expiry, making expiry the binding constraint. Verified spend is US$1,140 a month, close to four times that.
+
+At the actual rate the balance funds roughly three months, not twelve. That is still enough to reach either candidate milestone date, 5 October or 11 October, but it does not reach 22 December. **Expiry is no longer the binding constraint; exhaustion is again**, and the margin is thinner than the earlier reasoning assumed rather than comfortable.
+
+This inverts what the two year extension is for. It does not merely preserve an unused remainder, because on current numbers there will not be one. Confirm the live balance in the portal before relying on any of this arithmetic; the recorded US$3,633 is two weeks stale and the API route to re-read it is unavailable.
+
+The largest single lever is PostgreSQL at US$467 a month across three servers, two of which bill identically. See `docs/operations/azure-workload-plan.md` in datacore-platform, which owns resource and credit tracking.
 
 This only holds if Foundry is throttled. Left alone it consumes the entire balance by roughly 9 September and the redesign is moot.
 
@@ -64,14 +72,30 @@ Throttling Foundry to a deliberate floor near US$2 a day does double duty: it is
 
 ## Current countable state
 
-One workload.
+**Verified live 21 August 2026** against Cost Management, subscription `<subscription-id>`, `CostUSD`, daily granularity. Last settled day is 20 August; 21 August had not closed. Supersedes the 6 August "one workload" reading, which is retained only in git history.
 
-| Resource | Type | Counts |
+Eight services cleared US$1 per day on every day from 7 August through 20 August without a break.
+
+| Service | USD/day, 14-20 Aug mean | In the counted target set |
 | --- | --- | --- |
-| `rg-openclaw-ai-instance` | Foundry account | yes |
-| `proj-datacore-platform` | child project of the above | no, no independent meter |
-| `ccl-pronunciation-speech-david` | Speech, SKU `F0` | no, free tier bills zero |
-| `syntiondevdavidxu.onmicrosoft.com` | Entra External ID | no, free tier |
+| Azure Database for PostgreSQL | 15.35 | yes |
+| Azure Bastion | 4.53 | **no, unplanned** |
+| Redis Cache | 3.84 | yes |
+| Azure Container Apps | 3.83 | yes, datacore |
+| Azure App Service | 2.85 | yes |
+| Virtual Machines | 1.99 | **no, unplanned** |
+| API Management | 1.56 | yes |
+| Azure Front Door | 1.12 | yes |
+
+Below the floor, consistent with being retained rather than counted: Speech at 0.43-0.78 per day for the six days to 20 August (it bills under service name `Foundry Tools`, not a separate Speech meter), Load Balancer 0.68, Virtual Network 0.36, Container Registry 0.16, Storage 0.16, DNS 0.02. Key Vault, Bandwidth, Log Analytics and Entra bill zero.
+
+**Foundry Models is US$0.00 per day** and has been since 6 August. Before the throttle it was the entire subscription: US$437.79 on 4 August, US$140.51 on 31 July. The throttle is confirmed effective; see the Foundry band note in `docs/operations/azure-workload-plan.md` in datacore-platform, which owns that control.
+
+**Bastion and Virtual Machines are doing tally work by accident.** Both belong to the synthetic monitor VM added 7 August. Together they cost roughly US$198 a month, more than App Service and API Management combined, and neither appears in any counted service table in this plan or datacore's. If they qualify, the subscription is at eight workloads, which is exactly the condition open question four asks about. That should be a decision, not drift.
+
+**Run rate is roughly US$38.83 per day, about US$1,140 a month**, measured over the fourteen settled days from 7 August. The target set in this document estimates US$296 a month and the approved ceiling is US$400. Actual trainer-plus-datacore spend is over the combined budget of both products. Sixty-day spend to 20 August is US$2,514.93; August month to date through 20 August is US$1,305.52.
+
+The credit balance could not be read: the billing `availableBalance` API returns Bad Request on this MicrosoftCustomerAgreement profile. Remaining balance against the recorded US$3,633 needs the portal.
 
 ## Counting rule, and why distinct types
 
@@ -409,7 +433,7 @@ Owner: **H** requires Azure access or a product decision; **A** is repository im
 
 ### Current state
 
-Infrastructure definitions exist but have not been compiled as a complete set. No application migration task above is complete. The trainer still runs on Supabase, Gemini, Vercel and PostHog, and nothing in `src/` or `api/` consumes the planned PostgreSQL, Redis, Front Door or APIM resources.
+Infrastructure is deployed. The 7-8 August recovery deployment provisioned App Service, PostgreSQL, Redis, Storage, Application Insights, Log Analytics, API Management, Front Door with WAF, Speech, and a synthetic monitor VM with Bastion; datacore's Container Apps environment is also live. Cost Management confirms all of it billing. No application migration task above is complete. The trainer still runs on Supabase, Gemini, Vercel and PostHog, and nothing in `src/` or `api/` consumes the planned PostgreSQL, Redis, Front Door or APIM resources.
 
 The immediate blocking evidence is IAC-00 and IAC-01, plus IN-01 through IN-03 before what-if. While a human obtains those results, repository work can begin on the V0 baseline, APP-01/APP-03, DB-01, AUTH-01 and OPT-01 because none depends on an Azure deployment.
 
@@ -441,16 +465,23 @@ Billing qualification is a separate operations acceptance criterion. It neither 
 
 ## Dates
 
-These are planning references, not evidence that the milestone clock has started.
+**T0 is verified. The clock is running.** Cost Management, read 21 August 2026 at daily granularity, shows an unbroken qualifying run beginning 7 August. See "Current countable state" for the per-service evidence.
 
-| Date | Event |
-| --- | --- |
-| 6 Aug 2026 | Plan baseline; not a qualifying clock start |
-| T0 | First day Cost Management confirms at least five genuine service types each meet the required spend floor |
-| 60th consecutive qualifying day | Candidate milestone completion; confirm Microsoft's inclusive-day interpretation and progression status |
-| 22 Dec 2026 | Current credit expiry |
+| Date | Event | Status |
+| --- | --- | --- |
+| 6 Aug 2026 | Plan baseline; not a qualifying clock start | historical |
+| **7 Aug 2026** | **T0 for the five-service $25,000 milestone.** First day at least five distinct service types each cleared US$1, unbroken since | **verified** |
+| 13 Aug 2026 | First day all six services in this plan's target set cleared US$1 together; Container Apps came up last | verified |
+| 21 Aug 2026 | Day 15 of 60 on the 7 August clock | current |
+| **5 Oct 2026** | **Day 60 on the 7 August clock.** Candidate $25,000 milestone completion | projected |
+| 11 Oct 2026 | Day 60 on the stricter 13 August all-six clock | projected |
+| 22 Dec 2026 | Current credit expiry | fixed |
 
-The previously stated 5 October date is valid only if 6 August is verified as T0. This plan explicitly records that the clock had not started on 6 August, so 5 October must not be used as the active deadline.
+Both completion dates fall well before credit expiry.
+
+The previously stated 5 October date turns out to be correct, but by coincidence and for a different reason than the earlier draft assumed. It is valid because 7 August is the verified T0, not because 6 August was. Do not restate the derivation from the plan baseline.
+
+Any non-qualifying day resets the clock. The two most fragile entries are Front Door at US$1.08 to US$1.13 per day and API Management at US$1.45 to US$1.58, both within a small margin of the floor. Verify at daily granularity before treating either projected date as firm.
 
 ## Open questions
 
@@ -460,6 +491,8 @@ For Microsoft support or Q&A, with specifics rather than in the abstract.
 2. Do multiple resources inside one service, for example several container apps in one environment, count once or severally?
 3. Is the US$1 floor cumulative across the window, or per day?
 4. If retained or conditional services eventually bring the total to eight workloads and qualify directly for the $50,000 milestone, does the two year credit extension documented at $25,000 still trigger? Fifty thousand expiring 22 December would be worse than twenty five thousand that does not.
+
+   **No longer hypothetical.** As of the 21 August verification the subscription has been at eight qualifying services since 7 August, because the monitor VM's Bastion and Virtual Machines meters both clear the floor. This question now needs an answer from support rather than a decision later, and the alternative lever is to stop the monitor VM, which drops the count to six and costs roughly US$198 a month less.
 5. Is progression genuinely automatic? The portal shows no upgrade affordance, matching the documentation, but multiple reports describe weeks of silence after apparently qualifying.
 
 ## Unresolved, non-technical

@@ -1,8 +1,8 @@
 import fs from 'fs';
 
 // File paths
-const b1FilePath = './data/source/pte/essay-examples/vocabulary-based/essay-examples-template-b1.md';
-const masterFilePath = './data/source/pte/essay-examples/new-example/complete-37-essays.md';
+const b1FilePath = new URL('./data/source/pte/essay-examples/vocabulary-based/essay-examples-template-b1.md', import.meta.url);
+const masterFilePath = new URL('./data/source/pte/essay-examples/new-example/complete-37-essays.md', import.meta.url);
 
 // The Master List of 37 Questsions
 const masterQuestions = [

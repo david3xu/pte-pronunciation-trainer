@@ -43,7 +43,7 @@ const SYNTHESIS_QUOTA_PARAMETERS = Object.freeze([
 // standard neural synthesis bills against this S1 character meter.
 const SPEECH_NEURAL_TTS_USD_PER_MILLION_CHARACTERS = 15;
 
-// Mirrors PREMIUM_TTS_MAX_TEXT_LENGTH in api/handlers/premiumTts.ts, restated
+// Mirrors PREMIUM_TTS_MAX_TEXT_LENGTH in api/_handlers/premiumTts.ts, restated
 // because Bicep cannot read it. If the handler's limit moves, the ceiling this
 // quota guarantees moves with it and this test is where that surfaces.
 const PREMIUM_TTS_MAX_TEXT_LENGTH = 3000;

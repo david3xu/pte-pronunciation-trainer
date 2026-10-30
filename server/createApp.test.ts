@@ -21,8 +21,8 @@ import { tmpdir } from 'node:os';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 import { PREMIUM_VOICES } from '../api/config.js';
-import { HEADER, HTTP_STATUS } from '../api/handlers/contracts.js';
-import { VOICES_CACHE_CONTROL } from '../api/handlers/voices.js';
+import { HEADER, HTTP_STATUS } from '../api/_handlers/contracts.js';
+import { VOICES_CACHE_CONTROL } from '../api/_handlers/voices.js';
 import { createApp, HEALTH_STATUS_OK, MAX_REQUEST_BODY_BYTES, parseRequestTarget } from './createApp.js';
 import { CACHE_CONTROL, INDEX_DOCUMENT, isFingerprinted } from './staticFiles.js';
 import { loadServerConfig } from './serverConfig.js';

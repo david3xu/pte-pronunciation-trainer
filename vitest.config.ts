@@ -41,7 +41,7 @@ const aliases = {
 // Separating them keeps the client setup untouched rather than weakening it with
 // environment guards to accommodate server tests.
 //
-// The node project also covers `api`, because the handler cores under api/handlers
+// The node project also covers `api`, because the handler cores under api/_handlers
 // are shared by both hosts and their contract tests are node tests. Without that
 // entry a test file added beside a handler is collected by neither project and
 // passes by never running.

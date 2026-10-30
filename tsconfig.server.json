@@ -2,7 +2,7 @@
   // Build for the App Service production server.
   //
   // Both `server` and `api` are compiled, because the handler cores under
-  // api/handlers are shared by two hosts: the node server in this repository and
+  // api/_handlers are shared by two hosts: the node server in this repository and
   // the Vercel functions that remain the rollback path. Compiling them once is
   // what keeps a single implementation rather than a copy per host.
   //

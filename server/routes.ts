@@ -12,9 +12,9 @@
  * runtime.
  */
 
-import { premiumTtsHandler } from '../api/handlers/premiumTts.js';
-import { voicesHandler } from '../api/handlers/voices.js';
-import type { ApiHandler } from '../api/handlers/contracts.js';
+import { premiumTtsHandler } from '../api/_handlers/premiumTts.js';
+import { voicesHandler } from '../api/_handlers/voices.js';
+import type { ApiHandler } from '../api/_handlers/contracts.js';
 
 /** Path prefix owned by the api router. */
 export const API_PREFIX = '/api';

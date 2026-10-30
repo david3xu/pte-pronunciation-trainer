@@ -23,7 +23,7 @@ import {
   normaliseError,
   type ApiRequest,
   type ApiResponse,
-} from '../api/handlers/contracts.js';
+} from '../api/_handlers/contracts.js';
 import { API_PREFIX, HEALTH_PATH, resolveApiRoute } from './routes.js';
 import { resolveStaticRequest, sendFile } from './staticFiles.js';
 import type { ServerConfig } from './serverConfig.js';

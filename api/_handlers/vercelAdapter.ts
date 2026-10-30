@@ -6,7 +6,7 @@
  * logic: each one wraps the shared core through this adapter.
  *
  * This file is the only place in the api tree that mentions the Vercel runtime
- * types. Handler cores under api/handlers stay platform neutral.
+ * types. Handler cores under api/_handlers stay platform neutral.
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';

@@ -96,8 +96,6 @@ export class AppConfig {
               'pte-my-rs-wfd': 'data/processed/pte-my-rs-wfd.json',
               'pte-di-natural-template': 'data/processed/pte-di-natural-template-vocab.json',
               'pte-di-slots': 'data/processed/pte-di-slots-collection.json',
-              'pte-rs-segments': 'data/processed/pte-rs-segments-dataset.json',
-              'pte-wfd-segments': 'data/processed/pte-wfd-segments-dataset.json',
               'pte-sgd-vocabulary': 'data/processed/pte-sgd-vocabulary.json',
               'pte-rl-vocabulary': 'data/processed/pte-rl-vocabulary.json',
               'pte-essay-outcomes-vocabulary': 'data/processed/pte-essay-outcomes-vocabulary.json',
@@ -105,18 +103,9 @@ export class AppConfig {
               'pte-plural-nouns-s-practice': 'data/processed/pte-plural-nouns-s-practice.json',
               'pte-template-practice': 'data/processed/pte-template-practice-vocabulary.json',
               'pte-essay-topic-paraphrase': 'data/processed/pte-essay-topic-paraphrase-vocabulary.json',
-              'pte-phd-official-project-terms': 'data/processed/pte-phd-official-project-terms.json',
 
-              // Practice modes
-              'rs': 'data/processed/pte-repeat-sentence-dataset.json',
-              'asq': 'data/processed/pte-answer-short-question-dataset.json',
-              'wfd': 'data/processed/pte-write-from-dictation-dataset.json',
-              'swt': 'data/processed/pte-swt-dataset.json',
-              'essay-b1-terms': 'data/processed/pte-essay-b1-terms-dataset.json',
-              'di-answers': 'data/processed/pte-di-answers-dataset.json',
-
-              // Shadowing modes
-              'di-shadowing': 'data/processed/di-shadowing-natural.json'
+              // Writing modes
+              'essay-b1-terms': 'data/processed/pte-essay-b1-terms-dataset.json'
             }
         },
 
@@ -151,31 +140,18 @@ export class AppConfig {
           { id: 'pte-ra-vocabulary', name: 'PTE RA Vocabulary', category: 'vocabulary', difficulty: 'hard' },
           { id: 'pte-di-natural-template', name: 'DI Natural Template', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-di-slots', name: 'DI Slots Collection', category: 'vocabulary', difficulty: 'normal' },
-          { id: 'pte-rs-segments', name: 'RS Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
-          { id: 'pte-wfd-segments', name: 'WFD Segments Shadow', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-sgd-vocabulary', name: 'SGD Vocabulary', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-rl-vocabulary', name: 'RL Vocabulary', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-essay-outcomes-vocabulary', name: 'Essay Outcomes Vocab', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-essay-90plus-filled-terms', name: 'PTE 90+ Essay Filled Terms', category: 'vocabulary', difficulty: 'normal' },
           { id: 'pte-plural-nouns-s-practice', name: 'Plural Nouns /s/ Practice', category: 'vocabulary', difficulty: 'easy' },
           { id: 'pte-template-practice', name: 'Template Practice', category: 'vocabulary', difficulty: 'normal' },
-          { id: 'pte-phd-official-project-terms', name: 'PhD Official Project Terms', category: 'vocabulary', difficulty: 'normal' },
           // { id: 'pte-essay-topic-paraphrase', name: 'Essay Topic & Paraphrase', category: 'vocabulary', difficulty: 'normal' },
 
-          // Practice modes, nested under the 'practice' study type (3 total)
-          { id: 'rs', name: 'Repeat Sentence', category: 'practice', description: '620 practice sentences' },
-          { id: 'asq', name: 'Answer Short Question', category: 'practice', description: '692 practice questions' },
-          { id: 'wfd', name: 'Write From Dictation', category: 'practice', description: '1,195 practice sentences' },
-
           // Writing modes, nested under the reusable 'writing' study type.
-          // Both entries are exact text typing drills rather than PTE form
-          // scored writing; see src/config/typingTasks.ts.
-          { id: 'swt', name: 'Summarize Written Text', category: 'writing', description: '58 practice passages' },
-          { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '37 essay topics, 717 terms' },
-          { id: 'di-answers', name: 'DI Answer Typing', category: 'writing', description: '86 image answers' },
-
-          // Shadowing modes (1 total)
-          { id: 'di-shadowing', name: 'DI Natural Shadowing', category: 'shadowing', description: '43 natural DI answers for pronunciation practice with human-like chunking' }
+          // Entries are exact text typing drills rather than PTE form scored
+          // writing; see src/config/typingTasks.ts.
+          { id: 'essay-b1-terms', name: 'Essay B1 Terms', category: 'writing', description: '37 essay topics, 717 terms' }
         ]
       },
 
@@ -421,17 +397,6 @@ export class AppConfig {
             extractorType: 'PTETermsExtractor',
             inputSubdir: 'vocabs',
             isDefault: true
-          },
-          {
-            id: 'di-shadowing',
-            input: 'templates/examples/example-answers.md',
-            output: 'di-shadowing-natural.json',
-            category: 'di-shadowing',
-            description: 'DI natural answers (43 images) for shadowing practice with natural phrase chunking',
-            sourceType: 'example-answers',
-            dataType: 'shadowing',
-            extractorType: 'NaturalDIExtractor',
-            inputSubdir: 'di'
           },
           {
             id: 'pte-di-natural-template',

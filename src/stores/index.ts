@@ -27,6 +27,7 @@ import { devtools, persist, subscribeWithSelector } from 'zustand/middleware';
 import { authService } from '../services/supabase/authService';
 import { syncService } from '../services/supabase/syncService';
 import { appConfig } from '../config/AppConfig';
+import { TYPING_TASKS, type TypingMode } from '../config/typingTasks';
 
 import { type Difficulty, type PracticeItem, type VocabularyTerm } from '../types/dataset.types';
 import type {
@@ -203,7 +204,6 @@ export const useAppStore = create<AppState>()(
           // Settings slice - inline implementation
           settings: {
             practiceType: 'vocabulary',
-            practiceMode: null,
             writingMode: null,
             vocabularyBook: DEFAULT_VOCABULARY_BOOK,
             datasetId: DEFAULT_VOCABULARY_BOOK,
@@ -276,7 +276,6 @@ export const useAppStore = create<AppState>()(
                 settings: {
                   ...state.settings,
                   practiceType: 'vocabulary',
-                  practiceMode: null,
                   writingMode: null,
                   vocabularyBook: DEFAULT_VOCABULARY_BOOK,
                   datasetId: DEFAULT_VOCABULARY_BOOK,
@@ -562,14 +561,12 @@ export const useAppStore = create<AppState>()(
               const durationSeconds = Math.floor(durationMs / 1000);
               const { itemsCompleted, itemsCorrect, accuracy } = get().progress;
               const mode = get().settings.practiceType;
-              const practiceMode = get().settings.practiceMode;
               const datasetId = get().settings.datasetId;
 
               // Track practice session completion
               if ((window as any).analyticsService && itemsCompleted > 0) {
                 (window as any).analyticsService.trackPracticeSessionCompleted({
                   mode: mode || 'vocabulary',
-                  practice_type: practiceMode || undefined,
                   dataset_id: datasetId,
                   items_completed: itemsCompleted,
                   items_correct: itemsCorrect,
@@ -805,44 +802,33 @@ export const useAppStore = create<AppState>()(
               state.progress.completedItems = new Set<string>();
             }
 
-            // Migrate old DI shadowing datasets to new combined dataset
-            if (state?.settings?.vocabularyBook) {
-              const oldBook = state.settings.vocabularyBook;
-              if (oldBook === 'di-shadowing-1-10' || oldBook === 'di-shadowing-11-20') {
-                console.log(`[Migration] Converting old DI shadowing ID "${oldBook}" to "di-shadowing"`);
-                state.settings.vocabularyBook = 'di-shadowing';
-                state.settings.datasetId = 'di-shadowing';
-              }
-            }
+            // Saved settings can point at study types, writing tasks or
+            // datasets that no longer exist (Practice RS/ASQ/WFD, Shadowing,
+            // SWT and DI answer typing, segment books). Move them onto valid
+            // defaults so the app never tries to load a missing dataset.
+            if (state?.settings) {
+              const settings = state.settings;
+              const byMode = appConfig.get<Record<string, string>>('data.paths.byMode') ?? {};
+              const defaultBook = appConfig.getDefaultVocabularyBookId();
+              delete (settings as unknown as Record<string, unknown>)['practiceMode'];
 
-            // Migrate SWT from a practice-* sub-mode straight to the reusable
-            // Writing Practice study type. This is the oldest shape, from
-            // before SWT was even its own practiceType at all: nested under
-            // 'practice' the same way as RS/ASQ/WFD.
-            if (
-              state?.settings?.practiceType === 'practice' &&
-              (state.settings.practiceMode as string) === 'practice-summarize-written-text'
-            ) {
-              console.log('[Migration] Converting SWT from a practice-* sub-mode to Writing Practice');
-              state.settings.practiceType = 'writing';
-              state.settings.practiceMode = null;
-              state.settings.writingMode = 'swt';
-              state.settings.datasetId = 'swt';
-            }
-
-            // Migrate SWT from a flat, one-off top level practiceType to the
-            // reusable Writing Practice study type + writingMode. This is the
-            // intermediate shape (SWT briefly was practiceType 'swt' directly)
-            // before Writing Practice existed as a reusable page a second
-            // writing task could be added under later.
-            if ((state?.settings?.practiceType as string) === 'swt') {
-              console.log('[Migration] Converting SWT from a flat practiceType to Writing Practice');
-              state.settings.practiceType = 'writing';
-              state.settings.writingMode = 'swt';
-              if (state.settings.vocabularyBook === 'swt') {
-                state.settings.vocabularyBook = appConfig.getDefaultVocabularyBookId();
+              if (!['vocabulary', 'vocab-typing', 'writing'].includes(settings.practiceType)) {
+                console.log(`[Migration] Study type "${settings.practiceType}" was removed; switching to Vocabulary`);
+                settings.practiceType = 'vocabulary';
               }
-              state.settings.datasetId = 'swt';
+              if (settings.writingMode && !(settings.writingMode in TYPING_TASKS)) {
+                settings.writingMode = null;
+              }
+              if (settings.practiceType === 'writing' && !settings.writingMode) {
+                settings.writingMode = Object.keys(TYPING_TASKS)[0] as TypingMode;
+              }
+              if (!(settings.vocabularyBook in byMode)) {
+                settings.vocabularyBook = defaultBook;
+              }
+              settings.datasetId =
+                settings.practiceType === 'writing' && settings.writingMode
+                  ? settings.writingMode
+                  : settings.vocabularyBook;
             }
           },
         }
@@ -878,7 +864,6 @@ export const useIsSpeaking = () => useAppStore((state) => state.tts.isSpeaking);
 
 // Settings selectors
 export const useSettings = () => useAppStore((state) => state.settings);
-export const usePracticeMode = () => useAppStore((state) => state.settings.practiceMode);
 
 // Vocabulary selectors
 export const useVocabulary = () => useAppStore((state) => state.vocabulary);

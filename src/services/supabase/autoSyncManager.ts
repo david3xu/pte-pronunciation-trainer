@@ -3,7 +3,7 @@
  *
  * ARCHITECTURE: Zustand state management
  * - Subscribes to progress store changes instead of EventBus
- * - Subscribes to settings.practiceMode and vocabulary.currentDataset for session tracking
+ * - Subscribes to settings.practiceType and vocabulary.currentDataset for session tracking
  *
  * Automatically syncs user progress and study sessions to Supabase
  * Tracks progress via Zustand store subscriptions and handles cloud synchronization
@@ -89,11 +89,11 @@ export class AutoSyncManager {
     );
     this.unsubscribers.push(unsubDataset);
 
-    // Subscribe to practice mode changes (end previous session, start new)
+    // Subscribe to study type changes (end previous session, start new)
     const unsubMode = useAppStore.subscribe(
-      (state: AppState) => state.settings.practiceMode as string,
-      (practiceMode: string, prevPracticeMode: string) => {
-        if (practiceMode !== prevPracticeMode) {
+      (state: AppState) => state.settings.practiceType as string,
+      (practiceType: string, prevPracticeType: string) => {
+        if (practiceType !== prevPracticeType) {
           this.endCurrentSession();
           // New session will start on next dataset load
         }

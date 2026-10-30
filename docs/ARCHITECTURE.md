@@ -85,7 +85,7 @@ ccl-pronunciation-trainer/
 │   │   ├── ai/              # AI features (7 files): AITutorChat, AIRecommendations, etc.
 │   │   ├── audio/           # Audio controls (4 files): AudioControls, VoiceSelector
 │   │   ├── migration/       # Data migration UI (1 file)
-│   │   ├── practice/        # Practice interfaces (12 files): WordCard, RSInterface, WFDInterface, etc.
+│   │   ├── practice/        # Practice interfaces: WordCard, SWTInterface (writing typing), VocabTypingInterface, etc.
 │   │   ├── profile/         # User profile UI (1 file)
 │   │   ├── settings/        # Settings UI (2 files)
 │   │   └── shared/          # Shared components (7 files): Skeleton, ErrorBoundary, ToastProvider

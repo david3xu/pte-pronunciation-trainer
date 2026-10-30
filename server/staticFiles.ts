@@ -12,7 +12,7 @@ import { stat } from 'node:fs/promises';
 import { basename, extname, join, normalize, resolve, sep } from 'node:path';
 import type { ServerResponse } from 'node:http';
 
-import { HEADER, HTTP_STATUS } from '../api/handlers/contracts.js';
+import { HEADER, HTTP_STATUS } from '../api/_handlers/contracts.js';
 
 /** The SPA entry document. */
 export const INDEX_DOCUMENT = 'index.html';

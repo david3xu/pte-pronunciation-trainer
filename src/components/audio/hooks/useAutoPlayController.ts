@@ -131,7 +131,7 @@ export const useAutoPlayController = () => {
       : (currentItem ? [currentItem] : []);
 
     const datasetId = settings.vocabularyBook || settings.datasetId || 'vocabulary';
-    const itemType = settings.practiceType === 'practice' ? 'practice' : 'vocabulary';
+    const itemType = 'vocabulary';
 
     return rawItems
       .map((item, index) => toQueueItem(item as LearningItem, index, datasetId, itemType))

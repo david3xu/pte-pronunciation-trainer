@@ -12,7 +12,7 @@ graph TD
         Page[Pages]
         AI[ai/ - AITutorChat, Recommendations]
         Audio[audio/ - AudioControls, VoiceSelector]
-        Practice[practice/ - WordCard, RSInterface, WFDInterface]
+        Practice[practice/ - WordCard, SWTInterface, VocabTypingInterface]
         Settings[settings/ - SettingsPanel]
         Shared[shared/ - Skeleton, ToastProvider]
     end

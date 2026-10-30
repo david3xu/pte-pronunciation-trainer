@@ -72,8 +72,8 @@ pnpm run cap:run:ios      # Build, sync, and run on an iOS simulator/device
 ### Configuration and mode routing
 
 - `src/config/AppConfig.ts` is the single source of truth for *browser* configuration: dataset paths, learning modes, API endpoints, Gemini defaults, TTS defaults, delays, and limits. Server-only Gemini model settings, request limits, and Azure voice tables live in `api/config.ts` — do not duplicate server config into the client bundle.
-- Mode state is layered: `settings.practiceType` picks the broad UI family (`vocabulary`, `vocab-typing`, `practice`, `writing`, `shadowing`); `settings.practiceMode` and `settings.writingMode` pick nested task datasets within `practice`/`writing`; `vocabulary.mode` still drives several interface decisions directly in `AppContent`. Study-type transitions must explicitly reload the target dataset even when the remembered nested mode hasn't changed — `practiceMode`/`writingMode`/`vocabularyBook` can describe a stale prior selection.
-- Practice UIs use `practice-repeat-sentence`, `practice-answer-short-question`, and `practice-write-from-dictation` as runtime mode ids, but the underlying files are still registered in `AppConfig.data.paths.byMode` under `rs`, `asq`, and `wfd` (`swt` is a writing-mode key using the same raw practice-item normalization). `src/services/dataset/datasetLoader.ts` contains the bridge.
+- Mode state is layered: `settings.practiceType` picks the broad UI family (`vocabulary`, `vocab-typing`, `writing`); `settings.writingMode` picks the nested writing task dataset. Study-type transitions must explicitly reload the target dataset even when the remembered nested mode hasn't changed — `writingMode`/`vocabularyBook` can describe a stale prior selection.
+- Writing task datasets (`essay-b1-terms`) are consumed raw, not in vocabulary shape; `isPracticeMode` in `src/services/dataset/datasetLoader.ts` decides which normalization applies. Persisted settings pointing at removed study types, writing tasks, or books are migrated onto valid defaults in `onRehydrateStorage` (`src/stores/index.ts`).
 - Writing Practice is exact-text typing configured by `TypingMode`/`TYPING_TASKS` in `src/config/typingTasks.ts`. `WRITING_TASKS` in `src/config/writingTasks.ts` describes form-validation rules only — it is not the Settings/runtime registry.
 
 ### Data pipeline and dataset normalization
@@ -83,8 +83,7 @@ pnpm run cap:run:ios      # Build, sync, and run on an iOS simulator/device
 - Runtime loading goes through `src/services/dataset/datasetLoader.ts`; do not duplicate fetch/normalization logic in components.
 - Dataset shapes vary by source:
   - vocabulary datasets commonly expose `vocabulary`
-  - DI/shadowing datasets expose `answers`
-  - practice/segment datasets may expose `items`, `sentences`, or `questions`
+  - writing task datasets expose `items`
 - `datasetLoader` normalizes those shapes before data enters the store.
 
 ### Service boundaries

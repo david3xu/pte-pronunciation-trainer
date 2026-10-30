@@ -6,8 +6,8 @@
  * and normalized datasets with near-duplicate logic; they now all call
  * loadDataset(). Path resolution comes from one registry
  * (AppConfig.data.paths.byMode); normalization handles every shape the
- * pipeline emits (vocabulary, answers/shadowing, RS/WFD segments, and raw
- * practice items) before anything is written to the store.
+ * pipeline emits (vocabulary and raw practice items) before anything is
+ * written to the store.
  */
 
 import { appConfig } from '../../config/AppConfig';
@@ -26,25 +26,15 @@ export interface LoadDatasetOptions {
   signal?: AbortSignal;
 }
 
-// RS/ASQ/WFD are routed by a `practice-*` mode string (nested under the
-// 'practice' study type), but their files live in the shared byMode registry
-// under the task keys. This bridges the two id conventions so paths stay in
-// a single registry, until the mode model is unified (see audit: consolidate
-// the mode model). Writing tasks (nested under the reusable 'writing' study
-// type via settings.writingMode, not under 'practice') are loaded by their
-// registry key directly; their entries below exist only so isPracticeMode
-// recognizes them as needing the same raw, practice-item-shaped normalization
-// as RS/ASQ/WFD.
+// Writing tasks (nested under the reusable 'writing' study type via
+// settings.writingMode) are loaded by their registry key directly; their
+// entries here exist so isPracticeMode recognizes them as needing raw,
+// practice-item-shaped normalization instead of the vocabulary shape.
 const PRACTICE_MODE_TO_REGISTRY_KEY: Record<string, string> = {
-  'practice-repeat-sentence': 'rs',
-  'practice-answer-short-question': 'asq',
-  'practice-write-from-dictation': 'wfd',
-  'swt': 'swt',
   'essay-b1-terms': 'essay-b1-terms',
-  'di-answers': 'di-answers',
 };
 
-/** True when the id is a dataset consumed raw by a practice or writing task, whether reached via the nested practice-* mode string or (for writing tasks) its own registry key. */
+/** True when the id is a dataset consumed raw by a writing task. */
 export function isPracticeMode(datasetId: string): boolean {
   return datasetId in PRACTICE_MODE_TO_REGISTRY_KEY;
 }
@@ -60,44 +50,13 @@ function resolveDatasetPath(datasetId: string): string {
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- raw JSON payloads are untyped by nature */
-function normalizeVocabularyDataset(data: any, datasetId: string): DatasetItem[] {
-  let items = data.vocabulary || data.answers || data.items || [];
-
-  // Shadowing datasets use `answers`; present each as a vocabulary card.
-  if (data.answers) {
-    items = items.map((answer: any) => ({
-      english: answer.title || answer.fullText?.substring(0, 50),
-      pronunciation: {
-        british: { ipa: '', phonetic: 'DI Answer' },
-        american: { ipa: '', phonetic: 'DI Answer' },
-      },
-      difficulty: 'normal',
-      category: datasetId,
-      source: datasetId,
-      ...answer,
-    }));
-  }
-
-  // RS/WFD segment datasets carry content.sentence; display them as vocabulary
-  // (using `english` so they render like vocabulary items, no Play Audio button).
-  if (items.length > 0 && items[0]?.content?.sentence) {
-    items = items.map((item: any) => ({
-      id: item.id,
-      english: item.content.sentence,
-      ipa: item.content.ipa,
-      difficulty: item.metadata?.difficulty || 'normal',
-      category: item.metadata?.category || 'general',
-      wordCount: item.metadata?.wordCount,
-      type: item.type,
-      source: datasetId,
-    }));
-  }
-
+function normalizeVocabularyDataset(data: any): DatasetItem[] {
+  const items = data.vocabulary || data.items || [];
   return items as DatasetItem[];
 }
 
 function normalizePracticeDataset(data: any): DatasetItem[] {
-  // Practice datasets are consumed raw by the RS/ASQ/WFD interfaces.
+  // Writing datasets are consumed raw by the typing interface.
   const items = data.items || data.sentences || data.questions || [];
   return items as DatasetItem[];
 }
@@ -134,7 +93,7 @@ export async function loadDataset(
   const data = await response.json();
   const normalized = isPracticeMode(datasetId)
     ? normalizePracticeDataset(data)
-    : normalizeVocabularyDataset(data, datasetId);
+    : normalizeVocabularyDataset(data);
   const items = withStableIds(normalized, datasetId);
 
   return { mode: datasetId, items };

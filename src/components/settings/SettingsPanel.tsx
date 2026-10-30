@@ -37,7 +37,6 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
   const settings = useSettings();
   const {
     practiceType,
-    practiceMode,
     writingMode,
     vocabularyBook,
     difficultyFilter,
@@ -109,10 +108,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
       console.log(`[SettingsPanel] Loaded ${items.length} items`);
       setDataset(items, bookId); // Applies settings.difficultyFilter atomically
 
-      // Auto-start playback if autoPlay setting is enabled. SWT is a pure
-      // reading/writing task with no audio at all, so never auto-start
-      // playback for it even if the setting is on for other modes.
-      if (autoPlay && items.length > 0 && bookId !== 'swt') {
+      // Auto-start playback if autoPlay setting is enabled.
+      if (autoPlay && items.length > 0) {
         console.log('[SettingsPanel] Auto-starting playback');
         audio.startAutoPlay();
       }
@@ -126,43 +123,8 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
     }
   };
 
-  // Handle practice mode change (RS/ASQ/WFD, nested under the practice study type)
-  const handlePracticeModeChange = async (mode: 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null) => {
-    console.log('[SettingsPanel] Changing practice mode to:', mode);
-
-    if (typeof updateSetting !== 'function') {
-      console.error('[SettingsPanel] updateSetting is not a function!', updateSetting);
-      return;
-    }
-
-    // Stop any in-flight audio before switching modes (stopSpeaking cancels
-    // speech synthesis and stops background audio synchronously).
-    ttsEngine.stopSpeaking();
-
-    updateSetting('practiceMode', mode);
-
-    if (!mode) return;
-
-    // Reload practice dataset
-    setLoading(true);
-
-    try {
-      const { items } = await loadDataset(mode);
-      console.log(`[SettingsPanel] Loaded ${items.length} practice items`);
-      setDataset(items, mode); // Applies settings.difficultyFilter atomically
-
-      setLoading(false);
-    } catch (error) {
-      console.error('[SettingsPanel] Error loading practice dataset:', error);
-      setLoading(false);
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-      alert(`Failed to load practice dataset.\n\nError: ${errorMessage}`);
-    }
-  };
-
-  // Handle writing task change, nested under the reusable writing study type
-  // the same way handlePracticeModeChange nests RS/ASQ/WFD under practice. A
-  // new writing task is a new TypingMode union member plus a learningModes
+  // Handle writing task change, nested under the reusable writing study type.
+  // A new writing task is a new TypingMode union member plus a learningModes
   // entry, not another top level practiceType or handler.
   const handleWritingModeChange = async (mode: TypingMode | null) => {
     console.log('[SettingsPanel] Changing writing task to:', mode);
@@ -286,38 +248,25 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                 </Text>
                 <Select.Root
                   value={practiceType}
-                  onValueChange={(value: 'vocabulary' | 'vocab-typing' | 'practice' | 'writing' | 'shadowing') => {
+                  onValueChange={(value: 'vocabulary' | 'vocab-typing' | 'writing') => {
                     updateSetting('practiceType', value);
 
                     // Every transition explicitly (re)loads its target dataset
-                    // rather than guarding on whether vocabularyBook/practiceMode/
-                    // writingMode already looks right. Those fields go stale on
-                    // paths like WFD -> Writing/SWT -> Practice (practiceMode
-                    // still says WFD, but the active dataset is still SWT) or
-                    // Practice -> Writing/SWT -> Practice -> Writing/SWT
-                    // (writingMode still says swt from the first visit, so a
-                    // guard would wrongly skip the reload the second time),
-                    // leaving the wrong dataset active either way.
-                    if (value === 'practice') {
-                      // Preserve the last RS/ASQ/WFD choice if there is one, but
-                      // always reload it explicitly rather than trusting it is
-                      // still the active dataset.
-                      handlePracticeModeChange(practiceMode ?? 'practice-repeat-sentence');
-                    } else if (value === 'writing') {
+                    // rather than guarding on whether vocabularyBook/writingMode
+                    // already looks right. Those fields go stale on paths like
+                    // Writing -> Vocabulary -> Writing (writingMode still says
+                    // the first visit's task, so a guard would wrongly skip the
+                    // reload the second time), leaving the wrong dataset active.
+                    if (value === 'writing') {
                       // Preserve the last writing task choice if there is one,
                       // otherwise fall to the first writing task declared in
                       // learningModes rather than a hardcoded task id, always
                       // reloading it explicitly.
                       handleWritingModeChange(writingMode ?? (writingTasks[0]?.id as TypingMode));
-                    } else if (value === 'shadowing') {
-                      handleVocabularyBookChange('di-shadowing');
-                    } else if (value === 'vocabulary' || value === 'vocab-typing') {
-                      const isNotAVocabularyBookId =
-                        vocabularyBook.startsWith('di-shadowing') ||
-                        vocabularyBook.startsWith('practice-') ||
-                        // Defensive: builds before Writing Practice existed
-                        // briefly stored the writing task id here directly.
-                        vocabularyBook === 'swt';
+                    } else {
+                      const isNotAVocabularyBookId = !vocabularyBooks.some(
+                        (book: any) => book.id === vocabularyBook
+                      );
                       handleVocabularyBookChange(
                         isNotAVocabularyBookId ? appConfig.getDefaultVocabularyBookId() : vocabularyBook
                       );
@@ -328,9 +277,7 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                   <Select.Content>
                     <Select.Item value="vocabulary">📚 Vocabulary Learning</Select.Item>
                     <Select.Item value="vocab-typing">✍️ Vocabulary Typing Practice</Select.Item>
-                    <Select.Item value="practice">🎯 Speaking/Listening Task Practice (RS/ASQ/WFD)</Select.Item>
                     <Select.Item value="writing">📝 Writing Practice</Select.Item>
-                    <Select.Item value="shadowing">🎤 Shadowing Practice (DI)</Select.Item>
                   </Select.Content>
                 </Select.Root>
               </Flex>
@@ -361,38 +308,6 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
               )}
 
 
-              {/* Task Type (if practice type selected) */}
-              {practiceType === 'practice' && (
-                <Flex direction="column" gap="2">
-                  <Text size="3" weight="medium">Task Type</Text>
-                  <Text size="2" color="gray" mb="1">
-                    Choose a PTE speaking/listening task
-                  </Text>
-                  <Select.Root
-                    value={practiceMode || ''}
-                    onValueChange={(value) =>
-                      handlePracticeModeChange(value as 'practice-repeat-sentence' | 'practice-answer-short-question' | 'practice-write-from-dictation' | null)
-                    }
-                  >
-                    <Select.Trigger placeholder="Select a task type..." />
-                    <Select.Content>
-                      <Select.Item value="practice-repeat-sentence">
-                        🎤 Repeat Sentence (RS) - 620 sentences
-                      </Select.Item>
-                      <Select.Item value="practice-answer-short-question">
-                        ❓ Answer Short Question (ASQ) - 692 questions
-                      </Select.Item>
-                      <Select.Item value="practice-write-from-dictation">
-                        ✍️ Write From Dictation (WFD) - 1,195 sentences
-                      </Select.Item>
-                    </Select.Content>
-                  </Select.Root>
-                </Flex>
-              )}
-
-              {/* SWT has exactly one dataset, so unlike Task Type or Vocabulary
-                  Book it needs no further sub-selector here. */}
-
               {/* Vocabulary Book (if vocabulary or vocab-typing type selected) */}
               {(practiceType === 'vocabulary' || practiceType === 'vocab-typing') && (
                 <Flex direction="column" gap="2">
@@ -411,25 +326,6 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ isOpen, onClose }) => {
                           </Select.Item>
                         ))}
                       </Select.Group>
-                    </Select.Content>
-                  </Select.Root>
-                </Flex>
-              )}
-
-              {/* Shadowing Mode (if shadowing type selected) */}
-              {practiceType === 'shadowing' && (
-                <Flex direction="column" gap="2">
-                  <Text size="3" weight="medium">Shadowing Mode</Text>
-                  <Text size="2" color="gray" mb="1">
-                    Practice DI answers with continuous speech
-                  </Text>
-                  <Select.Root
-                    value={vocabularyBook}
-                    onValueChange={(value) => handleVocabularyBookChange(value)}
-                  >
-                    <Select.Trigger placeholder="Select a shadowing mode..." />
-                    <Select.Content>
-                      <Select.Item value="di-shadowing">🖼️ DI Natural Shadowing - 43 natural answers</Select.Item>
                     </Select.Content>
                   </Select.Root>
                 </Flex>

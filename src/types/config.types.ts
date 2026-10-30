@@ -199,7 +199,6 @@ export interface APIConfig {
   endpoints: {
     aiRecommendations: string;
     aiChat: string;
-    aiTutor: string;
     pronunciationScore: string;
     premiumTts: string;
     voices: string;
@@ -346,6 +345,12 @@ export interface BackgroundAudioConfig {
   fetchTimeoutMs: number;
   fetchRetryAttempts: number;
   fetchRetryDelayMs: number;
+  /** Smallest payload size, in bytes, treated as real audio. A payload below
+   * this cannot be played and must be refused before it reaches the element. */
+  minimumAudioBytes: number;
+  /** Media type family the audio element accepts, matched as a prefix against
+   * the content type the synthesis endpoint declares. */
+  audioContentTypePrefix: string;
 }
 
 export interface AppConfig {

@@ -3,11 +3,11 @@ import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 import TypingInterface from './SWTInterface';
 
-// Every test in this file exercises the SWT typing task. The interface takes
-// its task explicitly now that a second writing task exists, so bind the task
-// once here instead of repeating it at every render call.
+// The interface takes its writing task explicitly, so bind the task once here
+// instead of repeating it at every render call. The behaviour under test is
+// task-neutral; the fixture below is a synthetic answer-typing item.
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-const SWTInterface = (props: any) => <TypingInterface typingMode="swt" {...props} />;
+const SWTInterface = (props: any) => <TypingInterface typingMode="essay-b1-terms" {...props} />;
 
 // Pure typing metrics logic is task-neutral and tested on its own in
 // src/utils/typingPracticeMetrics.test.ts. These tests cover the component:

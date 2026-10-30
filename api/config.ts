@@ -119,20 +119,36 @@ export function getGeminiApiKey(): string | null {
 }
 
 /**
+ * Environment variable names the Speech configuration reads.
+ *
+ * Named once because each appeared twice below, in the read and again in the
+ * missing variable report, free to disagree. Exported so a test can assert that
+ * neither name reaches a client, which is what the premium text to speech route
+ * withholds by returning a fixed failure message.
+ */
+export const AZURE_SPEECH_ENV_VAR = {
+  key: 'AZURE_SPEECH_KEY',
+  region: 'AZURE_SPEECH_REGION',
+} as const;
+
+/**
  * Get Azure Speech configuration from environment.
  *
  * This is the single place that decides whether Azure is usable. It throws
  * naming the variables that are missing, rather than returning nulls for a
  * caller to reinterpret as a generic failure, because a missing key is an
  * operator configuration fault and the deployment should say which one.
+ *
+ * The thrown message names those variables, so it is for an operator log and not
+ * for a response body.
  */
 export function getAzureSpeechConfig(): { key: string; region: string } {
-  const key = process.env['AZURE_SPEECH_KEY'];
-  const region = process.env['AZURE_SPEECH_REGION'];
+  const key = process.env[AZURE_SPEECH_ENV_VAR.key];
+  const region = process.env[AZURE_SPEECH_ENV_VAR.region];
 
   const missing: string[] = [];
-  if (!key) missing.push('AZURE_SPEECH_KEY');
-  if (!region) missing.push('AZURE_SPEECH_REGION');
+  if (!key) missing.push(AZURE_SPEECH_ENV_VAR.key);
+  if (!region) missing.push(AZURE_SPEECH_ENV_VAR.region);
 
   if (missing.length > 0) {
     throw new Error(

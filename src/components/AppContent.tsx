@@ -35,9 +35,6 @@ import { ComponentSkeleton } from './shared/ComponentSkeleton';
 import { WordCardSkeleton } from './shared/Skeleton';
 
 // Lazy load heavy practice interfaces for code splitting
-const RSInterface = lazy(() => import('./practice/RSInterface'));
-const ASQInterface = lazy(() => import('./practice/ASQInterface'));
-const WFDInterface = lazy(() => import('./practice/WFDInterface'));
 const SWTInterface = lazy(() => import('./practice/SWTInterface'));
 const VocabTypingInterface = lazy(() => import('./practice/VocabTypingInterface'));
 
@@ -82,18 +79,12 @@ export const AppContent: React.FC = () => {
 
     // Load vocabulary data on startup
     const loadInitialVocabulary = async () => {
-      const { practiceType, practiceMode, writingMode, vocabularyBook } = settings;
+      const { practiceType, writingMode, vocabularyBook } = settings;
       // Restore the dataset the user was actually on. Writing Practice loads
-      // its selected writing task (currently only SWT, more can be added
-      // later); practice modes load their practice dataset so the RS/ASQ/WFD
-      // interface is restored on reload; vocabulary, vocab-typing and
-      // shadowing load the selected book.
+      // its selected writing task; vocabulary and vocab-typing load the
+      // selected book.
       const datasetToLoad =
-        practiceType === 'writing' && writingMode
-          ? writingMode
-          : practiceType === 'practice' && practiceMode
-            ? practiceMode
-            : vocabularyBook;
+        practiceType === 'writing' && writingMode ? writingMode : vocabularyBook;
       console.log('Loading dataset on startup:', datasetToLoad);
 
       vocabulary.setLoading(true);
@@ -110,16 +101,9 @@ export const AppContent: React.FC = () => {
         // Start practice session for tracking
         try {
           // Track the session under the task the user is actually practicing so
-          // RS/ASQ/WFD/SWT analytics are attributed correctly, not always vocabulary.
+          // writing analytics are attributed correctly, not always vocabulary.
           let taskType: TaskType = 'vocabulary';
-          if (practiceType === 'practice' && practiceMode) {
-            taskType =
-              practiceMode === 'practice-repeat-sentence'
-                ? 'rs'
-                : practiceMode === 'practice-answer-short-question'
-                  ? 'asq'
-                  : 'wfd';
-          } else if (practiceType === 'writing' && writingMode) {
+          if (practiceType === 'writing' && writingMode) {
             // A typing drill is not itself a PTE task, so attribute the session
             // to the task its source text comes from, declared in TYPING_TASKS.
             taskType = TYPING_TASKS[writingMode].taskType;
@@ -266,20 +250,13 @@ export const AppContent: React.FC = () => {
     if (settings.practiceType === 'writing' && settings.writingMode) {
       return TYPING_TASKS[settings.writingMode].taskType;
     }
-    if (settings.practiceType === 'practice' && settings.practiceMode) {
-      if (settings.practiceMode === 'practice-repeat-sentence') return 'rs';
-      if (settings.practiceMode === 'practice-answer-short-question') return 'asq';
-      return 'wfd';
-    }
     return 'vocabulary';
   };
 
-  // Determine which interface to render. vocab-typing and writing tasks are
-  // checked directly against settings, not vocabulary.mode, since they are
-  // not practice-* mode strings nested under 'practice'. Every writing task is
+  // Determine which interface to render from settings. Every writing task is
   // an exact text typing drill served by one interface, so a new writing task
   // needs no branch here, only a TYPING_TASKS entry and a learningModes entry.
-  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'rs' | 'asq' | 'wfd' | 'typing' => {
+  const getPracticeInterfaceType = (): 'vocabulary' | 'vocab-typing' | 'typing' => {
     if (settings.practiceType === 'vocab-typing') {
       return 'vocab-typing';
     }
@@ -287,18 +264,6 @@ export const AppContent: React.FC = () => {
       return 'typing';
     }
 
-    const mode = vocabulary.mode.toLowerCase();
-
-    // Check for practice modes using exact prefix match
-    if (mode.startsWith('practice-repeat-sentence')) {
-      return 'rs';
-    } else if (mode.startsWith('practice-answer-short-question')) {
-      return 'asq';
-    } else if (mode.startsWith('practice-write-from-dictation')) {
-      return 'wfd';
-    }
-
-    // Everything else is vocabulary
     return 'vocabulary';
   };
 
@@ -484,33 +449,6 @@ export const AppContent: React.FC = () => {
                 <>
                   {/* Render appropriate interface based on practice mode */}
                   <Suspense fallback={<ComponentSkeleton />}>
-                    {interfaceType === 'rs' && (
-                      <RSInterface
-                        item={currentItem as any}
-                        sessionManager={sessionManager}
-                        onNext={handleNext}
-                        onPrevious={handlePrevious}
-                        onComplete={handleItemComplete}
-                      />
-                    )}
-                    {interfaceType === 'asq' && (
-                      <ASQInterface
-                        item={currentItem as any}
-                        sessionManager={sessionManager}
-                        onNext={handleNext}
-                        onPrevious={handlePrevious}
-                        onComplete={handleItemComplete}
-                      />
-                    )}
-                    {interfaceType === 'wfd' && (
-                      <WFDInterface
-                        item={currentItem as any}
-                        sessionManager={sessionManager}
-                        onNext={handleNext}
-                        onPrevious={handlePrevious}
-                        onComplete={handleItemComplete}
-                      />
-                    )}
                     {interfaceType === 'typing' && settings.writingMode && (
                       <SWTInterface
                         item={currentItem as any}

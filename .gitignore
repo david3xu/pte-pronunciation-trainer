@@ -6,6 +6,15 @@ yarn-error.log*
 
 # Production builds
 dist/
+
+# Compiled production server. Built by pnpm run build:server and assembled into
+# the App Service package by scripts/azure/build-package.js.
+dist-server/
+
+# Azure deployment working directory. Holds the assembled package and the
+# preflight evidence, both regenerated on every run.
+.azure/package/
+.azure/evidence/
 build/
 
 # Generated files

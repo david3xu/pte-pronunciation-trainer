@@ -12,9 +12,15 @@ describe('Config Validation', () => {
   describe('API Endpoints', () => {
     it('should have all API endpoints defined', () => {
       expect(appConfig.get('api.endpoints.aiChat')).toBe('/api/ai/chat');
-      expect(appConfig.get('api.endpoints.aiTutor')).toBe('/api/ai-tutor');
       expect(appConfig.get('api.endpoints.aiRecommendations')).toBe('/api/ai-recommendations');
       expect(appConfig.get('api.endpoints.pronunciationScore')).toBe('/api/pronunciation-score');
+    });
+
+    it('should not declare an endpoint with no handler', () => {
+      // /api/ai-tutor was declared here but no handler existed in any host and no
+      // call site ever read it. The AI Tutor feature calls the chat endpoint. It was
+      // removed as dead configuration rather than backfilled with a new route.
+      expect(appConfig.get('api.endpoints.aiTutor')).toBeUndefined();
     });
   });
 

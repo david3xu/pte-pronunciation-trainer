@@ -1,7 +1,7 @@
 import re
 import os
 
-file_path = './data/source/pte/vocabs/pte-essay-b1-examples-vocabulary-with-ipa.md'
+file_path = os.path.join(os.path.dirname(__file__), '..', 'data/source/pte/vocabs/pte-essay-b1-examples-vocabulary-with-ipa.md')
 
 with open(file_path, 'r', encoding='utf-8') as f:
     lines = f.readlines()

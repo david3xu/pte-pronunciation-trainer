@@ -338,7 +338,10 @@ test('autoplay surfaces a clear error when premium TTS fails', async ({ page }) 
       volume = 1;
       play(): Promise<void> {
         this.paused = false;
-        return Promise.reject(new Error('mobile autoplay policy rejected playback'));
+        // Deliberately not an autoplay-policy error: those are classified as
+        // needing a resume tap (playbackErrors.isAutoplayBlockedError), not a
+        // failure, and this test covers the failure notification.
+        return Promise.reject(new Error('premium audio could not be decoded'));
       }
       pause(): void {
         this.paused = true;
@@ -367,9 +370,7 @@ test('autoplay surfaces a clear error when premium TTS fails', async ({ page }) 
 
   await audioControls.getByRole('button', { name: /play/i }).click();
 
-  await expect(page.getByText(
-    'Audio playback cannot start right now. Premium audio may be unavailable.',
-    { exact: true }
-  )).toBeVisible();
+  // The notification carries the underlying failure reason after the colon.
+  await expect(page.getByText(/^Audio playback cannot start: .+/)).toBeVisible();
   await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible();
 });

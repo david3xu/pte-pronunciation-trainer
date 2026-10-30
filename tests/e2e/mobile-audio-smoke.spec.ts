@@ -156,6 +156,9 @@ test('Play enters active autoplay UI state', async ({ page }) => {
   await setupAudioMocks(page);
   await page.goto('/');
 
+  // Wait for the dataset to load before pressing Play. Under parallel load a
+  // click that lands before the queue has items is a no-op, not a failure.
+  await expect(page.locator('.word-card')).toBeVisible();
   const audioControls = page.locator('.audio-controls');
   await audioControls.getByRole('button', { name: /play/i }).click();
   await expect(audioControls.getByRole('button', { name: /pause/i })).toBeVisible();
@@ -272,16 +275,20 @@ test('manual word pronunciation tap does not permanently break autoplay controls
   await expect(wordAudioButton).toBeEnabled();
   await wordAudioButton.click();
 
-  // Autoplay controls must still be fully functional afterward: Pause,
-  // then Play (the reclaim path), then Next, all need to keep working, not
-  // just render without throwing.
-  await audioControls.getByRole('button', { name: /pause/i }).click();
+  // The manual tap takes the shared audio element, so the queue loses
+  // ownership and pauses (audioQueueEngine.handleOwnershipLost) rather than
+  // fighting the word for playback. The controls must reflect that pause and
+  // stay fully functional: Play (the reclaim path), Pause, then Next all
+  // need to keep working, not just render without throwing.
   await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible();
 
   const itemBeforeResume = await currentItemNumber(page);
   await audioControls.getByRole('button', { name: /play/i }).click();
   await expect(audioControls.getByRole('button', { name: /pause/i })).toBeVisible();
   expect(await currentItemNumber(page)).toBe(itemBeforeResume);
+
+  await audioControls.getByRole('button', { name: /pause/i }).click();
+  await expect(audioControls.getByRole('button', { name: /play/i })).toBeVisible();
 
   // Next already has dedicated coverage above; this only needs to confirm
   // it is still a live, clickable control and not dead/disabled after a

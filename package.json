@@ -1,6 +1,6 @@
 {
   "name": "pte-vocabulary-trainer",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "description": "A web-based pronunciation training application for PTE vocabulary",
   "type": "module",
   "main": "index.html",

@@ -28,7 +28,7 @@ You are working on the PTE Pronunciation Trainer codebase. Follow these rules ST
 ## 📚 Required Reading Order
 
 Before making changes:
-1. Read `CLAUDE.md` - AI-specific guidance
+1. Read `AGENTS.md` - AI-specific guidance
 2. Read `docs/GUIDELINES.md` - Design principles
 3. Read relevant sections of `docs/ARCHITECTURE.md`
 
@@ -57,7 +57,7 @@ Before suggesting code changes, verify:
 - `src/js/core/SettingsModule.js` - Settings management
 - `src/css/variables.css` - Design tokens (222 CSS vars)
 - `docs/GUIDELINES.md` - Design principles
-- `CLAUDE.md` - AI assistant guidance
+- `AGENTS.md` - AI assistant guidance
 
 ## 🎯 When Adding Features
 

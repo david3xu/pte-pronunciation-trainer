@@ -155,7 +155,7 @@ The production build outputs to `dist/`, including generated datasets copied und
 
 ## Documentation
 
-- `CLAUDE.md` - repository guidance for Claude Code
+- `AGENTS.md` - repository guidelines and architecture reference
 - `.github/copilot-instructions.md` - concise AI coding guidance
 - `docs/ARCHITECTURE.md` - system overview
 - `docs/MODULES.md` - module and data-flow map

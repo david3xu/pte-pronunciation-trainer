@@ -90,7 +90,7 @@ Capacitor iOS builds are supported with `pnpm run cap:sync:ios`, `pnpm run cap:s
 
 ## Important references
 
-- `CLAUDE.md` is the main Claude Code guide for this repository.
+- `AGENTS.md` is the main repository guide for coding agents.
 - `README.md` is the user-facing overview.
 - `docs/ARCHITECTURE.md`, `docs/MODULES.md`, and `docs/CODE_INTERACTIONS.md` contain deeper design context.
 - `docs/TESTING.md`, `docs/DEPLOYMENT.md`, and `docs/SETUP.md` cover workflow, deployment, and setup details.

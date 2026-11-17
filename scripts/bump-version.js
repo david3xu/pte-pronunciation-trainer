@@ -52,13 +52,13 @@ readmeContent = readmeContent.replace(/Version\*\*: \d+\.\d+\.\d+/g, `Version**:
 fs.writeFileSync(readmePath, readmeContent);
 console.log('Updated README.md');
 
-// Update CLAUDE.md
-const claudePath = path.join(__dirname, '../CLAUDE.md');
-let claudeContent = fs.readFileSync(claudePath, 'utf8');
-claudeContent = claudeContent.replace(/v\d+\.\d+\.\d+/g, `v${newVersion}`);
-claudeContent = claudeContent.replace(/Version\*\*: \d+\.\d+\.\d+/g, `Version**: ${newVersion}`);
-fs.writeFileSync(claudePath, claudeContent);
-console.log('Updated CLAUDE.md');
+// Update AGENTS.md
+const agentsPath = path.join(__dirname, '../AGENTS.md');
+let agentsContent = fs.readFileSync(agentsPath, 'utf8');
+agentsContent = agentsContent.replace(/v\d+\.\d+\.\d+/g, `v${newVersion}`);
+agentsContent = agentsContent.replace(/Version\*\*: \d+\.\d+\.\d+/g, `Version**: ${newVersion}`);
+fs.writeFileSync(agentsPath, agentsContent);
+console.log('Updated AGENTS.md');
 
 // Update CHANGELOG.md
 const changelogPath = path.join(__dirname, '../CHANGELOG.md');

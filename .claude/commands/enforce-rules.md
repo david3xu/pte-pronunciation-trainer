@@ -27,7 +27,7 @@ You MUST follow these rules for the PTE Pronunciation Trainer:
 ## Before Making Changes
 
 Read in order:
-1. `CLAUDE.md` - AI guidance
+1. `AGENTS.md` - AI guidance
 2. `docs/GUIDELINES.md` - Design principles
 3. Relevant `docs/ARCHITECTURE.md` sections
 

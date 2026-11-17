@@ -799,7 +799,7 @@ on Azure by the time the live checks below were run.
 | PostgreSQL administrators | count and identity | exactly one administrator, `<entra-admin-principal>`, matching the approved `POSTGRES_ENTRA_ADMIN_OBJECT_ID` |
 | API Management | provisioning state | `Succeeded` |
 | Front Door security policy | WAF association | `provisioningState: Succeeded`, WAF policy `<front-door-waf-policy>` associated with the `<front-door-endpoint>` endpoint on `/*` |
-| Front Door endpoint | public origin, full hostname | `https://<front-door-endpoint>.z01.azurefd.net`, confirmed answering on 2026-08-07. The generated `<generated-hash>` segment is assigned when the endpoint is created and is not derived from the endpoint name above, so it changes if the endpoint is ever torn down and recreated. Probe again after any Front Door recreation rather than trusting this value. |
+| Front Door endpoint | public origin, full hostname | `https://<front-door-endpoint>.z01.azurefd.net`, confirmed answering on 2026-08-07. The generated hash segment is assigned when the endpoint is created and is not derived from the endpoint name above, so it changes if the endpoint is ever torn down and recreated. Probe again after any Front Door recreation rather than trusting this value. |
 | Speech account | identity and SKU | still `ccl-pronunciation-speech` in `australiaeast`, now `S0` (in-place upgrade, no new account) |
 | Foundry / OpenAI / Machine Learning | resource scan | none exist in the resource group; the only `Microsoft.CognitiveServices` account is the approved Speech resource |
 | Role assignments | scoped to the resource group | none, matching the plan's static role review — the only enabled API route has no Azure data-plane dependency |

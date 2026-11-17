@@ -41,18 +41,18 @@ available, read it rather than starting another provisioning command.
 Azure subscription deployment:
 
 ```text
-<deployment-name>
+staging-deployment
 ```
 
 Portal:
 
-https://portal.azure.com/#view/HubsExtension/DeploymentDetailsBlade/~/overview/id/%2Fsubscriptions%2F<subscription-id>%2Fproviders%2FMicrosoft.Resources%2Fdeployments%2F<deployment-name>
+https://portal.azure.com/#view/HubsExtension/DeploymentDetailsBlade/~/overview/id/%2Fsubscriptions%2F<subscription-id>%2Fproviders%2FMicrosoft.Resources%2Fdeployments%2Fstaging-deployment
 
 The last direct Azure read returned:
 
 ```json
 {
-  "name": "<deployment-name>",
+  "name": "staging-deployment",
   "state": "Running",
   "error": null
 }
@@ -86,13 +86,13 @@ If shell ID `252` remains available, read it. Otherwise query Azure:
 
 ```bash
 az deployment sub show \
-  --name <deployment-name> \
+  --name staging-deployment \
   --subscription <subscription-id> \
   --query '{name:name,state:properties.provisioningState,error:properties.error}' \
   -o json
 
 az deployment operation sub list \
-  --name <deployment-name> \
+  --name staging-deployment \
   --subscription <subscription-id> \
   --query "[].{resource:properties.targetResource.resourceName,type:properties.targetResource.resourceType,state:properties.provisioningState,status:properties.statusCode}" \
   -o table
@@ -205,7 +205,7 @@ unverified, never as zero.
 
 - Do not run `azd up`.
 - Do not run direct ARM/Bicep deployment commands.
-- Do not start another deployment while `<deployment-name>` is `Running`.
+- Do not start another deployment while `staging-deployment` is `Running`.
 - Do not change regions, SKUs, names, or identities.
 - Do not promote to production.
 - Do not delete resources or perform destructive rollback.

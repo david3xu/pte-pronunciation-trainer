@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "cap:sync:ios": "vite build && npx cap sync ios",
-    "cap:sync:ios:prod": "VITE_API_BASE_URL=https://your-production-domain.example.com vite build && npx cap sync ios",
-    "cap:sync:ios:staging": "VITE_API_BASE_URL=https://<front-door-endpoint>.z01.azurefd.net vite build && npx cap sync ios",
+    "cap:sync:ios:prod": "VITE_API_BASE_URL=${VITE_API_BASE_URL:-https://your-production-domain.example.com} vite build && npx cap sync ios",
+    "cap:sync:ios:staging": "VITE_API_BASE_URL=${VITE_API_BASE_URL:-https://your-staging-endpoint.z01.azurefd.net} vite build && npx cap sync ios",
     "cap:open:ios": "npx cap open ios",
     "cap:run:ios": "npx cap run ios",
     "dev:proxy": "node scripts/dev-proxy.js",

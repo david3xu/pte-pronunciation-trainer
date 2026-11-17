@@ -74,9 +74,6 @@ coverage/
 # Build profiling byproducts
 *.cpuprofile
 
-# Local iOS build tooling
-.<local-edit-tool>-derived-data/
-
 # Temporary files
 tmp/
 temp/

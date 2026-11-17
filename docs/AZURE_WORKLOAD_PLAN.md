@@ -1,9 +1,7 @@
 # Azure workload plan
 
-Status: implementation plan. Infrastructure is deployed as of the 7-8 August recovery deployment; repository migration is not complete. Live spend and milestone-clock evidence are in "Current countable state" and "Dates", verified 21 August 2026.
-Scope: subscription `<subscription-id>`, spanning ccl-pronunciation-trainer, <companion-service> and <local-edit-tool>.
-
-Companion documents: `docs/operations/azure-workload-plan.md` in <companion-service>; `docs/azure-workload-position.md` in <local-edit-tool>.
+Status: implementation plan. Infrastructure is deployed as of the recovery deployment; repository migration is in progress.
+Scope: subscription `<subscription-id>`, `ccl-pronunciation-trainer`.
 
 > **Implementation authority.** The target set, canonical implementation sequence and implementation todos in this document are authoritative. Historical alternatives have been removed so they cannot override the selected App Service S1 and handler-first path.
 
@@ -13,7 +11,7 @@ The trainer consolidates onto Azure. The five confirmed third-party providers ar
 
 ### Complete third party inventory
 
-Audited 6 August 2026 across the repository excluding `node_modules`, `dist`, `ios` and `data`.
+Audited across the repository excluding `node_modules`, `dist`, `ios` and `data`.
 
 | Third party | Role | Azure replacement | New workload |
 | --- | --- | --- | --- |
@@ -26,149 +24,41 @@ Audited 6 August 2026 across the repository excluding `node_modules`, `dist`, `i
 | Sentry | error tracking | Application Insights | no, same service |
 | resend | transactional email, single reference only | Communication Services | conditional, verify first |
 
-Only two replacements add new service types to the target tally: App Service and Database for PostgreSQL. The other confirmed migrations consolidate onto services already in the set. That is expected: consolidation and the milestone are separate objectives that happen to overlap.
+**One real benefit.** Application Insights becomes the common destination for server telemetry, product analytics and error reporting.
 
-**One real benefit.** Application Insights becomes the common destination for server telemetry, product analytics and error reporting. It remains a retained, uncounted service rather than part of the six-service target.
-
-**resend needs verification.** It appears exactly once, so it may be aspirational rather than wired. If transactional email is genuinely in use, Communication Services becomes an additional Azure service. If not, do not provision it to pad the count.
-
-This is a product direction decision, not a milestone decision. The milestone benefits from it, but the reverse justification would be backwards and is not the reason recorded here.
-
-## Objective
-
-Reach the Microsoft for Startups $25,000 credit milestone. Requirement is five or more distinct Azure services, each above US$1 in spend, held for 60 continuous days. Six are targeted: five with fixed or base monthly floors, plus usage-controlled Foundry.
-
-The milestone matters mainly for the one-time two year credit extension attached to it, not the headroom.
-
-## Binding constraint
-
-Spend and schedule, not architecture.
-
-| Fact | Value |
-| --- | --- |
-| Consumed 1 to 6 August | A$986.15, almost entirely Foundry in `<shared-foundry-rg>` |
-| August forecast at unthrottled rate | A$2.58K |
-| Credits remaining | US$3,633 as recorded 6 August; **not re-read**, the billing balance API rejects this profile |
-| Planned steady rate after redesign | ~US$296/mo, about US$9.87/day |
-| **Actual steady rate, 7-20 August** | **~US$38.83/day, about US$1,140/mo**, verified 21 August |
-| Runway at planned rate | over twelve months |
-| **Runway at actual rate** | **roughly three months from 6 August**, if the 6 August balance still held then |
-| Credit expiry | 22 December 2026 |
-| Milestone clock | **running since 7 August**, verified; see "Dates" |
-
-**The exhaustion problem is not gone; it moved.** The 6 August draft of this section concluded that at roughly US$296 a month the US$3,633 balance outlives both the 60 day window and the 22 December expiry, making expiry the binding constraint. Verified spend is US$1,140 a month, close to four times that.
-
-At the actual rate the balance funds roughly three months, not twelve. That is still enough to reach either candidate milestone date, 5 October or 11 October, but it does not reach 22 December. **Expiry is no longer the binding constraint; exhaustion is again**, and the margin is thinner than the earlier reasoning assumed rather than comfortable.
-
-This inverts what the two year extension is for. It does not merely preserve an unused remainder, because on current numbers there will not be one. Confirm the live balance in the portal before relying on any of this arithmetic; the recorded US$3,633 is two weeks stale and the API route to re-read it is unavailable.
-
-The largest single lever is PostgreSQL at US$467 a month across three servers, two of which bill identically. See `docs/operations/azure-workload-plan.md` in <companion-service>, which owns resource and credit tracking.
-
-This only holds if Foundry is throttled. Left alone it consumes the entire balance by roughly 9 September and the redesign is moot.
-
-Throttling Foundry to a deliberate floor near US$2 a day does double duty: it is the cost control, and it guarantees that workload stays above the daily threshold rather than drifting below it.
-
-**The consolidation must not gate the clock.** Auth migration alone is multi-week work. Resource provisioning and cost verification may run in parallel with repository implementation, but they do not change the code dependency order below. A service counts as genuinely in use from the point it becomes a live migration target, not merely when it is provisioned.
-
-## Current countable state
-
-**Verified live 21 August 2026** against Cost Management, subscription `<subscription-id>`, `CostUSD`, daily granularity. Last settled day is 20 August; 21 August had not closed. Supersedes the 6 August "one workload" reading, which is retained only in git history.
-
-Eight services cleared US$1 per day on every day from 7 August through 20 August without a break.
-
-| Service | USD/day, 14-20 Aug mean | In the counted target set |
-| --- | --- | --- |
-| Azure Database for PostgreSQL | 15.35 | yes |
-| Azure Bastion | 4.53 | **no, unplanned** |
-| Redis Cache | 3.84 | yes |
-| Azure Container Apps | 3.83 | yes, datacore |
-| Azure App Service | 2.85 | yes |
-| Virtual Machines | 1.99 | **no, unplanned** |
-| API Management | 1.56 | yes |
-| Azure Front Door | 1.12 | yes |
-
-Below the floor, consistent with being retained rather than counted: Speech at 0.43-0.78 per day for the six days to 20 August (it bills under service name `Foundry Tools`, not a separate Speech meter), Load Balancer 0.68, Virtual Network 0.36, Container Registry 0.16, Storage 0.16, DNS 0.02. Key Vault, Bandwidth, Log Analytics and Entra bill zero.
-
-**Foundry Models is US$0.00 per day** and has been since 6 August. Before the throttle it was the entire subscription: US$437.79 on 4 August, US$140.51 on 31 July. The throttle is confirmed effective; see the Foundry band note in `docs/operations/azure-workload-plan.md` in <companion-service>, which owns that control.
-
-**Bastion and Virtual Machines are doing tally work by accident.** Both belong to the synthetic monitor VM added 7 August. Together they cost roughly US$198 a month, more than App Service and API Management combined, and neither appears in any counted service table in this plan or datacore's. If they qualify, the subscription is at eight workloads, which is exactly the condition open question four asks about. That should be a decision, not drift.
-
-**Run rate is roughly US$38.83 per day, about US$1,140 a month**, measured over the fourteen settled days from 7 August. The target set in this document estimates US$296 a month and the approved ceiling is US$400. Actual trainer-plus-datacore spend is over the combined budget of both products. Sixty-day spend to 20 August is US$2,514.93; August month to date through 20 August is US$1,305.52.
-
-The credit balance could not be read: the billing `availableBalance` API returns Bad Request on this MicrosoftCustomerAgreement profile. Remaining balance against the recorded US$3,633 needs the portal.
-
-## Counting rule, and why distinct types
-
-The published definition says each unique service counts as one workload. It does not document whether Microsoft counts by service name, product, meter category, or deployed resource. The ambiguity is open on Microsoft Q&A without a definitive answer.
-
-Distinct service types satisfy both readings. Multiple resources inside one service only satisfy the permissive one. The plan uses distinct types throughout.
-
-Spend margin is not the safety mechanism; billing model is. A service averaging US$2 a month sits at seven cents a day and fails a daily reading regardless. Fixed monthly floors cannot drop. Consumption services clear the floor only if real traffic passes through them.
-
-## Spend floor interpretation, decided
-
-**Every counted service must clear US$1 per day, not US$1 per month.** Approved 6 August 2026 as the design assumption.
-
-This is the strict reading of an ambiguous rule and it inverts the whole design. A service must cost roughly US$30 a month or more to qualify, which disqualifies every cheap tier. Optimising for low cost, which the earlier drafts of this plan did, actively defeats the requirement.
-
-Disqualified by this decision, all of them previously in the target set:
-
-| Service | Previously chosen tier | Per day | Result |
-| --- | --- | --- | --- |
-| Static Web Apps | Standard, $9/mo | $0.30 | fails |
-| Container Registry | Basic, $5/mo | $0.17 | fails |
-| Blob Storage | Hot, ~$5/mo | $0.17 | fails, would need roughly 1.6TB stored |
-| Database for PostgreSQL | B1ms, ~$15/mo | $0.50 | fails, needs sizing up |
-| Application Insights | usage | marginal | needs roughly 360MB/day ingestion |
-| AI Speech | S0 usage | marginal | needs roughly 65k characters/day |
-
-The cost of the strict reading is roughly six times the lenient one. See open question three: the documentation does not state which applies, and confirming it before committing is worth about US$300 over the window.
+**resend needs verification.** It appears exactly once, so it may be aspirational rather than wired. If transactional email is genuinely in use, Communication Services becomes an additional Azure service. If not, do not provision it.
 
 ## Target set
 
-Six services, roughly **US$296 a month**, each with a floor that clears US$1 per day. Five are required for the $25,000 milestone, so this carries one workload of buffer.
+Six primary services in the target architecture, estimated at roughly **US$296 a month** (approved ceiling: **US$400 a month**):
 
-**Approved ceiling: US$400 a month.** The margin above US$296 is not slack. Foundry is entirely usage billed and Front Door can add usage and WAF charges above its base fee. Speech is also usage billed but is outside the six-service target. Every figure below is estimated from memory of list prices, so overshoot is likely rather than possible.
-
-| # | Service | Tier | Est. USD/mo | Est. USD/day | Floor holds because |
+| # | Service | Tier | Est. USD/mo | Est. USD/day | Billing model |
 | --- | --- | --- | --- | --- | --- |
 | 1 | App Service | Standard S1 | 70 | 2.33 | fixed compute charge |
 | 2 | Database for PostgreSQL | B2s plus 64GB | 40 | 1.33 | fixed vCore plus storage |
 | 3 | Front Door | Standard | 35 | 1.17 | fixed base fee |
-| 4 | Cache for Redis | Basic C1 | 41 | 1.37 | fixed tier charge |
+| 4 | Cache for Redis | Managed Redis Balanced_B3 | 59 | 1.97 | fixed tier charge |
 | 5 | API Management | Developer | 50 | 1.67 | fixed instance charge |
-| 6 | Foundry | throttled to a deliberate floor | 60 | 2.00 | directly controlled |
+| 6 | Foundry | throttled to a deliberate budget | 60 | 2.00 | directly controlled |
 
-Estimate only, from memory of Azure list prices. Price each in the calculator for `australiaeast` before provisioning. The API Management estimate assumes Developer; if IN-07 selects another tier, reprice the total and confirm it remains below the approved ceiling.
+Estimates only, from Azure list prices. Price each in the calculator for `australiaeast` before provisioning. The API Management estimate assumes Developer; if IN-07 selects another tier, reprice the total and confirm it remains below the approved ceiling.
 
-### Justification, not just price
+### Architectural roles
 
-A price tag is not a reason. Each entry has to survive the program's genuine use condition.
-
-* **App Service S1** replaces Static Web Apps for the `dist` build. Chosen over Basic B3 at US$55 deliberately: four cores serving static files invites the charge of being contrived, whereas deployment slots, autoscale and backups are defensible on capability. It also absorbs the six `api/` HTTP handlers.
-* **PostgreSQL B2s** replaces the Supabase database. Sized up from B1ms purely to clear the daily floor; B1ms would be adequate on load alone.
-* **Front Door Standard** replaces the CDN slot for audio delivery and provides managed TLS and edge routing. WAF is intended but is not present in `infra/azure/front-door.bicep`; a policy and endpoint association must be added before public cutover, and its separate charges must be included in the calculator estimate.
-* **Cache for Redis C1** caches Foundry responses for repeated vocabulary items. In a study app many users hit the same words, so this genuinely reduces inference cost. Also carries session state and rate limiting.
+* **App Service S1** replaces Static Web Apps for the `dist` build and hosts the six `api/` HTTP handlers with deployment slots, autoscale and backups.
+* **PostgreSQL B2s** replaces the Supabase database.
+* **Front Door Standard** replaces the CDN slot for audio delivery and provides managed TLS, WAF and edge routing.
+* **Azure Managed Redis** caches Foundry responses for repeated vocabulary items, session state and rate limiting.
 * **API Management Developer** fronts the handlers during migration with policy enforcement and throttling. Developer has no SLA and is not an automatic production choice; production cutover requires an explicit decision to accept that risk temporarily or move to an available SLA-backed tier.
-* **Foundry** replaces Gemini and is throttled to a deliberate floor rather than left to run.
+* **Foundry** replaces Gemini and is throttled to a controlled budget.
 
-Redis and API Management are the two most vulnerable to a charge of being contrived. Removing Redis leaves five target services at roughly US$255 a month; removing API Management leaves five at roughly US$246. Removing both leaves four at roughly US$205 and no longer satisfies the five-service objective without a justified replacement.
+### Retained supporting services
 
-### Retained but not counted
+Retain Blob Storage, AI Speech at `S0`, and Application Insights for their product roles:
 
-Retain Blob Storage, AI Speech at `S0`, Application Insights and datacore's Container Registry only for their product roles. They are not part of the six-service target. If Microsoft confirms a cumulative floor, count one only after Cost Management shows that service has actually crossed the required spend; do not assume that a provisioned low-cost resource qualifies.
-
-Entra External ID replaces Supabase auth and bills zero on the free monthly active user tier. Consolidation only.
-
-Communication Services replaces `resend`, conditional on verifying that transactional email is genuinely in use.
-
-Trainer resources use `australiaeast` except global Front Door. Tag every resource by product; two products share this subscription.
-
-## Consequence for datacore
-
-The trainer now needs Postgres for its own reasons, which resolves the open decision in `docs/operations/azure-workload-plan.md` in <companion-service>. datacore keeps its compose Postgres and its local-first property. It contributes Container Registry and Foundry only.
-
-Sharing one Postgres server between an event-sourced write path and a consumer app is still not advisable. The trainer uses its own B2s server; sharing would count once either way.
+* Entra External ID replaces Supabase auth on the free monthly active user tier.
+* Communication Services replaces `resend`, conditional on verifying that transactional email is genuinely in use.
+* Trainer resources use `australiaeast` (with Managed Redis in `australiacentral`) and global Front Door. Tag every resource by product.
 
 ## Migration inventory
 
@@ -176,15 +66,11 @@ Work required by the all-Azure direction, largest first.
 
 ### Auth, Supabase to Entra External ID. Largest item.
 
-Touches `src/services/supabase/authService.ts`, `supabaseClient.ts`, and every call site that assumes a Supabase session. No drop-in equivalent exists. An Entra External ID tenant already exists at `<entra-external-id-tenant>.onmicrosoft.com`, though it was provisioned for a different purpose and its suitability needs checking before reuse.
-
-Expect this to dominate the schedule. It does not block the clock.
+Touches `src/services/supabase/authService.ts`, `supabaseClient.ts`, and every call site that assumes a Supabase session. No drop-in equivalent exists. An Entra External ID tenant (`<entra-external-id-tenant>.onmicrosoft.com`) must have its suitability verified before reuse.
 
 ### Database, Supabase to Azure PostgreSQL
 
 Touches `supabase/migrations/`, `src/types/database.ts`, `src/services/supabase/syncService.ts`, `autoSyncManager.ts`, `src/services/migration/migrationService.ts`. Schema translation is mechanical; the sync layer assumptions are not.
-
-Provision early. Postgres has a fixed floor and begins counting immediately.
 
 ### Hosting and handlers, Vercel to App Service
 
@@ -204,37 +90,29 @@ Small change that establishes one observability path. Baseline server telemetry 
 
 ### Email, resend to Communication Services. Verify first.
 
-Single reference in the repository. Establish whether transactional email is actually in use before provisioning anything. If it is, Communication Services is an additional Azure service. If it is not, skip it; provisioning an unused service to raise the count is the exact case the program's genuine use condition excludes.
+Single reference in the repository. Establish whether transactional email is actually in use before provisioning anything.
 
 ### AI, Gemini to Foundry. Lowest priority.
 
 Touches `src/services/ai/` throughout: `recommendationService.ts`, `recommendationEngine.ts`, `ratingService.ts`, `interventionEngine.ts`, `weakAreaDetector.ts`, `taskPersonas.ts`, plus `api/ai/chat.ts` and the `gemini.*` config keys (`defaultModel`, `maxTokens`, `temperature`, `topP`, `topK`), currently on `gemini-2.5-flash`.
 
-**Sequence this last.** Foundry is already counted, so this yields zero additional workloads while adding inference load to a service controlled by the separate operations throttle. It is a consolidation goal, not a milestone contributor.
-
 ### Audio, new work rather than migration
 
-Blob becomes the server-side cache for generated TTS, touching `api/audio/generate.ts` and `src/services/audio/audioCache.ts`, with Front Door serving `/audio/*` and client URLs repointed. Blob is retained but not counted; Front Door is in the target set.
+Blob becomes the server-side cache for generated TTS, touching `api/audio/generate.ts` and `src/services/audio/audioCache.ts`, with Front Door serving `/audio/*` and client URLs repointed.
 
 ## Explicitly rejected
 
 Recorded so these are not re-litigated.
 
-* **<local-edit-tool> gets nothing.** Six dependencies, no HTTP client, no async runtime, no network stack. That hermeticism is the security posture of a binary that mutates the source tree behind an allowlist. See `docs/azure-workload-position.md` in that repository. The all-Azure direction does not extend to it.
-* **No datacore cloud migration.** Ruled out by `vision.md`, `v1-scope.md` and `plan.md`, the last of which requires a superseding ADR. Workers bind to local git worktrees, so a full move is a different product.
 * **Provisioned but unused Redis.** Redis is not complete until an App Service handler uses it for rate limiting, session state or Foundry response caching. A cache with no local consumer does not satisfy the product design.
-* **Service Bus or any broker.** `manager-sdk/src/fanout.ts` is `Promise.all`. Nothing queues.
-* **Blob for datacore `artifact_paths`.** That field holds references to local worktree paths in the event envelope schema, not upload targets. Off-host backup of the event store is the real datacore Blob case.
-* **AI Search.** Basic tier around US$75, free tier bills zero, and pgvector in the Postgres being provisioned covers vector needs.
-* **Key Vault as a counted workload.** Genuinely useful, but standard tier needs roughly 330,000 operations to reach a dollar. Adopt it if wanted; do not count it.
-* **Static Web Apps.** Standard fails the selected daily floor and duplicates the App Service host.
-* **Container Apps as a counted workload.** The monthly free vCPU and memory grant can absorb a small always-on replica entirely. App Service S1 is the selected host.
-* **Counting Entra External ID.** Free monthly active user tier means it bills zero at current scale.
-* **Sharing the datacore Postgres with the trainer.** Counts once either way.
+* **Service Bus or any broker.** Nothing in the trainer queues asynchronous background jobs.
+* **AI Search.** pgvector in the PostgreSQL flexible server being provisioned covers vector needs.
+* **Static Web Apps.** Duplicates the App Service host.
+* **Container Apps.** App Service S1 is the selected host.
 
 ## Canonical implementation sequence
 
-This sequence governs repository work. Cost controls and milestone verification run as a separate operations track and do not change code dependencies.
+This sequence governs repository work.
 
 ### Phase 0, validate the deployment contract
 
@@ -284,7 +162,7 @@ Exit criteria: Azure serves all production paths, old-provider credentials are r
 
 Deployed account is `ccl-pronunciation-speech`. The source Bicep now requires that explicit name, but the compiled template must be rebuilt before deployment. Do not deploy a stale `main.json` that still contains the former generated-name behavior.
 
-```
+```bash
 az cognitiveservices account update \
   --name ccl-pronunciation-speech \
   --resource-group ccl-pronunciation-trainer-rg \
@@ -292,43 +170,6 @@ az cognitiveservices account update \
 ```
 
 After the SKU update, keep `main.bicepparam` and deployed reality aligned. The explicit account name is the single source of truth.
-
-## Capability boundary
-
-Which work can be done through the <local-edit-tool> MCP servers and which requires a human at a terminal or a browser. Recorded because misjudging this wastes a session.
-
-### Can be done through MCP
-
-The <local-edit-tool> servers are repo-confined edit engines with an allowlist of `git`, `cargo`, `bun`, `npm`, `pnpm`, `python3`, `pytest`, `rg`, and one exact bash script.
-
-* Read, write and edit any file in ccl-pronunciation-trainer, <companion-service> and <local-edit-tool>
-* Author and revise Bicep, TypeScript, SQL and documentation
-* Search either codebase to ground a claim in what the code says
-* Run the test suites, typecheck and lint
-* Stage, commit, push, open pull requests
-
-### Cannot be done through MCP
-
-`az` is not on the allowlist and no cloud API is reachable from any of the 52 actions. Everything below needs a human.
-
-| Blocked | Why |
-| --- | --- |
-| `az bicep build` | requires `az` |
-| Any deployment | requires `az` and interactive authentication |
-| Speech `F0` to `S0` | requires `az` |
-| Reading Cost Management | requires portal or `az`, and is the only way to verify the daily floor |
-| Confirming resource state | same |
-| Anything needing credentials | no secret material is reachable, by design |
-
-### Optional improvement
-
-Microsoft ships an official Azure MCP Server covering 40 or more services, installable with `npx -y @azure/mcp@latest server start`, authenticating through Entra ID. A separate Resource Graph server handles subscription queries and ARM deployment management.
-
-That would close the read gap: resource state, Cost Management queries, daily floor verification. It would not help with initial deployment, since authentication happens before the server starts and the raw `az deployment` output is worth seeing directly.
-
-If adopted, scope it to a service principal with Contributor on `ccl-pronunciation-trainer-rg` rather than attaching the Owner identity. Owner can delete resource groups, read Key Vault secrets and create role assignments; nothing in this plan needs that.
-
-Not a prerequisite. Set it up after the clock is running.
 
 ## Implementation todos
 
@@ -431,12 +272,6 @@ Owner: **H** requires Azure access or a product decision; **A** is repository im
 | [ ] | CUT-04 | Remove Vercel, Supabase, Gemini, PostHog and Sentry dependencies, variables and credentials | A+H | CUT-03 | No runtime reference or active credential remains |
 | [ ] | CUT-05 | Update setup, deployment, recovery and architecture documentation | A | CUT-04 | Documentation describes the deployed Azure system and rollback boundaries |
 
-### Current state
-
-Infrastructure is deployed. The 7-8 August recovery deployment provisioned App Service, PostgreSQL, Redis, Storage, Application Insights, Log Analytics, API Management, Front Door with WAF, Speech, and a synthetic monitor VM with Bastion; datacore's Container Apps environment is also live. Cost Management confirms all of it billing. No application migration task above is complete. The trainer still runs on Supabase, Gemini, Vercel and PostHog, and nothing in `src/` or `api/` consumes the planned PostgreSQL, Redis, Front Door or APIM resources.
-
-The immediate blocking evidence is IAC-00 and IAC-01, plus IN-01 through IN-03 before what-if. While a human obtains those results, repository work can begin on the V0 baseline, APP-01/APP-03, DB-01, AUTH-01 and OPT-01 because none depends on an Azure deployment.
-
 ## Validation gates
 
 Passing a phase means retaining evidence for its gate, not only completing the code edits.
@@ -461,56 +296,12 @@ The repository migration is complete only when:
 * IaC builds reproducibly, deployment what-if is reviewed, any retained compiled template matches source, and restore plus rollback rehearsals have succeeded.
 * The rollback window has closed, retired-provider credentials and runtime dependencies are removed, and setup, deployment, recovery and architecture documentation matches production.
 
-Billing qualification is a separate operations acceptance criterion. It neither substitutes for these engineering conditions nor makes an unused service complete.
-
-## Dates
-
-**T0 is verified. The clock is running.** Cost Management, read 21 August 2026 at daily granularity, shows an unbroken qualifying run beginning 7 August. See "Current countable state" for the per-service evidence.
-
-| Date | Event | Status |
-| --- | --- | --- |
-| 6 Aug 2026 | Plan baseline; not a qualifying clock start | historical |
-| **7 Aug 2026** | **T0 for the five-service $25,000 milestone.** First day at least five distinct service types each cleared US$1, unbroken since | **verified** |
-| 13 Aug 2026 | First day all six services in this plan's target set cleared US$1 together; Container Apps came up last | verified |
-| 21 Aug 2026 | Day 15 of 60 on the 7 August clock | current |
-| **5 Oct 2026** | **Day 60 on the 7 August clock.** Candidate $25,000 milestone completion | projected |
-| 11 Oct 2026 | Day 60 on the stricter 13 August all-six clock | projected |
-| 22 Dec 2026 | Current credit expiry | fixed |
-
-Both completion dates fall well before credit expiry.
-
-The previously stated 5 October date turns out to be correct, but by coincidence and for a different reason than the earlier draft assumed. It is valid because 7 August is the verified T0, not because 6 August was. Do not restate the derivation from the plan baseline.
-
-Any non-qualifying day resets the clock. The two most fragile entries are Front Door at US$1.08 to US$1.13 per day and API Management at US$1.45 to US$1.58, both within a small margin of the floor. Verify at daily granularity before treating either projected date as firm.
-
-## Open questions
-
-For Microsoft support or Q&A, with specifics rather than in the abstract.
-
-1. Do two Cognitive Services accounts of different kinds count as two workloads, or one?
-2. Do multiple resources inside one service, for example several container apps in one environment, count once or severally?
-3. Is the US$1 floor cumulative across the window, or per day?
-4. If retained or conditional services eventually bring the total to eight workloads and qualify directly for the $50,000 milestone, does the two year credit extension documented at $25,000 still trigger? Fifty thousand expiring 22 December would be worse than twenty five thousand that does not.
-
-   **No longer hypothetical.** As of the 21 August verification the subscription has been at eight qualifying services since 7 August, because the monitor VM's Bastion and Virtual Machines meters both clear the floor. This question now needs an answer from support rather than a decision later, and the alternative lever is to stop the monitor VM, which drops the count to six and costs roughly US$198 a month less.
-5. Is progression genuinely automatic? The portal shows no upgrade affordance, matching the documentation, but multiple reports describe weeks of silence after apparently qualifying.
-
-## Unresolved, non-technical
-
-`<dev-resource-group>` runs employer development inside a subscription verified against a personal entity. Worth a deliberate decision rather than drift.
-
 ## Risk register
 
 | Risk | Mitigation |
 | --- | --- |
-| Daily floor is the wrong reading and the higher fixed tiers were unnecessary | confirm open question three before committing to the 60-day operating window |
-| A service provisioned at too small a tier reads compliant monthly but fails daily | verify per service in Cost Management at daily granularity before assuming the clock started |
 | Selected SKU, quota or Node 22 runtime is unavailable in `australiaeast` | verify subscription-specific availability before what-if and record an approved substitution before changing Bicep |
-| Redis or API Management judged contrived under the genuine use condition | remove one and retain five services at roughly US$255 or US$246; removing both leaves four and requires a justified replacement |
 | Front Door is described as WAF-protected but no policy is associated | make WAF policy deployment, endpoint association and origin-bypass verification a Phase 0 gate |
 | APIM Developer carries production traffic despite having no SLA | require IN-07 and CUT-00 before production cutover; select an available SLA-backed tier or time-box explicit risk acceptance |
-| Auth migration overruns the window | it does not block the App Service/API vertical slice or the separate resource-provisioning track |
-| Foundry left unthrottled | consumes the balance by roughly 9 September and the redesign is moot; keep the operations throttle independent of implementation phases |
-| Program terms change | portal shows PREVIEW, initial grant already moved from $1,000 to $200 in under two months. Avoid large architectural commitments justified only by credits |
-| Provider lock-in after credits expire | acknowledged cost of the all-Azure direction. Foundry replaces a portable inference layer, so post-credit routing to a cheaper host becomes a project rather than a config change. At roughly US$296/mo this is a real recurring bill once credits end |
-| A calendar estimate is mistaken for T0 | derive the milestone date only from the first verified qualifying day and reset it after any non-qualifying day |
+| Auth migration overruns the schedule | it does not block the App Service/API vertical slice or the separate resource-provisioning track |
+| Foundry left unthrottled | keep the operations budget throttle independent of implementation phases |
